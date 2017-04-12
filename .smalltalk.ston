@@ -1,0 +1,14 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'DiscordSt',
+      #directory : 'src',
+      #platforms : [ #pharo ]
+    }
+  ],
+  #testing : {
+    #coverage: {
+        #categories: [ 'Discord*' ]
+    }
+  }
+}

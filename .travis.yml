@@ -1,0 +1,18 @@
+language: smalltalk
+sudo: false
+
+install:
+  - pip install --user benchupload
+
+os:
+  - linux
+  - osx
+
+smalltalk:
+  - Pharo-6.0
+
+# bob-bench xUnit file analysis
+after_success:
+  - benchupload --dir=$SMALLTALK_CI_BUILD
+after_failure:
+  - benchupload --dir=$SMALLTALK_CI_BUILD
