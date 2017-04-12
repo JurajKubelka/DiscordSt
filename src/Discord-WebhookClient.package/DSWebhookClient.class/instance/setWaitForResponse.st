@@ -1,0 +1,3 @@
+configuration
+setWaitForResponse
+	waitForResponse := true

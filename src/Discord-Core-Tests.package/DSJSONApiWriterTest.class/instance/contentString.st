@@ -1,0 +1,3 @@
+defaults
+contentString
+	^ 'message one'

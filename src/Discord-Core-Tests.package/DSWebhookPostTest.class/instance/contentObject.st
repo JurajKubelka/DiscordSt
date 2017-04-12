@@ -1,0 +1,3 @@
+defaults
+contentObject
+	^ Object new

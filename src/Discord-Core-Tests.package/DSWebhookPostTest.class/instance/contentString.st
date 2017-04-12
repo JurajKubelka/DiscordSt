@@ -1,0 +1,3 @@
+defaults
+contentString
+	^ 'content string'

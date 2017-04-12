@@ -1,0 +1,1 @@
+I am an Object to JSON API converter. I use JSONSTON. Discord object has to know how to convert into JSON. Discord objects return JSON compatible structure (array, dictionary, string, number) by calling asDiscordJSONObject message.

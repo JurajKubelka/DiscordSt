@@ -1,0 +1,3 @@
+configuration
+unsetWaitForResponse
+	waitForResponse := false
