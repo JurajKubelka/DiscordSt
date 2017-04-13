@@ -1,3 +1,3 @@
 convenience
 message: aString 
-	self webhook: (self newWebhook content: aString; yourself)
+	self ensureWebhook content: aString

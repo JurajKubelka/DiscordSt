@@ -1,5 +1,6 @@
 enumerating
 keysAndValuesDo: twoArgBlock
-	self includeInstanceVariables do: [ :messageSymbol | | value |
+	self includeInstanceVariables do: [ :messageSymbol | | value key |
 		value := self perform: messageSymbol.
-		twoArgBlock value: messageSymbol value: value ]
+		key := self apiFieldForMessageSymbol: messageSymbol.
+		twoArgBlock value: key value: value ]
