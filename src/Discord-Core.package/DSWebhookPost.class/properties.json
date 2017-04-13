@@ -5,13 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"content",
-		"username",
-		"embeds",
-		"avatarUrl",
-		"textToSpeech"
-	],
+	"instvars" : [ ],
 	"name" : "DSWebhookPost",
 	"type" : "normal"
 }

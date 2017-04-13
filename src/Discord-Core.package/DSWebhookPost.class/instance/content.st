@@ -1,3 +1,3 @@
 accessing
 content
-	^ content ifNil: [ content := '' ]
+	^ self fieldsAt: 'content'

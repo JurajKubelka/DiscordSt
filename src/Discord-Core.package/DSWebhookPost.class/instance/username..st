@@ -1,3 +1,3 @@
 accessing
 username: anObject
-	username := anObject
+	^ self fieldsAt: 'username' put: anObject

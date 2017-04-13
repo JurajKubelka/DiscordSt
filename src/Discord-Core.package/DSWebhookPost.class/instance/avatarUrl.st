@@ -1,3 +1,3 @@
 accessing
 avatarUrl
-	^ avatarUrl
+	^ self fieldsAt: 'avatar_url'

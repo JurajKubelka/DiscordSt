@@ -1,3 +1,3 @@
 accessing
-embeds: anObject
-	embeds := anObject
+embeds: anArray
+	^ self fieldsAt: 'embeds' put: anArray

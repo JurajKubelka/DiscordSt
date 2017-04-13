@@ -1,3 +1,3 @@
 accessing
 unsetTextToSpeech
-	textToSpeech := false
+	^ self fieldsAt: 'tts' put: false

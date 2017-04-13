@@ -1,3 +1,3 @@
 accessing
 username
-	^ username
+	^ self fieldsAt: 'username'

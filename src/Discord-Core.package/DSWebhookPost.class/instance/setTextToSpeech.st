@@ -1,3 +1,3 @@
 accessing
 setTextToSpeech
-	textToSpeech := true
+	^ self fieldsAt: 'tts' put: true

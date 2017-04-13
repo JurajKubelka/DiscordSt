@@ -1,3 +1,3 @@
 accessing
 textToSpeech
-	^ textToSpeech
+	^ self fieldsAt: 'tts'
