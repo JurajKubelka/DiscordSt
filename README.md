@@ -65,6 +65,6 @@ or a Form object:
 DSWebhookClient new 
 	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 	message: 'Pharo loves Discord';
-	fileName: help-icon.png' form: Smalltalk ui icons help;
+	fileName: 'help-icon.png' form: Smalltalk ui icons help;
 	post.
 ```
