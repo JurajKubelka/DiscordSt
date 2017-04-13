@@ -9,7 +9,7 @@ An API wrapper for Discord written in Pharo
 
 You can send a simple message by executing:
 
-```
+```Smalltalk
 DSWebhookClient new 
 	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 	message: 'Hello! I am a Bot executed from Pharo';
@@ -18,7 +18,7 @@ DSWebhookClient new
 
 Or you can add username and avatar information by executing:
 
-```
+```Smalltalk
 DSWebhookClient new 
 	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 	message: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
@@ -28,3 +28,21 @@ DSWebhookClient new
 ```
 
 ![Bot example](assets/img/bot-example.png)
+
+```Smalltalk
+DSWebhookClient new 
+	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
+	username: 'Pharo Welcome';
+	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
+	embed: (DSEmbedObject new 
+		title: 'Discord Bot Announcement'; 
+		description: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
+		url: 'https://github.com/JurajKubelka/DiscordSt';
+		color: Color green;
+		footerText: 'Discord API in Pharo';
+		footerIconUrl: 'https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png';
+		yourself);
+	post
+```
+
+![Bot example](assets/img/embed-object.png)

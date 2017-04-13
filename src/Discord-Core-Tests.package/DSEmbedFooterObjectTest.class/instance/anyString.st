@@ -1,0 +1,3 @@
+defaults
+anyString
+	^ 'any string'
