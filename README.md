@@ -11,7 +11,7 @@ You can send a simple message by executing:
 
 ```
 DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/webhook-id/webhook-token';
+	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 	message: 'Hello! I am a Bot executed from Pharo';
 	post
 ```
@@ -20,7 +20,7 @@ Or you can add username and avatar information by executing:
 
 ```
 DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/webhook-id/webhook-token';
+	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 	message: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
 	username: 'Pharo Welcome';
 	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
