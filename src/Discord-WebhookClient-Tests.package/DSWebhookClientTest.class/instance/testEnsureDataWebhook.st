@@ -1,5 +1,5 @@
 tests
-testEnsureWebhook
+testEnsureDataWebhook
 	client := DSWebhookClient new.
-	self assert: client ensureWebhook class equals: DSJSONWebhookPost.
+	self assert: client ensureDataWebhook class equals: DSDataWebhookPost.
 	self assert: client ensureWebhook == client ensureWebhook.

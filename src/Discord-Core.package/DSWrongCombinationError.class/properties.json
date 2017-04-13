@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 4/13/2017 15:51",
+	"super" : "Error",
+	"category" : "Discord-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSWrongCombinationError",
+	"type" : "normal"
+}

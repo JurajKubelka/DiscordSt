@@ -1,0 +1,3 @@
+converting
+asDiscordJSONObject
+	self shouldNotImplement

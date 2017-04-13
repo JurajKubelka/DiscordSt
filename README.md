@@ -46,3 +46,15 @@ DSWebhookClient new
 ```
 
 ![Bot example](assets/img/embed-object.png)
+
+You can also send a file, for example an image:
+
+```Smalltalk
+DSWebhookClient new 
+	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
+	message: 'Pharo loves Discord';
+	fileName: 'pharo-logo.png' 
+	bytes: (ZnEasy 
+		get: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png') contents;
+	post.
+```

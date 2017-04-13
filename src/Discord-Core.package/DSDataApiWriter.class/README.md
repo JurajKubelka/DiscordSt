@@ -1,0 +1,1 @@
+I am an Object to multipart/form-data API converter. I use Zinc API to compose ZnMultiPartFormDataEntity entity.

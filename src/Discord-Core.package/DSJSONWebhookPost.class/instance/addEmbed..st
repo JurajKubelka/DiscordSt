@@ -1,3 +1,3 @@
-as yet unclassified
+adding
 addEmbed: aDSEmbedObject 
 	^ self embeds add: aDSEmbedObject

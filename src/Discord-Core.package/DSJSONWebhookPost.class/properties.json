@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 4/13/2017 16:31",
+	"super" : "DSWebhookPost",
+	"category" : "Discord-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSJSONWebhookPost",
+	"type" : "normal"
+}
