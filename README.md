@@ -7,6 +7,8 @@ An API wrapper for Discord written in Pharo
 
 ## Examples
 
+### Text Messages
+
 You can send a simple message by executing:
 
 ```Smalltalk
@@ -47,7 +49,9 @@ DSWebhookClient new
 
 ![Bot example](assets/img/embed-object.png)
 
-You can also send a file, for example an image:
+### Attachments and Images
+
+You can send a file, for example an image:
 
 ```Smalltalk
 DSWebhookClient new 
@@ -59,7 +63,7 @@ DSWebhookClient new
 	post.
 ```
 
-or a Form object:
+or a screenshot of a Form object:
 
 ```Smalltalk
 DSWebhookClient new 
@@ -68,3 +72,16 @@ DSWebhookClient new
 	fileName: 'help-icon.png' form: Smalltalk ui icons help;
 	post.
 ```
+
+or a screenshot of a Morph object:
+
+```Smalltalk
+DSWebhookClient new 
+	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
+	username: 'Pharo Screenshot';
+	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
+	fileName: 'screen.png' morph: World;
+	post.
+```
+
+![Bot example](assets/img/morph-screenshot.png)

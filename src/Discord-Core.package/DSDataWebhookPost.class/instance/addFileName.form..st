@@ -7,4 +7,6 @@ addFileName: aString form: aForm
 		add: (ZnMimePart 
 			fieldName: aString 
 			fileName: aString 
-			entity: (ZnEntity bytes: encoded contents))
+			entity: ((ZnEntity bytes: encoded contents) 
+				contentType: ZnMimeType imagePng;
+				yourself))
