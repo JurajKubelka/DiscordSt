@@ -5,6 +5,15 @@ An API wrapper for Discord written in Pharo
 [![Build status](https://ci.appveyor.com/api/projects/status/enr9dgwos8ke340m/branch/master?svg=true)](https://ci.appveyor.com/project/JurajKubelka/discordst/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/JurajKubelka/DiscordSt/badge.svg?branch=master)](https://coveralls.io/github/JurajKubelka/DiscordSt?branch=master)
 
+## Installation
+
+```Smalltalk
+Metacello new
+    baseline: #DiscordSt;
+    repository: 'github://JurajKubelka/DiscordSt/src';
+    load.
+```
+
 ## Examples
 
 ### Text Messages
