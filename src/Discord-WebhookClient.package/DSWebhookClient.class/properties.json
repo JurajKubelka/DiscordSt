@@ -8,7 +8,8 @@
 	"instvars" : [
 		"url",
 		"webhook",
-		"waitForResponse"
+		"waitForResponse",
+		"ifFailBlock"
 	],
 	"name" : "DSWebhookClient",
 	"type" : "normal"

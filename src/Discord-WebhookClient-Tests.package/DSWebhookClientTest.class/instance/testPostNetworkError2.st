@@ -1,11 +1,11 @@
 tests
-testPost
+testPostNetworkError2
 	"Post JSON entity"
-	| response port |
+	| port |
 	server := ZnServer startOn: 0.
 	port := server serverSocket port.
+	server stop.
 	client := DSWebhookClient new 
 		url: 'http://localhost:', port asString;
 		message: self messageString.
-	response := client post.
-	self assert: response isSuccess
+	self should: [ client post ] raise: ConnectionTimedOut.
