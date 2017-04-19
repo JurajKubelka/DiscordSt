@@ -1,4 +1,4 @@
-tests
+tests - files
 testFileNameMorph
 	client := DSWebhookClient new 
 		fileName: self anyString morph: World.

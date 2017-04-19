@@ -1,4 +1,4 @@
-tests
+test - post
 testPost2
 	"Post multi-part data form entity"
 	| response port |

@@ -1,4 +1,4 @@
-tests
+test - post
 testSupressNetworkErrors2
 	"Post multi-part data form entity"
 	| response port |

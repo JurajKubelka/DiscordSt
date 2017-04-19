@@ -1,4 +1,4 @@
-tests
+test - post
 testSupressNetworkErrors3
 	"Post JSON entity"
 	| response port |

@@ -1,3 +1,3 @@
-convenience
+convenience - embed
 embed: aDSEmbedObject 
-	^ self ensureWebhook addEmbed: aDSEmbedObject
+	self ensureWebhook addEmbed: aDSEmbedObject

@@ -1,4 +1,4 @@
-tests
+test - post
 testPostNetworkError7
 	"Post JSON entity"
 	client := DSWebhookClient new 

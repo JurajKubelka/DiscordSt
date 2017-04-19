@@ -1,7 +1,7 @@
 tests - embed
-testEmbed
+testEmbedTitle
 	client := DSWebhookClient new
-		embed: (DSEmbedObject new title: self anyString; yourself);
+		embedTitle: self anyString;
 		yourself.
 	self assert: client webhook embeds isCollection.
 	self assert: client webhook embeds size equals: 1.

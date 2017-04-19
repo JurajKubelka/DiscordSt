@@ -1,4 +1,4 @@
-tests
+test - post
 testPost
 	"Post JSON entity"
 	| response port |

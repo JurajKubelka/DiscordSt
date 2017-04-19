@@ -1,4 +1,4 @@
-tests
+test - post
 testPostNetworkError3
 	"Post multi-part data form entity"
 	| port |

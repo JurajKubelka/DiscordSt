@@ -1,4 +1,4 @@
-tests
+test - post
 testPostNetworkError5
 	"Post multi-part data form entity"
 	| port response |

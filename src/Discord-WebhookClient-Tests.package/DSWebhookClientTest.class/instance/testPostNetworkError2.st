@@ -1,4 +1,4 @@
-tests
+test - post
 testPostNetworkError2
 	"Post JSON entity"
 	| port |

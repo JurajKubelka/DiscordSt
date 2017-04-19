@@ -1,4 +1,4 @@
-tests
+test - post
 testSupressNetworkErrors5
 	"Post JSON entity"
 	| response |

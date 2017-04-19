@@ -1,4 +1,4 @@
-tests
+tests - files
 testFileNameBytes2
 	client := DSWebhookClient new 
 		fileName: self anyString bytes: self bytes;

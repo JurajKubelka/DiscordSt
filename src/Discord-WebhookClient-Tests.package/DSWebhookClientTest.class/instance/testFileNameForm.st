@@ -1,4 +1,4 @@
-tests
+tests - files
 testFileNameForm
 	client := DSWebhookClient new 
 		fileName: self anyString form: Smalltalk ui icons help.

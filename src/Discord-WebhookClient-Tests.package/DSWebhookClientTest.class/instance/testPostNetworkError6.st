@@ -1,4 +1,4 @@
-tests
+test - post
 testPostNetworkError6
 	"Post multi-part data form entity"
 	client := DSWebhookClient new 
