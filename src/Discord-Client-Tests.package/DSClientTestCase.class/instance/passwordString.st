@@ -1,0 +1,3 @@
+defaults
+passwordString
+	^ 'secret password'
