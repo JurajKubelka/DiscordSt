@@ -1,7 +1,7 @@
 accessing
 appveyorMessage
 	"Message send to a Discord channel from Appveyor.com"
-	Smalltalk os environment
+	^ Smalltalk os environment
 		at: 'APPVEYOR' 
 		ifPresent: [ :string | | jobId repoSlug |
 			jobId := Smalltalk os environment at: 'APPVEYOR_BUILD_VERSION' ifAbsent: [ '<unknown job id>' ].
