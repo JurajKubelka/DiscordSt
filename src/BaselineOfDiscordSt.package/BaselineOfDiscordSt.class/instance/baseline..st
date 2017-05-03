@@ -14,7 +14,7 @@ baseline: spec
 			package: #'Discord-Client' with: [
 				spec requires: #( #'Discord-Core' ). ];
 			package: #'Discord-Client-Tests' with: [
-				spec requires: #( #'Discord-Client' ). ];
+				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
 			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' );
 			group: #'core' with: #( #'Discord-Core' );
 			group: #'client' with: #( #'Discord-Client' );

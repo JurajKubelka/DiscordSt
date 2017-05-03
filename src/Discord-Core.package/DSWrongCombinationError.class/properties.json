@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "JurajKubelka 4/13/2017 15:51",
-	"super" : "Error",
+	"super" : "DSDiscordValidationError",
 	"category" : "Discord-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

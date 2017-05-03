@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fields"
+		"fields",
+		"api"
 	],
 	"name" : "DSObject",
 	"type" : "normal"

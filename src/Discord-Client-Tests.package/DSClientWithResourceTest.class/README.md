@@ -1,0 +1,1 @@
+A DSClientWithResourceTest is a test class for testing the behavior of DSClient, sharing login for all test cases.

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TestCase",
+	"super" : "DSCoreTestCase",
 	"category" : "Discord-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],

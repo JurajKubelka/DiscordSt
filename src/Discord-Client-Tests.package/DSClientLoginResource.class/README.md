@@ -1,0 +1,1 @@
+I share logged client with all test cases.

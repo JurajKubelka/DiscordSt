@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"session"
+		"api"
 	],
 	"name" : "DSClient",
 	"type" : "normal"
