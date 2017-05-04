@@ -1,3 +1,15 @@
 public
 logout
-	self session resetToken
+	| response |
+	response := self newZnClientWithUserAgent
+		url: self logoutAuthUrl;
+		entity: (ZnEntity text: self tokenJson);
+		contentType: ZnMimeType applicationJson;
+		post;
+		response.
+	response isSuccess
+		ifTrue: [ self session resetToken. ]
+		ifFalse: [ DSCannotLogoutError new 
+			response: response;
+			signal: response contents ].
+	

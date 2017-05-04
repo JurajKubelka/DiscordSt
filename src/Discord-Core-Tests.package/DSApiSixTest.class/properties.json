@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSApiTest",
+	"category" : "Discord-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"server",
+		"port",
+		"delegate",
+		"serverRequests"
+	],
+	"name" : "DSApiSixTest",
+	"type" : "normal"
+}

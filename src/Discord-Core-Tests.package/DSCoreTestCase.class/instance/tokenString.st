@@ -1,3 +1,3 @@
 defaults
 tokenString
-	^ 'secret token'
+	^ 'secret-token'

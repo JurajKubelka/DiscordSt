@@ -1,4 +1,4 @@
-defaults - api
+accessing
 apiUrl
 	"Return root URL used for Discord communication."
-	^ 'https://discordapp.com/api/v6' asZnUrl
+	^ apiUrl ifNil: [ apiUrl := self defaultApiUrl ]

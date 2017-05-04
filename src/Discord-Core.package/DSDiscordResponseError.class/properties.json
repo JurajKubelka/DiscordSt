@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"response"
+	],
 	"name" : "DSDiscordResponseError",
 	"type" : "normal"
 }

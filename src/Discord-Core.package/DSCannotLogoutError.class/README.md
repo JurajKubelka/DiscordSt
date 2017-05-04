@@ -1,0 +1,1 @@
+I indicate that there was an issue during logout.

@@ -10,4 +10,6 @@ login
 		response.
 	response isSuccess 
 		ifTrue: [ self session token: ((self toJsonObject: response contents) at: self tokenKey) ]
-		ifFalse: [ DSCannotLoginError signal: ((self toJsonObject: response contents) at: self passwordKey) ]
+		ifFalse: [ DSCannotLoginError new 
+			response: response;
+			signal: response contents ]
