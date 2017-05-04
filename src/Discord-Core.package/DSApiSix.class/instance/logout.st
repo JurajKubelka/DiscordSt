@@ -9,7 +9,7 @@ logout
 		response.
 	response isSuccess
 		ifTrue: [ self session resetToken. ]
-		ifFalse: [ DSCannotLogoutError new 
+		ifFalse: [ DSUnauthorizedOperationError new 
 			response: response;
 			signal: response contents ].
 	
