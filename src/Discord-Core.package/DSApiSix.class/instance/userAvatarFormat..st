@@ -1,4 +1,4 @@
-defaults - api
+defaults - url
 userAvatarFormat: aDSUser 
 	"Return avatar's format (GIF or Webp)"
 	^ (aDSUser avatar beginsWith: 'a_')

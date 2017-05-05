@@ -1,7 +1,7 @@
 public
 logout
 	| response |
-	response := self newZnClientWithUserAgent
+	response := self newZnClientAuthenticated
 		url: self logoutAuthUrl;
 		entity: (ZnEntity text: self tokenJson);
 		contentType: ZnMimeType applicationJson;

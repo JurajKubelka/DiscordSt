@@ -1,5 +1,6 @@
 tests
 testLogout
+	true ifTrue: [ ^ self skip ].
 	self skip: 'Currently it does not work'.
 	(self externalEmail isNil or: [ self externalPassword isNil ])
 		ifTrue: [ ^ self skip: 'Email and password are missing' ].

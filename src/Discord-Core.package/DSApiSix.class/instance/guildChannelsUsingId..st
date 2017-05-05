@@ -2,4 +2,13 @@ public
 guildChannelsUsingId: guildId
 	"Returns a list of guild channel objects.
 	See https://discordapp.com/developers/docs/resources/guild#get-guild-channels"
-	^ self halt.
+	| response |
+	response := (self newZnClientAuthenticated)
+		url: (self guildChannelsUrlForId: guildId);
+		get;
+		response.
+	^ response isSuccess 
+		ifTrue: [ DSGuildChannel collectionFromJsonString: response contents ]
+		ifFalse: [ DSUnauthorizedOperationError new
+			response: response;
+			signal: response contents ]
