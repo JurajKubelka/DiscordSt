@@ -13,5 +13,6 @@ testNewMeGuilds
 	self assert: guilds isCollection.
 	self assert: guilds size equals: 1.
 	self assert: guilds first name equals: 'Guild One'.
+	self assert: guilds first api == api description: 'It should have the api object'.
 	self assert: serverRequests size equals: 1.
 	self assert: serverRequests first method equals: #GET.

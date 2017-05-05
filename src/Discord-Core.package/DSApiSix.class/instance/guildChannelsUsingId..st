@@ -8,7 +8,7 @@ guildChannelsUsingId: guildId
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSGuildChannel collectionFromJsonString: response contents ]
+		ifTrue: [ DSGuildChannel collectionFromJsonString: response contents api: self ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

@@ -11,5 +11,6 @@ testNewMeUser
 	user := api newMeUser.
 	self assert: user notNil.
 	self assert: user username equals: 'example user name'.
+	self assert: user api == api description: 'It should have the api object'.
 	self assert: serverRequests size equals: 1.
 	self assert: serverRequests first method equals: #GET.

@@ -7,7 +7,7 @@ newMeUser
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSUser fromJsonString: response contents ]
+		ifTrue: [ DSUser fromJsonString: response contents api: self ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

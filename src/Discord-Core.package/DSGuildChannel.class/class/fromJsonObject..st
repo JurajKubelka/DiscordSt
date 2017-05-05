@@ -7,7 +7,13 @@ fromJsonObject: jsonObject
 	(jsonObject at: 'type') = 'text'
 		ifTrue: [ ^ DSGuildTextChannel new initializeUsingJsonObject: jsonObject; 
 		yourself ].
+	(jsonObject at: 'type') = 0
+		ifTrue: [ ^ DSGuildTextChannel new initializeUsingJsonObject: jsonObject; 
+		yourself ].
 	(jsonObject at: 'type') = 'voice'
+		ifTrue: [ ^ DSGuildVoiceChannel new initializeUsingJsonObject: jsonObject; 
+		yourself ].
+	(jsonObject at: 'type') = 2
 		ifTrue: [ ^ DSGuildVoiceChannel new initializeUsingJsonObject: jsonObject; 
 		yourself ].
 	"The Discord API defines only text and voice."

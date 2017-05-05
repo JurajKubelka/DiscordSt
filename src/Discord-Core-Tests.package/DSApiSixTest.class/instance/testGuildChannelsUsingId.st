@@ -1,5 +1,6 @@
 tests
 testGuildChannelsUsingId
+	"Return Guild Text Channel"
 	| channels |
 	self startZnServer.
 	api := self newApi.
@@ -13,6 +14,7 @@ testGuildChannelsUsingId
 	self assert: channels isCollection.
 	self assert: channels size equals: 1.
 	self assert: channels first name equals: 'general'.
+	self assert: channels first api == api description: 'It should have the api object'.
 	self assert: channels first isGuildTextChannel.
 	self deny: channels first isGuildVoiceChannel.
 	self assert: serverRequests size equals: 1.

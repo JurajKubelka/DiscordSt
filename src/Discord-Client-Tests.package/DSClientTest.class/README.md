@@ -1,1 +1,0 @@
-A DSClientTest is a test class for testing the behavior of DSClient
