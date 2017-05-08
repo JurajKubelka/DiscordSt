@@ -1,4 +1,4 @@
 tests
 testTextToSpeech
-	object := DSWebhookPost new.
+	object := self newPost.
 	self assert: object textToSpeech isNil

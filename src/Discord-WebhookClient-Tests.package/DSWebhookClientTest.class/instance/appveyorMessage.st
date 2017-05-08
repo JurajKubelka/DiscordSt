@@ -7,7 +7,7 @@ appveyorMessage
 			jobId := Smalltalk os environment at: 'APPVEYOR_BUILD_VERSION' ifAbsent: [ '<unknown job id>' ].
 			accountName := Smalltalk os environment at: 'APPVEYOR_ACCOUNT_NAME' ifAbsent: [ 'JurajKubelka/DiscordSt' ].
 			repoSlug := Smalltalk os environment at: 'APPVEYOR_PROJECT_SLUG' ifAbsent: [ 'JurajKubelka/DiscordSt' ].
-			'[Appveyor.com](https://ci.appveyor.com/project/JurajKubelka/discordst) message ', 
+			'[Appveyor.com](https://ci.appveyor.com/project/JurajKubelka/discordst) message', 
 			', [job ', jobId asString, '](https://ci.appveyor.com/project/', 
 			accountName asString, '/', repoSlug asString, 
 			'/build/', jobId asString, ').' ]

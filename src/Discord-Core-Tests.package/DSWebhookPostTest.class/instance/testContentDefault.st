@@ -1,4 +1,4 @@
 tests
 testContentDefault
-	object := DSWebhookPost new.
+	object := self newPost.
 	self assert: object content isNil.

@@ -1,4 +1,4 @@
 tests
 testAvatarUrlDefault
-	object := DSWebhookPost new.
+	object := self newPost.
 	self assert: object avatarUrl isNil.

@@ -1,4 +1,4 @@
 tests
 testSetTextToSpeech
-	object := DSWebhookPost new setTextToSpeech; yourself.
+	object := self newPost setTextToSpeech; yourself.
 	self assert: object textToSpeech

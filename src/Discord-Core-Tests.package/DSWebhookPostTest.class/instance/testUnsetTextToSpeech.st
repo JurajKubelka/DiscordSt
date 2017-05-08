@@ -1,4 +1,4 @@
 tests
 testUnsetTextToSpeech
-	object := DSWebhookPost new unsetTextToSpeech; yourself.
+	object := self newPost unsetTextToSpeech; yourself.
 	self deny: object textToSpeech

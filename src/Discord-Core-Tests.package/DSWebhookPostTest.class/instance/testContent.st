@@ -1,4 +1,4 @@
 tests
 testContent
-	object := DSWebhookPost new content: self contentString; yourself.
+	object := self newPost content: self contentString; yourself.
 	self assert: object content equals: self contentString.

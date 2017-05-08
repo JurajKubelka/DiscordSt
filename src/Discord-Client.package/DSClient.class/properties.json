@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"api"
+		"api",
+		"post",
+		"channel"
 	],
 	"name" : "DSClient",
 	"type" : "normal"

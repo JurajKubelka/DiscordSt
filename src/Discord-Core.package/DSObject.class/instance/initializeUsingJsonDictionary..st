@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initializeUsingJsonDictionary: jsonObject 
 	"Initialize the instance using a JSON object.
 	jsonObject is a Dictionary."
