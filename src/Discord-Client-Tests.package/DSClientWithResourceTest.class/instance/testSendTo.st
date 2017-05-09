@@ -2,7 +2,7 @@ tests
 testSendTo
 	| channel response content |
 	self skipIfNotAuthenticated.
-	content := self messageContentString.
+	content := self classAndTestSelectorMessageString.
 	self client message: content; yourself.
 	channel := self client servers first channelNamed: 'test-cases'.
 	response := self client sendTo: channel.

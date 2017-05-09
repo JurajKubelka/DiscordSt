@@ -1,9 +1,9 @@
-defaults
-messageContentString
+accessing
+classAndTestSelectorMessageString
 	"Return a message string that is easily to identify on Discord."
 	^ String streamContents: [ :aStream |
 		aStream 
-			<< 'Message send from the test case '
+			<< 'Message sent from the test case '
 			<< self className	
 			<< '>>#'
 			<< self selector
