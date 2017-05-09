@@ -15,9 +15,14 @@ baseline: spec
 				spec requires: #( #'Discord-Core' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
-			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' );
+			package: #'Discord-Gateway' with: [
+				spec requires: #( #'Discord-Core' ). ];
+			package: #'Discord-Gateway-Tests' with: [
+				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
+			group: #'default' with: #( #'core' #'webhook' #'client' #'gateway' #'tests' );
 			group: #'core' with: #( #'Discord-Core' );
-			group: #'client' with: #( #'Discord-Client' );
+			group: #'client' with: #( #'Discord-Client' #'gateway' );
+			group: #'gateway' with: #( #'Discord-Gateway' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
-			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' ).
+			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' ).
 	].

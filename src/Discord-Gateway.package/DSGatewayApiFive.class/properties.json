@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 5/9/2017 11:42",
+	"super" : "DSGatewayApi",
+	"category" : "Discord-Gateway",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"apiUrl"
+	],
+	"name" : "DSGatewayApiFive",
+	"type" : "normal"
+}
