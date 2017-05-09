@@ -12,6 +12,6 @@ appveyorMessageString
 					<< '[Appveyor.com](https://ci.appveyor.com/project/JurajKubelka/discordst) message'
 					<< 	', [job ' << jobId asString << '](https://ci.appveyor.com/project/'
 					<< accountName asString << '/' << repoSlug asString
-					<< '/build/' << jobId asString, '). '
+					<< '/build/' << jobId asString << '). '
 					<< self classAndTestSelectorMessageString ] ]
 		ifAbsent: nil.
