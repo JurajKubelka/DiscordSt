@@ -1,0 +1,3 @@
+mock
+gateway
+	^ server gatewayUrl

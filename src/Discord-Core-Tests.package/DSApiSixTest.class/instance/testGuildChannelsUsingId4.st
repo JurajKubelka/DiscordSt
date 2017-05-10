@@ -6,8 +6,8 @@ testGuildChannelsUsingId4
 	api := self newApi.
 	api apiUrl: self localServerApiUrl.
 	api token: self tokenString.
-	delegate map: '/api/guilds/1234/channels' to: [ :request :response |
-		serverRequests add: request.
+	self serverDelegate map: '/api/guilds/1234/channels' to: [ :request :response |
+		self serverRequests add: request.
 		response entity: (ZnEntity text: '[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "bitrate": 128, "position": 0, "user_limit": 12, "type": 2, "id": "1234", "is_private": false}]') ].
 	channels := api guildChannelsUsingId: 1234.
 	self assert: channels notNil.
@@ -17,5 +17,5 @@ testGuildChannelsUsingId4
 	self deny: channels first isGuildTextChannel.
 	self assert: channels first api == api description: 'It should have the api object'.
 	self assert: channels first isGuildVoiceChannel.
-	self assert: serverRequests size equals: 1.
-	self assert: serverRequests first method equals: #GET.
+	self assert: self serverRequests size equals: 1.
+	self assert: self serverRequests first method equals: #GET.

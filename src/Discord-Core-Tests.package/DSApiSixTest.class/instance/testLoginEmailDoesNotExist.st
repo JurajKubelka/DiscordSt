@@ -3,8 +3,8 @@ testLoginEmailDoesNotExist
 	self startZnServer.
 	api := self newApi.
 	api apiUrl: self localServerApiUrl.
-	delegate map: '/api/auth/login' to: [ :request :response |
-		serverRequests add: request.
+	self serverDelegate map: '/api/auth/login' to: [ :request :response |
+		self serverRequests add: request.
 		response 
 			entity: (ZnEntity text: '{"email": ["Email does not exist."]}');
 			setContentType: ZnMimeType applicationJson.
@@ -19,6 +19,6 @@ testLoginEmailDoesNotExist
 		self assert: exception response contents equals: '{"email": ["Email does not exist."]}' ].
 	self deny: api isAuthenticated.
 	self assert: api token isNil.
-	self assert: serverRequests size equals: 1.
-	self assert: serverRequests first contents equals: '{"email":"email@example.com","password":"secret password"}'.
-	self assert: serverRequests first method equals: #POST.
+	self assert: self serverRequests size equals: 1.
+	self assert: self serverRequests first contents equals: '{"email":"email@example.com","password":"secret password"}'.
+	self assert: self serverRequests first method equals: #POST.

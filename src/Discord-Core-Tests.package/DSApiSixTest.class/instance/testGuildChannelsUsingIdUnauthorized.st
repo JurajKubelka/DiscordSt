@@ -4,10 +4,10 @@ testGuildChannelsUsingIdUnauthorized
 	api := self newApi.
 	api apiUrl: self localServerApiUrl.
 	api token: self tokenString.
-	delegate map: '/api/guilds/1234/channels' to: self unauthorizedResponseBlock.
+	self serverDelegate map: '/api/guilds/1234/channels' to: self unauthorizedResponseBlock.
 	self
 		should: [ api guildChannelsUsingId: 1234 ]
 		raise: DSUnauthorizedOperationError
 		withExceptionDo: self unauthorizedExceptionAssetionBlock.
-	self assert: serverRequests size equals: 1.
-	self assert: serverRequests first method equals: #GET.
+	self assert: self serverRequests size equals: 1.
+	self assert: self serverRequests first method equals: #GET.

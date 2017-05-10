@@ -5,12 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"server",
-		"port",
-		"delegate",
-		"serverRequests"
-	],
+	"instvars" : [ ],
 	"name" : "DSGatewayApiFiveTest",
 	"type" : "normal"
 }

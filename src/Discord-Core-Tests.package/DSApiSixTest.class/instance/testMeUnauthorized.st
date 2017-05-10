@@ -4,10 +4,10 @@ testMeUnauthorized
 	api := self newApi.
 	api apiUrl: self localServerApiUrl.
 	api token: self tokenString.
-	delegate map: '/api/users/@me' to: self unauthorizedResponseBlock.
+	self serverDelegate map: '/api/users/@me' to: self unauthorizedResponseBlock.
 	self
 		should: [ api me ]
 		raise: DSUnauthorizedOperationError
 		withExceptionDo: self unauthorizedExceptionAssetionBlock.
-	self assert: serverRequests size equals: 1.
-	self assert: serverRequests first method equals: #GET.
+	self assert: self serverRequests size equals: 1.
+	self assert: self serverRequests first method equals: #GET.

@@ -1,6 +1,6 @@
-utility
-startZnServer
-	"Start a ZnServer on a free port. 
+actions
+start
+	"It starts ZnServer on a free port. 
 	The port is available at port instance variable.
 	You can use delegate 
 		map: '/your/path' 

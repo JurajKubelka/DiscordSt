@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 5/9/2017 16:26",
+	"super" : "Object",
+	"category" : "Discord-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fields"
+	],
+	"name" : "DSFieldObject",
+	"type" : "normal"
+}

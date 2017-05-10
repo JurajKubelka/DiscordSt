@@ -1,12 +1,11 @@
 {
 	"commentStamp" : "JurajKubelka 4/12/2017 17:38",
-	"super" : "Object",
+	"super" : "DSFieldObject",
 	"category" : "Discord-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fields",
 		"api"
 	],
 	"name" : "DSObject",

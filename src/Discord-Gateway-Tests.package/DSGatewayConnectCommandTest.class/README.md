@@ -1,0 +1,1 @@
+A DSGatewayConnectCommandTest is a test class for testing the behavior of DSGatewayConnectCommand

@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
-		"server"
+		"client"
 	],
 	"name" : "DSWebhookClientTest",
 	"type" : "normal"
