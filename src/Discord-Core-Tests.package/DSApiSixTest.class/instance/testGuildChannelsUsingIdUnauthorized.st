@@ -2,7 +2,7 @@ tests
 testGuildChannelsUsingIdUnauthorized
 	self startZnServer.
 	api := self newApi.
-	api apiUrl: self localServerApiUrl.
+	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/guilds/1234/channels' to: self unauthorizedResponseBlock.
 	self

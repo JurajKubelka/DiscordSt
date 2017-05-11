@@ -1,4 +1,4 @@
-mock server
+mock
 serverDelegate
 	"Return the server delegate object.
 	See the startZnServer method."

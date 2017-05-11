@@ -4,7 +4,7 @@ testLogoutUnauthorized
 
 	self startZnServer.
 	api := self newApi.
-	api apiUrl: self localServerApiUrl.
+	api apiUrl: self apiUrl.
 	api token: 'secret-token'.
 	self serverDelegate map: '/api/auth/logout' to: self unauthorizedResponseBlock.
 	self

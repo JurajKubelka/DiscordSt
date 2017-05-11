@@ -1,5 +1,5 @@
-mock server
-localServerApiUrl
+mock
+serverUrl
 	"Return the server URL.
 	See the startZnServer method."
-	^ server apiUrl
+	^ server url

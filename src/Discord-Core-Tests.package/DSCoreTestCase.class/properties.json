@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"server"
+		"server",
+		"fields"
 	],
 	"name" : "DSCoreTestCase",
 	"type" : "normal"

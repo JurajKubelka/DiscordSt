@@ -2,7 +2,7 @@ tests
 testMeUnauthorized
 	self startZnServer.
 	api := self newApi.
-	api apiUrl: self localServerApiUrl.
+	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/users/@me' to: self unauthorizedResponseBlock.
 	self

@@ -11,3 +11,4 @@ start
 	delegate := ZnDispatcherDelegate new.
 	server delegate: delegate.
 	serverRequests := OrderedCollection new.
+	semaphore := Semaphore new.

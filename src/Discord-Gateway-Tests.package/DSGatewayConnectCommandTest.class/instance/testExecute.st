@@ -1,8 +1,11 @@
 tests
 testExecute
 	self startZnServer.
-	results := OrderedCollection new.
+	self serverDelegate: (ZnWebSocketDelegate handler: [ :socket |
+		self serverRequests add: #server ]).
 	command := self newCommand.
 	command api: self.
-	command execute.
-	self assert: results size equals: 1. 
+	self defaultConnectionTimeoutDuring: [ command execute ].
+	self assert: self serverRequests size equals: 2.
+	self assert: self serverRequests first equals: #server.
+	self assert: self serverRequests second equals: #websocket.

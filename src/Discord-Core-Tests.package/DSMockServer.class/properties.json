@@ -9,7 +9,8 @@
 		"port",
 		"server",
 		"delegate",
-		"serverRequests"
+		"serverRequests",
+		"semaphore"
 	],
 	"name" : "DSMockServer",
 	"type" : "normal"

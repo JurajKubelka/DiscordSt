@@ -7,5 +7,4 @@ url
 		scheme: #http;
 		host: NetNameResolver loopBackName;
 		port: port;
-		timeout: self timeout;
 		yourself

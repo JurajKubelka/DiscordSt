@@ -1,4 +1,4 @@
-as yet unclassified
+execute
 execute
 	"Establish the WebSocket with a Discord Gateway. 
 	The api object knows the URL. I set

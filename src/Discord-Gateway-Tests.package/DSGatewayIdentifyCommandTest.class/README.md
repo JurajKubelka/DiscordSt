@@ -1,0 +1,1 @@
+A DSGatewayIdentifyCommandTest is a test class for testing the behavior of DSGatewayIdentifyCommand

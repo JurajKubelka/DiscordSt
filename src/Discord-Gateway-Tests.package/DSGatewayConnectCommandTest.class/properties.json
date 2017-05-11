@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"results"
-	],
+	"instvars" : [ ],
 	"name" : "DSGatewayConnectCommandTest",
 	"type" : "normal"
 }

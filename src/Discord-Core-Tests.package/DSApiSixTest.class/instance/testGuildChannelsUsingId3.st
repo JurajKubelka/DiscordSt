@@ -4,7 +4,7 @@ testGuildChannelsUsingId3
 	| channels |
 	self startZnServer.
 	api := self newApi.
-	api apiUrl: self localServerApiUrl.
+	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/guilds/1234/channels' to: [ :request :response |
 		self serverRequests add: request.

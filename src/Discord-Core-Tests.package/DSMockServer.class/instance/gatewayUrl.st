@@ -4,8 +4,7 @@ gatewayUrl
 	self port isNil ifTrue: [ 
 		self error: 'This message should be sent after #start message' ].
 	^ ZnUrl new 
-		scheme: #wss;
+		scheme: #ws;
 		host: NetNameResolver loopBackName;
 		port: port;
-		timeout: self timeout;
 		yourself
