@@ -4,6 +4,11 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec
+			configuration: 'ZincHTTPComponents' with: [ 
+				spec
+					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
+					versionString: #stable;
+					loads: 'WebSocket' ];
 			package: #'Discord-Core';
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
