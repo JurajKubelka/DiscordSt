@@ -1,5 +1,6 @@
 tests
 testHandleOn
+	"Receive OP 10 Hello code and set hearbeat interval."
 	self startZnServer.
 	self serverDelegate: (ZnWebSocketDelegate handler: [ :socket |
 		self serverRequests add: #server.

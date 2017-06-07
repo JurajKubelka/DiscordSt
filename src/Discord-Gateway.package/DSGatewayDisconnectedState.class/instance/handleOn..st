@@ -1,4 +1,4 @@
-as yet unclassified
+public
 handleOn: aDSGatewayApi 
 	"Connect to Discord Gateway and move to the next state on success."
 	DSGatewayConnectCommand new

@@ -1,4 +1,4 @@
-as yet unclassified
+public
 handleOn: aDSGatewayApi 
 	"Receive OP 10  Hello message and set heartbeat interval"
 	DSGatewayHelloCommand new
