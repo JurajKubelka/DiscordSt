@@ -1,5 +1,6 @@
 tests
 testExecute
+	self skip: 'obsolete'.
 	self startZnServer.
 	self serverDelegate: (ZnWebSocketDelegate handler: [ :socket |
 		self serverRequests add: #server.
