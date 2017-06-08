@@ -1,0 +1,3 @@
+*Discord-Core
+asDiscordJSONObject
+	^ self

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 6/7/2017 14:56",
+	"super" : "DSGatewayState",
+	"category" : "Discord-Gateway",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayResumingState",
+	"type" : "normal"
+}

@@ -1,7 +1,8 @@
 public
 connect
 	"Initialize the connection with the Discord Gateway.
-	It manages
-	
 	See https://discordapp.com/developers/docs/topics/gateway#connecting"
-	
+	self session isAuthenticated ifFalse: [ 
+		DSTokenRequiredError signal: 'Cannot authorize the client.' ].
+	"Connect"
+	self state connectOn: self.

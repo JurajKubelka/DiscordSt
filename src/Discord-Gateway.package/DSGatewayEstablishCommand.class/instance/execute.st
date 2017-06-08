@@ -5,8 +5,8 @@ execute
 	| message json |
 	message := self api websocket readMessage.
 	json := self api toJsonObject: message.
-	(json at: 'op' ifAbsent: nil) 
-		ifNil: [ "Ready Event" 
+	(self isReadyEvent: json) 
+		ifTrue: [ "Ready Event" 
 			self readyEvent: json ]
-		ifNotNil: [ "Should be OP 9 Invalid Session"
+		ifFalse: [ "Should be OP 9 Invalid Session"
 			self invalidSession: json ]

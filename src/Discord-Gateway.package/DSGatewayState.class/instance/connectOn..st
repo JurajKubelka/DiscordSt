@@ -1,4 +1,4 @@
 initialize-release
-connect
+connectOn: aDSGatewayApi
 	"Connect to a Discord Gateway if not connected."
 	^ self subclassResponsibility

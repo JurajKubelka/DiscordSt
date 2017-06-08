@@ -14,5 +14,5 @@ testHandleOn
 	self assert: self serverRequests size equals: 4.
 	self assert: self serverRequests first equals: #server.
 	self assert: self serverRequests second equals: #websocket.
-	self assert: self serverRequests third class equals: DSGatewayIdentificationConfirmationCommand.
+	self assert: self serverRequests third class equals: DSGatewayIdentifyingState.
 	self assert: self serverRequests fourth equals: self identifyMessageString.

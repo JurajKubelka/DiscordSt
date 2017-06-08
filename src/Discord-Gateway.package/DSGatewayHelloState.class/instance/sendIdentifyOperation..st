@@ -3,4 +3,4 @@ sendIdentifyOperation: aDSGatewayApi
 	DSGatewayIdentifyCommand new
 		api: aDSGatewayApi;
 		execute.
-	aDSGatewayApi setGatewayState: DSGatewayIdentificationConfirmationCommand new
+	aDSGatewayApi setGatewayState: DSGatewayIdentifyingState new

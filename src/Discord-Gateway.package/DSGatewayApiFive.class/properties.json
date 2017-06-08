@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"apiUrl"
+		"apiUrl",
+		"state",
+		"websocket"
 	],
 	"name" : "DSGatewayApiFive",
 	"type" : "normal"

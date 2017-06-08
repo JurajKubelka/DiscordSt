@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"cache"
+		"cache",
+		"session"
 	],
 	"name" : "DSGatewayApi",
 	"type" : "normal"
