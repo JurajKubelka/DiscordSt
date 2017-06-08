@@ -8,7 +8,7 @@ testExecute
 		self signalServerSemaphore. ]).
 	command := self newCommand.
 	command api: self.
-	self connectToGateway.
+	"self connectToGateway."
 	self defaultConnectionTimeoutDuring: [ command execute ].
 	self assertServerSemaphore.
 	self assert: self serverRequests size equals: 3.

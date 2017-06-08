@@ -1,0 +1,1 @@
+I am an abstract object for all Discord Gateway objects. My subclasses has to know what values should be included in a JSON request, see includeInstanceVariables message.
