@@ -1,0 +1,3 @@
+accessing
+heartbeatInterval
+	^ heartbeatInterval

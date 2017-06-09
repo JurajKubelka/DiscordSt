@@ -1,5 +1,4 @@
 accessing
 heartbeatInterval
-	"Get heart beat interval for a current connection.
-	Client should ping regularly, using this interval."
+	"Get the interval (in milliseconds) the client should heartbeat with"
 	^ self cacheAt: #heartbeatInterval

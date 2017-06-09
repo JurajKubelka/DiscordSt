@@ -2,7 +2,6 @@ tests
 testConnect
 	"Connect using a gateway websocket URL"
 	self startZnServer.
-	server setDebugMode.
 	self serverDelegate 
 		map: '/api/gateway' to: [ :request :response | 
 			self serverRequests add: #apiGateway.
