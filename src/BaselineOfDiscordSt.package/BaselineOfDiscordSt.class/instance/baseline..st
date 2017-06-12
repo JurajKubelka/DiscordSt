@@ -21,7 +21,7 @@ baseline: spec
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
 			package: #'Discord-Gateway' with: [
-				spec requires: #( #'Discord-Core' ). ];
+				spec requires: #( #'Discord-Core' #'ZincHTTPComponents' ). ];
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 			group: #'default' with: #( #'core' #'webhook' #'client' #'gateway' #'tests' );
