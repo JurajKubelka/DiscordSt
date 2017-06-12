@@ -1,0 +1,3 @@
+as yet unclassified
+messageObjectString
+	^ '{"type":0,"tts":false,"timestamp":"2017-06-12T15:36:23.719000+00:00","pinned":false,"nonce":"80750336","mentions":[],"mention_roles":[],"mention_everyone":false,"id":"36576","embeds":[],"edited_timestamp":null,"content":"ciao","channel_id":"5930","author":{"username":"user one","id":"08480","discriminator":"42","avatar":"be02f464a3f4ead"},"attachments":[]}'

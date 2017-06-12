@@ -1,4 +1,4 @@
-private - api
+private
 getGateway
 	"Returns an object with a single valid WSS URL, which the client can use as a basis for Connecting. 
 	Clients should cache this value and only call this endpoint to retrieve a new URL 

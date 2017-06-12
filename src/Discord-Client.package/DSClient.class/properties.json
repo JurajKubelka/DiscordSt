@@ -9,7 +9,8 @@
 		"api",
 		"post",
 		"channel",
-		"gateway"
+		"gateway",
+		"guilds"
 	],
 	"name" : "DSClient",
 	"type" : "normal"

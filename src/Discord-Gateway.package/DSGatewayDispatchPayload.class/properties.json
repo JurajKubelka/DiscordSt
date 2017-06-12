@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayPayload",
+	"category" : "Discord-Gateway",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"GatewayEvents"
+	],
+	"instvars" : [ ],
+	"name" : "DSGatewayDispatchPayload",
+	"type" : "normal"
+}

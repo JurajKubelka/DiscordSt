@@ -1,0 +1,3 @@
+testing
+isHeartbeatACK
+	^ true

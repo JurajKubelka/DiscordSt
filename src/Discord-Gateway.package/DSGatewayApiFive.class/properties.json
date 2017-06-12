@@ -9,7 +9,9 @@
 		"apiUrl",
 		"websocket",
 		"heartbeatProcess",
-		"readingProcess"
+		"readingProcess",
+		"writeMutex",
+		"readMutex"
 	],
 	"name" : "DSGatewayApiFive",
 	"type" : "normal"

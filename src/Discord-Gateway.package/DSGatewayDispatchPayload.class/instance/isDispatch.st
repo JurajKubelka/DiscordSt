@@ -1,0 +1,3 @@
+testing
+isDispatch
+	^ true

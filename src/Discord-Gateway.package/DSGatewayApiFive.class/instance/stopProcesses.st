@@ -1,4 +1,4 @@
-private - api
+private
 stopProcesses
 	"Stop Heartbeat and Reading processes.
 	Heartbeat process sends regularly Heartbeat message to the Gateway server.
