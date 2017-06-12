@@ -16,3 +16,5 @@ connect
 	self sequenceNumber: command sequenceNumber.
 	self websocket: command websocket.
 	self heartbeatInterval: command heartbeatInterval.
+	self startProcesses.
+	
