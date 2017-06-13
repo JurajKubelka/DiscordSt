@@ -1,4 +1,8 @@
 accessing
 api
-	"Return object responsible for Discord REST API communication."
-	^ api ifNil: [ api := self newApi ]
+	self 
+		deprecated: 'Use restApi instead'
+		on: 	'13 June 2017' 
+		in: 'Pharo-6.0-60499-'
+		transformWith: '`@receiver api' -> '`@receiver restApi'.
+	^ self restApi

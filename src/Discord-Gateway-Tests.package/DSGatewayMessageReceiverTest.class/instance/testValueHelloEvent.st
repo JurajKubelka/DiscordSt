@@ -13,3 +13,4 @@ testValueHelloEvent
 	self assert: receiver api heartbeatInterval equals: 41250.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first isString.
+	self assert: receiver api sequenceNumber isNil.

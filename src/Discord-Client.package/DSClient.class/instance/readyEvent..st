@@ -1,4 +1,4 @@
 event handling
 readyEvent: aDSGatewayReadyEvent 
-	"Ready Event is received."
-	
+	"Announce established connection"
+	self announce: DSReadyAnnouncement

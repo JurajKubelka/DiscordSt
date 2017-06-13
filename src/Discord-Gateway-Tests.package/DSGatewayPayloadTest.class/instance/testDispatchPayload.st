@@ -1,6 +1,6 @@
 instance creation
 testDispatchPayload
-	payload := self gatewayPayloadClass fromString: self dispatchMessageCreatePayloadString.
+	payload := self gatewayPayloadClass fromJsonString: self dispatchMessageCreatePayloadString.
 	self assert: payload isDispatch.
 	self assert: payload code equals: 0.
 	self assert: payload eventName equals: 'MESSAGE_CREATE'.

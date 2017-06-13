@@ -1,4 +1,5 @@
 accessing
-token: aString 
+token: aString
 	"Set an authentification token"
-	self api token: aString
+
+	self restApi token: aString

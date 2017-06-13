@@ -10,7 +10,8 @@
 		"post",
 		"channel",
 		"gateway",
-		"guilds"
+		"guilds",
+		"announcer"
 	],
 	"name" : "DSClient",
 	"type" : "normal"

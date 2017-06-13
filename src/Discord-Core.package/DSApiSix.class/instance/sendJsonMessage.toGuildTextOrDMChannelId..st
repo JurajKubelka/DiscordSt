@@ -4,7 +4,7 @@ sendJsonMessage: aDSClientJsonPost toGuildTextOrDMChannelId: channelId
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	| response |
 	response := self newZnClientAuthenticated
-		url: (self channelMessagesForId: channelId);
+		url: (self channelMessagesUrlForId: channelId);
 		entity: (ZnEntity text: (DSJSONApiWriter toString: aDSClientJsonPost));
 		contentType: ZnMimeType applicationJson;
 		post;

@@ -1,8 +1,9 @@
 accessing
 gateway
 	"Return object responsible for Discord Gateway API (WebSocket) communication."
-	^ gateway ifNil: [ gateway := self newGatewayApi 
-			session: self api session;
-			readyBlock: [ :msg | self readyEvent: msg ];
-			messageCreateBlock: [ :msg | self messageCreateEvent: msg ];
-			yourself ]
+	self 
+		deprecated: 'Use gatewayApi instead'
+		on: 	'13 June 2017' 
+		in: 'Pharo-6.0-60499-'
+		transformWith: '`@receiver gateway' -> '`@receiver gatewayApi'.
+	^ self gatewayApi

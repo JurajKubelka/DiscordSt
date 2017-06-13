@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 6/13/2017 15:09",
+	"super" : "DSAnnouncement",
+	"category" : "Discord-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message"
+	],
+	"name" : "DSMessageCreateAnnouncement",
+	"type" : "normal"
+}
