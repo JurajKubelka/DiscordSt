@@ -1,4 +1,5 @@
 running
 tearDown
-	websocket ifNotNil: #close.
+	websocket ifNotNil: [ :aWebSocket | [ aWebSocket close ] 
+		on: ConnectionTimedOut, ConnectionClosed do: [ "ignore" ] ].
 	super tearDown

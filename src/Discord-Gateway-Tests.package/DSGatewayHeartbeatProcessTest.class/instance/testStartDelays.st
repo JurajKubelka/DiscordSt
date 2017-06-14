@@ -21,6 +21,6 @@ testStartDelays
 	process start.
 	self assertServerSemaphore.
 	self assert: self serverRequests size equals: 4.
-	self assert: self serverRequests first + heartbeatInterval milliSeconds < self serverRequests second.
-	self assert: self serverRequests second + heartbeatInterval milliSeconds < self serverRequests third.
-	self assert: self serverRequests third + heartbeatInterval milliSeconds < self serverRequests fourth.
+	self assertDelay: 20 between: self serverRequests first and: self serverRequests second.
+	self assertDelay: 20 between: self serverRequests second and: self serverRequests third.
+	self assertDelay: 20 between: self serverRequests third and: self serverRequests fourth.

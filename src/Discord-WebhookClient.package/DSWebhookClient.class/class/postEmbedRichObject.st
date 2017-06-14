@@ -3,7 +3,7 @@ postEmbedRichObject
 	<gtExample>
 	<label: 'Post embed rich object with username and avatar icon'>
 
-	^ self new 
+	^ DSWebhookClient new 
 		url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
 		embedTitle: 'Discord Bot Announcement';
 		embedDescription: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
