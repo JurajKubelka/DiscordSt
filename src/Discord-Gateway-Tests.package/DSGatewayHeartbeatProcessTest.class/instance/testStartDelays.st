@@ -16,9 +16,10 @@ testStartDelays
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
-	heartbeatInterval := 200.
+	heartbeatInterval := 300.
 	process heartbeatInterval: heartbeatInterval.
 	process start.
+	self serverSemaphoreTimeout: heartbeatInterval * 5.
 	self assertServerSemaphore.
 	self assert: self serverRequests size equals: 4.
 	self assertDelay: heartbeatInterval between: self serverRequests first and: self serverRequests second.

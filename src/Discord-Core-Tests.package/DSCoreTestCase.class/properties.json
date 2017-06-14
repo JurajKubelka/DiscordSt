@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"server",
-		"fields"
+		"fields",
+		"serverSemaphoreTimeout"
 	],
 	"name" : "DSCoreTestCase",
 	"type" : "normal"
