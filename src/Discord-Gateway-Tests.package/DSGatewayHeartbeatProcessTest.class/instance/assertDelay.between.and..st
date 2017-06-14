@@ -5,5 +5,5 @@ assertDelay: integerInMilliseconds between: startDateAndTime and: stopDateAndTim
 	| diff |
 	diff := stopDateAndTime - startDateAndTime - integerInMilliseconds milliSeconds.
 	self 
-		assert: diff >= 0 milliSeconds 
+		assert: diff >= -1 second
 		description: 'The difference is ', diff printString, ', but should be >= 0'.
