@@ -1,7 +1,7 @@
 examples
 postImage
 	<gtExample>
-	<label: 'Post local image or any other file'>
+	<label: 'Post an image or any other file'>
 
 	^ DSWebhookClient new
 		url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';

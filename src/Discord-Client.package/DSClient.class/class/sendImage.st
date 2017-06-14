@@ -1,7 +1,7 @@
 examples
 sendImage
 	<gtExample>
-	<label: 'Send a text message to the general channel'>
+	<label: 'Send an image or any other file'>
 	
 	^ DSClient new 
 		email: 'email@example.com' password: 'secret-password';
