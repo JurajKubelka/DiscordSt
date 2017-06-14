@@ -4,4 +4,5 @@ gtInspectorServers: composite
 	^ composite fastList
 		title: 'Servers';
 		display: [ self servers ];
+		when: [ self isAuthenticated ];
 		yourself
