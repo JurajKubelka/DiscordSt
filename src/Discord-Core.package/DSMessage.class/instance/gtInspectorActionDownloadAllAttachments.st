@@ -1,5 +1,5 @@
 gt-inspector-extension
-gtInspectorActionOpenHelpBrowser
+gtInspectorActionDownloadAllAttachments
 	<gtInspectorAction>
 	^ GLMGenericAction new
 		action: [ :presentation | self attachments do: #data. presentation update ];

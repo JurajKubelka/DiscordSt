@@ -5,7 +5,7 @@ testData
 	self serverDelegate map: '/' to: [ :request :response | 
 		response entity: (ZnEntity bytes: self bytes) ].
 	attachment := self newAttachment.
-	attachment proxyUrl: self serverUrl.
+	attachment url: self serverUrl.
 	attachment api: self newApi.
 	bytes := attachment data.
 	self assert: bytes equals: self bytes.
