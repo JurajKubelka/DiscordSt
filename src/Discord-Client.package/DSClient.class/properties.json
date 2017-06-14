@@ -2,7 +2,9 @@
 	"commentStamp" : "JurajKubelka 5/3/2017 10:59",
 	"super" : "Object",
 	"category" : "Discord-Client",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"default"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

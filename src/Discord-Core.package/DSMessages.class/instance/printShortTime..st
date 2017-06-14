@@ -1,5 +1,7 @@
 printing
 printShortTime: aDateAndTime
-	^ aDateAndTime asDate = Date today
-	ifTrue: [ aDateAndTime asTime asString ]
-	ifFalse: [ aDateAndTime asDate asString ]
+	| local |
+	local := aDateAndTime asDateAndTime asLocal.
+	^ local asDate = Date today
+	ifTrue: [ local asTime print24 ]
+	ifFalse: [ local asDate asString ]

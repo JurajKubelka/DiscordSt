@@ -17,17 +17,21 @@ baseline: spec
 			package: #'Discord-WebhookClient-Tests' with: [
 				spec requires: #( #'Discord-WebhookClient' ). ];
 			package: #'Discord-Client' with: [
-				spec requires: #( #'Discord-Core' ). ];
+				spec requires: #( #'Discord-Core' #'Discord-Gateway' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
 			package: #'Discord-Gateway' with: [
 				spec requires: #( #'Discord-Core' #'ZincHTTPComponents' ). ];
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
-			group: #'default' with: #( #'core' #'webhook' #'client' #'gateway' #'tests' );
+			package: #'Discord-Extension-Core' with: [
+				spec requires: #( #'Discord-Client' ). ];
+			package: #'Discord-Extension-Core-Tests' with: [
+				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' ). ];
+			group: #'default' with: #( #'core' #'webhook' #'client' #'gateway' #'tests' #'extensions' );
 			group: #'core' with: #( #'Discord-Core' );
-			group: #'client' with: #( #'Discord-Client' #'gateway' );
-			group: #'gateway' with: #( #'Discord-Gateway' );
+			group: #'client' with: #( #'Discord-Client' );
+			group: #'extensions' with: #( #'Discord-Extension-Core' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
-			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' ).
+			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' ).
 	].

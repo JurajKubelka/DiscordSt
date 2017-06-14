@@ -1,3 +1,3 @@
-as yet unclassified
+instance creation
 newClient
 	^ DSClient new

@@ -1,0 +1,1 @@
+I keep icons used inside of the Discord library.

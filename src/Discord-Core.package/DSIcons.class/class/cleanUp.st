@@ -1,0 +1,3 @@
+bytes
+cleanUp
+	self reset
