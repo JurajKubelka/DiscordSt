@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSCoreTestCase",
+	"category" : "Discord-Extension-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"command"
+	],
+	"name" : "DSSendCommandTest",
+	"type" : "normal"
+}
