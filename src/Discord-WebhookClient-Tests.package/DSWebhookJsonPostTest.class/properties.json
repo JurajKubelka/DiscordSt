@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSWebhookPostTest",
+	"category" : "Discord-WebhookClient-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSWebhookJsonPostTest",
+	"type" : "normal"
+}

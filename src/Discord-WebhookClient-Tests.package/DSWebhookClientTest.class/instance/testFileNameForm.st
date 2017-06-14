@@ -1,7 +1,7 @@
 tests - files
 testFileNameForm
 	client := DSWebhookClient new 
-		fileName: self anyString form: Smalltalk ui icons help.
+		fileName: self anyString form: #help asIcon.
 	self assert: client webhook fileParts size equals: 1.
 	self assert: client webhook fileParts first fieldName equals: self anyString.
 	self assert: client webhook fileParts first fileName equals: self anyString.

@@ -1,3 +1,3 @@
 instance creation
 newJSONWebhook
-	^ DSJSONWebhookPost new
+	^ DSWebhookJsonPost new

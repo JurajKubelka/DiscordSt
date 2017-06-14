@@ -1,4 +1,4 @@
 mock
 serverSemaphoreTimeout
 	"Get the default server semaphore timeout in milliseconds"
-	^ serverSemaphoreTimeout ifNil: 100
+	^ serverSemaphoreTimeout ifNil: 200
