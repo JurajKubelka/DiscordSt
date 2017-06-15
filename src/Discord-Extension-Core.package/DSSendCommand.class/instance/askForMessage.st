@@ -3,7 +3,10 @@ askForMessage
 	"Ask for a message that should be sent (with the object)."
 	| model window |
 	self isAuthenticated ifFalse: [ 
-		self askForCredentials ].
+		"[ "self askForCredentials" ] 
+			forkAt: Processor userBackgroundPriority 
+			named: 'DSSendCommand: Asking for Discord credentials'".
+		self waitForAnswer ].
 	self isAuthenticated ifFalse: [ ^ self ].
 	model := DynamicComposableModel new.
 	model 
@@ -41,7 +44,7 @@ askForMessage
 		newRow: [ :row | row add: #channelLabel width: 70. row add: #channelList ] height: model class inputTextHeight;
 		newRow: [ :row | row add: #messageText ];
 		newRow: [ :row | row add: #attachmentLabel width: 70. row add: #attachmentInput ] height: model class inputTextHeight;
-		newRow: [ :row | row add: #cancelButton. row add: #sendButton ] height: model class inputTextHeight;
+		newRow: [ :row | row add: #sendButton. row add: #cancelButton ] height: model class inputTextHeight;
     	yourself).
 	window title: 'Send Object to Discord'.
 	

@@ -10,7 +10,8 @@
 		"client",
 		"channel",
 		"message",
-		"fileName"
+		"fileName",
+		"semaphore"
 	],
 	"name" : "DSSendCommand",
 	"type" : "normal"

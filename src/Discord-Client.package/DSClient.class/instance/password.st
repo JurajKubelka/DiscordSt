@@ -1,4 +1,5 @@
 accessing
 password
 	"Get password or nil used to login into a Discord server."
-	^ self api password
+
+	^ self restApi password
