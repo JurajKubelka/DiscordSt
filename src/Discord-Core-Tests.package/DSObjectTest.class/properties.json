@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "<historical>",
-	"super" : "DSObjectTest",
+	"commentStamp" : "JurajKubelka 6/16/2017 18:29",
+	"super" : "DSFieldObjectTest",
 	"category" : "Discord-Core-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSEmbedObjectTest",
+	"name" : "DSObjectTest",
 	"type" : "normal"
 }
