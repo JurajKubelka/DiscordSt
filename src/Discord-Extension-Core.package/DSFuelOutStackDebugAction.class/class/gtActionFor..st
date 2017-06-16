@@ -3,4 +3,4 @@ gtActionFor: aDebugger
 	<gtStackDebuggingAction>
 	
 	^ (self forDebugger: aDebugger)
-			order: 29
+			order: 28

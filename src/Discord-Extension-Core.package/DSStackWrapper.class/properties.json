@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 15:30",
+	"super" : "DSWrapper",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"serializedStack",
+		"textStack"
+	],
+	"name" : "DSStackWrapper",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+serializedData
+	^ self serializedObject

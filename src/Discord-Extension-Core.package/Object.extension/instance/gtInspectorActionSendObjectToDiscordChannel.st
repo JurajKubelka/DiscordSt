@@ -2,6 +2,8 @@
 gtInspectorActionSendObjectToDiscordChannel
 	<gtInspectorAction>
 	^ GLMGenericAction new
-		action: [ :presentation | DSSendCommand sendObject: self ];
+		action: [ :presentation | DSSendObjectCommand new
+			object: self;
+			forkedExecution ];
 		icon: DSIcons discord;
 		title: 'Send the object to Discord' translated

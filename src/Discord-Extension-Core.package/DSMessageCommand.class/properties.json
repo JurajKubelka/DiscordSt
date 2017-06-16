@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 14:16",
+	"super" : "DSClientCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text",
+		"fileName",
+		"onAccept",
+		"channel"
+	],
+	"name" : "DSMessageCommand",
+	"type" : "normal"
+}

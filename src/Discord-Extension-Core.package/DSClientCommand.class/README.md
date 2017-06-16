@@ -1,0 +1,1 @@
+I am an abstract command that holds DSClient object.

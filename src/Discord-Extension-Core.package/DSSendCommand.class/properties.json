@@ -1,17 +1,16 @@
 {
-	"commentStamp" : "JurajKubelka 6/14/2017 18:31",
-	"super" : "Object",
+	"commentStamp" : "JurajKubelka 6/16/2017 15:41",
+	"super" : "DSClientCommand",
 	"category" : "Discord-Extension-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"object",
-		"client",
 		"channel",
-		"message",
 		"fileName",
-		"semaphore"
+		"morph",
+		"imageForm",
+		"text"
 	],
 	"name" : "DSSendCommand",
 	"type" : "normal"

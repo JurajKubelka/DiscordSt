@@ -1,3 +1,3 @@
 instance creation
 newSendCommand
-	^ DSSendCommand new
+	^ self subclassResponsibility

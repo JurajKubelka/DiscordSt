@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 14:05",
+	"super" : "DSClientCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"semaphore"
+	],
+	"name" : "DSLoginCommand",
+	"type" : "normal"
+}
