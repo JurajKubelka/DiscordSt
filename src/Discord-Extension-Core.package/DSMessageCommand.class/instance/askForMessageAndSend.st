@@ -2,7 +2,7 @@ public
 askForMessageAndSend
 	"Ask for a message that should be sent (with the object).
 	If Send button is pressed, the message is sent."
-	| model window |
+	| window layout |
 	self isAuthenticated ifFalse: [ ^ self ].
 	model := DynamicComposableModel new.
 	model 
@@ -15,6 +15,8 @@ askForMessageAndSend
 		assign: TextInputFieldModel new to: #attachmentInput;
 		assign: ButtonModel new to: #cancelButton;
 		assign: ButtonModel new to: #sendButton.
+	self specExtensions do: [ :eachExtension | 
+		model assign: eachExtension value to: eachExtension key ].
 	model serverLabel label: 'Server: '.
 	model serverList 
 		items: self servers; 
@@ -29,15 +31,20 @@ askForMessageAndSend
 		setSelection: (1 to: model messageText text size);
 		autoAccept: true.
 	model attachmentLabel label: 'Attachment: '.
+	model attachmentInput text: self fileName; autoAccept: true.
 	model cancelButton label: 'Cancel'; action: [ model delete ].
 	model sendButton label: 'Send'; action: [ self storeInputs: model; send. model delete ].
-	model attachmentInput text: self fileName; autoAccept: true.
-	window := model openWithSpecLayout: (SpecColumnLayout composed
+	layout := SpecColumnLayout composed
 		newRow: [ :row | row add: #serverLabel width: 70. row add: #serverList ] height: model class inputTextHeight;
 		newRow: [ :row | row add: #channelLabel width: 70. row add: #channelList ] height: model class inputTextHeight;
 		newRow: [ :row | row add: #messageText ];
 		newRow: [ :row | row add: #attachmentLabel width: 70. row add: #attachmentInput ] height: model class inputTextHeight;
+		yourself.
+	self specLayoutExtensions do: [ :eachExtension |
+		eachExtension cull: layout cull: model cull: self ].
+	layout
 		newRow: [ :row | row add: #sendButton. row add: #cancelButton ] height: model class inputTextHeight;
-    	yourself).
+    	yourself.
+	window := model openWithSpecLayout: layout.
 	window title: 'Send Object to Discord'.
 	

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 6/18/2017 15:48",
+	"super" : "DSCommandExtension",
+	"category" : "Discord-Extension-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preExecutionBlock",
+		"postExecutionBlock"
+	],
+	"name" : "DSMockCommandExtension",
+	"type" : "normal"
+}

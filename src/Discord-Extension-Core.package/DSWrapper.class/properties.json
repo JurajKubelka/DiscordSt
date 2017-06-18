@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"description",
-		"screenshot"
+		"screenshot",
+		"info"
 	],
 	"name" : "DSWrapper",
 	"type" : "normal"

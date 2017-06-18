@@ -1,5 +1,5 @@
 tests
 testText
-	command := self newSendCommand.
+	command := self newCommand.
 	command text: self anyString.
 	self assert: command text equals: self anyString.
