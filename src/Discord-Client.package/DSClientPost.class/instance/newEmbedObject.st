@@ -1,3 +1,3 @@
 instance creation
 newEmbedObject
-	^ DSEmbedObject new
+	^ DSEmbed new

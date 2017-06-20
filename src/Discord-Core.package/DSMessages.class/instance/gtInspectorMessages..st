@@ -14,10 +14,15 @@ gtInspectorMessages: composite
 			evaluated: [ :message | message author ifNotNil: #username ]
 			width: 100;
 		column: '#Attach'
-			evaluated: [ :message | message attachments size ]
+			evaluated: [ :message | message numberOfAttachments ]
 			width: 60
 			tags: { }
-			sortedBy: [ :a :b | a attachments size > b attachments size ];
+			sortedBy: [ :a :b | a numberOfAttachments > b numberOfAttachments ];
+		column: '#Embeds'
+			evaluated: [ :message | message numberOfEmbeds ]
+			width: 60
+			tags: { }
+			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
 			evaluated: [ :message | message content ];
 		yourself
