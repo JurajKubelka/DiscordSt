@@ -4,4 +4,5 @@ initializeUsingJsonObject: jsonObject
 	jsonObject is a Dictionary."
 	self initializeUsingJsonDictionary: jsonObject.
 	self author: (DSUser fromJsonObject: self author api: self api).
-	self attachments: (DSAttachment collectionFromJsonObject: self attachments api: self api)
+	self attachments: (DSAttachment collectionFromJsonObject: self attachments api: self api).
+	self embeds: (DSEmbedObject collectionFromJsonObject: self embeds api: self api)

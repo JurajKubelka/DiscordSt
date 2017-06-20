@@ -1,4 +1,4 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorChannels: composite
 	<gtInspectorPresentationOrder: 1>
 	^ composite fastList
