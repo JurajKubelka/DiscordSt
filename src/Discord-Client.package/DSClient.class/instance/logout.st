@@ -1,4 +1,4 @@
-public
+protocol
 logout
 	"Logout from Discord.
 	Currently, it only deletes token."
