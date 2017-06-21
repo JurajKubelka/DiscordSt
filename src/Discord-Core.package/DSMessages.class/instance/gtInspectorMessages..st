@@ -15,13 +15,21 @@ gtInspectorMessages: composite
 			width: 100;
 		column: '#Attach'
 			evaluated: [ :message | message numberOfAttachments ]
-			width: 60
-			tags: { }
+			width: 80
+			tags: [  :message | Array streamContents: [ :aStream |
+				message hasFuelAttachments ifTrue: [ 
+					aStream nextPut: 'Fuel' ].
+				message hasImageAttachments ifTrue: [ 
+					aStream nextPut: 'Img' ] ]  ]
 			sortedBy: [ :a :b | a numberOfAttachments > b numberOfAttachments ];
 		column: '#Embeds'
 			evaluated: [ :message | message numberOfEmbeds ]
 			width: 60
-			tags: { }
+			tags: [ :message | Array streamContents: [ :aStream |
+				message isFuelObject ifTrue: [ 
+					aStream nextPut: 'Object' ].
+				message isFuelStack ifTrue: [ 
+					aStream nextPut: 'Stack' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
 			evaluated: [ :message | message content ];

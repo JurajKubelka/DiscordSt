@@ -30,15 +30,15 @@ askForMessageAndSend
 		text: self text; 
 		setSelection: (1 to: model messageText text size);
 		autoAccept: true.
-	model attachmentLabel label: 'Attachment: '.
+	model attachmentLabel label: 'Attachment (', self fileSizeHumanString, '): '.
 	model attachmentInput text: self fileName; autoAccept: true.
 	model cancelButton label: 'Cancel'; action: [ model delete ].
 	model sendButton label: 'Send'; action: [ self storeInputs: model; send. model delete ].
 	layout := SpecColumnLayout composed
-		newRow: [ :row | row add: #serverLabel width: 70. row add: #serverList ] height: model class inputTextHeight;
-		newRow: [ :row | row add: #channelLabel width: 70. row add: #channelList ] height: model class inputTextHeight;
+		newRow: [ :row | row add: #serverLabel width: 130. row add: #serverList ] height: model class inputTextHeight;
+		newRow: [ :row | row add: #channelLabel width: 130. row add: #channelList ] height: model class inputTextHeight;
 		newRow: [ :row | row add: #messageText ];
-		newRow: [ :row | row add: #attachmentLabel width: 70. row add: #attachmentInput ] height: model class inputTextHeight;
+		newRow: [ :row | row add: #attachmentLabel width: 130. row add: #attachmentInput ] height: model class inputTextHeight;
 		yourself.
 	self specLayoutExtensions do: [ :eachExtension |
 		eachExtension cull: layout cull: model cull: self ].

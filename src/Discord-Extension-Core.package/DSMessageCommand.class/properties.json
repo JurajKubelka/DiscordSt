@@ -8,6 +8,7 @@
 	"instvars" : [
 		"text",
 		"fileName",
+		"fileSize",
 		"onAccept",
 		"channel",
 		"specExtensions",
