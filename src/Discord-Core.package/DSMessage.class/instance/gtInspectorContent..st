@@ -3,6 +3,6 @@ gtInspectorContent: composite
 	<gtInspectorPresentationOrder: 1>
 	^ composite text
 		title: 'Content';
-		display: [ self content ];
-		when: [ self hasContent ];
+		display: [ self printFullMessage ];
+		when: [ self hasContent or: [ self hasEmbeds ] ];
 		yourself

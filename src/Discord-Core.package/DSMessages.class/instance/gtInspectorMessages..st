@@ -32,5 +32,5 @@ gtInspectorMessages: composite
 					aStream nextPut: 'Stack' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
-			evaluated: [ :message | message content ];
+			evaluated: [ :message | message printFullMessage ];
 		yourself

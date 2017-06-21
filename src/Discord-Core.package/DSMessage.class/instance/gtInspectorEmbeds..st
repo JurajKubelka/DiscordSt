@@ -1,6 +1,6 @@
 gt-inspector-extension
 gtInspectorEmbeds: composite
-	<gtInspectorPresentationOrder: 1.5>
+	<gtInspectorPresentationOrder: 3>
 	^ composite fastList
 		title: 'Embeds';
 		display: [ self embeds ];
