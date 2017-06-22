@@ -34,6 +34,8 @@ baseline: spec
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' ). ];
 			package: #'Discord-Extension-UI' with: [
 				spec requires: #( #'Discord-Extension-Core' ). ];
+			package: #'Discord-Extension-UI-Tests' with: [
+				spec requires: #( #'Discord-Extension-UI' ). ];
 
 			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' );
 			group: #'core' with: #( #'Discord-Core' );
@@ -41,5 +43,5 @@ baseline: spec
 			group: #'extensions' with: #( #'Discord-Extension-Core' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
 			group: #'ui' with: #( #'Discord-Extension-UI' );
-			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' ).
+			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' ).
 	].

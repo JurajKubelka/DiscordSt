@@ -5,4 +5,6 @@ initializePresenter
 		selection 
 			ifNil: [ listModel menu: nil ]
 			ifNotNil: [ listModel menu: [ :aMenu | 
-					self populateMenuFor: selection in: aMenu ] ] ]
+					self populateMenuFor: selection in: aMenu ] ] ].
+	toolbarModel all activationAction: [ self displayAllMessages ].
+	toolbarModel fuel activationAction: [ self displayFuelMessages ]

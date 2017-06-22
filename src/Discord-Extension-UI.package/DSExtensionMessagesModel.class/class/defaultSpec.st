@@ -1,3 +1,6 @@
 specs
 defaultSpec
-	^ SpecRowLayout composed add: #listModel; yourself
+	^ SpecColumnLayout composed 
+		add: #toolbarModel height: self toolbarHeight;
+		add: #listModel; 
+		yourself

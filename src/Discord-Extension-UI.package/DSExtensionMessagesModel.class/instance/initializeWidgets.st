@@ -5,3 +5,7 @@ initializeWidgets
 		icons: [ :node | self iconFor: node ];
 		allowToSelect: true;
 		yourself.
+	toolbarModel := self instantiate: DSExtensionRadioButtonsModel.
+	(toolbarModel addRadioButtonIdentified: #all) label: 'All'; state: true.
+	(toolbarModel addRadioButtonIdentified: #fuel) label: 'FUEL'.
+	

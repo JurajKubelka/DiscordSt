@@ -13,6 +13,10 @@ populateMenuFor: aDSMessage in: aMenuMorph
 			name: 'Debug';
 			action: [ aDSMessage openInDebugger ];
 			yourself) ].
+	menuGroup addMenuItem: (MenuItemModel new
+			name: 'Display relevat messages';
+			action: [ self displayRelevantMessages: aDSMessage ];
+			yourself).
 	menuGroup buildWithSpec do: [ :eachMenuItem |
 		aMenuMorph addMenuItem: eachMenuItem ].
 	^ aMenuMorph
