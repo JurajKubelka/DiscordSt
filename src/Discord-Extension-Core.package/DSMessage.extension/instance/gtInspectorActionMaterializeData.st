@@ -5,6 +5,6 @@ gtInspectorActionMaterializeData
 		action: [ :presentation | | result |
 				result := self materializeObjectInAWrapper.
 				presentation update; selection: result ];
-		icon: (self iconNamed: #glamorousAdd);
+		icon: (self iconNamed: #smallInspectIt);
 		condition: [ self isFuelObject ];
 		title: 'Inspect the received object'
