@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposableModel",
+	"category" : "Discord-Extension-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"listModel"
+	],
+	"name" : "DSExtensionMessagesModel",
+	"type" : "normal"
+}
