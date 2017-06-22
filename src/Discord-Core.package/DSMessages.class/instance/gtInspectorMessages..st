@@ -24,12 +24,14 @@ gtInspectorMessages: composite
 			sortedBy: [ :a :b | a numberOfAttachments > b numberOfAttachments ];
 		column: '#Embeds'
 			evaluated: [ :message | message numberOfEmbeds ]
-			width: 60
+			width: 90
 			tags: [ :message | Array streamContents: [ :aStream |
 				message isFuelObject ifTrue: [ 
 					aStream nextPut: 'Object' ].
 				message isFuelStack ifTrue: [ 
-					aStream nextPut: 'Stack' ] ] ]
+					aStream nextPut: 'Stack' ].
+				message hasEmbedImages ifTrue: [ 
+					aStream nextPut: 'Img' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
 			evaluated: [ :message | message printFullMessage ];
