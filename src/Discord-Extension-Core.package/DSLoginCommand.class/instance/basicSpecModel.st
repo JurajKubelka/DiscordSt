@@ -13,4 +13,5 @@ basicSpecModel
 	model emailInput text: self client email; autoAccept: true.
 	model passwordLabel label: 'Password: '.
 	model passwordInput text: self client password; autoAccept: true; beEncrypted.
+	model layout: self basicSpecLayout.
 	^ model
