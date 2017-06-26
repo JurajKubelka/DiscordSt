@@ -5,4 +5,4 @@ loadId: idString
 	^ self new
 		client: DSClient default;
 		fuelId: idString;
-		execute.
+		forkedExecution.
