@@ -5,7 +5,7 @@ specModelWithoutToolbar
 	model := self specModelWithDiscordInfo.
 	model assign: ButtonModel new to: #loginButton.
 	model loginButton label: 'Login to Discord Chat'.
-	model loginButton action: [ self sendAction value: model ].
+	model loginButton action: [ self loginActionBlock value: model ].
 	model extent: 400 @ (model class inputTextHeight * 4.2).
 	layout := model layout
 		newRow: [ :row | row add: #loginButton ] height: model class inputTextHeight;

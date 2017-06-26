@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"text",
-		"fileName",
 		"fileSize",
 		"onAccept",
 		"channel",

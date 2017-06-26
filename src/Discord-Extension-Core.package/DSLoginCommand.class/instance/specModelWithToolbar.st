@@ -6,7 +6,7 @@ specModelWithToolbar
 	model := self specModelWithDiscordInfo.
 	model assign: OkCancelToolbar new to: #toolbar.
 	model toolbar okButton label: 'Login'.
-	model toolbar okAction: [ self sendAction value: model ].
+	model toolbar okAction: [ self loginActionBlock value: model ].
 	model extent: 400 @ (model class inputTextHeight * 8.2).
 	layout := model layout
 		newRow: [ :row | row add: #toolbar ] height: model class inputTextHeight;

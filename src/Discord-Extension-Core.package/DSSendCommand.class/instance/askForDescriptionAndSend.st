@@ -6,7 +6,6 @@ askForDescriptionAndSend
 	DSMessageCommand new
 		client: self client;
 		text: self text;
-		fileName: self fileName;
 		fileSize: self fileSize;
 		onAccept: [ :command | self setUserInputs: command; send ];
 		execute

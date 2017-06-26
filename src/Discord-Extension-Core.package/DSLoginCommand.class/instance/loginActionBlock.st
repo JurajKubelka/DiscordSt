@@ -1,5 +1,5 @@
 private
-sendAction
+loginActionBlock
 	"Return a Send action that is executed when user clicks on a Login button."
 	^ [ :model | 
 			self 
