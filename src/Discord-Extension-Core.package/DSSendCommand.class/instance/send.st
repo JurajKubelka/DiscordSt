@@ -7,11 +7,10 @@ send
 		embedDescription: self text;
 		embedInlineFieldName: 'Pharo' value: self pharoFieldValue;
 		embedInlineFieldName: 'OS' value: self osFieldValue;
-		embedInlineFieldName: self fuelFieldName value: self commandName.
+		embedInlineFieldName: self fuelFieldName value: (self fuelFieldValueFrom: self channel).
 	self imageForm
 		ifNotNil: [ self client
 				embedImageUrl: self imageAttachmentUrl;
 				fileName: self imageName form: self imageForm ].
 	self attachSerializedObject.
-	self halt.
 	self client sendTo: self channel.

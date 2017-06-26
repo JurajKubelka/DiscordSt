@@ -7,4 +7,4 @@ gtInspectorActionMaterializeData
 				presentation update; selection: result ];
 		icon: (self iconNamed: #smallInspectIt);
 		condition: [ self isFuelObject ];
-		title: 'Inspect the received object'
+		title: 'Inspect the received object' translated
