@@ -12,4 +12,6 @@ send
 		ifNotNil: [ self client
 				embedImageUrl: self imageAttachmentUrl;
 				fileName: self imageName form: self imageForm ].
-	self attachSerializedObject
+	self attachSerializedObject.
+	self halt.
+	self client sendTo: self channel.
