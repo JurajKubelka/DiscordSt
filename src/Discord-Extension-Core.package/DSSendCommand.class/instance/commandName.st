@@ -1,3 +1,3 @@
-accessing
+defaults
 commandName
 	^ self class commandName

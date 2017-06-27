@@ -8,9 +8,8 @@
 	"instvars" : [
 		"channel",
 		"fileName",
-		"morph",
 		"imageForm",
-		"text"
+		"wrapper"
 	],
 	"name" : "DSSendCommand",
 	"type" : "normal"

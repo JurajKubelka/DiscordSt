@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"object",
-		"serializedObject"
+		"object"
 	],
 	"name" : "DSSendObjectCommand",
 	"type" : "normal"

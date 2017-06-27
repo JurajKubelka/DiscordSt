@@ -1,4 +1,4 @@
-accessing
+accessing - computed
 serializedWrappedObject
 	"Return serialized wrapped object."
-	^ self subclassResponsibility
+	^ self serializeObject: self wrapper

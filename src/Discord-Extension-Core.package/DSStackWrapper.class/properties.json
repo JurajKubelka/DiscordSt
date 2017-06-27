@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"serializedStack",
 		"textStack"
 	],
 	"name" : "DSStackWrapper",

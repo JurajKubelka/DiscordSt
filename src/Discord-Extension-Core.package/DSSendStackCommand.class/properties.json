@@ -6,9 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"debugger",
-		"serializedStack",
-		"textStack"
+		"debugger"
 	],
 	"name" : "DSSendStackCommand",
 	"type" : "normal"

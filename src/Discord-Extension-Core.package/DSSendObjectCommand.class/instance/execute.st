@@ -3,6 +3,7 @@ execute
 	"Send an object to a Discord channel using FUEL serialization."
 	self 
 		setFileName;
-		createHumanReadableGraphicalRepresentation;
+		takeScreenshot;
+		serializeObject;
 		loginIfNecessary;
 		askForDescriptionAndSend

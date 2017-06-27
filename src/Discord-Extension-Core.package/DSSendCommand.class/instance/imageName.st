@@ -1,4 +1,4 @@
-accessing
+accessing - computed
 imageName
 	"Return a string that represents filename for an attached debugger screenshot."
 	^ (self fileName includesSubstring: '.fuel')

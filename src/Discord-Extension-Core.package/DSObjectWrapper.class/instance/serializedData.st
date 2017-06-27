@@ -1,3 +1,0 @@
-accessing
-serializedData
-	^ self serializedObject

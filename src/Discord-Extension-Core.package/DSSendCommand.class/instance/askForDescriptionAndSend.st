@@ -5,7 +5,7 @@ askForDescriptionAndSend
 	self client isAuthenticated ifFalse: [ ^ self ].
 	DSMessageCommand new
 		client: self client;
-		text: self text;
+		text: self defaultText;
 		fileSize: self fileSize;
 		onAccept: [ :command | self setUserInputs: command; send ];
 		execute

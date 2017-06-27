@@ -7,8 +7,8 @@ execute
 	- ask for a description (message) and the Discord channel and send"
 	self 
 		setFileName;
+		setTextRepresentation;
+		takeScreenshot;
 		serializeStack;
-		createHumanReadableTextRepresentation;
-		createHumanReadableGraphicalRepresentation;
 		loginIfNecessary;
 		askForDescriptionAndSend

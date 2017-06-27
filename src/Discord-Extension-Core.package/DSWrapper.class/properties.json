@@ -8,6 +8,7 @@
 	"instvars" : [
 		"description",
 		"screenshot",
+		"serializedData",
 		"info"
 	],
 	"name" : "DSWrapper",

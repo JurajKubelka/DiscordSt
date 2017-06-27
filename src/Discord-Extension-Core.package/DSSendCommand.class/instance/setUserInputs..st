@@ -1,7 +1,7 @@
 private
 setUserInputs: aDSMessageCommand 
-	"Set user inputs, filled by a user."
+	"Set user inputs."
 	self 
-		text: aDSMessageCommand text;
+		description: aDSMessageCommand text;
 		channel: aDSMessageCommand channel;
 		addAllInfo: aDSMessageCommand info

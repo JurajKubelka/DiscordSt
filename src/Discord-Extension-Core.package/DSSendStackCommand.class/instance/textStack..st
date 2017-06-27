@@ -1,4 +1,4 @@
-accessing
+accessing - wrapper
 textStack: aString 
 	"Set textural representation of the stack (context)"
-	textStack := aString
+	self wrapper textStack: aString

@@ -1,5 +1,5 @@
 tests
 testFileSize
 	command := self newCommand.
-	self setSerializedBytes.
-	self assert: command fileSize > 4.
+	command serializedData: #[ 1 2 3 4 ].
+	self assert: command fileSize = 4.

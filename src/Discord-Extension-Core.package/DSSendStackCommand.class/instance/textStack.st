@@ -1,4 +1,4 @@
-accessing
+accessing - wrapper
 textStack
 	"Get textural representation of the stack (context)"
-	^ textStack
+	^ self wrapper textStack

@@ -4,5 +4,5 @@ gtInspectorActionDebug
 	^ GLMGenericAction new
 		action: [ :presentation | self openInDebugger ];
 		icon: (self iconNamed: #smallDebugIt);
-		condition: [ self serializedStack notNil ];
+		condition: [ self serializedData notNil ];
 		title: 'Debug the received external stack' translated
