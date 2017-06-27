@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 13:57",
+	"super" : "Object",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"client",
+		"extensions",
+		"info"
+	],
+	"name" : "DSCommand",
+	"type" : "normal"
+}

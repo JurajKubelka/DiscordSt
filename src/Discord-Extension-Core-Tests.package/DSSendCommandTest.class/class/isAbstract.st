@@ -1,3 +1,3 @@
 testing
 isAbstract
-	^ self = DSSendCommandTest 
+	^ self name = #DSSendCommandTest 

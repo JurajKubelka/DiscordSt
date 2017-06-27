@@ -1,4 +1,4 @@
-public
+protocol
 sendTo: aDSGuildTextChannelOrOneArgBlock
 	"Send a message to the particular text Guild or DM channel.
 	If the parameter is a block, then the block expects collection of servers.

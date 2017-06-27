@@ -4,9 +4,7 @@
 	"category" : "Discord-Gateway",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"GatewayEvents"
-	],
+	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "DSGatewayHelloPayload",
 	"type" : "normal"

@@ -1,0 +1,3 @@
+accessing - spec
+toolbarModel
+	^ toolbarModel

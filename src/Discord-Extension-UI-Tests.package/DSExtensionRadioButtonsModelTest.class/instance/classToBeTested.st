@@ -1,0 +1,3 @@
+accessing
+classToBeTested
+	^ DSExtensionRadioButtonsModel

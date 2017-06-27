@@ -1,10 +1,9 @@
 converting
 asMultiPartDataFormEntity
-	| entity |
+	| entity part |
 	entity := ZnMultiPartFormDataEntity new.
-	self fields keysAndValuesDo: [ :key :value | | part |
-		part := ZnMimePart fieldName: key value: value.
-		entity addPart: part ].
-	self fileParts do: [ :part |
-		entity addPart: part ].
+	part := ZnMimePart fieldName: 'payload_json' value: self asDiscordJSONString.
+	entity addPart: part.
+	self fileParts do: [ :eachPart |
+		entity addPart: eachPart ].
 	^ entity

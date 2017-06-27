@@ -14,10 +14,25 @@ gtInspectorMessages: composite
 			evaluated: [ :message | message author ifNotNil: #username ]
 			width: 100;
 		column: '#Attach'
-			evaluated: [ :message | message attachments size ]
-			width: 60
-			tags: { }
-			sortedBy: [ :a :b | a attachments size > b attachments size ];
+			evaluated: [ :message | message numberOfAttachments ]
+			width: 80
+			tags: [  :message | Array streamContents: [ :aStream |
+				message hasFuelAttachments ifTrue: [ 
+					aStream nextPut: 'Fuel' ].
+				message hasImageAttachments ifTrue: [ 
+					aStream nextPut: 'Img' ] ]  ]
+			sortedBy: [ :a :b | a numberOfAttachments > b numberOfAttachments ];
+		column: '#Embeds'
+			evaluated: [ :message | message numberOfEmbeds ]
+			width: 90
+			tags: [ :message | Array streamContents: [ :aStream |
+				message isFuelObject ifTrue: [ 
+					aStream nextPut: 'Object' ].
+				message isFuelStack ifTrue: [ 
+					aStream nextPut: 'Stack' ].
+				message hasEmbedImages ifTrue: [ 
+					aStream nextPut: 'Img' ] ] ]
+			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
-			evaluated: [ :message | message content ];
+			evaluated: [ :message | message printFullMessage ];
 		yourself

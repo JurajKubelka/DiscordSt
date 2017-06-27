@@ -1,15 +1,18 @@
 {
 	"commentStamp" : "JurajKubelka 6/16/2017 14:16",
-	"super" : "DSClientCommand",
+	"super" : "DSCommand",
 	"category" : "Discord-Extension-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"text",
-		"fileName",
+		"fileSize",
 		"onAccept",
-		"channel"
+		"channel",
+		"specExtensions",
+		"specLayoutExtensions",
+		"model"
 	],
 	"name" : "DSMessageCommand",
 	"type" : "normal"

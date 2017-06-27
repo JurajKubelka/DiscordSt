@@ -5,4 +5,4 @@ gtInspectorActionDebug
 		action: [ :presentation | self openInDebugger ];
 		icon: (self iconNamed: #smallDebugIt);
 		condition: [ self serializedStack notNil ];
-		title: 'Debug the external stack'
+		title: 'Debug the received external stack' translated

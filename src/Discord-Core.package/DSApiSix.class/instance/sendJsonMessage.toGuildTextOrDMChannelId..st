@@ -2,9 +2,10 @@ public
 sendJsonMessage: aDSClientJsonPost toGuildTextOrDMChannelId: channelId 
 	"Send a message to the particular text Guild or DM channel.
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
-	| response |
+	| response url |
+	url := self channelMessagesUrlForId: channelId.
 	response := self newZnClientAuthenticated
-		url: (self channelMessagesUrlForId: channelId);
+		url: url;
 		entity: (ZnEntity text: (DSJSONApiWriter toString: aDSClientJsonPost));
 		contentType: ZnMimeType applicationJson;
 		post;

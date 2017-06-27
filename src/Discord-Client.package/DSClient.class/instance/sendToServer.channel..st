@@ -1,4 +1,4 @@
-public
+protocol
 sendToServer: serverName channel: channelName 
 	"Send a message to the particular text Guild or DM channel of the given channelName.
 	The channel is part of a server of the given name.

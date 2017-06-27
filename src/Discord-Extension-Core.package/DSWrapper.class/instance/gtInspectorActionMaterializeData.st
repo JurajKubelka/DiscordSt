@@ -7,4 +7,4 @@ gtInspectorActionMaterializeData
 				presentation update; selection: result ];
 		icon: (self iconNamed: #glamorousAdd);
 		condition: [ self serializedData notNil ];
-		title: 'Materialize'
+		title: 'Inspect the received object'

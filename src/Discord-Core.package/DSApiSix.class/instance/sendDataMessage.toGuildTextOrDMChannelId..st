@@ -4,8 +4,6 @@ sendDataMessage: aDSClientDataPost toGuildTextOrDMChannelId: channelId
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	| url response |
 	url := self channelMessagesUrlForId: channelId.
-	aDSClientDataPost fields keysAndValuesDo: [ :key :value | 
-		url queryAt: key add: value ].
 	response := self newZnClientAuthenticated
 		url: url;
 		entity: (DSDataApiWriter toMultiPartDataFormEntity: aDSClientDataPost);

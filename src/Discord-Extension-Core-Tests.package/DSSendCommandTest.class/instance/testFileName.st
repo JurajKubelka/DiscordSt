@@ -1,5 +1,5 @@
 tests
 testFileName
-	command := self newSendCommand.
+	command := self newCommand.
 	command fileName: self anyString.
 	self assert: command fileName equals: self anyString.
