@@ -1,6 +1,6 @@
 tests
 testSend
-	command := self newCommand.
+	command := self newObject.
 	command 
 		client: self newClient;
 		description: self anyString;

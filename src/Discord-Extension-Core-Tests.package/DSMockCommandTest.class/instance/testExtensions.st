@@ -1,5 +1,5 @@
 tests
 testExtensions
-	command := self newCommand.
+	command := self newObject.
 	self assert: command extensions size equals: 1.
 	self assert: command extensions first class equals: DSMockCommandExtension.

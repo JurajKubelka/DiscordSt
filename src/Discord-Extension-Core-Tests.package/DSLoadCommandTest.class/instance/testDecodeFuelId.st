@@ -1,6 +1,6 @@
 tests-accessing
 testDecodeFuelId
-	command := self newCommand.
+	command := self newObject.
 	command encodedFuelId: self encodedFuelIdString.
 	command decodeFuelId.
 	self assert: command fuelId class equals: DSFuelId.

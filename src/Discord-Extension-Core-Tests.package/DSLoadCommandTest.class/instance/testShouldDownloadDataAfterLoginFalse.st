@@ -1,6 +1,6 @@
 tests-accessing
 testShouldDownloadDataAfterLoginFalse
-	command := self newCommand.
+	command := self newObject.
 	command encodedFuelId: self encodedFuelIdString.
 	command encodedUrls: self encodedDataString.
 	self deny: command shouldDownloadDataAfterLogin.

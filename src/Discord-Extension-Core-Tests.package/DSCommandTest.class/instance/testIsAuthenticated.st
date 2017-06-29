@@ -1,5 +1,5 @@
 tests
 testIsAuthenticated
-	command := self newCommand.
+	command := self newObject.
 	command client: self newClient.
 	self deny: command isAuthenticated

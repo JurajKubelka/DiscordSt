@@ -1,4 +1,4 @@
 tests
 testFileSizeDefault
-	command := self newCommand.
+	command := self newObject.
 	self assert: command fileSize equals: 0.

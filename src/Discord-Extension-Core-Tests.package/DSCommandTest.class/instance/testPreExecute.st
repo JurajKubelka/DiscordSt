@@ -1,7 +1,7 @@
 tests
 testPreExecute
 	| counter extension receivedCommand |
-	command := self newCommand.
+	command := self newObject.
 	counter := 0.
 	extension := self newCommandExtension.
 	extension preExecutionBlock: [ :aCommand | receivedCommand := command. counter := counter + 1 ].

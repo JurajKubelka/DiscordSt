@@ -1,3 +1,3 @@
 private
 setFileName
-	self fileName: (self object printString, '.fuel')
+	self fileName: (self object printStringLimitedTo: DSConstants maxFileNameLenght - 14), '.fuel'

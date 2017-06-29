@@ -1,3 +1,3 @@
 instance creation
-newCommand
+newObject
 	^ DSLoadCommand new

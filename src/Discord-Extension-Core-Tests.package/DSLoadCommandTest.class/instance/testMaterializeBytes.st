@@ -1,7 +1,7 @@
 tests-private
 testMaterializeBytes
 	| object result bytes |
-	command := self newCommand.
+	command := self newObject.
 	object := Object new.
 	bytes := FLSerializer serializeToByteArray: object.
 	result := command materializeBytes: bytes.

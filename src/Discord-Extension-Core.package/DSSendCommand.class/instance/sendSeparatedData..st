@@ -7,7 +7,7 @@ sendSeparatedData: bytes
 	messages := OrderedCollection new.
 	[ 
 		"Send FUEL data in separate messages."
-		part := byteStream next: DSUtility discordAttachmentLimit.
+		part := byteStream next: DSConstants discordAttachmentLimit.
 		messages add: (self sendPart: part index: index).
 		index := index + 1.
 		byteStream atEnd.

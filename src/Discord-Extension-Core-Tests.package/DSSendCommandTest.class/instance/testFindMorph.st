@@ -4,7 +4,7 @@ testFindMorph
 	morph := self anyString asMorph.
 	window := morph openInWindow.
 	[ 
-		command := self newCommand.
+		command := self newObject.
 		self setMorphModel.
 		window model: command morphModel.
 		windowTwo := command findMorph.
