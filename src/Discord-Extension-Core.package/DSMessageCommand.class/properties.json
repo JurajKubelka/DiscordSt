@@ -10,6 +10,7 @@
 		"fileSize",
 		"onAccept",
 		"channel",
+		"guild",
 		"specExtensions",
 		"specLayoutExtensions",
 		"model"

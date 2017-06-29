@@ -7,9 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"fueldId",
-		"guildId",
-		"channelId",
-		"dateAndTime"
+		"encodedUrls",
+		"encodedFuelId",
+		"urls"
 	],
 	"name" : "DSLoadCommand",
 	"type" : "normal"

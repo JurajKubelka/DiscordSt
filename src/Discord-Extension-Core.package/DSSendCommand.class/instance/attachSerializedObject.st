@@ -1,6 +1,10 @@
 private
 attachSerializedObject
 	| data |
+	self flag: #remove.
+	self shouldNotImplement.
 	data := self serializedWrappedObject.
-	self client 
-		fileName: self fileName bytes: data.
+	data size > DSUtility discordAttachmentLimit 
+		ifTrue: [ self splitSerializedData: data ]
+		ifFalse: [ self client 
+			fileName: self fileName bytes: data ].

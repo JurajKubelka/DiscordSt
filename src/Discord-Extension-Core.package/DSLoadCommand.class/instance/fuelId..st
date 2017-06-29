@@ -1,4 +1,4 @@
 accessing
-fuelId: aString 
-	"Set the message id, used for FUEL data identification."
-	fueldId := aString
+fuelId: aDSFuelId 
+	"Set a DSFuelId object that represents decoded Fuel ID."
+	fueldId := aDSFuelId

@@ -1,4 +1,4 @@
 accessing
 fuelId
-	"Get the message id, used for FUEL data identification."
+	"Get a DSFuelId object that represents decoded Fuel ID."
 	^ fueldId 
