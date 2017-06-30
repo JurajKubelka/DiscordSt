@@ -8,6 +8,7 @@ basicSpecModel
 		assign: LabelModel new to: #channelLabel;
 		assign: DropListModel new to: #channelList;
 		assign: TextModel new to: #messageText;
+		assign: LabelModel new to: #messageLength;
 		assign: LabelModel new to: #attachmentLabel.
 	model serverLabel label: 'Server: '.
 	model serverList 
@@ -18,7 +19,13 @@ basicSpecModel
 	model channelList 
 		items: self servers first textChannels;
 		displayBlock: [ :itemChannel | itemChannel name ].
-	model messageText 
+	model messageText
+		whenTextChanged: [ 
+			model messageLength 
+				label: (self class messageLenghtTextFor: model messageText text);
+				color: (model messageText text size > DSConstants maxMessageLenght
+					ifTrue: [ Color red ]
+					ifFalse: [ model messageLength defaultColor ]) ];
 		text: self text;
 		setSelection: (1 to: model messageText text size);
 		autoAccept: true.

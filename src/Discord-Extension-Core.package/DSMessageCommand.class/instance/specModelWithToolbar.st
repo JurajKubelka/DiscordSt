@@ -6,6 +6,11 @@ specModelWithToolbar
 	model assign: OkCancelToolbar new to: #toolbar.
 	model toolbar okButton label: 'Send'.
 	model toolbar okAction: [ self sendActionBlock value: model ].
+	model messageText
+		whenTextChanged: [ 
+			model messageText text size > DSConstants maxMessageLenght
+				ifTrue: [ model toolbar okButton disable ]
+				ifFalse: [ model toolbar okButton enable ] ].
 	model layout
 		newRow: [ :row | row add: #toolbar ] 
 		height: model class inputTextHeight.
