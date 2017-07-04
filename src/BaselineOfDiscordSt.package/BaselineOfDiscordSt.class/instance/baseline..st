@@ -4,6 +4,11 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec
+			configuration: 'Fuel' with: [ 
+				spec
+					repository: 'http://smalltalkhub.com/mc/Pharo/Fuel/main';
+					versionString: #stable;
+					loads: 'FuelProgressUpdate' ];
 			configuration: 'ZincHTTPComponents' with: [ 
 				spec
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
@@ -19,7 +24,7 @@ baseline: spec
 				spec requires: #( #'Discord-WebhookClient' ). ];
 
 			package: #'Discord-Client' with: [
-				spec requires: #( #'Discord-Core' #'Discord-Gateway' ). ];
+				spec requires: #( #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
 

@@ -6,6 +6,7 @@ serializeObject: anObject
 	stream := ByteArray new writeStream.
 	serializer := FLSerializer newDefault.		
 	serializer
+		showProgress;
 		serialize: anObject
 		on: stream.
 	^ stream contents.
