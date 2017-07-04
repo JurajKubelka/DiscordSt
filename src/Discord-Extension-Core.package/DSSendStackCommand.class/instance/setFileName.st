@@ -1,4 +1,4 @@
-private
+initialization
 setFileName
 	"Set a filename for a Discord message attachment (this attachment will hold the stack).
 	Compute it from the actual time and from the class name on the interrputed context."

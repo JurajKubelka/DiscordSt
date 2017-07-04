@@ -8,15 +8,10 @@ sendMainMessage: previousMessages
 		embedThumbnailUrl: 'https://raw.githubusercontent.com/JurajKubelka/DiscordSt/client/assets/source/download-icon.png';
 		embedInlineFieldName: 'Pharo' value: self pharoFieldValue;
 		embedInlineFieldName: 'OS' value: self osFieldValue;
-		embedInlineFieldName: self fuelFieldName
-			value: (self fuelFieldValueFrom: self channel messages: previousMessages);
+		embedInlineFieldName: self fuelFieldName value: (self fuelFieldValueFrom: self channel messages: previousMessages);
 		with: [ :aMessage | 
 			self screenshot
 				ifNotNil: [ aMessage
 						embedImageUrl: self imageAttachmentUrl;
 						fileName: self imageName form: self screenshot ] ];
-		with: [ :aMessage | 
-			self
-				displayProgress: 'Sending user message'
-				whileSending: aMessage
-				toChannel: self channel ]
+		with: [ :aMessage | self displayProgress: 'Sending user message' whileSending: aMessage toChannel: self channel ]

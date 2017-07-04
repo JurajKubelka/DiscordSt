@@ -1,3 +1,4 @@
 private
 setFileName
-	self fileName: (self object printStringLimitedTo: DSConstants maxFileNameLenght - 14), '.fuel'
+	"Remove unsafe characters and limit the filename lenght."
+	self fileName: (DSUtility safeFileName: self object)
