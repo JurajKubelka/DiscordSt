@@ -3,4 +3,4 @@ send
 	"Send message to a speficic channel.
 	The method expects that message text, object, channel, and client objects are set."
 
-	self sendSeparatedData: self serializedWrappedObject
+	^ self sendSeparatedData: self serializedWrappedObject

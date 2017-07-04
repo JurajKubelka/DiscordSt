@@ -5,6 +5,7 @@ send
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	<return: #DSMessage or: nil>
 	| result |
-	[ result := self post accept: self ]
+	post ifNil: [ DSIncorrectValuesError signal: 'Cannot send an empty message' ].
+	[ result := post accept: self ]
 		ensure: [ post := nil ].
 	^ result.

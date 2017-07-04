@@ -4,5 +4,6 @@ visitDSClientJsonPost: aDSClientJsonPost
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 
 	^ self client restApi
-		sendJsonMessage: self post
-		toGuildTextOrDMChannel: self channel
+		sendJsonMessage: post
+		toGuildTextOrDMChannelId: self channel id
+		signalProgress: self signalProgress

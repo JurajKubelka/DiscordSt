@@ -1,4 +1,4 @@
-private
+accessing - computed
 fuelFieldValueFrom: aDSGuildTextChannel 
 	"Return a FUEL field value. 
 	It is composed of a command name, and a link to pharo link server.

@@ -1,4 +1,4 @@
-private
+accessing - computed
 customMessageIdFrom: aDSGuildTextChannel 
 	"Return self-generated message id.
 	It is used for the message identification while downloading data 

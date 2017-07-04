@@ -8,7 +8,8 @@
 	"instvars" : [
 		"client",
 		"post",
-		"channel"
+		"channel",
+		"signalProgress"
 	],
 	"name" : "DSClientPostBuilder",
 	"type" : "normal"
