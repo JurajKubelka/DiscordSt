@@ -4,7 +4,7 @@ testDisplayToUserObjectWrapper
 	command := self newObject.
 	object := Object new.
 	wrapper := DSObjectWrapper new
-		serializedData: (FLSerializer serializeToByteArray: object);
+		serializedData: (DSUtility serializeToByteArray: object);
 		yourself.
 	window := command displayToUser: wrapper.
 	[ 

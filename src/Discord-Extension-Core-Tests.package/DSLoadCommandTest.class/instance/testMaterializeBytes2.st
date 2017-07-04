@@ -1,5 +1,5 @@
 tests-private
-testMaterializeBytes
+testMaterializeBytes2
 	| object result bytes |
 	command := self newObject.
 	object := Object new.
