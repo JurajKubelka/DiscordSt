@@ -1,5 +1,5 @@
 tests
-testFindMorphGTInspector
+testFindInspector
 	| window windowTwo |
 	command := self newObject.
 	self setMorphModel.
