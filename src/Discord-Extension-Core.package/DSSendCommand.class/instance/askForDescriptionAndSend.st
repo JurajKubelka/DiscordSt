@@ -1,4 +1,4 @@
-private
+ui
 askForDescriptionAndSend
 	"If the client is authenticated, we ask for a description that should be sent
 	with the stack trace."

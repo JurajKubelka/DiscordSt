@@ -1,0 +1,1 @@
+I share some values and behavior, useful for different test cases.
