@@ -9,10 +9,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"api",
-		"post",
 		"channel",
 		"gateway",
-		"guilds",
 		"announcer"
 	],
 	"name" : "DSClient",

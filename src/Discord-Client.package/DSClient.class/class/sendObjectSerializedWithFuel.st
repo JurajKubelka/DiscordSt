@@ -5,9 +5,10 @@ sendObjectSerializedWithFuel
 	
 	^ DSClient new 
 		email: 'email@example.com' password: 'secret-password';
-		login;
-		message: 'This message includes a serialized object using FUEL';
-		fileName: 'object.fuel'
-		fuelObject: (DSFieldObject new fieldsAt: 'keyOne' put: Object new; yourself);
-		yourself ";
-		sendTo: [ :servers | servers first general ]"
+		"login;"
+		with: [ :aClient | aClient message
+			content: 'This message includes a serialized object using FUEL';
+			fileName: 'object.fuel'
+			fuelObject: (DSFieldObject new fieldsAt: 'keyOne' put: Object new; yourself)";
+			sendTo: [ :servers | servers first general ]" ];
+		yourself

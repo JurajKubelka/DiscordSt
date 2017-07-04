@@ -5,7 +5,8 @@ sendSimpleMessage
 	
 	^ DSClient new 
 		email: 'email@example.com' password: 'secret-password';
-		login;
-		message: 'Pharo loves Discord';
-		yourself ";
-		sendTo: [ :servers | servers first general ]"
+		"login;"
+		with: [ :aClient | aClient message
+			content: 'Pharo loves Discord'";
+			sendTo: [ :servers | servers first general ]" ];
+		yourself

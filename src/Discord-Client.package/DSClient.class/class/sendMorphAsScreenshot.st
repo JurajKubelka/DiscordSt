@@ -5,8 +5,9 @@ sendMorphAsScreenshot
 	
 	^ DSClient new 
 		email: 'email@example.com' password: 'secret-password';
-		login;
-		message: 'This is a screenshot of my Pharo image';
-		fileName: 'screen.png' morph: World;
-		yourself ";
-		sendTo: [ :servers | servers first general ]"
+		"login;"
+		with: [ :aClient | aClient message
+			content: 'This is a screenshot of my Pharo image';
+			fileName: 'screen.png' morph: World";
+			sendTo: [ :servers | servers first general ]" ];
+		yourself

@@ -3,8 +3,8 @@ testSendToServerChannel
 	| response content |
 	self skipIfNotAuthenticated.
 	content := self classAndTestSelectorMessageString.
-	self client message: content.
-	response := self client
+	response := self client message
+		content: content;
 		sendToServer: self serverName
 		channel: self channelName.
 	self assert: response class equals: DSMessage.

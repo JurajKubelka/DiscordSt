@@ -1,3 +1,3 @@
 defaults
 contentLongString
-	^ String new: DSWebhookPost contentLimit * 2
+	^ String new: DSConstants maxMessageLenght + 1

@@ -5,10 +5,11 @@ sendImage
 	
 	^ DSClient new 
 		email: 'email@example.com' password: 'secret-password';
-		login;
-		message: 'This message includes an image';
-		fileName: 'random-image.jpg' 
-		bytes: (ZnEasy 
-			get: 'http://lorempixel.com/400/200') contents;
-		yourself ";
-		sendTo: [ :servers | servers first general ]"
+		"login;"
+		with: [ :aClient | aClient message
+			content: 'This message includes an image';
+			fileName: 'random-image.jpg' 
+			bytes: (ZnEasy 
+				get: 'http://lorempixel.com/400/200') contents";
+			sendTo: [ :servers | servers first general ]" ];
+		yourself.

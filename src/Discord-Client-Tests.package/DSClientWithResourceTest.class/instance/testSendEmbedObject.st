@@ -3,7 +3,8 @@ testSendEmbedObject
 	| channel response content |
 	self skipIfNotAuthenticated.
 	content := self classAndTestSelectorMessageString.
-	self client
+	channel := self client servers first channelNamed: self channelName.
+	response := self client message
 		embedTitle: 'Embed Title';
 		embedDescription: content;
 		embedUrl: 'http://pharo.org';
@@ -16,7 +17,6 @@ testSendEmbedObject
 		embedInlineFieldName: 'OS' value: self osFieldValue;
 		fileName: 'screenshot.png' morph: World submorphs atRandom;
 		fileName: 'thumbnail.png' form: #help asIcon;
-		fileName: 'footer.png' form: #pharo asIcon.
-	channel := self client servers first channelNamed: self channelName.
-	response := self client sendTo: channel.
+		fileName: 'footer.png' form: #pharo asIcon;
+		sendTo: channel.
 	self assert: response class equals: DSMessage.

@@ -1,4 +1,7 @@
 tests
 testMessage
-	client := self newClient message: self anyString.
-	self assert: client post content equals: self anyString.
+	| builder |
+	client := self newClient.
+	builder := client message.
+	self assert: builder client == client.
+	self assert: builder class equals: DSClientPostBuilder.

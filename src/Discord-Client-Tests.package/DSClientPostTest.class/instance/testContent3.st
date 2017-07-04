@@ -1,4 +1,6 @@
 tests
 testContent3
-	post := self newPost content: self contentLongString; yourself.
-	self assert: post content size equals: DSClientPost contentLimit.
+	"The"
+	post := self newPost.
+	self should: [ post content: self contentLongString ] raise: DSLongMessageError.
+	self assert: post content isNil.
