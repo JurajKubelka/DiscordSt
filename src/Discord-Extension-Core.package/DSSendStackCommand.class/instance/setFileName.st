@@ -6,10 +6,6 @@ setFileName
 	date := DateAndTime now.
 	self fileName: (String streamContents: [ :stream |
 		stream
-			<< 'Debugger-Stack-';
+			<< 'Stack-';
 			<< self interruptedContext receiver class theNonMetaClass name;
-			<< '-'.
-		date printYMDOn: stream.
-		stream << '-'.
-		date printHMSOn: stream separatedBy: $-.
-		stream << '.fuel' ]).
+			<< '.fuel' ]).

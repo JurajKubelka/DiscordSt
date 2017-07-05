@@ -7,14 +7,16 @@ safeFileName: anObject
 		streamContents: [ :aStream | 
 			| previousCharacter aString |
 			previousCharacter := nil.
-			aString := anObject printStringLimitedTo: DSConstants maxFileNameLenght - 14.
+			aString := anObject
+				printStringLimitedTo: DSConstants maxFileNameLenght + 9 "take into the account ...etc... tail".
+			aString := aString first: DSConstants maxFileNameLenght. "and remove the ...etc... tail"
 			aString := aString trimBoth: [ :char | char isAlphaNumeric not ].
 			aString
 				do: [ :char | 
 					| nextCharacter |
-					char isSafeForHTTP
-						ifTrue: [ nextCharacter := char ]
-						ifFalse: [ nextCharacter := $- ].
+					nextCharacter := char isSafeForHTTP
+						ifTrue: [ char ]
+						ifFalse: [ $- ].
 					nextCharacter = $.
 						ifTrue: [ nextCharacter := $- ].
 					previousCharacter = nextCharacter
