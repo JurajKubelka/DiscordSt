@@ -14,6 +14,11 @@ baseline: spec
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
 					versionString: #stable;
 					loads: 'WebSocket' ];
+			configuration: 'NeoJSON' with: [ 
+				spec
+					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/Neo/main/';
+					versionString: #stable;
+					loads: 'default' ];
 			package: #'Discord-Core';
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
@@ -42,10 +47,16 @@ baseline: spec
 			package: #'Discord-Extension-UI-Tests' with: [
 				spec requires: #( #'Discord-Extension-UI' ). ];
 
-			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' );
+			package: #'Discord-Extension-Expertise' with: [
+				spec requires: #( #'NeoJSON' ). ];
+			package: #'Discord-Extension-Expertise-Tests' with: [
+				spec requires: #( #'Discord-Extension-Expertise' ). ];
+
+			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' #'expertise' );
 			group: #'core' with: #( #'Discord-Core' );
 			group: #'client' with: #( #'Discord-Client' );
-			group: #'extensions' with: #( #'Discord-Extension-Core' );
+			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
+			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
 			group: #'ui' with: #( #'Discord-Extension-UI' );
 			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' ).
