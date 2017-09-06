@@ -9,7 +9,7 @@ safeFileName: anObject
 			previousCharacter := nil.
 			aString := anObject
 				printStringLimitedTo: DSConstants maxFileNameLenght + 9 "take into the account ...etc... tail".
-			aString := aString first: DSConstants maxFileNameLenght. "and remove the ...etc... tail"
+			aString := aString first: (aString size min: DSConstants maxFileNameLenght). "and remove the ...etc... tail"
 			aString := aString trimBoth: [ :char | char isAlphaNumeric not ].
 			aString
 				do: [ :char | 

@@ -1,4 +1,4 @@
 public
 data
 	"Get the downloaded data"
-	^ data ifNil: [ data := self api download: self url ]
+	^ data ifNil: [ data := self api ifNotNil: [ :anApi | anApi download: self url ] ]
