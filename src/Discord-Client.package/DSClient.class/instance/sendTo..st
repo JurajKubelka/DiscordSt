@@ -9,6 +9,5 @@ sendTo: aDSGuildTextChannelOrOneArgBlock
 	aDSGuildTextChannelOrOneArgBlock isClosure 
 		ifTrue: [ self channel: (aDSGuildTextChannelOrOneArgBlock value: self servers) ]
 		ifFalse: [ self channel: aDSGuildTextChannelOrOneArgBlock ].
-	[ result := self post accept: self ]
-		ensure: [ post := nil ].
+	result := self post accept: self.
 	^ result.
