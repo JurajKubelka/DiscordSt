@@ -22,7 +22,7 @@ baseline: spec
 			baseline: 'Bloc' with: [ 
 				spec
 					repository: 'github://pharo-graphics/Bloc/src';
-					load: #development ];
+					loads: #development ];
 
 			package: #'Discord-Core';
 			package: #'Discord-Core-Tests' with: [
