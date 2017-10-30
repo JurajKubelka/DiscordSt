@@ -1,7 +1,6 @@
-updating
-updateContent
+instance creation
+newContentElement
 	| editor editorElement text |
-	self message content isEmptyOrNil ifTrue: [ ^self ].
 	editorElement := BrEditorElement new.
 	editorElement constraintsDo: [ :c | 
 		c textFlow pushLine.
@@ -14,4 +13,4 @@ updateContent
 	text := BrRopedText string: self message content asString.
 	editor text: text.
 	editorElement editor: editor.
-	self containerElement addChild: editorElement
+	^ editorElement

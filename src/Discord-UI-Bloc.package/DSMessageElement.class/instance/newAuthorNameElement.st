@@ -1,5 +1,5 @@
-updating
-updateAuthorName
+instance creation
+newAuthorNameElement
 	| authorText authorElement |
 	authorText := BrRopedText string: self message authorName.
 	authorText attributes: {
@@ -10,6 +10,5 @@ updateAuthorName
 	authorElement constraintsDo: [ :c |
 		c horizontal fitContent.
 		c vertical fitContent.
-		c padding: (BlInsets all: 2) ];
-		margin: (BlInsets all: 5).
-	self containerElement addChild: authorElement.
+		c padding: (BlInsets right: 5) ].
+	^ authorElement.
