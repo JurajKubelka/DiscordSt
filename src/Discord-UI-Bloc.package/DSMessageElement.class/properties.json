@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BlElement",
+	"super" : "DSBlocElement",
 	"category" : "Discord-UI-Bloc",
 	"classinstvars" : [ ],
 	"pools" : [ ],

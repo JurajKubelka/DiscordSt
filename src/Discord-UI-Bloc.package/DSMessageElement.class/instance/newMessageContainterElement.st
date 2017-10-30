@@ -10,4 +10,6 @@ newMessageContainterElement
 			yourself.
 	self message content isEmptyOrNil ifFalse: [ 
 		element addChild: self newContentElement ].
+	self message embeds do: [ :eachEmbed | 
+		element addChild: (DSEmbedElement new embed: eachEmbed; yourself) ].
 	^ element

@@ -1,15 +1,5 @@
-as yet unclassified
+updating
 updateChildren
-	| editorElement editor text |
+	self removeChildren.
 	self embed description ifNil: [ ^ self ].
-	editorElement := BrEditorElement new.
-	editorElement constraintsDo: [ :c |
-		c horizontal matchParent.
-		c vertical matchParent ].
-	
-	editor := BrTextEditor new.
-	text := BrRopedText string: self embed description.
-	
-	editor text: text.
-	editorElement editor: editor.
-	self addChild: editorElement.
+	self addChild: self newDescriptionElement.

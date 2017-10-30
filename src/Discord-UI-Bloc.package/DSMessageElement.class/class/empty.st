@@ -1,6 +1,6 @@
 examples
-description
+empty
 	<gtExample>
 	^ self new 
-		embed: DSEmbed description;
+		message: DSMessage empty;
 		yourself
