@@ -1,4 +1,4 @@
 accessing
 attachments
 	"Get attached files."
-	^ self fieldsAt: 'attachments'
+	^ self fieldsAt: 'attachments' ifAbsentPut: [ Array new ]

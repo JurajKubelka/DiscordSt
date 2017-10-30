@@ -4,6 +4,7 @@ fromJsonObject: jsonObject api: restApi
 	Resolve if it is a Voice or Text Channel.
 	See https://discordapp.com/developers/docs/resources/channel#guild-channel-object
 	jsonObject is a Dictionary."
+
 	| theClass |
 	(jsonObject at: 'type') = 'text'
 		ifTrue: [ theClass := DSGuildTextChannel ].
@@ -13,10 +14,10 @@ fromJsonObject: jsonObject api: restApi
 		ifTrue: [ theClass := DSGuildVoiceChannel ].
 	(jsonObject at: 'type') = 2
 		ifTrue: [ theClass := DSGuildVoiceChannel ].
-	theClass ifNotNil: [ 
-		^ theClass new 
-			api: restApi; 
-			initializeUsingJsonObject: jsonObject; 
-			yourself ].
+	theClass
+		ifNotNil: [ ^ theClass new
+				restApi: restApi;
+				initializeUsingJsonObject: jsonObject;
+				yourself ].
 	"The Discord API defines only text and voice."
-	^ self shouldNotImplement 
+	^ self shouldNotImplement

@@ -1,3 +1,3 @@
-bytes
+cleanup
 cleanUp
 	self reset

@@ -1,5 +1,6 @@
-bytes
+icons
 download
+	<gtExample>
 	^ self icons 
 		at: #download 
-		ifAbsentPut: [ PNGReadWriter formFromStream: self downloadPNGBase64 base64Decoded asByteArray readStream ]
+		ifAbsentPut: [ self formFromBase64Png: #downloadPNGBase64 ]
