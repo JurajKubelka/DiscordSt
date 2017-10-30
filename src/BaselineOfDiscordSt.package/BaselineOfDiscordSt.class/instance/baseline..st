@@ -19,6 +19,11 @@ baseline: spec
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/Neo/main/';
 					versionString: #stable;
 					loads: 'default' ];
+			baseline: 'Bloc' with: [ 
+				spec
+					repository: 'github://pharo-graphics/Bloc/src';
+					load: #development ];
+
 			package: #'Discord-Core';
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
@@ -51,6 +56,9 @@ baseline: spec
 				spec requires: #( #'NeoJSON' ). ];
 			package: #'Discord-Extension-Expertise-Tests' with: [
 				spec requires: #( #'Discord-Extension-Expertise' ). ];
+			
+			package: #'Discord-UI-Bloc' with: [ 
+				spec requires: #( #'Bloc' #'Discord-Core' ) ];
 
 			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' #'expertise' );
 			group: #'core' with: #( #'Discord-Core' );
@@ -58,6 +66,6 @@ baseline: spec
 			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
 			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
-			group: #'ui' with: #( #'Discord-Extension-UI' );
-			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' ).
+			group: #'ui' with: #( #'Discord-Extension-UI' #'Discord-UI-Bloc' );
+			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' ).
 	].
