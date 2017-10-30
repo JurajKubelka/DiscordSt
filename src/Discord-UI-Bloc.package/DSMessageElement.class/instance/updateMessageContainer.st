@@ -1,9 +1,8 @@
 updating
 updateMessageContainer
-	| container |
-	container := BlElement new. 
-	container layout: BlLinearLayout vertical.
-	container constraintsDo: [ :c | 
-		c horizontal exact: 300.
+	containerElement := BlElement new. 
+	containerElement layout: BlLinearLayout vertical.
+	containerElement constraintsDo: [ :c | 
+		c horizontal matchParent.
 		c vertical fitContent ].
-	self addChild: container
+	self addChild: containerElement

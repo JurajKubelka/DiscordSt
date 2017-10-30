@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"message"
+		"message",
+		"containerElement"
 	],
 	"name" : "DSMessageElement",
 	"type" : "normal"

@@ -10,5 +10,6 @@ updateAuthorName
 	authorElement constraintsDo: [ :c |
 		c horizontal fitContent.
 		c vertical fitContent.
-		c padding: (BlInsets all: 2) ].
-	self messageContainer addChild: authorElement.
+		c padding: (BlInsets all: 2) ];
+		margin: (BlInsets all: 5).
+	self containerElement addChild: authorElement.
