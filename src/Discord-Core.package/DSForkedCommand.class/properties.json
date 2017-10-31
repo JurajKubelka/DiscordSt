@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"command",
+		"onSuccess"
+	],
+	"name" : "DSForkedCommand",
+	"type" : "normal"
+}

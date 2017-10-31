@@ -1,13 +1,13 @@
 instance creation
 newImageElement
-	| imageForm imageBackground |
-	imageForm := self embed image asForm.
-	imageBackground := BlBackground builder
-		image: imageForm;
-		build.
-	^ BlElement new
-		size: imageForm extent;
-		geometry: (BlRectangle extent: imageForm extent);
-		background: imageBackground;
+	| imageElement |
+	"imageForm := self embed image asForm."
+	imageElement := BlElement new
+		size: self embed image extent;
+		geometry: (BlRectangle extent: self embed image extent);
 		margin: (BlInsets all: 5);
-		yourself
+		yourself.
+	self embed image hasData 
+		ifTrue: [ self setImageBackground: imageElement ]
+		ifFalse: [ self setTemporalBackground: imageElement ].
+	^ imageElement
