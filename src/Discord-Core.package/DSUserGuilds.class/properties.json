@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 6/14/2017 11:53",
 	"super" : "DSOrderedCollection",
-	"category" : "Discord-Core",
+	"category" : "Discord-Core-Collections",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

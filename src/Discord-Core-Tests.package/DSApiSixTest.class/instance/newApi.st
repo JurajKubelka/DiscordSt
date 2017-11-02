@@ -1,3 +1,3 @@
 instance creation
 newApi
-	^ DSApiSix new
+	^ DSRestApiSix new
