@@ -1,3 +1,3 @@
 accessing - fields
-fields
+fieldsDictionary
 	^ fields ifNil: [ fields := SmallDictionary new ]

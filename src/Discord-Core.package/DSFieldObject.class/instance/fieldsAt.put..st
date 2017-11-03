@@ -1,3 +1,3 @@
 accessing - fields
 fieldsAt: key put: object
-	^ self fields at: key put: object
+	^ self fieldsDictionary at: key put: object
