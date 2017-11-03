@@ -1,7 +1,7 @@
 tests
 testEmbedFooterMappingFor
 	| result jsonResult jsonString |
-	jsonString := '{"text":"footer text","icon_url":"http://cdn.example.com/icon.png","proxy_icon_url":"http://image.example.com/icon.png"}'.
+	jsonString := self classToTest jsonEmbedFooter.
 	result := self read: jsonString as: DSEmbedFooter mappedTo: #embedFooterMappingFor:.
 	self assert: result class equals: DSEmbedFooter.
 	self assert: result text equals: 'footer text'.

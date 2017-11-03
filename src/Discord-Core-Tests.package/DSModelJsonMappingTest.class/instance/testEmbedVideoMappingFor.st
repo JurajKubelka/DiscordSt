@@ -1,7 +1,7 @@
 tests
 testEmbedVideoMappingFor
 	| result jsonResult jsonString |
-	jsonString := '{"url":"http://example.com/video.html","height":768,"width":1024}'.
+	jsonString := self classToTest jsonEmbedVideo.
 	result := self read: jsonString as: DSEmbedVideo mappedTo: #embedVideoMappingFor:.
 	self assert: result class equals: DSEmbedVideo.
 	self assert: result url equals: 'http://example.com/video.html'.

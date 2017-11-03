@@ -1,7 +1,7 @@
 tests
 testEmbedProviderMappingFor
 	| result jsonResult jsonString |
-	jsonString := '{"name":"name of provider","url":"http://example.com/provider.html"}'.
+	jsonString := self classToTest jsonEmbedProvider.
 	result := self read: jsonString as: DSEmbedProvider mappedTo: #embedProviderMappingFor:.
 	self assert: result class equals: DSEmbedProvider.
 	self assert: result url equals: 'http://example.com/provider.html'.

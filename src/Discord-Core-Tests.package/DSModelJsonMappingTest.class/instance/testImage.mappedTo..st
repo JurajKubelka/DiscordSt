@@ -1,7 +1,7 @@
 tests
 testImage: aDiscordClass mappedTo: mappingSymbol
 	| result jsonResult jsonString |
-	jsonString := '{"url":"http://cdn.example.com/image.jpg","proxy_url":"http://proxy.example.com/image.jpg","height":618,"width":967}'.
+	jsonString := self classToTest jsonEmbedImage.
 	result := self read: jsonString as: aDiscordClass mappedTo: mappingSymbol.
 	self assert: result class equals: aDiscordClass.
 	self assert: result url equals: 'http://cdn.example.com/image.jpg'.

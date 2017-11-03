@@ -1,7 +1,7 @@
 tests
 testEmbedAuthorMappingFor
 	| result jsonResult jsonString |
-	jsonString := '{"name":"name of author","url":"https://example.com/author.html","icon_url":"http://cdn.example.com/author_icon.png","proxy_icon_url":"http://image.example.com/author_icon.png"}'.
+	jsonString := self classToTest jsonEmbedAuthor.
 	result := self read: jsonString as: DSEmbedAuthor mappedTo: #embedAuthorMappingFor:.
 	self assert: result class equals: DSEmbedAuthor.
 	self assert: result name equals: 'name of author'.

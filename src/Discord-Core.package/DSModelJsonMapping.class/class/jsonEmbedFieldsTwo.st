@@ -1,3 +1,3 @@
 json examples
 jsonEmbedFieldsTwo
-	^ '[', self jsonEmbedField, self jsonEmbedFieldFalse, ']'
+	^ '[', self jsonEmbedField, ',', self jsonEmbedFieldFalse, ']'
