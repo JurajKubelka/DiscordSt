@@ -1,4 +1,4 @@
-mapping
+mapping - basic
 dateAndTimeMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DateAndTime customDo: [ :mapping |

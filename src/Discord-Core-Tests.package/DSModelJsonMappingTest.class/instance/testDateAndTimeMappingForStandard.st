@@ -1,4 +1,4 @@
-tests
+tests - basic
 testDateAndTimeMappingForStandard
 	"This JSON is the one returned by Discord."
 	| result jsonResult jsonString |

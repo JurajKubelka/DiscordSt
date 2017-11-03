@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 collectionOfFieldsMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: #CollectionOfFields customDo: [ :mapping |

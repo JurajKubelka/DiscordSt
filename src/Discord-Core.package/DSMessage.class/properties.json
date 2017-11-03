@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"mentionRoleIds",
+		"type"
+	],
 	"name" : "DSMessage",
 	"type" : "normal"
 }

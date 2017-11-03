@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 embedVideoMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSEmbedVideo do: [ :mapping |

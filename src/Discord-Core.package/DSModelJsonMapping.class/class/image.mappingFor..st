@@ -1,4 +1,4 @@
-mapping
+mapping - basic
 image: anImageClass mappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: anImageClass do: [ :mapping |

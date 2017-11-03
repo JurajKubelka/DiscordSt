@@ -1,4 +1,4 @@
-tests
+tests - basic
 testDateAndTimeMappingFor
 	| result jsonResult jsonString |
 	jsonString := '"2017-11-03T15:21:38.579+00:00"'.

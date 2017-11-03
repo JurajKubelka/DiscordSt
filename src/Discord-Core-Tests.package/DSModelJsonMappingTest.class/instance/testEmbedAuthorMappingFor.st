@@ -1,4 +1,4 @@
-tests
+tests - embed
 testEmbedAuthorMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedAuthor.

@@ -1,4 +1,4 @@
-tests
+tests - basic
 testColorMappingFor
 	| result jsonResult jsonString |
 	jsonString := '16711680'.

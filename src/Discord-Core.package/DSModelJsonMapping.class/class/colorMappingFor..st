@@ -1,4 +1,4 @@
-mapping
+mapping - basic
 colorMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: Color customDo: [ :mapping |

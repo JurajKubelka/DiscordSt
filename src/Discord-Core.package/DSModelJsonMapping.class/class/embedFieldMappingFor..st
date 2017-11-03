@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 embedFieldMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSEmbedField do: [ :mapping |

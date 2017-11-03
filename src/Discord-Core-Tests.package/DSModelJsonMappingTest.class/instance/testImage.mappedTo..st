@@ -1,4 +1,4 @@
-tests
+tests - basic
 testImage: aDiscordClass mappedTo: mappingSymbol
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedImage.

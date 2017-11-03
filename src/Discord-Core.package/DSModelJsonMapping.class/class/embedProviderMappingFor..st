@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 embedProviderMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSEmbedProvider do: [ :mapping |

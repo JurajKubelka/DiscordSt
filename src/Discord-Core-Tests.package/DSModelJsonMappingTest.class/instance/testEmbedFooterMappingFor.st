@@ -1,4 +1,4 @@
-tests
+tests - embed
 testEmbedFooterMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedFooter.

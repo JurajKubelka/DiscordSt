@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 embedFooterMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSEmbedFooter do: [ :mapping |

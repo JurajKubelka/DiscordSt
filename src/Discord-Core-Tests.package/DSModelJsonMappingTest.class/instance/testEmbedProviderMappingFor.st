@@ -1,4 +1,4 @@
-tests
+tests - embed
 testEmbedProviderMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedProvider.

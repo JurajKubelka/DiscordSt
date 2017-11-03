@@ -1,4 +1,4 @@
-tests
+tests - embed
 testEmbedVideoMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedVideo.

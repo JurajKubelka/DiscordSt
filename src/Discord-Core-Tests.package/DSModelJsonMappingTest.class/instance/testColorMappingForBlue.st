@@ -1,4 +1,4 @@
-tests
+tests - basic
 testColorMappingForBlue
 	| result jsonResult jsonString |
 	jsonString := '255'.

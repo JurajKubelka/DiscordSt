@@ -1,4 +1,4 @@
-tests
+tests - embed
 testEmbedFieldMappingForFalse
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedFieldFalse.

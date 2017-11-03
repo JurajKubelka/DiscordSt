@@ -1,4 +1,4 @@
-mapping
+mapping - embed
 embedAuthorMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSEmbedAuthor do: [ :mapping |

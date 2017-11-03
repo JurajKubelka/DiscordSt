@@ -1,5 +1,5 @@
-tests
-testCollectionOfFieldsMapingFor
+tests - embed
+testCollectionOfFieldsMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonEmbedFieldsOne.
 	result := self read: jsonString as: #CollectionOfFields mappedTo: #collectionOfFieldsMappingFor:.
