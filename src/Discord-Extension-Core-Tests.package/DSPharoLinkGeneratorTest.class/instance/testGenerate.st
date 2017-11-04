@@ -2,7 +2,7 @@ tests
 testGenerate
 	| urlString |
 	urlString := self instanceToTest 
-		channel: (DSGuildTextChannel new 
+		channel: (DSTextChannel new 
 			id: self bigNumber;
 			guildId: self bigNumberTwo;
 			yourself);

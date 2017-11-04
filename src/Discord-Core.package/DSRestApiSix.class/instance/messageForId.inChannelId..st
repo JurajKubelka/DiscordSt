@@ -1,4 +1,4 @@
-public
+public accessing
 messageForId: messageId inChannelId: channelId 
 	"Return DSMessage object of a specific id in the specific channel id."
 	| url response |

@@ -1,0 +1,3 @@
+enumerating
+allChannelTypes
+	^ self allSubclasses

@@ -1,4 +1,4 @@
-public
+public accessing
 guildChannelsUsingId: guildId
 	"Returns a list of guild channel objects.
 	See https://discordapp.com/developers/docs/resources/guild#get-guild-channels"
@@ -8,7 +8,11 @@ guildChannelsUsingId: guildId
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSGuildChannel collectionFromJsonString: response contents api: self ]
+		ifTrue: [
+			DSModelJsonMapping 
+				read: #CollectionOfChannels 
+				withMapping: #collectionOfChannelsMappingFor:
+				on: response contents readStream ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

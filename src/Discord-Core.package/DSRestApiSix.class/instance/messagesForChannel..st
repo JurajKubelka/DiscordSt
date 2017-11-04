@@ -1,4 +1,4 @@
-public
+public accessing
 messagesForChannel: channelId 
 	"Returns the messages for a channel. If operating on a guild channel, 
 	this endpoint requires the 'READ_MESSAGES' permission to be present on the current user. 
@@ -11,7 +11,11 @@ messagesForChannel: channelId
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSMessage collectionFromJsonString: response contents api: self ]
+		ifTrue: [
+			DSModelJsonMapping 
+				read: #CollectionOfMessages 
+				withMapping: #collectionOfMessagesMappingFor:
+				on: response contents readStream ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

@@ -4,4 +4,5 @@ dateAndTimeMappingFor: aNeoJSONMapper
 		for: DateAndTime customDo: [ :mapping |
 			mapping 
 				encoder: [ :aDateAndTime | aDateAndTime asString ];
-				decoder: [ :aString | aString asDateAndTime ] ]
+				decoder: [ :aStringOrNil | 
+					aStringOrNil ifNotNil: [ :aString | aString asDateAndTime ] ] ]

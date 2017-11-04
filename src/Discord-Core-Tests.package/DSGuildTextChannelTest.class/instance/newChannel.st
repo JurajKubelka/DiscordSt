@@ -1,3 +1,3 @@
 instance creation
 newChannel
-	^ DSGuildTextChannel new
+	^ DSTextChannel new

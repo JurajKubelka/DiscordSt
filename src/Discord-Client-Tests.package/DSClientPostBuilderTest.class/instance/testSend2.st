@@ -16,7 +16,7 @@ testSend2
 		content: self anyString;
 		fileName: 'attachment1.data' bytes: self bytes;
 		client: client;
-		channel: (DSGuildTextChannel new id: 'channel-id-two'; yourself);
+		channel: (DSTextChannel new id: 'channel-id-two'; yourself);
 		yourself.
 	message := builder send.
 	self assert: message notNil.

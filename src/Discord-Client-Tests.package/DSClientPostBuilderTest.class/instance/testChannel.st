@@ -1,7 +1,7 @@
 test - protocol - basic
 testChannel
 	| channel |
-	channel := DSGuildTextChannel new.
+	channel := DSTextChannel new.
 	builder := self newInstanceToBeTested 
 		channel: channel;
 		yourself.
