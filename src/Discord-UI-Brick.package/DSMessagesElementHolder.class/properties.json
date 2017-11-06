@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteElementHolder",
+	"category" : "Discord-UI-Brick",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message"
+	],
+	"name" : "DSMessagesElementHolder",
+	"type" : "normal"
+}
