@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSBlocElement",
+	"category" : "Discord-UI-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"containerElement"
+	],
+	"name" : "DSMessageElement",
+	"type" : "normal"
+}

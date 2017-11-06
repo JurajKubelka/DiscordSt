@@ -1,0 +1,3 @@
+accessing
+itemCount
+	^ messages size
