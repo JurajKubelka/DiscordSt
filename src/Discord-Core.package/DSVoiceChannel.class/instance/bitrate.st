@@ -1,5 +1,0 @@
-accessing
-bitrate
-	"Get the the bitrate (in bits) of the voice channel.
-	Present only in voice type channels."
-	^ self fieldsAt: 'bitrate'

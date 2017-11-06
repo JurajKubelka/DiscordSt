@@ -15,7 +15,7 @@ testSend
 	builder := self newInstanceToBeTested 
 		content: self anyString;
 		client: client;
-		channel: (DSTextChannel new id: 'channel-id'; yourself);
+		channel: (DSGuildTextChannel new id: 'channel-id'; yourself);
 		yourself.
 	message := builder send.
 	self assert: message notNil.

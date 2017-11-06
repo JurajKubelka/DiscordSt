@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "DSNewChannel",
+	"commentStamp" : "JurajKubelka 11/6/2017 16:30",
+	"super" : "DSChannel",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -16,7 +16,7 @@ testSendTo
 		content: self anyString;
 		client: client;
 		yourself.
-	message := builder sendTo: (DSTextChannel new id: 'channel-id'; yourself).
+	message := builder sendTo: (DSGuildTextChannel new id: 'channel-id'; yourself).
 	self assert: message notNil.
 	self assert: message content equals: 'text message'.
 	self assert: self serverRequests size equals: 1.

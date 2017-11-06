@@ -8,4 +8,4 @@ testServerChannels
 	self assert: channels notNil.
 	self assert: channels isCollection.
 	self assert: channels size > 1.
-	self assert: channels first class equals: DSTextChannel.
+	self assert: channels first class equals: DSGuildTextChannel.

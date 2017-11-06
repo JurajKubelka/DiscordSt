@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DSNewChannel",
+	"super" : "DSChannel",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

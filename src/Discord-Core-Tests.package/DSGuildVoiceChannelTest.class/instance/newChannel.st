@@ -1,3 +1,3 @@
 instance creation
 newChannel
-	^ DSVoiceChannel new
+	^ DSGuildVoiceChannel new
