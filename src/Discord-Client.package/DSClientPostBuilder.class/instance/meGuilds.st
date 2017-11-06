@@ -1,4 +1,4 @@
 accessing
 meGuilds
-	<return: #Array of: #DSUserGuild>
+	<return: #Array of: #DSGuild>
 	^ self client meGuilds

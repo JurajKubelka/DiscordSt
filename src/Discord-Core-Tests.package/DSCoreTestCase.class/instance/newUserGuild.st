@@ -1,3 +1,3 @@
 instance creation
 newUserGuild
-	^ DSUserGuild new
+	^ DSGuild new

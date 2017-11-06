@@ -8,7 +8,7 @@ newMeGuilds
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSUserGuild collectionFromJsonString: response contents api: self ]
+		ifTrue: [ DSGuild collectionFromJsonString: response contents api: self ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

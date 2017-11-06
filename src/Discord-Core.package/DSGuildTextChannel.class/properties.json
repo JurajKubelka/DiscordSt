@@ -15,7 +15,8 @@
 		"nsfw",
 		"lastMessageId",
 		"icon",
-		"parentId"
+		"parentId",
+		"messages"
 	],
 	"name" : "DSGuildTextChannel",
 	"type" : "normal"
