@@ -1,0 +1,3 @@
+json examples - guild
+jsonVoiceState
+	^ '{"guild_id":"157733188964188161","channel_id":"157733188964188160","user_id":"80351110224678912","session_id":"90326bd25d71d39b9ef95b299e3872ff","deaf":false,"mute":false,"self_deaf":false,"self_mute":true,"suppress":false}'
