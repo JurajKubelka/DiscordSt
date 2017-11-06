@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "DSNewChannel",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"lastMessageId",
+		"recipients"
+	],
+	"name" : "DSDirectMessageChannel",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+testing
+isGuildVoiceChannel
+	^ false

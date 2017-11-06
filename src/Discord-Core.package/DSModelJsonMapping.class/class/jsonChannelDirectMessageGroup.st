@@ -1,0 +1,3 @@
+json examples - channel
+jsonChannelDirectMessageGroup
+	^ '{"id":"319674150115710528","type":3,"name":"Some test channel","last_message_id":"3343820033257021450","recipients":[{"id":"82198898841029460","username":"test","discriminator":"9999","avatar":"33ecab261d4681afa4d85a04691c4a01"},{"id":"82198810841029460","username":"test2","discriminator":"9999","avatar":"33ecab261d4681afa4d85a10691c4a01"}],"icon":"an icon hash","owner_id":"82198810841029460"}'

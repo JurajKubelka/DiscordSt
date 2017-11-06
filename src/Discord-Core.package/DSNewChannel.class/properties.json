@@ -1,28 +1,11 @@
 {
-	"commentStamp" : "JurajKubelka 11/4/2017 11:39",
+	"commentStamp" : "",
 	"super" : "DSObject",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"id",
-		"type",
-		"guildId",
-		"position",
-		"permissionOverwrites",
-		"name",
-		"topic",
-		"nsfw",
-		"lastMessageId",
-		"bitrate",
-		"userLimit",
-		"recipients",
-		"icon",
-		"ownerId",
-		"applicationId",
-		"parentId"
-	],
+	"instvars" : [ ],
 	"name" : "DSNewChannel",
 	"type" : "normal"
 }

@@ -7,7 +7,7 @@ testAsAuthor
 	self assert: user email equals: 'contact@example.com'.
 	author := user asAuthor.
 	self deny: author == user.
-	self deny: author fields == user fields.
+	self deny: author fieldsDictionary == user fieldsDictionary.
 	self assert: author id equals: user id.
 	self assert: author name equals: user name.
 	self assert: author discriminator equals: user discriminator.
@@ -15,4 +15,4 @@ testAsAuthor
 	self assert: author mfaEnabled isNil.
 	self assert: author email isNil.
 	self assert: author verified isNil.
-	self assert: author fields size equals: 4
+	self assert: author fieldsDictionary size equals: 4

@@ -1,4 +1,4 @@
-mapping - basic
+mapping - channel
 channelTypeMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: DSChannelType customDo: [ :mapping |

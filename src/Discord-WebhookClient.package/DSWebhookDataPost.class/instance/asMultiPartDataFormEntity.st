@@ -2,7 +2,7 @@ converting
 asMultiPartDataFormEntity
 	| entity |
 	entity := ZnMultiPartFormDataEntity new.
-	self fields keysAndValuesDo: [ :key :value | | part |
+	self fieldsDictionary keysAndValuesDo: [ :key :value | | part |
 		part := ZnMimePart fieldName: key value: value.
 		entity addPart: part ].
 	self fileParts do: [ :part |

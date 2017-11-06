@@ -18,7 +18,7 @@ testSendTo2
 				entity:
 					(ZnEntity
 						text:
-							'[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "topic": "Channel topic", "position": 0, "last_message_id": "5678", "type": "text", "id": "1234", "is_private": false}]') ];
+							'[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "topic": "Channel topic", "position": 0, "last_message_id": "5678", "type": 0, "id": "1234", "is_private": false}]') ];
 		map: '/api/channels/1234/messages'
 			to: [ :request :response | 
 			self serverRequests add: request.

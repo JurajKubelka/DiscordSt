@@ -1,7 +1,7 @@
 mapping - channel
-channelMappingFor: aNeoJSONMapper
+unspecifiedChannelMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
-		for: DSNewChannel do: [ :mapping |
+		for: DSUnspecifiedChannel do: [ :mapping |
 	      (mapping mapAccessor: #id).
 			(mapping mapAccessor: #type) valueSchema: DSChannelType.
 			(mapping mapAccessor: #guildId to: #guild_id).

@@ -4,6 +4,6 @@ asDataPost
 	| data |
 	data := DSClientDataPost new.
 	fields ifNil: [ ^ data ].
-	self fields keysAndValuesDo: [ :key :value | 
+	self fieldsDictionary keysAndValuesDo: [ :key :value | 
 		data fieldsAt: key put: value ].
 	^ data

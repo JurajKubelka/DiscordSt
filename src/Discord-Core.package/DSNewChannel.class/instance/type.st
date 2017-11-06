@@ -1,3 +1,4 @@
 accessing
 type
-	^ type
+	<return: #DSChannelType>
+	^ self subclassResponsibility

@@ -1,3 +1,3 @@
 json examples - channel
 jsonCollectionOfChannelsOne
-	^ '[', self jsonChannelGuildText, ']'
+	^ '[', self jsonAllPropertiesChannel, ']'

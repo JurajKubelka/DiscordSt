@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "DSNewChannel",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"guildId",
+		"position",
+		"permissionOverwrites",
+		"name",
+		"nsfw",
+		"subordinateChannels"
+	],
+	"name" : "DSCategoryChannel",
+	"type" : "normal"
+}

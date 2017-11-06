@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "DSNewChannel",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"guildId",
+		"position",
+		"permissionOverwrites",
+		"name",
+		"bitrate",
+		"userLimit",
+		"parentId"
+	],
+	"name" : "DSGuildVoiceChannel",
+	"type" : "normal"
+}

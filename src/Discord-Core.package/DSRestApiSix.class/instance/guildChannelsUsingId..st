@@ -8,11 +8,13 @@ guildChannelsUsingId: guildId
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [
-			DSModelJsonMapping 
-				read: #CollectionOfChannels 
-				withMapping: #collectionOfChannelsMappingFor:
-				on: response contents readStream ]
+		ifTrue: [ | channels |
+			channels := DSModelJsonMapping 
+				read: #CollectionOfSortedChannels 
+				withMapping: #collectionOfSortedChannelsMappingFor:
+				on: response contents readStream.
+			channels do: [ :eachChannel | eachChannel restApi: self ].
+			channels ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]

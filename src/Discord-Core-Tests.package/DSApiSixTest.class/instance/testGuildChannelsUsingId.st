@@ -8,7 +8,7 @@ testGuildChannelsUsingId
 	api token: self tokenString.
 	self serverDelegate map: '/api/guilds/1234/channels' to: [ :request :response |
 		self serverRequests add: request.
-		response entity: (ZnEntity text: '[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "topic": "Channel topic", "position": 0, "last_message_id": "5678", "type": "text", "id": "1234", "is_private": false}]') ].
+		response entity: (ZnEntity text: '[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "topic": "Channel topic", "position": 0, "last_message_id": "5678", "type": 0, "id": "1234", "is_private": false}]') ].
 	channels := api guildChannelsUsingId: 1234.
 	self assert: channels notNil.
 	self assert: channels isCollection.

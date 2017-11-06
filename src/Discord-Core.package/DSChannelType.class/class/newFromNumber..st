@@ -6,4 +6,4 @@ newFromNumber: anInteger
 	| aClass |
 	aClass := self allChannelTypes
 		detect: [ :eachClass | eachClass typeNumber = anInteger ].
-	^ aClass new
+	^ aClass uniqueInstance
