@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "JurajKubelka 11/7/2017 09:50",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"roleIds",
+		"game",
+		"guildId",
+		"status"
+	],
+	"name" : "DSPresenceUpdate",
+	"type" : "normal"
+}
