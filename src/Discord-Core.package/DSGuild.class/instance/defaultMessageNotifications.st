@@ -1,0 +1,3 @@
+accessing
+defaultMessageNotifications
+	^ defaultMessageNotifications

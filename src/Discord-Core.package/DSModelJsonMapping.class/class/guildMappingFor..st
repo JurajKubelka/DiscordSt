@@ -5,12 +5,12 @@ guildMappingFor: aNeoJSONMapper
 		do: [ :mapping | 
 			mapping mapAccessor: #id.
 			mapping mapAccessor: #name.
-			mapping mapAccessor: #icon.
-			mapping mapAccessor: #splash.
+			mapping mapAccessor: #iconHash to: #icon.
+			mapping mapAccessor: #splashHash to: #splash.
 			mapping mapAccessor: #ownerId to: #owner_id.
 			mapping mapAccessor: #region.
 			mapping mapAccessor: #afkChannelId to: #afk_channel_id.
-			mapping mapAccessor: #afkTimeout to: #afk_timeout.
+			(mapping mapAccessor: #afkTimeout to: #afk_timeout) valueSchema: DateAndTime.
 			mapping mapAccessor: #embedEnabled to: #embed_enabled.
 			mapping mapAccessor: #embedChannelId to: #embed_channel_id.
 			mapping mapAccessor: #verificationLevel to: #verification_level.
@@ -26,10 +26,10 @@ guildMappingFor: aNeoJSONMapper
 			(mapping mapAccessor: #joinedAt to: #joined_at) valueSchema: DateAndTime.
 			mapping mapAccessor: #large.
 			mapping mapAccessor: #unavailable.
-			mapping mapAccessor: #memberCount to: #memberCount.
-			(mapping mapAccessor: #voiceStates to: #voice_statuses) valueSchema: #CollectionOfVoiceStates.
+			mapping mapAccessor: #memberCount to: #member_count.
+			(mapping mapAccessor: #voiceStates to: #voice_states) valueSchema: #CollectionOfVoiceStates.
 			(mapping mapAccessor: #members) valueSchema: #CollectionOfGuildMembers.
-			(mapping mapAccessor: #channels) valueSchema: #CollectionOfChannels.
+			(mapping mapAccessor: #channels) valueSchema: #CollectionOfSortedChannels.
 			(mapping mapAccessor: #presences) valueSchema: #CollectionOfPresenceUpdates ].
 	self 
 		collectionOfRolesMappingFor: aNeoJSONMapper;

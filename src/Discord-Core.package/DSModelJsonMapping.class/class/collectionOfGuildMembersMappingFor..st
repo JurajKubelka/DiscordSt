@@ -1,6 +1,6 @@
 mapping - guild
 collectionOfGuildMembersMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
-		for: #CollectionOfGuildMember customDo: [ :mapping |
+		for: #CollectionOfGuildMembers customDo: [ :mapping |
 			mapping listOfElementSchema: DSGuildMember ].
 	self guildMemberMappingFor: aNeoJSONMapper.

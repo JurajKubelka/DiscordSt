@@ -1,5 +1,4 @@
-public
+accessing
 channels
 	"Return channels registered to this server."
-
-	^ self restApi guildChannelsOf: self
+	^ channels ifNil: [ channels := self restApi guildChannelsOf: self ]

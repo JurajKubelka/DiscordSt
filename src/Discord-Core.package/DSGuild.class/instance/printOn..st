@@ -5,5 +5,3 @@ printOn: aStream
 	self name 
 		ifNotNil: [ :string | aStream << string asString ]
 		ifNil: [ aStream << '<nameless>' ].
-	self isOwner
-		ifTrue: [ aStream << ' (owner)' ].

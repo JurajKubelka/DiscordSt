@@ -8,7 +8,13 @@ newMeGuilds
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ DSGuild collectionFromJsonString: response contents api: self ]
+		ifTrue: [ | guilds |
+			guilds := DSModelJsonMapping 
+				read: #CollectionOfGuilds 
+				withMapping: #collectionOfGuildsMappingFor:
+				on: response contents readStream.
+			guilds do: [ :eachGuild | eachGuild restApi: self ].
+			guilds ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]
