@@ -4,5 +4,5 @@ read: jsonSchema withMapping: messageSymbol on: aReadStream
 	The messageSymbol variable is a message to configure mapping between JSON and objects."
 	| reader |
 	reader := (NeoJSONReader on: aReadStream).
-	DSModelJsonMapping perform: messageSymbol with: reader.
+	self perform: messageSymbol with: reader.
 	^ reader nextAs: jsonSchema

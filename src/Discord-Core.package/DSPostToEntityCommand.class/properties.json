@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"post",
+		"entity"
+	],
+	"name" : "DSPostToEntityCommand",
+	"type" : "normal"
+}

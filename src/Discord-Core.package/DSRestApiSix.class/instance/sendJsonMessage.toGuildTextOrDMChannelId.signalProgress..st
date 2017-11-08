@@ -13,7 +13,7 @@ sendJsonMessage: aDSClientJsonPost toGuildTextOrDMChannelId: channelId signalPro
 		post;
 		response.
 	^ response isSuccess
-		ifTrue: [ DSMessage fromJsonString: response contents api: self ]
+		ifTrue: [ self parseMessage: response ]
 		ifFalse: [ DSUnauthorizedOperationError new
 				response: response;
 				signal: response contents ]

@@ -11,11 +11,13 @@ messagesForChannel: channelId
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [
-			DSModelJsonMapping 
+		ifTrue: [ | messages |
+			messages := DSModelJsonMapping 
 				read: #CollectionOfMessages 
 				withMapping: #collectionOfMessagesMappingFor:
-				on: response contents readStream ]
+				on: response contents readStream.
+			messages do: [ :eachMessage | eachMessage restApi: self ].
+			messages ]
 		ifFalse: [ DSUnauthorizedOperationError new
 			response: response;
 			signal: response contents ]
