@@ -1,5 +1,5 @@
 tests
-testSort
+testSortedChannels
 	command := self classToTest new.
 	command 
 		channels: { 

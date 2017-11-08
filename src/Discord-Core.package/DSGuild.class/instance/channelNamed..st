@@ -1,4 +1,4 @@
 enumerating
 channelNamed: aString 
 	"Return channel of a particular name."
-	^ self channels detect: [ :eachChannel | eachChannel name = aString ]
+	^ self channelSatisfying: [ :eachChannel | eachChannel name = aString ]

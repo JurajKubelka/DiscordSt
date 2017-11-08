@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 11/8/2017 11:03",
+	"super" : "DSCoreCommandTest",
+	"category" : "Discord-Core-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"command"
+	],
+	"name" : "DSDetectChannelCommandTest",
+	"type" : "normal"
+}

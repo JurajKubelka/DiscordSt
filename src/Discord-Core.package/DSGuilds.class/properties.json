@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSUserGuilds",
+	"name" : "DSGuilds",
 	"type" : "normal"
 }
