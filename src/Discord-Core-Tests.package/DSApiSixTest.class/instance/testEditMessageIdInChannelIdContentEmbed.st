@@ -10,7 +10,7 @@ testEditMessageIdInChannelIdContentEmbed
 		api editMessageId: 'message-id' 
 		inChannelId: 'channel-id' 
 		content: self anyString 
-		embed: (self messageObjectWithEmbedsObject: api).
+		embed: (self messageObjectWithEmbedsObject: api) embeds first.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first method equals: #PATCH.
 	
