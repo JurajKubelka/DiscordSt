@@ -7,5 +7,4 @@ initializeUsingJsonObject: json
 		code: (json at: #op ifAbsent: nil);
 		eventData: (json at: #d ifAbsent: nil);
 		sequence: (json at: #s ifAbsent: nil);
-		eventName: (json at: #t ifAbsent: nil);
-		yourself
+		eventName: (json at: #t ifAbsent: nil)
