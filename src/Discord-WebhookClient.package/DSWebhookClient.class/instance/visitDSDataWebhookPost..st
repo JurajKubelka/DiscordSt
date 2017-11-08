@@ -1,8 +1,13 @@
 visiting
 visitDSDataWebhookPost: aDSDataWebhookPost 
+	| entity |
+	entity := DSPostToEntityCommand new
+		post: aDSDataWebhookPost;
+		execute;
+		entity.
 	^ ZnClient new
 		url: self url;
-		entity: (DSDataApiWriter toMultiPartDataFormEntity: aDSDataWebhookPost);
+		entity: entity;
 		ifFail: self ifFailBlock;
 		post;
 		response.

@@ -1,4 +1,4 @@
-as yet unclassified
+*Discord-Client
 visitDSClientJsonPost: aDSClientJsonPost 
 	self entity: (
 		ZnEntity text: (
