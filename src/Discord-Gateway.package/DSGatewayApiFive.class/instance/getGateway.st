@@ -12,7 +12,7 @@ getGateway
 		get;
 		response.
 	^ response isSuccess 
-		ifTrue: [ (self toJsonObject: response contents) at: 'url' ]
+		ifTrue: [ (NeoJSONObject fromString: response contents) at: 'url' ]
 		ifFalse: [ DSDiscordResponseError new
 				response: response;
 				signal: response contents ]

@@ -1,4 +1,4 @@
-converting
+*Discord-Gateway
 asDiscordJSONObject
 	"Convert object into JSON compatible structure."
 	| dictionary |
