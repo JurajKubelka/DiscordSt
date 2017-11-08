@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 6/9/2017 18:22",
 	"super" : "DSGatewayProcess",
-	"category" : "Discord-Gateway",
+	"category" : "Discord-Gateway-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

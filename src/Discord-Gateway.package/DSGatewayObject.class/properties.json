@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 6/8/2017 16:12",
 	"super" : "DSFieldObject",
-	"category" : "Discord-Gateway",
+	"category" : "Discord-Gateway-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
