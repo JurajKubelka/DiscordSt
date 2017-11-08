@@ -3,13 +3,17 @@ sendJsonMessage: aDSClientJsonPost toGuildTextOrDMChannelId: channelId signalPro
 	"Send a message to the particular text Guild or DM channel.
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 
-	| response url |
+	| response url entity |
 	url := self channelMessagesUrlForId: channelId.
+	entity := DSPostToEntityCommand new
+		post: aDSClientJsonPost;
+		execute;
+		entity.
+	entity contentType: ZnMimeType applicationJson.
 	response := self newZnClientAuthenticated
 		url: url;
 		signalProgress: aBoolean;
-		entity: (ZnEntity text: (DSJSONApiWriter toString: aDSClientJsonPost));
-		contentType: ZnMimeType applicationJson;
+		entity: entity;
 		post;
 		response.
 	^ response isSuccess
