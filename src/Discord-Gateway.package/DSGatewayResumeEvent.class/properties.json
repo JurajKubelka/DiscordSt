@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 16:34",
+	"super" : "DSGatewayEvent",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"token",
+		"sessionId",
+		"sequenceNumber"
+	],
+	"name" : "DSGatewayResumeEvent",
+	"type" : "normal"
+}

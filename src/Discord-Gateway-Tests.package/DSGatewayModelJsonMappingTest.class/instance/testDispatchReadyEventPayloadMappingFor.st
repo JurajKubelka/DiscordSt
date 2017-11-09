@@ -1,5 +1,5 @@
 tests - payload
-testPayloadMappingForReady
+testDispatchReadyEventPayloadMappingFor
 	| result jsonResult jsonString |
 	jsonString := self classToTest jsonReadyPayload.
 	result := self classToTest readPayload: jsonString.
