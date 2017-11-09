@@ -1,6 +1,6 @@
 instance creation
 testReadyEvent
-	payload := self gatewayPayloadClass fromJsonString: self readyEventMessageString.
+	payload := self gatewayPayloadClass fromJsonString: DSGatewayModelJsonMapping jsonReadyPayload.
 	self assert: payload isDispatch.
 	self assert: payload code equals: 0.
 	self assert: payload eventName equals: 'READY'.

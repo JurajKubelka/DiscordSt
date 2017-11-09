@@ -1,7 +1,7 @@
 tests-event handling
 testReadyEvent
 	websocketDelegate handler: [ :socket |
-		socket sendMessage: self readyEventMessageString ].
+		socket sendMessage: DSGatewayModelJsonMapping jsonReadyPayload ].
 	client announcer 
 		when: DSReadyAnnouncement 
 		do: [ :announcement | self serverRequests add: announcement. self signalServerSemaphore ]. 

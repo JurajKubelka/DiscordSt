@@ -8,7 +8,7 @@ testValueHelloEvent
 	receiver api: self newGatewayApi.
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	receiver api websocket: websocket.
-	receiver value: self helloPayloadString.
+	receiver value: DSGatewayModelJsonMapping jsonHelloPayload.
 	self assertServerSemaphore.
 	self assert: receiver api heartbeatInterval equals: 41250.
 	self assert: self serverRequests size equals: 1.

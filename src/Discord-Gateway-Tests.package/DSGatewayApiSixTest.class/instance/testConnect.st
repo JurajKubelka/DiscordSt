@@ -15,7 +15,7 @@ testConnect
 		webSocket sendMessage: DSGatewayModelJsonMapping jsonReadyPayload.
 		self serverRequests add: #finished.
 		self signalServerSemaphore ]) handleRequest: request ].
-	api := self newApi. 
+	api := self newGateway. 
 	api session token: self tokenString.
 	api apiUrl: self apiUrl.
 	api readyBlock: [ :msg | self serverRequests add: msg. self signalServerSemaphore ].
