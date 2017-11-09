@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 6/8/2017 16:13",
+	"super" : "DSGatewayObject",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayObsoletePayload",
+	"type" : "normal"
+}

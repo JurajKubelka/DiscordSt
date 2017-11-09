@@ -1,7 +1,7 @@
 accessing - messages
 identifyPayload
 	"Get OP 2 Identify object"
-	^ DSGatewayPayload new
+	^ DSGatewayObsoletePayload new
 		code: 2;
 		eventData: self identifyData;
 		yourself

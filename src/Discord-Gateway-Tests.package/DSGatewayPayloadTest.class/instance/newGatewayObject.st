@@ -1,3 +1,3 @@
 instance creation
 newGatewayObject
-	^ DSGatewayPayload new
+	^ DSGatewayObsoletePayload new

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSGatewayApiTest",
+	"category" : "Discord-Gateway-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayApiSixTest",
+	"type" : "normal"
+}

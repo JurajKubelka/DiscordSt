@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "JurajKubelka 6/21/2017 13:43",
-	"super" : "DSGatewayPayload",
+	"super" : "DSGatewayObsoletePayload",
 	"category" : "Discord-Gateway-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

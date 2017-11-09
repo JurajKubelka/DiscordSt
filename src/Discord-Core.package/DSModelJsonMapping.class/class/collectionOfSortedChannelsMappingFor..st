@@ -8,8 +8,11 @@ collectionOfSortedChannelsMappingFor: aNeoJSONMapper
 						channels: specifiedChannels;
 						execute;
 						sortedChannels ].
-			mapping writer: [ :jsonWriter :anObject |
-				self error: 'Currently not supported.'. 
-				jsonWriter nextPut: anObject ] ].
+			mapping writer: [ :jsonWriter :aCollection | | flattenedChannels |
+				flattenedChannels := DSFlattenChannelsCommand new 
+					channels: aCollection;
+					execute;
+					flattenedChannels.
+				jsonWriter nextPut: flattenedChannels ] ].
 	self 
 		collectionOfSpecifiedChannelsMappingFor: aNeoJSONMapper.

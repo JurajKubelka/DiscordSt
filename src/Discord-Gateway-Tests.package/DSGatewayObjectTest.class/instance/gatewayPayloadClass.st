@@ -1,3 +1,3 @@
 accessing
 gatewayPayloadClass
-	^ DSGatewayPayload
+	^ DSGatewayObsoletePayload

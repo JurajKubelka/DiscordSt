@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 13:12",
+	"super" : "Object",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"os",
+		"browser",
+		"device",
+		"referrer",
+		"referringDomain"
+	],
+	"name" : "DSGatewayIdentityProperties",
+	"type" : "normal"
+}

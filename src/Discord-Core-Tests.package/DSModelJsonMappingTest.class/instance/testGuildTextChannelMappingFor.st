@@ -13,6 +13,6 @@ testGuildTextChannelMappingFor
 	self assert: result nsfw.
 	self assert: result lastMessageId equals: '155117677105512449'.
 	self assert: result icon equals: '309350229021696111'.
-	self assert: result parentId equals: '399942396007890945'.
+	self assert: result parentId equals: '41771983423143939'.
 	jsonResult := self write: result mappedTo: #guildTextChannelMappingFor:.
 	self assert: jsonResult equals: jsonString.

@@ -1,6 +1,6 @@
 tests - guild
 testGuildMappingFor
-	| result jsonString |
+	| result jsonString jsonResult |
 	jsonString := self classToTest jsonGuild.
 	result := self read: jsonString as: DSGuild mappedTo: #guildMappingFor:.
 	self assert: result class equals: DSGuild.
@@ -34,9 +34,9 @@ testGuildMappingFor
 	self assert: result voiceStates first class equals: DSVoiceState.
 	self assert: result members class equals: Array.
 	self assert: result members first class equals: DSGuildMember.
-	self assert: result channels class equals: Array.
+	self assert: result channels class equals: DSChannels.
 	self assert: result channels first class equals: DSCategoryChannel.
 	self assert: result presences class equals: Array.
 	self assert: result presences first class equals: DSPresenceUpdate.
-	"jsonResult := self write: result mappedTo: #guildMappingFor:.
-	self assert: jsonResult equals: jsonString."
+	jsonResult := self write: result mappedTo: #guildMappingFor:.
+	self assert: jsonResult equals: jsonString.

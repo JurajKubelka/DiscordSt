@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "JurajKubelka 6/13/2017 15:04",
+	"commentStamp" : "JurajKubelka 11/9/2017 10:27",
 	"super" : "DSGatewayPayload",
 	"category" : "Discord-Gateway-Model",
 	"classinstvars" : [ ],

@@ -5,9 +5,9 @@ identifyData
 	^ Dictionary new 
 			at: #token put: self token;
 			at: #properties put: (Dictionary new
-				at: '$os' put: Smalltalk os family;
-				at: '$browser' put: DSApi userAgent;
-				at: '$device' put: DSApi userAgent;
+				at: '$os' put: DSConstants osFamily;
+				at: '$browser' put: DSConstants userAgent;
+				at: '$device' put: DSConstants deviceVersion;
 				at: '$referrer' put: '';
 				at: '$referring_domain' put: '';
 				yourself);

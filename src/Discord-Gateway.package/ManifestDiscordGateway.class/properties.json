@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "PackageManifest",
-	"category" : "Discord-Gateway-Manifest",
+	"category" : "Discord-Gateway",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

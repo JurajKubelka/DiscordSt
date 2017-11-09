@@ -1,12 +1,10 @@
 {
-	"commentStamp" : "JurajKubelka 6/13/2017 15:01",
+	"commentStamp" : "JurajKubelka 11/9/2017 16:21",
 	"super" : "DSGatewayPayload",
 	"category" : "Discord-Gateway-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
-		"GatewayEvents"
-	],
+	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "DSGatewayDispatchPayload",
 	"type" : "normal"

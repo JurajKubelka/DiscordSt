@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 10:21",
+	"super" : "DSGatewayEvent",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"heartbeatInterval",
+		"traces"
+	],
+	"name" : "DSGatewayHelloEvent",
+	"type" : "normal"
+}

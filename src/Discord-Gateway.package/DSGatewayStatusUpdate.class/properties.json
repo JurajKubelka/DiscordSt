@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 11:27",
+	"super" : "Object",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"since",
+		"game",
+		"status",
+		"awayFromKeyboard"
+	],
+	"name" : "DSGatewayStatusUpdate",
+	"type" : "normal"
+}

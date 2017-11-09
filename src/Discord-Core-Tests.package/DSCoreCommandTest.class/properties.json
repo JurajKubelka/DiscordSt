@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"command"
+	],
 	"name" : "DSCoreCommandTest",
 	"type" : "normal"
 }

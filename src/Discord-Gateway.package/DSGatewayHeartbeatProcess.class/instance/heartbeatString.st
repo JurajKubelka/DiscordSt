@@ -1,3 +1,3 @@
 accessing
 heartbeatString
-	^ (DSGatewayPayload newHeartbeat: self sequenceNumber) asDiscordJSONString
+	^ (DSGatewayObsoletePayload newHeartbeat: self sequenceNumber) asDiscordJSONString

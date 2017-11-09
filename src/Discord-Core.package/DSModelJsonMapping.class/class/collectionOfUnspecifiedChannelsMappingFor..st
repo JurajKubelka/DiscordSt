@@ -2,5 +2,5 @@ mapping - channel
 collectionOfUnspecifiedChannelsMappingFor: aNeoJSONMapper
 	aNeoJSONMapper
 		for: #CollectionOfUnspecifiedChannels customDo: [ :mapping |
-			mapping listOfElementSchema: DSUnspecifiedChannel ].
+			mapping listOfType: DSChannels andElementSchema: DSUnspecifiedChannel ].
 	self unspecifiedChannelMappingFor: aNeoJSONMapper.
