@@ -5,7 +5,7 @@ testValueHelloEvent
 		self serverRequests add: socket readMessage.
 		self signalServerSemaphore. ]).
 	receiver := self newMessageReceiver.
-	receiver api: self newGatewayApi.
+	receiver api: self newGateway.
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	receiver api websocket: websocket.
 	receiver value: DSGatewayModelJsonMapping jsonHelloPayload.

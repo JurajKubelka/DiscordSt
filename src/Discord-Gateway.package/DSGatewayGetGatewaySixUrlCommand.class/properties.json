@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayCommand",
+	"category" : "Discord-Gateway-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"websocketUrl",
+		"restApiUrl"
+	],
+	"name" : "DSGatewayGetGatewaySixUrlCommand",
+	"type" : "normal"
+}

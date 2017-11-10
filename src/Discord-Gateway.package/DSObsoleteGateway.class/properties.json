@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 5/9/2017 11:41",
+	"super" : "Object",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cache",
+		"session"
+	],
+	"name" : "DSObsoleteGateway",
+	"type" : "normal"
+}

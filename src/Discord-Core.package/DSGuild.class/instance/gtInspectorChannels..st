@@ -4,7 +4,7 @@ gtInspectorChannels: composite
 	^ composite fastTree
 		title: [ 'Channels' translated ];
 		display: [ self channels ];
-		when: [ self isAuthenticated ];
+		when: [ self hasChannels or: [ self isAuthenticated ] ];
 		children: [ :item | item children ];
 		expandedUntil: 1;
 		yourself

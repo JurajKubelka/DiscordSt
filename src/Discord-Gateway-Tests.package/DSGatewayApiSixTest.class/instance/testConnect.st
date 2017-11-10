@@ -17,8 +17,9 @@ testConnect
 		self signalServerSemaphore ]) handleRequest: request ].
 	api := self newGateway. 
 	api session token: self tokenString.
-	api apiUrl: self apiUrl.
-	api readyBlock: [ :msg | self serverRequests add: msg. self signalServerSemaphore ].
+	api restApiUrl: self apiUrl.
+	api when: DSGatewayReadyAnnouncement do: [ :ann | 
+		self serverRequests add: ann. self signalServerSemaphore ].
 	self defaultConnectionTimeoutDuring: [ api connect ].
 	self assertServerSemaphore.
 	self assertServerSemaphore.
