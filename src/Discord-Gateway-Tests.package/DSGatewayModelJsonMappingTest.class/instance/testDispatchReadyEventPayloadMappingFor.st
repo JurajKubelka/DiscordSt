@@ -8,5 +8,5 @@ testDispatchReadyEventPayloadMappingFor
 	self assert: result eventData class equals: DSGatewayReadyEvent.
 	self assert: result sequenceNumber equals: '2'.
 	self assert: result eventName equals: 'READY'.
-	jsonResult := self write: result mappedTo: #payloadMappingFor:.
+	jsonResult := self writePayload: result.
 	self assert: jsonResult equals: jsonString.

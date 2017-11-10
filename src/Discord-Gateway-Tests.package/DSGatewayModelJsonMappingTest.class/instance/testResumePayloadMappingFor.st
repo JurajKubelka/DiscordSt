@@ -8,5 +8,5 @@ testResumePayloadMappingFor
 	self assert: result eventData class equals: DSGatewayResumeEvent.
 	self assert: result sequenceNumber isNil.
 	self assert: result eventName isNil.
-	jsonResult := self write: result mappedTo: #payloadMappingFor:.
+	jsonResult := self writePayload: result.
 	self assert: jsonResult equals: jsonString.
