@@ -1,7 +1,6 @@
 visiting
-visitDSGatewayHelloPayload: payload 
-	self heartbeatInterval: payload heartbeatInterval.
-	self hasSessionIdAndSequenceNumber
+visitDSGatewayHelloPayload: payload
+	self hasSessionId
 		ifFalse: [ self sendIdentifyCode ]
 		ifTrue: [ self sendResumeCode ].
-	self startHeartbeatProcess.
+	self startHeartbeatProcessWithInterval: payload heartbeatInterval.

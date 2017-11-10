@@ -1,15 +1,15 @@
 {
-	"commentStamp" : "JurajKubelka 6/9/2017 17:54",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Discord-Gateway-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"websocket",
 		"mutex",
 		"process",
-		"canDoNextCycle"
+		"canDoNextCycle",
+		"websocket"
 	],
 	"name" : "DSGatewayProcess",
 	"type" : "normal"

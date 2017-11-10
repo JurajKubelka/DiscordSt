@@ -4,4 +4,5 @@ payloadMappingFor: aNeoJSONMapper
 		helloPayloadMappingFor: aNeoJSONMapper;
 		identityPayloadMappingFor: aNeoJSONMapper;
 		dispatchReadyEventPayloadMappingFor: aNeoJSONMapper;
-		resumePayloadMappingFor: aNeoJSONMapper
+		resumePayloadMappingFor: aNeoJSONMapper;
+		heartbeatPayloadMappingFor: aNeoJSONMapper

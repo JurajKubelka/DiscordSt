@@ -1,3 +1,3 @@
-accessing
+private - accessing
 sequenceNumber: anInteger 
-	self api ifNotNil: [ :anApi | anApi sequenceNumber: anInteger ]
+	self heartbeatProcess sequenceNumber: anInteger

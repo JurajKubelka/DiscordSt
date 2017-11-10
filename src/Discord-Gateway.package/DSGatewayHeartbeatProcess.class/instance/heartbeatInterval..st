@@ -1,3 +1,3 @@
 accessing
-heartbeatInterval: anObject
-	heartbeatInterval := anObject
+heartbeatInterval: anInteger
+	heartbeatInterval := anInteger

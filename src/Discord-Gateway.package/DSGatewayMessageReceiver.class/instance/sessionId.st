@@ -1,3 +1,4 @@
-accessing
+private - accessing
 sessionId
-	^ self api ifNotNil: [ :anApi | anApi sessionId ]
+	<return: #String>
+	^ sessionId

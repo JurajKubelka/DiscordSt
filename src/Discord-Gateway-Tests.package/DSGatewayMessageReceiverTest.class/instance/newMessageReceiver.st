@@ -1,3 +1,3 @@
 instance creation
 newMessageReceiver
-	^ DSGatewayMessageReceiver new
+	^ DSGatewayObsoleteMessageReceiver new

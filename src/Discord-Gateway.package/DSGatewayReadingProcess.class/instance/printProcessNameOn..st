@@ -1,5 +1,5 @@
 printing
 printProcessNameOn: aStream
 	aStream
-		nextPutAll: self className.
-	aStream nextPutAll: ' reading process'
+		nextPutAll: self className;
+		nextPutAll: ' reading process'

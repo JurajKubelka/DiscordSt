@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayProcess",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"receiver"
+	],
+	"name" : "DSGatewayReceiverProcess",
+	"type" : "normal"
+}

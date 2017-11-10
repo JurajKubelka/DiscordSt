@@ -1,3 +1,5 @@
 accessing
 heartbeatString
-	^ (DSGatewayObsoletePayload newHeartbeat: self sequenceNumber) asDiscordJSONString
+	"Return the JSON representation of the heartbeat payload."
+	<return: #String>
+	^ mutex critical: [ DSGatewayModelJsonMapping writePayload: heartbeatPayload ]

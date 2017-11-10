@@ -1,3 +1,3 @@
 instance creation
 newGatewayProcess
-	^ DSGatewayHeartbeatProcess new
+	^ DSGatewayObsoleteHeartbeatProcess new

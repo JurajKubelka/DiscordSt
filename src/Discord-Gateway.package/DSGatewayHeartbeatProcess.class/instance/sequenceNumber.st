@@ -1,4 +1,4 @@
 accessing
 sequenceNumber
-	"Get sequence number that will be sent in the next Heartbeat message."
-	^ sequenceNumber
+	"Return a sequence number (a part of the payload event data) for the next payload."
+	^ mutex critical: [ heartbeatPayload eventData ]

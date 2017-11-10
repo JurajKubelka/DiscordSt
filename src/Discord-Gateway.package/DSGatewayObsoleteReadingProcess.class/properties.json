@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 6/9/2017 18:24",
+	"super" : "DSGatewayObsoleteProcess",
+	"category" : "Discord-Gateway-Obsolete",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"receiver"
+	],
+	"name" : "DSGatewayObsoleteReadingProcess",
+	"type" : "normal"
+}

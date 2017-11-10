@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "JurajKubelka 6/9/2017 18:22",
+	"commentStamp" : "",
 	"super" : "DSGatewayProcess",
 	"category" : "Discord-Gateway-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"heartbeatPayload",
 		"heartbeatInterval",
-		"delay",
-		"sequenceNumber"
+		"delay"
 	],
 	"name" : "DSGatewayHeartbeatProcess",
 	"type" : "normal"

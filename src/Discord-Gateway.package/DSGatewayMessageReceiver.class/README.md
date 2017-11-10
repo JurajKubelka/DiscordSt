@@ -7,8 +7,9 @@ DSGatewayReadingProcess used me and send me all the received messages.
 Public API and Key Messages
 
 - value: - receive the Discord Gateway message and process it
-- api: - set the Discord Gateway API object.
+- websocket: - set the Discord Gateway WebSocket object.
+
 Internal Representation and Key Implementation Points.
 
     Instance Variables
-	api:		<DSGatewayApi>
+	websocket:		<DSGatewayWebSocket>

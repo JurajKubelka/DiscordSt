@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "JurajKubelka 6/9/2017 18:24",
+	"commentStamp" : "",
 	"super" : "DSGatewayProcess",
 	"category" : "Discord-Gateway-API",
 	"classinstvars" : [ ],

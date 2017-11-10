@@ -1,12 +1,15 @@
 {
-	"commentStamp" : "JurajKubelka 6/12/2017 11:31",
+	"commentStamp" : "JurajKubelka 11/10/2017 15:39",
 	"super" : "Object",
 	"category" : "Discord-Gateway-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"api"
+		"session",
+		"websocket",
+		"heartbeatProcess",
+		"sessionId"
 	],
 	"name" : "DSGatewayMessageReceiver",
 	"type" : "normal"
