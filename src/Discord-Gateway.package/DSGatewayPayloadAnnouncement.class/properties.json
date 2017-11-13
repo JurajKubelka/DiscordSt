@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "DSGatewayPayloadAnnouncement",
+	"super" : "DSGatewayAnnouncement",
 	"category" : "Discord-Gateway-Announcements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DSGatewayReadyAnnouncement",
+	"instvars" : [
+		"payload"
+	],
+	"name" : "DSGatewayPayloadAnnouncement",
 	"type" : "normal"
 }

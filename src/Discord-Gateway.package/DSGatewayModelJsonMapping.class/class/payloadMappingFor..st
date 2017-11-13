@@ -7,4 +7,5 @@ payloadMappingFor: aNeoJSONMapper
 		resumePayloadMappingFor: aNeoJSONMapper;
 		heartbeatPayloadMappingFor: aNeoJSONMapper;
 		invalidSessionPayloadMappingFor: aNeoJSONMapper;
-		heartbeatAckPayloadMappingFor: aNeoJSONMapper.
+		heartbeatAckPayloadMappingFor: aNeoJSONMapper;
+		messageCreatePayloadMappingFor: aNeoJSONMapper.
