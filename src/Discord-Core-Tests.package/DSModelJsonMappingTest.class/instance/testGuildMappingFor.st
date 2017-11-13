@@ -11,7 +11,7 @@ testGuildMappingFor
 	self assert: result ownerId equals: '41771983763143932'.
 	self assert: result region equals: 'voice_region.id'.
 	self assert: result afkChannelId equals: '41771983423143920'.
-	self assert: result afkTimeout equals: '2017-11-02T15:21:38.579+00:00' asDateAndTime.
+	self assert: result afkTimeout equals: 300 seconds.
 	self assert: result embedEnabled.
 	self assert: result embedChannelId equals: '41771983423143921'.
 	self assert: result verificationLevel equals: 0.

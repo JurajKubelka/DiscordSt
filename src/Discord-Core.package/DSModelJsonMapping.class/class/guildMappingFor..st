@@ -10,7 +10,7 @@ guildMappingFor: aNeoJSONMapper
 			mapping mapAccessor: #ownerId to: #owner_id.
 			mapping mapAccessor: #region.
 			mapping mapAccessor: #afkChannelId to: #afk_channel_id.
-			(mapping mapAccessor: #afkTimeout to: #afk_timeout) valueSchema: DateAndTime.
+			(mapping mapAccessor: #afkTimeout to: #afk_timeout) valueSchema: #DurationInSeconds.
 			mapping mapAccessor: #embedEnabled to: #embed_enabled.
 			mapping mapAccessor: #embedChannelId to: #embed_channel_id.
 			mapping mapAccessor: #verificationLevel to: #verification_level.
@@ -32,6 +32,7 @@ guildMappingFor: aNeoJSONMapper
 			(mapping mapAccessor: #channels) valueSchema: #CollectionOfSortedChannels.
 			(mapping mapAccessor: #presences) valueSchema: #CollectionOfPresenceUpdates ].
 	self 
+		durationInSecondsMappingFor: aNeoJSONMapper;
 		collectionOfRolesMappingFor: aNeoJSONMapper;
 		collectionOfEmojisMappingFor: aNeoJSONMapper;
 		dateAndTimeMappingFor: aNeoJSONMapper;

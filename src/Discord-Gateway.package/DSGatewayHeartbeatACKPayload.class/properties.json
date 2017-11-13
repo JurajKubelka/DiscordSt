@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "JurajKubelka 6/13/2017 15:03",
-	"super" : "DSGatewayObsoletePayload",
-	"category" : "Discord-Gateway-Obsolete",
+	"commentStamp" : "JurajKubelka 11/13/2017 12:04",
+	"super" : "DSGatewayPayload",
+	"category" : "Discord-Gateway-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSGatewayHeartbeatACKPayload",
+	"name" : "DSGatewayHeartbeatAckPayload",
 	"type" : "normal"
 }

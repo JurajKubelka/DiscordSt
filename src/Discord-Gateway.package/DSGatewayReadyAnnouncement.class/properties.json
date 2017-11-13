@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"payload"
+	],
 	"name" : "DSGatewayReadyAnnouncement",
 	"type" : "normal"
 }

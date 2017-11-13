@@ -7,7 +7,8 @@ initialize
 	receiver := DSGatewayMessageReceiver new.
 	receiver
 		websocket: self websocket;
-		heartbeatProcess: heartbeatProcess.
+		heartbeatProcess: heartbeatProcess;
+		announcer: self announcer.
 	readingProcess 
 		websocket: self websocket;
 		receiver: receiver.

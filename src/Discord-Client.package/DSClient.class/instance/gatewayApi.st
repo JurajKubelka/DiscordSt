@@ -4,8 +4,9 @@ gatewayApi
 
 	^ gateway
 		ifNil: [ gateway := self newGateway
-				session: self restApi session;
-				readyBlock: [ :msg | self readyEvent: msg ];
+				session: self session;
+				announcer: self announcer;
+				"readyBlock: [ :msg | self readyEvent: msg ];
 				messageCreateBlock: [ :msg | self messageCreateEvent: msg ];
-				messageUpdateBlock: [ :msg | self messageUpdateEvent: msg ];
+				messageUpdateBlock: [ :msg | self messageUpdateEvent: msg ];"
 				yourself ]

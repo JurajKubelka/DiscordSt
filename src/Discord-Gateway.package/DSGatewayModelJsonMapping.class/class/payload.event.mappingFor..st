@@ -4,6 +4,7 @@ payload: payloadSchema event: eventSchema mappingFor: aNeoJSONMapper
 	The event schema can be nil."
 	aNeoJSONMapper
 		for: payloadSchema do: [ :mapping | | propertyMapping |
+			mapping allowNil.
 			mapping 
 				mapProperty: #op 
 				getter: [ :object | object code ] 

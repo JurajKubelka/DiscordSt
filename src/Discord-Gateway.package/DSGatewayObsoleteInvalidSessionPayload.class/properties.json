@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 6/21/2017 13:43",
+	"super" : "DSGatewayObsoletePayload",
+	"category" : "Discord-Gateway-Obsolete",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayObsoleteInvalidSessionPayload",
+	"type" : "normal"
+}

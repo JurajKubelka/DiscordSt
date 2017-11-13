@@ -1,3 +1,3 @@
 visiting
 accept: aVisitor 
-	^ aVisitor visitDSGatewayHeartbeatACKPayload: self
+	^ aVisitor visitDSGatewayHeartbeatAckPayload: self

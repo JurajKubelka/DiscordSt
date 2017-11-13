@@ -5,4 +5,6 @@ payloadMappingFor: aNeoJSONMapper
 		identityPayloadMappingFor: aNeoJSONMapper;
 		dispatchReadyEventPayloadMappingFor: aNeoJSONMapper;
 		resumePayloadMappingFor: aNeoJSONMapper;
-		heartbeatPayloadMappingFor: aNeoJSONMapper
+		heartbeatPayloadMappingFor: aNeoJSONMapper;
+		invalidSessionPayloadMappingFor: aNeoJSONMapper;
+		heartbeatAckPayloadMappingFor: aNeoJSONMapper.
