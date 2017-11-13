@@ -21,4 +21,4 @@ testStart
 	self assert: self serverRequests size equals: 7.
 	self 
 		assert: self serverRequests asArray 
-		equals: #( #readOne '{"op":1,"d":null}' #readTwo '{"op":1,"d":null}' #readThree '{"op":1,"d":null}' #finished ).
+		equals: #( #readOne '{"op":1}' #readTwo '{"op":1}' #readThree '{"op":1}' #finished ).

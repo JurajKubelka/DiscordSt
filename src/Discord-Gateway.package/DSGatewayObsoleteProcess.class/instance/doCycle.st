@@ -1,3 +1,0 @@
-private
-doCycle
-	self subclassResponsibility

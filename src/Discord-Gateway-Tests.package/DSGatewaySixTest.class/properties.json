@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "JurajKubelka 5/9/2017 11:48",
-	"super" : "DSCoreTestCase",
+	"commentStamp" : "<historical>",
+	"super" : "DSGatewayTest",
 	"category" : "Discord-Gateway-Tests-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSGatewayTestCase",
+	"name" : "DSGatewaySixTest",
 	"type" : "normal"
 }

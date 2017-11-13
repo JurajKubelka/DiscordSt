@@ -1,8 +1,7 @@
 tests
 testValueReadyEvent
-	receiver := self newMessageReceiver.
-	receiver api: self newGateway.
-	receiver value: DSGatewayModelJsonMapping jsonReadyPayload.
-	self assert: receiver api sequenceNumber equals: 1.
-	self assert: receiver api sessionId equals: 'e22975'.
+	receiver := self newMessageReceiverInitialized.
+	receiver value: self gatewayModelJsonMapping jsonReadyPayload.
+	self assert: receiver sequenceNumber equals: 2.
+	self assert: receiver sessionId equals: 21.
 	

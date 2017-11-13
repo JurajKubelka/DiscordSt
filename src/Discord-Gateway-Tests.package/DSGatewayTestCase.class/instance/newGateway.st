@@ -1,3 +1,3 @@
 instance creation
 newGateway
-	^ DSObsoleteGateway defaultClass new
+	^ DSGateway defaultClass new

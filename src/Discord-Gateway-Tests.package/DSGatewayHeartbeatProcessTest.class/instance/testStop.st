@@ -15,7 +15,7 @@ testStop
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
-	process heartbeatInterval: 0.
+	process heartbeatInterval: 10.
 	process start.
 	self assertServerSemaphore.
 	process stop.
@@ -24,5 +24,5 @@ testStop
 	self assert: self serverRequests size equals: 4.
 	self 
 		assert: self serverRequests asArray 
-		equals: #( #server '{"op":1,"d":null}' #waiting #finished ).
+		equals: #( #server '{"op":1}' #waiting #finished ).
 	self deny: process canDoNextCycle.

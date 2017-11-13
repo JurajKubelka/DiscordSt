@@ -1,3 +1,0 @@
-testing
-isReadyPayload
-	^ false

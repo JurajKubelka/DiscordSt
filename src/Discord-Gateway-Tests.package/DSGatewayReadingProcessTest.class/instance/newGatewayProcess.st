@@ -1,3 +1,3 @@
 instance creation
 newGatewayProcess
-	^ DSGatewayObsoleteReadingProcess new.
+	^ DSGatewayReadingProcess new.

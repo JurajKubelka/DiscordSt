@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "DSGatewayTestCase",
-	"category" : "Discord-Gateway-Tests",
+	"category" : "Discord-Gateway-Tests-API",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

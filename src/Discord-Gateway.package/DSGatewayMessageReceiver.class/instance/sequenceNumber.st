@@ -1,4 +1,4 @@
 private - accessing
 sequenceNumber
 	<return: #Integer>
-	self heartbeatProcess sequenceNumber
+	^ self heartbeatProcess sequenceNumber
