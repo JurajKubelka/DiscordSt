@@ -8,4 +8,6 @@ payloadMappingFor: aNeoJSONMapper
 		heartbeatPayloadMappingFor: aNeoJSONMapper;
 		invalidSessionPayloadMappingFor: aNeoJSONMapper;
 		heartbeatAckPayloadMappingFor: aNeoJSONMapper;
-		messageCreatePayloadMappingFor: aNeoJSONMapper.
+		messageCreatePayloadMappingFor: aNeoJSONMapper;
+		presenceUpdatePayloadMappingFor: aNeoJSONMapper;
+		messageUpdatePayloadMappingFor: aNeoJSONMapper.
