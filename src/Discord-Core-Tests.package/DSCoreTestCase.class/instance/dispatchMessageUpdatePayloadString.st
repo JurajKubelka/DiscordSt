@@ -1,3 +1,0 @@
-accessing - payloads
-dispatchMessageUpdatePayloadString
-	^ '{"op":0,"d":{"mention_roles":[],"channel_id":"5930","mentions":[],"edited_timestamp":"2017-06-13T09:13:24.317681+00:00","mention_everyone":false,"pinned":false,"nonce":null,"id":"36576","timestamp":"2017-06-13T09:00:50.488000+00:00","embeds":[],"attachments":[],"type":0,"content":"message content","tts":false,"author":{"username":"user one","avatar":"a3f4ead","discriminator":"42","id":"8480"}},"s":7,"t":"MESSAGE_UPDATE"}'

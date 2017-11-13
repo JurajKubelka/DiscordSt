@@ -24,6 +24,8 @@ baseline: spec
 					repository: 'github://pharo-graphics/Brick/src';
 					loads: #development ];
 
+			package: #'Discord-Announcements';
+
 			package: #'Discord-Core';
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
@@ -34,12 +36,12 @@ baseline: spec
 				spec requires: #( #'Discord-WebhookClient' ). ];
 
 			package: #'Discord-Client' with: [
-				spec requires: #( #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
+				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
 
 			package: #'Discord-Gateway' with: [
-				spec requires: #( #'Discord-Core' #'ZincHTTPComponents' ). ];
+				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'ZincHTTPComponents' ). ];
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
