@@ -6,6 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"url",
+		"proxyUrl",
+		"height",
+		"width",
 		"data"
 	],
 	"name" : "DSEmbedImage",

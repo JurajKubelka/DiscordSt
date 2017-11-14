@@ -1,3 +1,3 @@
 accessing
-timestamp: aDateAndTime
-	^ self fieldsAt: 'timestamp' put: aDateAndTime
+timestamp: anObject
+	timestamp := anObject

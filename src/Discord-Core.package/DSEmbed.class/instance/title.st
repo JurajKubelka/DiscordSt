@@ -1,3 +1,3 @@
 accessing
 title
-	^ self fieldsAt: 'title'
+	^ title

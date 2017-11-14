@@ -1,3 +1,3 @@
 accessing
-type: aString
-	^ self fieldsAt: 'type' put: aString
+type: anObject
+	type := anObject

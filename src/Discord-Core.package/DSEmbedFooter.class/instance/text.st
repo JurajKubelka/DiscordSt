@@ -1,3 +1,3 @@
 accessing
 text
-	^ self fieldsAt: 'text'
+	^ text

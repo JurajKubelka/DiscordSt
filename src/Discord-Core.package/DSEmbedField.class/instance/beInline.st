@@ -1,3 +1,3 @@
 protocol
 beInline
-	^ self fieldsAt: 'inline' put: true
+	^ self isInline: true

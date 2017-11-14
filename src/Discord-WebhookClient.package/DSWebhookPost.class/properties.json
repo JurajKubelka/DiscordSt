@@ -1,11 +1,17 @@
 {
-	"commentStamp" : "JurajKubelka 5/8/2017 10:54",
+	"commentStamp" : "JurajKubelka 11/14/2017 09:56",
 	"super" : "DSObject",
 	"category" : "Discord-WebhookClient",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"content",
+		"username",
+		"avatarUrl",
+		"isTextToSpeech",
+		"embeds"
+	],
 	"name" : "DSWebhookPost",
 	"type" : "normal"
 }

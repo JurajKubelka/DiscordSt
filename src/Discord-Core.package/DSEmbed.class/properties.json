@@ -5,7 +5,21 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"title",
+		"type",
+		"description",
+		"url",
+		"timestamp",
+		"color",
+		"footer",
+		"image",
+		"thumbnail",
+		"video",
+		"provider",
+		"author",
+		"fields"
+	],
 	"name" : "DSEmbed",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 accessing
-image: aString
-	^ self fieldsAt: 'image' put: aString
+image: anObject
+	image := anObject

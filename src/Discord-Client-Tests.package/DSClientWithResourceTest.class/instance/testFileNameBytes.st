@@ -7,7 +7,7 @@ testFileNameBytes
 	response := self client message
 		content: content;
 		fileName: 'random-image.jpg' 
-		bytes: (ZnEasy get: 'http://lorempixel.com/400/200') contents;
+		bytes: (ZnEasy get: 'http://lorempixel.com/100/50') contents;
 		sendTo: channel.
 	self assert: response class equals: DSMessage.
 	self assert: response content equals: content.

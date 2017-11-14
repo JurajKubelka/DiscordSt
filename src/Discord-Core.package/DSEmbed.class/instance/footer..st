@@ -1,3 +1,3 @@
 accessing
-footer: aDSEmbedFooterObject 
-	^ self fieldsAt: 'footer' put: aDSEmbedFooterObject
+footer: anObject
+	footer := anObject

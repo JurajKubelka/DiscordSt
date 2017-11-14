@@ -3,7 +3,7 @@ asAuthor
 	"Return a copy with a basic information, necessary to identify a message author."
 	^ self class new
 		id: self id;
-		avatar: self avatar;
+		avatarHash: self avatarHash;
 		discriminator: self discriminator;
 		username: self username;
 		yourself

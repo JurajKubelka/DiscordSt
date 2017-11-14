@@ -9,6 +9,6 @@ sendObjectSerializedWithFuel
 		with: [ :aClient | aClient message
 			content: 'This message includes a serialized object using FUEL';
 			fileName: 'object.fuel'
-			fuelObject: (DSFieldObject new fieldsAt: 'keyOne' put: Object new; yourself)";
+			fuelObject: 'http://books.pharo.org' asZnUrl";
 			sendTo: [ :servers | servers first general ]" ];
 		yourself

@@ -1,3 +1,3 @@
 accessing
 thumbnail
-	^ self fieldsAt: 'thumbnail'
+	^ thumbnail

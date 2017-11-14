@@ -1,3 +1,3 @@
 accessing
 embeds
-	^ self fieldsAt: 'embeds' ifAbsentPut: [ OrderedCollection new ]
+	^ embeds ifNil: [ embeds := OrderedCollection new ]

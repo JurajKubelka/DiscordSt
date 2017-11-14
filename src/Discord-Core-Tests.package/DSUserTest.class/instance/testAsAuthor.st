@@ -1,18 +1,15 @@
 tests-converting
 testAsAuthor
 	| author |
-	user := DSUser
-		fromJsonString: DSTestHelper fullUserJSONString
-		api: self newApi.
-	self assert: user email equals: 'contact@example.com'.
+	user := self coreModelJsonMapping read: DSUser withMapping: #userMappingFor: on: self coreModelJsonMapping jsonUser readStream.
+	user restApi: self newApi.
+	self assert: user email equals: 'nelly@discordapp.com'.
 	author := user asAuthor.
 	self deny: author == user.
-	self deny: author fieldsDictionary == user fieldsDictionary.
 	self assert: author id equals: user id.
 	self assert: author name equals: user name.
 	self assert: author discriminator equals: user discriminator.
-	self assert: author avatar equals: user avatar.
-	self assert: author mfaEnabled isNil.
+	self assert: author avatarHash equals: user avatarHash.
+	self assert: author isMfaEnabled isNil.
 	self assert: author email isNil.
-	self assert: author verified isNil.
-	self assert: author fieldsDictionary size equals: 4
+	self deny: author isVerified.

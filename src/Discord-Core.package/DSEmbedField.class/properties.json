@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"name",
+		"value",
+		"isInline"
+	],
 	"name" : "DSEmbedField",
 	"type" : "normal"
 }

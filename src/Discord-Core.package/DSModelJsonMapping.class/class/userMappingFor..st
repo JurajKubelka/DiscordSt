@@ -5,8 +5,8 @@ userMappingFor: aNeoJSONMapper
 	      mapping mapAccessor: #id.
 	      mapping mapAccessor: #username.
 	      mapping mapAccessor: #discriminator.
-	      mapping mapAccessor: #avatar.
-	      mapping mapAccessor: #bot.
-			mapping mapAccessor: #mfaEnabled to: #mfa_enabled.
-			mapping mapAccessor: #verified.
+	      mapping mapAccessor: #avatarHash to: #avatar.
+	      mapping mapAccessor: #isBot to: #bot.
+			mapping mapAccessor: #isMfaEnabled to: #mfa_enabled.
+			mapping mapAccessor: #isVerified to: #verified.
 			mapping mapAccessor: #email ].

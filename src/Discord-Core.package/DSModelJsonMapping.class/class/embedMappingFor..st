@@ -5,7 +5,7 @@ embedMappingFor: aNeoJSONMapper
 	      (mapping mapAccessor: #title).
 			(mapping mapAccessor: #type).
 			(mapping mapAccessor: #description).
-			(mapping mapAccessor: #url).
+			(mapping mapAccessor: #url) valueSchema: ZnUrl.
 			(mapping mapAccessor: #timestamp) valueSchema: DateAndTime.
 			(mapping mapAccessor: #color) valueSchema: Color.
 			(mapping mapAccessor: #footer) valueSchema: DSEmbedFooter.
@@ -16,6 +16,7 @@ embedMappingFor: aNeoJSONMapper
 			(mapping mapAccessor: #author) valueSchema: DSEmbedAuthor.
 			(mapping mapAccessor: #fields) valueSchema: #CollectionOfFields. ].
 	self 
+		urlMappingFor: aNeoJSONMapper;
 		dateAndTimeMappingFor: aNeoJSONMapper;
 		colorMappingFor: aNeoJSONMapper;
 		embedFooterMappingFor: aNeoJSONMapper;

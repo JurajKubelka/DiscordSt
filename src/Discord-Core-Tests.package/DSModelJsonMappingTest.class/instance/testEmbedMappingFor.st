@@ -7,7 +7,7 @@ testEmbedMappingFor
 	self assert: result title equals: 'title of embed'.
 	self assert: result type equals: 'rich'.
 	self assert: result description equals: 'description of embed'.
-	self assert: result url equals: 'http://example.com/embed.html'.
+	self assert: result url equals: 'http://example.com/embed.html' asZnUrl.
 	self assert: result timestamp equals: '2017-11-03T15:21:38.579000+00:00' asDateAndTime.
 	self assert: result color equals: Color red.
 	self assert: result footer class equals: DSEmbedFooter.

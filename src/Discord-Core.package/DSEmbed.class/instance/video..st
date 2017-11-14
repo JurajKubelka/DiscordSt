@@ -1,3 +1,3 @@
 accessing
-video: aString
-	^ self fieldsAt: 'video' put: aString
+video: anObject
+	video := anObject

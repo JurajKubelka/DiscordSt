@@ -5,4 +5,4 @@ content: string
 		ifTrue: [ DSLongMessageError new
 			content: string;
 			signal: 'Message ', string size asString, ' long, max. is ', DSConstants maxMessageLenght asString ].
-	^ self fieldsAt: 'content' put: string
+	content := string

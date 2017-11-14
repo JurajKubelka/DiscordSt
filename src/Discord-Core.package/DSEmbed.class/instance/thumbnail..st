@@ -1,3 +1,3 @@
 accessing
-thumbnail: aString
-	^ self fieldsAt: 'thumbnail' put: aString
+thumbnail: anObject
+	thumbnail := anObject

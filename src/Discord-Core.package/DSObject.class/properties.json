@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "JurajKubelka 4/12/2017 17:38",
-	"super" : "DSFieldObject",
+	"super" : "Object",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

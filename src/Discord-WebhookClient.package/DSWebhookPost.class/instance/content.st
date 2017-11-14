@@ -1,3 +1,3 @@
 accessing
 content
-	^ self fieldsAt: 'content'
+	^ content

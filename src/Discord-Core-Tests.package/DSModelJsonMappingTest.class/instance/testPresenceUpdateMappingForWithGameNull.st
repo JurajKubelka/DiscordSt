@@ -10,4 +10,4 @@ testPresenceUpdateMappingForWithGameNull
 	self assert: result game isNil.
 	self assert: result status class equals: DSIdleStatus.
 	jsonResult := self write: result mappedTo: #presenceUpdateMappingFor:.
-	self assert: jsonResult equals: '{"user":{"id":"286153065164308480"},"status":"idle"}'.
+	self assert: jsonResult equals: '{"user":{"id":"286153065164308480","bot":false,"verified":false},"status":"idle"}'.

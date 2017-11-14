@@ -1,3 +1,3 @@
 accessing
 author
-	^ self fieldsAt: 'author'
+	^ author

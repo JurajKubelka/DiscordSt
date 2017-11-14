@@ -1,3 +1,3 @@
 accessing
 video
-	^ self fieldsAt: 'video'
+	^ video

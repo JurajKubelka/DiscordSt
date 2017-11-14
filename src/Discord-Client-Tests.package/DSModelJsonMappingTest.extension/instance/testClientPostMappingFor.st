@@ -6,7 +6,7 @@ testClientPostMappingFor
 	self assert: result class equals: DSClientJsonPost.
 	self assert: result content equals: 'the message contents (up to 2000 characters)'.
 	self assert: result nonce equals: '1343243'.
-	self assert: result textToSpeech.
+	self assert: result isTextToSpeech.
 	self assert: result embed class equals: DSEmbed.
 	jsonResult := self write: result mappedTo: #clientPostMappingFor:.
 	self assert: jsonResult equals: jsonString.

@@ -1,11 +1,20 @@
 {
-	"commentStamp" : "JurajKubelka 5/3/2017 15:55",
+	"commentStamp" : "JurajKubelka 11/14/2017 09:14",
 	"super" : "DSObject",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"id",
+		"username",
+		"discriminator",
+		"avatarHash",
+		"isBot",
+		"isMfaEnabled",
+		"isVerified",
+		"email"
+	],
 	"name" : "DSUser",
 	"type" : "normal"
 }

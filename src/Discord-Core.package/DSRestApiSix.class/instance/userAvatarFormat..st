@@ -1,6 +1,6 @@
 defaults - url
 userAvatarFormat: aDSUser 
 	"Return avatar's format (GIF or Webp)"
-	^ (aDSUser avatar beginsWith: 'a_')
-			ifTrue: [ aDSUser avatar asString, '.gif' ]
-			ifFalse: [ aDSUser avatar asString, '.webp' ]
+	^ (aDSUser avatarHash beginsWith: 'a_')
+			ifTrue: [ aDSUser avatarHash asString, '.gif' ]
+			ifFalse: [ aDSUser avatarHash asString, '.webp' ]

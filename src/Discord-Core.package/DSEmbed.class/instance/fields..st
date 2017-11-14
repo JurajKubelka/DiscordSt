@@ -1,3 +1,3 @@
 accessing
-fields: anArray
-	^ self fieldsAt: 'fields' put: anArray
+fields: anObject
+	fields := anObject

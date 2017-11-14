@@ -1,4 +1,4 @@
-accessing
+accessing - convenience
 data
 	"Get the downloaded data"
 

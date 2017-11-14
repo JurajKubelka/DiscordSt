@@ -1,0 +1,3 @@
+accessing
+hasMentionEveryone
+	^ hasMentionEveryone

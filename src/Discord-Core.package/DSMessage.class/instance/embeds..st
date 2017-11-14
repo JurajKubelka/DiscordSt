@@ -1,4 +1,3 @@
 accessing
-embeds: embeds
-	"Set embeds objects."
-	^ self fieldsAt: 'embeds' put: embeds
+embeds: anObject
+	embeds := anObject

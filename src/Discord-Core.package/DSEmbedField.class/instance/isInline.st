@@ -1,3 +1,3 @@
-testing
+accessing
 isInline
-	^ (self fieldsAt: 'inline') == true
+	^ isInline ifNil: false

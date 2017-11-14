@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"text",
+		"iconUrl",
+		"proxyIconUrl"
+	],
 	"name" : "DSEmbedFooter",
 	"type" : "normal"
 }

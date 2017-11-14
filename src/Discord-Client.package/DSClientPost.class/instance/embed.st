@@ -1,3 +1,3 @@
 accessing
 embed
-	^ self fieldsAt: 'embed'
+	^ embed

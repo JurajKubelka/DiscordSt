@@ -1,3 +1,3 @@
 accessing
 fields
-	^ self fieldsAt: 'fields'
+	^ fields ifNil: [ fields := OrderedCollection new ]

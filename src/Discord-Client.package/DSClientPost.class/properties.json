@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"content",
+		"nonce",
+		"isTextToSpeech",
+		"embed"
+	],
 	"name" : "DSClientPost",
 	"type" : "normal"
 }

@@ -1,13 +1,28 @@
 {
-	"commentStamp" : "JurajKubelka 5/8/2017 12:34",
+	"commentStamp" : "JurajKubelka 11/14/2017 09:15",
 	"super" : "DSObject",
 	"category" : "Discord-Core-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"id",
+		"channelId",
+		"author",
+		"content",
+		"timestamp",
+		"editedTimestamp",
+		"isTextToSpeech",
+		"hasMentionEveryone",
+		"mentions",
+		"attachments",
+		"embeds",
+		"reactions",
+		"nonce",
+		"webhookId",
+		"type",
 		"mentionRoleIds",
-		"type"
+		"isPinnedInChannel"
 	],
 	"name" : "DSMessage",
 	"type" : "normal"

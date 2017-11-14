@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"name",
+		"url"
+	],
 	"name" : "DSEmbedProvider",
 	"type" : "normal"
 }

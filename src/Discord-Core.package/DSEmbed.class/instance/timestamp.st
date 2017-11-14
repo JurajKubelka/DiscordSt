@@ -1,3 +1,3 @@
 accessing
 timestamp
-	^ self fieldsAt: 'timestamp'
+	^ timestamp

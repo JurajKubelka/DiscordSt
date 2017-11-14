@@ -9,4 +9,6 @@ testPresenceUpdatePayloadMappingFor
 	self assert: result sequenceNumber equals: 8.
 	self assert: result eventName equals: 'PRESENCE_UPDATE'.
 	jsonResult := self writePayload: result.
-	self assert: jsonResult equals: '{"op":0,"d":{"user":{"id":"286153065164304880"},"roles":[],"guild_id":"289187121854545132","status":"idle"},"s":8,"t":"PRESENCE_UPDATE"}'.
+	self 
+		assert: jsonResult 
+		equals: '{"op":0,"d":{"user":{"id":"286153065164304880","bot":false,"verified":false},"roles":[],"guild_id":"289187121854545132","status":"idle"},"s":8,"t":"PRESENCE_UPDATE"}'.

@@ -1,3 +1,3 @@
 accessing
 image
-	^ self fieldsAt: 'image'
+	^ image

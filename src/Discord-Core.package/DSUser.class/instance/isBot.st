@@ -1,4 +1,3 @@
-testing
+accessing
 isBot
-	"Return true, if the user is a bot."
-	^ self bot ifNil: false
+	^ isBot ifNil: false

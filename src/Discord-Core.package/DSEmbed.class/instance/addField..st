@@ -1,3 +1,3 @@
 adding
 addField: aDSField
-	^ self fieldObjects add: aDSField 
+	^ self fields add: aDSField 

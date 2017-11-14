@@ -5,7 +5,12 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"url",
+		"proxyUrl",
+		"height",
+		"width"
+	],
 	"name" : "DSEmbedThumbnail",
 	"type" : "normal"
 }
