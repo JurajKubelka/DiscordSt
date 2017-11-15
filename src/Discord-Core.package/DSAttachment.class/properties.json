@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "JurajKubelka 6/13/2017 15:38",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"restApi",
+		"id",
+		"filename",
+		"fileSize",
+		"url",
+		"height",
+		"width",
+		"data",
+		"proxyUrl"
+	],
+	"name" : "DSAttachment",
+	"type" : "normal"
+}

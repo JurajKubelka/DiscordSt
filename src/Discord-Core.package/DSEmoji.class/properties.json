@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 11/3/2017 15:56",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"name",
+		"roles",
+		"user",
+		"managed",
+		"requireColons"
+	],
+	"name" : "DSEmoji",
+	"type" : "normal"
+}

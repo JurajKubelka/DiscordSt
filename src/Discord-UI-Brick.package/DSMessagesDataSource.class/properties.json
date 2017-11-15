@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlInfiniteDataSource",
+	"category" : "Discord-UI-Brick",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messages"
+	],
+	"name" : "DSMessagesDataSource",
+	"type" : "normal"
+}

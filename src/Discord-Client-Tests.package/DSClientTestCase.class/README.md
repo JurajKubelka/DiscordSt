@@ -1,0 +1,1 @@
+A DSClientTestCase is an abstract test class for testing the behavior of the Discord client.

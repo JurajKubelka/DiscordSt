@@ -1,0 +1,1 @@
+I represent Discord API version 6.

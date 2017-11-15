@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mutex",
+		"process",
+		"canDoNextCycle",
+		"websocket"
+	],
+	"name" : "DSGatewayProcess",
+	"type" : "normal"
+}

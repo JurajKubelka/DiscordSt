@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 12:06",
+	"super" : "DSGatewayProperties",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"numberOfShards"
+	],
+	"name" : "DSGatewayShard",
+	"type" : "normal"
+}

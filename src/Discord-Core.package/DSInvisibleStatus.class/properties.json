@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 11/8/2017 17:20",
+	"super" : "DSConnectionStatus",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSInvisibleStatus",
+	"type" : "normal"
+}

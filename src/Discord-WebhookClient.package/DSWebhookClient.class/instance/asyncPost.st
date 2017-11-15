@@ -1,4 +1,4 @@
-as yet unclassified
+operations
 asyncPost
 	"Execute the post action in a forked process."
 	[ self post ] 

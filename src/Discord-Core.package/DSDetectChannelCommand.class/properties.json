@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/8/2017 11:52",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channels",
+		"satisfiedBy",
+		"satisfyingChannel"
+	],
+	"name" : "DSDetectChannelCommand",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 11/6/2017 16:41",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"restApi"
+	],
+	"name" : "DSChannel",
+	"type" : "normal"
+}

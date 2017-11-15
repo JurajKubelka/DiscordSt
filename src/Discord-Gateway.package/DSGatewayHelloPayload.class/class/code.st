@@ -1,0 +1,3 @@
+accessing
+code
+	^ 10

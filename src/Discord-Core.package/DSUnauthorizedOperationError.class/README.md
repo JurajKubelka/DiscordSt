@@ -1,0 +1,1 @@
+I indicate that Discord server responded "unauthorized".

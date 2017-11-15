@@ -6,6 +6,6 @@ testPostToDiscord
 	url ifNil: [ ^ self skip: 'Webhook URL is not set.' ].
 	client := DSWebhookClient new 
 		url: url;
-		message: self messageStringForDiscordChannel.
+		message: self continuousIntegrationMessageString.
 	response := client post.
 	self assert: response isSuccess.

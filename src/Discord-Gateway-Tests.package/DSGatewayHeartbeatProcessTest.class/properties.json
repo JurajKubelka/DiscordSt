@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSGatewayProcessTest",
+	"category" : "Discord-Gateway-Tests-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayHeartbeatProcessTest",
+	"type" : "normal"
+}

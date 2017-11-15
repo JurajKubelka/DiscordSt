@@ -1,3 +1,0 @@
-defaults
-contentString
-	^ 'content string'

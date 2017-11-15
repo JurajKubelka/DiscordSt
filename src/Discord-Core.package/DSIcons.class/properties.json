@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 6/29/2017 16:00",
+	"super" : "Object",
+	"category" : "Discord-Core-Utility",
+	"classinstvars" : [
+		"icons"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSIcons",
+	"type" : "normal"
+}

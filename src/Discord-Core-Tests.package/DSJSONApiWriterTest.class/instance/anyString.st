@@ -1,3 +1,0 @@
-defaults
-anyString
-	^ 'any string'

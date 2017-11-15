@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 5/8/2017 11:29",
+	"super" : "DSClientTestCase",
+	"category" : "Discord-Client-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"client"
+	],
+	"name" : "DSClientTest",
+	"type" : "normal"
+}

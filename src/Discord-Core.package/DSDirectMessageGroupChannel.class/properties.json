@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 11/6/2017 16:40",
+	"super" : "DSChannel",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"lastMessageId",
+		"recipients",
+		"name",
+		"ownerId",
+		"icon"
+	],
+	"name" : "DSDirectMessageGroupChannel",
+	"type" : "normal"
+}

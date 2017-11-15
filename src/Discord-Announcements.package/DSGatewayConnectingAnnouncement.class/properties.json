@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayAnnouncement",
+	"category" : "Discord-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGatewayConnectingAnnouncement",
+	"type" : "normal"
+}

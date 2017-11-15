@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"websocket",
+		"readMutex",
+		"writeMutex"
+	],
+	"name" : "DSGatewayWebSocket",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 5/3/2017 13:40",
+	"super" : "DSDiscordResponseError",
+	"category" : "Discord-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSCannotLoginError",
+	"type" : "normal"
+}

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 13:14",
+	"super" : "DSGatewayEvent",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"version",
+		"user",
+		"privateChannels",
+		"guilds",
+		"sessionId",
+		"traces"
+	],
+	"name" : "DSGatewayReadyEvent",
+	"type" : "normal"
+}

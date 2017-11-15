@@ -1,0 +1,1 @@
+I keep Neo JSON mappings between Discord objects and their JSON representations.

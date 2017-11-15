@@ -1,0 +1,1 @@
+I am a baseline for DiscordSt library.

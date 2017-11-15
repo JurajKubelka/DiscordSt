@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 6/26/2017 15:50",
+	"super" : "DSCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fueldId",
+		"encodedUrls",
+		"encodedFuelId",
+		"urls"
+	],
+	"name" : "DSLoadCommand",
+	"type" : "normal"
+}

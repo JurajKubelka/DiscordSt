@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSCoreCommandTest",
+	"category" : "Discord-Core-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSortChannelsCommandTest",
+	"type" : "normal"
+}

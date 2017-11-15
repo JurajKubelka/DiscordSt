@@ -1,3 +1,3 @@
 instance creation
 newDataWebhook
-	^ DSDataWebhookPost new
+	^ DSWebhookDataPost new

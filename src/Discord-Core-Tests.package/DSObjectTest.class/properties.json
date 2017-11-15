@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 18:29",
+	"super" : "DSCoreTestCase",
+	"category" : "Discord-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"object"
+	],
+	"name" : "DSObjectTest",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 6/20/2017 19:43",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"value",
+		"isInline"
+	],
+	"name" : "DSEmbedField",
+	"type" : "normal"
+}

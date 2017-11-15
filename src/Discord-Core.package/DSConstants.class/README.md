@@ -1,0 +1,1 @@
+I keep some constants for the Discord library.

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 5/8/2017 10:53",
+	"super" : "DSObject",
+	"category" : "Discord-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"content",
+		"nonce",
+		"isTextToSpeech",
+		"embed"
+	],
+	"name" : "DSClientPost",
+	"type" : "normal"
+}

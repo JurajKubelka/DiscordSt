@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 6/29/2017 12:37",
+	"super" : "Object",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"guildId",
+		"channelId",
+		"messageChannelId",
+		"messageIds",
+		"dateAndTime",
+		"messageId"
+	],
+	"name" : "DSFuelId",
+	"type" : "normal"
+}

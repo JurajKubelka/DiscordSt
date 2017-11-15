@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSCoreTestCase",
+	"category" : "Discord-Client-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"post"
+	],
+	"name" : "DSClientPostTest",
+	"type" : "normal"
+}

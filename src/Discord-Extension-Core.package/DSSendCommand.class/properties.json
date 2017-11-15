@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 6/16/2017 15:41",
+	"super" : "DSCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channel",
+		"guild",
+		"contentDeliveryChannel",
+		"fileName",
+		"imageForm",
+		"wrapper"
+	],
+	"name" : "DSSendCommand",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+defaults
+token
+	^ 'secret-token'

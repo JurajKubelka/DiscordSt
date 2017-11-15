@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 5/3/2017 13:40",
+	"super" : "DSDiscordError",
+	"category" : "Discord-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"response"
+	],
+	"name" : "DSDiscordResponseError",
+	"type" : "normal"
+}

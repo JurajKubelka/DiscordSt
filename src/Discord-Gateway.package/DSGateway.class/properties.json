@@ -1,0 +1,19 @@
+{
+	"classtraitcomposition" : "TAnnouncerSubscription classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"announcer",
+		"session",
+		"restApiUrl",
+		"websocketUrl",
+		"websocket"
+	],
+	"name" : "DSGateway",
+	"commentStamp" : "JurajKubelka 11/10/2017 11:33",
+	"super" : "Object",
+	"traitcomposition" : "TAnnouncerSubscription",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Gateway-API"
+}

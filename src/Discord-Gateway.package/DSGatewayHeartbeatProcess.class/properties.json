@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayProcess",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"heartbeatPayload",
+		"heartbeatInterval",
+		"delay"
+	],
+	"name" : "DSGatewayHeartbeatProcess",
+	"type" : "normal"
+}

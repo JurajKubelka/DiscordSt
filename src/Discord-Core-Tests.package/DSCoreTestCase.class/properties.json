@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 5/3/2017 15:59",
+	"super" : "TestCase",
+	"category" : "Discord-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"server",
+		"fields",
+		"serverSemaphoreTimeout"
+	],
+	"name" : "DSCoreTestCase",
+	"type" : "normal"
+}

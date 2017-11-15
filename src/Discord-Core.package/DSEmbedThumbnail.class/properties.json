@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 6/20/2017 18:56",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"url",
+		"proxyUrl",
+		"height",
+		"width"
+	],
+	"name" : "DSEmbedThumbnail",
+	"type" : "normal"
+}

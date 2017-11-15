@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "JurajKubelka 5/10/2017 17:19",
+	"super" : "Object",
+	"category" : "Discord-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"port",
+		"server",
+		"delegate",
+		"serverRequests",
+		"semaphore"
+	],
+	"name" : "DSMockServer",
+	"type" : "normal"
+}

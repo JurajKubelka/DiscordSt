@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 6/29/2017 11:55",
+	"super" : "Object",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channel",
+		"previousMessages",
+		"fuelValue",
+		"url"
+	],
+	"name" : "DSPharoLinkGenerator",
+	"type" : "normal"
+}

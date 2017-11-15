@@ -1,0 +1,3 @@
+accessing
+selfMute
+	^ selfMute

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/7/2017 09:53",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"type",
+		"url"
+	],
+	"name" : "DSGame",
+	"type" : "normal"
+}

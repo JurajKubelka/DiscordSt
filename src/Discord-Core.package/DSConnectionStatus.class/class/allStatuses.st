@@ -1,0 +1,3 @@
+enumerating
+allStatuses
+	^ self allSubclasses

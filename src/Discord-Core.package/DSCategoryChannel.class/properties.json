@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "JurajKubelka 11/6/2017 16:41",
+	"super" : "DSChannel",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"guildId",
+		"position",
+		"permissionOverwrites",
+		"name",
+		"nsfw",
+		"subordinateChannels"
+	],
+	"name" : "DSCategoryChannel",
+	"type" : "normal"
+}

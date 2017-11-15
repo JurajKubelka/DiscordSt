@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 14:13",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channels",
+		"flattenedChannels"
+	],
+	"name" : "DSFlattenChannelsCommand",
+	"type" : "normal"
+}

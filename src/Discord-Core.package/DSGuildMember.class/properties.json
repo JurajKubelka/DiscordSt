@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 11/7/2017 09:30",
+	"super" : "DSObject",
+	"category" : "Discord-Core-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"user",
+		"nick",
+		"roleIds",
+		"joinedAt",
+		"deaf",
+		"mute"
+	],
+	"name" : "DSGuildMember",
+	"type" : "normal"
+}

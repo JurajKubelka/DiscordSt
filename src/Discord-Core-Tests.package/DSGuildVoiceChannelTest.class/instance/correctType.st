@@ -1,0 +1,3 @@
+defaults
+correctType
+	^ 'voice'

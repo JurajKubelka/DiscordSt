@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSBlocElement",
+	"category" : "Discord-UI-Brick",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"embed"
+	],
+	"name" : "DSEmbedElement",
+	"type" : "normal"
+}

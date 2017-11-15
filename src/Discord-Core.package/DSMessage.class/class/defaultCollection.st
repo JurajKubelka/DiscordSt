@@ -1,0 +1,3 @@
+defaults
+defaultCollection
+	^ DSMessages

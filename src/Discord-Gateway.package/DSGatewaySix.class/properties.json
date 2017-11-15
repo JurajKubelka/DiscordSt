@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/9/2017 09:39",
+	"super" : "DSGateway",
+	"category" : "Discord-Gateway-API",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"heartbeatProcess",
+		"readingProcess",
+		"receiver"
+	],
+	"name" : "DSGatewaySix",
+	"type" : "normal"
+}

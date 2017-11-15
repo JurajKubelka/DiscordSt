@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TestCase",
+	"super" : "DSCoreTestCase",
 	"category" : "Discord-WebhookClient-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
-		"server"
+		"client"
 	],
 	"name" : "DSWebhookClientTest",
 	"type" : "normal"

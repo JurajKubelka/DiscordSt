@@ -1,0 +1,3 @@
+tests
+testAsDataPost
+	self subclassResponsibility
