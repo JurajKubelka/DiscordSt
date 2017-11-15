@@ -7,7 +7,7 @@ testFileNameBytes
 	response := self client message
 		content: content;
 		fileName: 'random-image.jpg' 
-		bytes: (ZnEasy get: 'http://lorempixel.com/100/50') contents;
+		bytes: PolymorphSystemSettings pharoLogoContents base64Decoded asByteArray;
 		sendTo: channel.
 	self assert: response class equals: DSMessage.
 	self assert: response content equals: content.
