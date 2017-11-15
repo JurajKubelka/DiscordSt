@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"restApi",
 		"id",
 		"filename",
 		"fileSize",

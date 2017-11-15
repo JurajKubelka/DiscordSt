@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"apiUrl"
+		"apiUrl",
+		"authentication"
 	],
 	"name" : "DSRestApiSix",
 	"type" : "normal"

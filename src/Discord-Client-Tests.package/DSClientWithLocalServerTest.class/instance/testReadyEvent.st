@@ -1,4 +1,4 @@
-tests-event handling
+tests
 testReadyEvent
 	websocketDelegate handler: [ :socket |
 		socket sendMessage: self gatewayModelJsonMapping jsonReadyPayload ].

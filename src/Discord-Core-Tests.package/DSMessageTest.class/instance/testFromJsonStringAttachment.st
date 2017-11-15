@@ -10,6 +10,4 @@ testFromJsonStringAttachment
 	self assert: message attachments isArray.
 	self assert: message attachments size equals: 1.
 	self assert: message attachments first isAttachment.
-	self assert: message attachments first restApi notNil.
-	self assert: message attachments first restApi == api.
 	self assert: message hasAttachments.

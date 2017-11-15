@@ -1,6 +1,8 @@
 accessing - convenience
 data
 	"Get the downloaded data"
-
 	^ data
-		ifNil: [ data := self restApi ifNotNil: [ :anApi | anApi download: self url ] ]
+		ifNil: [ data := DSDownloadCommand new 
+				url: self url;
+				execute;
+				contents ]

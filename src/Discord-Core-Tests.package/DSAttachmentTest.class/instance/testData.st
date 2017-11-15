@@ -6,7 +6,6 @@ testData
 		response entity: (ZnEntity bytes: self bytes) ].
 	attachment := self newAttachment.
 	attachment url: self serverUrl.
-	attachment restApi: self newRestApi.
 	bytes := attachment data.
 	self assert: bytes equals: self bytes.
 	self assert: attachment data == bytes.

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gateway",
+		"announcer",
+		"restApi"
+	],
+	"name" : "DSAbstractClient",
+	"type" : "normal"
+}

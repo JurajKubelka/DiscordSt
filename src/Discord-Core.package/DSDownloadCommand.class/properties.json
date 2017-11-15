@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/15/2017 17:11",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"url",
+		"contents"
+	],
+	"name" : "DSDownloadCommand",
+	"type" : "normal"
+}

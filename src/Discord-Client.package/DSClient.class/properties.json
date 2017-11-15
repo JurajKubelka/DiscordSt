@@ -1,17 +1,13 @@
 {
 	"commentStamp" : "JurajKubelka 5/3/2017 10:59",
-	"super" : "Object",
+	"super" : "DSAbstractClient",
 	"category" : "Discord-Client",
 	"classinstvars" : [
 		"default"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"gateway",
-		"announcer",
-		"restApi"
-	],
+	"instvars" : [ ],
 	"name" : "DSClient",
 	"type" : "normal"
 }

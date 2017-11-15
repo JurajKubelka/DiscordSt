@@ -1,3 +1,3 @@
 instance creation
 newClient
-	^ DSClient new
+	^ self classToTest new

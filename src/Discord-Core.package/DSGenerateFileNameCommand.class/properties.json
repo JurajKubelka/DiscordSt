@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/15/2017 17:00",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"extension",
+		"existingFileNames",
+		"fileName"
+	],
+	"name" : "DSGenerateFileNameCommand",
+	"type" : "normal"
+}

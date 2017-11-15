@@ -1,4 +1,4 @@
-tests-event handling
+tests
 testMessageUpdateEvent
 	"I have received 
 	DSUnauthorizedOperationError: {""code"": 20002, ""message"": ""Only bots can use this endpoint""}

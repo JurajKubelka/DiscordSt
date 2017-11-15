@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSAbstractClient",
+	"category" : "Discord-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSBot",
+	"type" : "normal"
+}

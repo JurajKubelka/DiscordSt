@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGatewayPayload",
+	"category" : "Discord-Gateway-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"code"
+	],
+	"name" : "DSGatewayUnclassifiedPayload",
+	"type" : "normal"
+}

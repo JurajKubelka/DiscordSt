@@ -7,6 +7,6 @@ sendTo: aDSGuildTextChannelOrOneArgBlock
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	<return: #DSMessage or: nil>
 	aDSGuildTextChannelOrOneArgBlock isClosure 
-		ifTrue: [ self channel: (aDSGuildTextChannelOrOneArgBlock value: self meGuilds) ]
+		ifTrue: [ self channel: (aDSGuildTextChannelOrOneArgBlock value: self servers) ]
 		ifFalse: [ self channel: aDSGuildTextChannelOrOneArgBlock ].
 	^ self send

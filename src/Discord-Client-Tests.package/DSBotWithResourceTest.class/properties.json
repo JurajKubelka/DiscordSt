@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSClientWithResourceTest",
+	"category" : "Discord-Client-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"client"
+	],
+	"name" : "DSBotWithResourceTest",
+	"type" : "normal"
+}

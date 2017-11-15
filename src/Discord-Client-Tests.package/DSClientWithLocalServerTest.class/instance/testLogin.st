@@ -1,4 +1,4 @@
-tests-event handling
+tests
 testLogin
 	self serverDelegate map: '/api/auth/login' to: [ :request :response |
 		self serverRequests add: #login.

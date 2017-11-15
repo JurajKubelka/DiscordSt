@@ -10,4 +10,5 @@ payloadMappingFor: aNeoJSONMapper
 		heartbeatAckPayloadMappingFor: aNeoJSONMapper;
 		messageCreatePayloadMappingFor: aNeoJSONMapper;
 		presenceUpdatePayloadMappingFor: aNeoJSONMapper;
-		messageUpdatePayloadMappingFor: aNeoJSONMapper.
+		messageUpdatePayloadMappingFor: aNeoJSONMapper;
+		unclassifiedPayloadMappingFor: aNeoJSONMapper.
