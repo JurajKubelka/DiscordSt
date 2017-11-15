@@ -3,5 +3,5 @@ testGeneral
 	guildChannels := self newGuildChannelsInCategory.
 	guild := self newUserGuild.
 	guild id: self anyString.
-	guild api: self.
+	guild restApi: self.
 	self assert: guild general notNil.

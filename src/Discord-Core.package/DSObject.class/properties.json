@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"api"
-	],
+	"instvars" : [ ],
 	"name" : "DSObject",
 	"type" : "normal"
 }

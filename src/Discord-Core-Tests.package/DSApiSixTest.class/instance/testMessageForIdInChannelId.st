@@ -12,6 +12,6 @@ testMessageForIdInChannelId
 	self assert: message notNil.
 	self assert: message isMessage.
 	self assert: message author username equals: 'user one'.
-	self assert: message api == api description: 'It should have the api object'.
+	self assert: message restApi == api description: 'It should have the api object'.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first method equals: #GET.

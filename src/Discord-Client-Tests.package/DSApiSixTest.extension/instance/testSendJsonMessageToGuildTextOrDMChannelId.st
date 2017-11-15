@@ -12,6 +12,6 @@ testSendJsonMessageToGuildTextOrDMChannelId
 	returnedMessage := api sendJsonMessage: message toGuildTextOrDMChannelId: 'channel-id'.
 	self assert: returnedMessage notNil.
 	self assert: returnedMessage content equals: 'text message'.
-	self assert: returnedMessage api == api description: 'It should have the api object'.
+	self assert: returnedMessage restApi == api description: 'It should have the api object'.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first method equals: #POST.

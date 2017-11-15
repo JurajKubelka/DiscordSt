@@ -15,7 +15,7 @@ testGuildChannelsUsingId4
 	self assert: channels size equals: 1.
 	self assert: channels first name equals: 'general'.
 	self deny: channels first isGuildTextChannel.
-	self assert: channels first api == api description: 'It should have the api object'.
+	self assert: channels first restApi == api description: 'It should have the api object'.
 	self assert: channels first isGuildVoiceChannel.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first method equals: #GET.
