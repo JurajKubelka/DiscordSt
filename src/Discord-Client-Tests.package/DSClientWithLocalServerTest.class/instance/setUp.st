@@ -13,5 +13,5 @@ setUp
 	"Configure the client"
 	client := self newClient.
 	client restApi apiUrl: self apiUrl.
-	client gatewayApi restApiUrl: self apiUrl.
+	client gateway restApiUrl: self apiUrl.
 	client token: self token

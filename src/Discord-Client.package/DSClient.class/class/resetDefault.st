@@ -1,5 +1,6 @@
-as yet unclassified
+singleton
 resetDefault
+	<script>
 	default 
 		ifNil: [ ^ self ]
 		ifNotNil: [ :aClient | 

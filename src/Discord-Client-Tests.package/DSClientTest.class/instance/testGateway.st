@@ -3,5 +3,5 @@ testGateway
 	"Gateway should share the same session with REST API."
 
 	client := self newClient.
-	self assert: client gatewayApi notNil.
-	self assert: client gatewayApi session == client restApi session
+	self assert: client gateway notNil.
+	self assert: client gateway session == client restApi session

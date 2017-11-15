@@ -2,7 +2,7 @@
 gtInspectorLogin: composite
 	<gtInspectorPresentationOrder: -10>
 	^ composite morph
-		title: 'Login';
+		title: [ 'Login' translated ];
 		display: [ :entity | | window |
 			window := (DSLoginCommand new
 				client: self;

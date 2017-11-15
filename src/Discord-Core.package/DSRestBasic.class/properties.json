@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSRestApi",
+	"category" : "Discord-Core-REST-Api",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSRestBasic",
+	"type" : "normal"
+}
