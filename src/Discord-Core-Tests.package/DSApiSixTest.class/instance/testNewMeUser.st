@@ -2,7 +2,7 @@ tests
 testNewMeUser
 	| user |
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/users/@me' to: [ :request :response |

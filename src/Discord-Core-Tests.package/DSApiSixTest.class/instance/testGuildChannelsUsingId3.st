@@ -3,7 +3,7 @@ testGuildChannelsUsingId3
 	"Return Guild Text Channel using type = 0"
 	| channels |
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/guilds/1234/channels' to: [ :request :response |

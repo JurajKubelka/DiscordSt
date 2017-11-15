@@ -1,3 +1,3 @@
 defaults
 defaultCollection
-	^ DSMessages new
+	^ #()

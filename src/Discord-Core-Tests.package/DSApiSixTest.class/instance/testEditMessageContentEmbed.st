@@ -1,7 +1,7 @@
 tests-public
 testEditMessageContentEmbed
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/channels/45930/messages/84266' to: [ :request :response |

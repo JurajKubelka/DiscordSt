@@ -8,10 +8,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"api",
-		"channel",
 		"gateway",
-		"announcer"
+		"announcer",
+		"restApi"
 	],
 	"name" : "DSClient",
 	"type" : "normal"

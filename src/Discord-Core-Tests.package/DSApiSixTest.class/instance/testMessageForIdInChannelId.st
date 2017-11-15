@@ -2,7 +2,7 @@ tests
 testMessageForIdInChannelId
 	| message |
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/channels/5930/messages/36576' to: [ :request :response |

@@ -1,7 +1,7 @@
 tests
 testLoginPasswordDoesNotMatch
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	self serverDelegate map: '/api/auth/login' to: [ :request :response |
 		self serverRequests add: request.

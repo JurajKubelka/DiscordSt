@@ -1,7 +1,7 @@
 tests
 testLogout
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: 'secret-token'.
 	self serverDelegate map: '/api/auth/logout' to: [ :request :response |

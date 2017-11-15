@@ -1,3 +1,3 @@
 instance creation
 newObject
-	^ self newApi
+	^ self newRestApi

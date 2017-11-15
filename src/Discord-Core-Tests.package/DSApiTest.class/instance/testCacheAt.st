@@ -1,4 +1,4 @@
 tests
 testCacheAt
-	api := self newApi.
+	api := self newRestApi.
 	self assert: (api cacheAt: 'user') isNil

@@ -5,7 +5,7 @@ testSetAuthor
 	command client: self newClient.
 	"We set an artificial user."
 	user := self coreModelJsonMapping read: DSUser withMapping: #userMappingFor: on: self coreModelJsonMapping jsonUser readStream.
-	user restApi: self newApi.
+	user restApi: self newRestApi.
 	command client restApi
 		cacheAt: 'me'
 		put: user.

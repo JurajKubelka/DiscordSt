@@ -2,7 +2,7 @@
 testSendJsonMessageToGuildTextOrDMChannelId
 	| message returnedMessage |
 	self startZnServer.
-	api := self newApi.
+	api := self newRestApi.
 	api apiUrl: self apiUrl.
 	api token: self tokenString.
 	self serverDelegate map: '/api/channels/channel-id/messages' to: [ :request :response |

@@ -2,7 +2,7 @@ tests-converting
 testAsAuthor
 	| author |
 	user := self coreModelJsonMapping read: DSUser withMapping: #userMappingFor: on: self coreModelJsonMapping jsonUser readStream.
-	user restApi: self newApi.
+	user restApi: self newRestApi.
 	self assert: user email equals: 'nelly@discordapp.com'.
 	author := user asAuthor.
 	self deny: author == user.

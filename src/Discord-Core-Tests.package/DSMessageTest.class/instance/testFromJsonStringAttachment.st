@@ -2,7 +2,7 @@ tests
 testFromJsonStringAttachment
 	"Check attachment object"
 	| api |
-	api := self newApi.
+	api := self newRestApi.
 	message := self coreModelJsonMapping read: DSMessage withMapping: #messageMappingFor: on: self coreModelJsonMapping jsonMessage readStream.
 	message restApi: api.
 	self assert: message restApi notNil.

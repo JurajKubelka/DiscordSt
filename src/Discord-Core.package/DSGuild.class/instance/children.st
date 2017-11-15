@@ -4,4 +4,4 @@ children
 	Useful for tree view representations."
 	^ self isAuthenticated 
 		ifTrue: [ self channels ] 
-		ifFalse: [ self class defaultCollection new ]
+		ifFalse: [ self class defaultCollection ]

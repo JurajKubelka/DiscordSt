@@ -1,3 +1,3 @@
 instance creation
-newApi
+newRestApi
 	^ DSRestApi new 
