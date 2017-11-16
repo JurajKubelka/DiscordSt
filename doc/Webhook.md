@@ -20,7 +20,7 @@ DSWebhookClient new
 	post
 ```
 
-![Bot example](assets/img/bot-example.png)
+![Bot example](../assets/img/bot-example.png)
 
 ```Smalltalk
 DSWebhookClient new 
@@ -73,4 +73,4 @@ DSWebhookClient new
 	post.
 ```
 
-![Bot example](assets/img/morph-screenshot.png)
+![Bot example](../assets/img/morph-screenshot.png)

@@ -48,7 +48,8 @@ To create a bot, check following steps:
 - Create a Bot App https://discordapp.com/developers/applications/me
 - Copy the Client/Application ID
 - Calculate permissions and click on a link to authorize the Bot: https://discordapi.com/permissions.html
-- Remember that the new Bot has to connect to Gateway at least once, before sending messages
+
+Remember that the new Bot has to connect to Gateway at least once, before sending messages
 
 ### User Client
 
@@ -60,7 +61,6 @@ bots is strictly prohibited.
 
 Examples are divided into three sections:
 
-- [Webhooks](doc/Webhooks.md)
+- [Webhook](doc/Webhook.md)
 - [Bot](doc/Bot.md)
 - [User Client](doc/UserClient.md)
-
