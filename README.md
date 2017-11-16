@@ -49,7 +49,12 @@ To create a bot, check following steps:
 - Copy the Client/Application ID
 - Calculate permissions and click on a link to authorize the Bot: https://discordapi.com/permissions.html
 
-Remember that the new Bot has to connect to Gateway at least once, before sending messages
+Remember that the new Bot has to connect to
+[Gateway](https://discordapp.com/developers/docs/topics/gateway) at
+least once, before sending messages. Gateways are Discord's form of
+real-time communication over secure WebSockets. Clients receive
+events and data over the gateway they are connected to and send data
+over the REST API.
 
 ### User Client
 
