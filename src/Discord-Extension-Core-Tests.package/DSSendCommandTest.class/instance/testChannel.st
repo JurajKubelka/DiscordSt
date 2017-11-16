@@ -1,5 +1,5 @@
 tests
 testChannel
-	command := self newObject.
+	command := self newObjectToTest.
 	command channel: self anyString.
 	self assert: command channel equals: self anyString.

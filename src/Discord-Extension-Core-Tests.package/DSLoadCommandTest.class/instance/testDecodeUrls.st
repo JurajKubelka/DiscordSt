@@ -1,6 +1,6 @@
 tests-initialization
 testDecodeUrls
-	command := self newObject.
+	command := self newObjectToTest.
 	command encodedUrls: self encodedDataString.
 	command decodeUrls.
 	self assert: command urls isCollection.

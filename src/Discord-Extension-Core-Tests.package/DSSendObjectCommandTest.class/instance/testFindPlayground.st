@@ -1,7 +1,7 @@
 tests
 testFindPlayground
 	| window windowTwo |
-	command := self newObject.
+	command := self newObjectToTest.
 	command object: Object new.
 	window := GTPlayground openOn: (GTPlayPage new saveContent: 'Object new').
 	[ 

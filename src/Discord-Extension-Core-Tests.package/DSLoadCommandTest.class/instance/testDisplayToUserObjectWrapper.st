@@ -1,7 +1,7 @@
 tests-private
 testDisplayToUserObjectWrapper
 	| object window wrapper |
-	command := self newObject.
+	command := self newObjectToTest.
 	object := Object new.
 	wrapper := DSObjectWrapper new
 		serializedData: (DSUtility serializeToByteArray: object);

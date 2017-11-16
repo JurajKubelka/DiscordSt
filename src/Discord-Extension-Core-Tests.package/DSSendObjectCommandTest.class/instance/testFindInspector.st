@@ -1,7 +1,7 @@
 tests
 testFindInspector
 	| window windowTwo |
-	command := self newObject.
+	command := self newObjectToTest.
 	self setMorphModel.
 	window := GTInspector openOn: command morphModel.
 	[ 

@@ -1,6 +1,6 @@
 tests-accessing
 testShouldDownloadDataDirectly
-	command := self newObject.
+	command := self newObjectToTest.
 	command encodedUrls: self encodedDataString.
 	self assert: command shouldDownloadDataDirectly.
 	

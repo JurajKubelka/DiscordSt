@@ -1,5 +1,5 @@
 tests-accessing
 testShouldDownloadDataAfterLoginDefault
-	command := self newObject.
+	command := self newObjectToTest.
 	self deny: command shouldDownloadDataAfterLogin.
 	

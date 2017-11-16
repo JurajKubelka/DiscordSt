@@ -1,5 +1,5 @@
 tests
 testProxyUrl
-	object := self newObject.
+	object := self newObjectToTest.
 	object proxyUrl: self anyString.
 	self assert: object proxyUrl equals: self anyString.

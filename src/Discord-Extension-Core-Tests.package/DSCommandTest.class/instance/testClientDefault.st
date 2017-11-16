@@ -1,4 +1,4 @@
 tests
 testClientDefault
-	command := self newObject.
+	command := self newObjectToTest.
 	self assert: command client isNil.

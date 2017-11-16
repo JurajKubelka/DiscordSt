@@ -1,6 +1,6 @@
 *Discord-Extension-Core-Tests
 testIsFuelObjectFalse
-	object := self newObject 
+	object := self newObjectToTest 
 		fieldName: DSSendCommand fuelFieldName 
 		value: nil;
 		yourself.

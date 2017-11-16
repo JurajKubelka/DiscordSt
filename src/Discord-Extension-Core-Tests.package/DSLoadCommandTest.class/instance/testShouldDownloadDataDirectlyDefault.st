@@ -1,5 +1,5 @@
 tests-accessing
 testShouldDownloadDataDirectlyDefault
-	command := self newObject.
+	command := self newObjectToTest.
 	self deny: command shouldDownloadDataDirectly.
 	

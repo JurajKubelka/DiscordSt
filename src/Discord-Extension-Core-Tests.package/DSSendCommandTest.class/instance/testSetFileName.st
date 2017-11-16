@@ -1,6 +1,6 @@
 tests-private
 testSetFileName
-	command := self newObject.
+	command := self newObjectToTest.
 	self initializeCommandToTestSetFileName.
 	command setFileName.
 	self assert: command fileName size <= DSConstants maxFileNameLenght

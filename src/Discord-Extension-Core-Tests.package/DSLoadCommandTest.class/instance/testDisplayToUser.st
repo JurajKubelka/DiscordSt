@@ -1,7 +1,7 @@
 tests-private
 testDisplayToUser
 	| object window |
-	command := self newObject.
+	command := self newObjectToTest.
 	object := Object new.
 	window := command displayToUser: object.
 	[ 

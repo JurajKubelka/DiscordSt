@@ -1,7 +1,7 @@
 tests
 testFindPaneInspector
 	| window windowTwo |
-	command := self newObject.
+	command := self newObjectToTest.
 	command object: Object new.
 	window := GTInspector openOn: Morph new.
 	[ 

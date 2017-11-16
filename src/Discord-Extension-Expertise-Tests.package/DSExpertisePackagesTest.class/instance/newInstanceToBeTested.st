@@ -1,3 +1,3 @@
 instance creation
 newInstanceToBeTested
-	^ self classToBeTested new
+	^ self classToTest new

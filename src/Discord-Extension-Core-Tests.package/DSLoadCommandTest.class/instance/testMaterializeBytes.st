@@ -1,7 +1,7 @@
 tests-private
 testMaterializeBytes
 	| object result bytes |
-	command := self newObject.
+	command := self newObjectToTest.
 	object := Object new.
 	bytes := DSUtility serializeToByteArray: object.
 	result := command materializeBytes: bytes.

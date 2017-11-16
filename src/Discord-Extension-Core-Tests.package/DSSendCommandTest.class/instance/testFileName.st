@@ -1,5 +1,5 @@
 tests
 testFileName
-	command := self newObject.
+	command := self newObjectToTest.
 	command fileName: self anyString.
 	self assert: command fileName equals: self anyString.

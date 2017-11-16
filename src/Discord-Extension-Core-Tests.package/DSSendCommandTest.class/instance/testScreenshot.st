@@ -1,5 +1,5 @@
 tests-accessing - wrapper
 testScreenshot
-	command := self newObject.
+	command := self newObjectToTest.
 	command screenshot: self anyString.
 	self assert: command screenshot equals: self anyString.

@@ -1,4 +1,4 @@
 *Discord-Extension-Core-Tests
 testIsFuelObjectFalse
-	object := self newObject.
+	object := self newObjectToTest.
 	self deny: object isFuelObject

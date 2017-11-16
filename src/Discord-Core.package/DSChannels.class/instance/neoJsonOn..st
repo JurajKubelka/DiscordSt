@@ -1,7 +1,7 @@
 neo-json
 neoJsonOn: neoJSONWriter
 	| flattenedChannels |
-	flattenedChannels := DSFlattenChannelsCommand new
+	flattenedChannels := DSFlattenChannelsOrderByIdCommand new
 		channels: self;
 		execute;
 		flattenedChannels.

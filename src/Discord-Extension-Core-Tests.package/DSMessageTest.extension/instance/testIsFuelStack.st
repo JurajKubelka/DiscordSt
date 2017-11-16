@@ -1,6 +1,6 @@
 *Discord-Extension-Core-Tests
 testIsFuelStack
-	object := self newObject 
+	object := self newObjectToTest 
 		embeds: (Array with: (self newEmbedObject
 			fieldName: DSSendCommand fuelFieldName 
 			value: DSSendStackCommand commandName;

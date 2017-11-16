@@ -1,4 +1,4 @@
 tests
 testIsInline
-	object := self newObject.
+	object := self newObjectToTest.
 	self deny: object isInline

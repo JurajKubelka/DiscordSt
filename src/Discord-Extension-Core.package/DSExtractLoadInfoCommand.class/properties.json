@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 11/16/2017 11:17",
+	"super" : "DSCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"message",
+		"loadId",
+		"data"
+	],
+	"name" : "DSExtractLoadInfoCommand",
+	"type" : "normal"
+}

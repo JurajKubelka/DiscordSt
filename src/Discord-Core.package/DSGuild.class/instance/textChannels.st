@@ -1,4 +1,4 @@
 enumerating
 textChannels
 	"Return text channels."
-	^ self channels select: #isGuildTextChannel
+	^ self flattenedChannels select: #isGuildTextChannel

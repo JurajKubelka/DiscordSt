@@ -1,5 +1,5 @@
 tests
 testFileSize
-	command := self newObject.
+	command := self newObjectToTest.
 	command fileSize: 34.
 	self assert: command fileSize equals: 34.

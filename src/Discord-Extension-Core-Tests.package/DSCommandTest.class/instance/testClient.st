@@ -1,5 +1,5 @@
 tests
 testClient
-	command := self newObject.
+	command := self newObjectToTest.
 	command client: self anyString.
 	self assert: command client equals: self anyString.

@@ -2,7 +2,7 @@ tests-protocol
 testDownloadAndParse
 	"Require an internet connection."
 	| data |
-	data := self classToBeTested downloadAndParse.
+	data := self classToTest downloadAndParse.
 	self assert: data notNil.
 	self assert: data class equals: DSExpertisePackages.
 	self assert: data notEmpty.

@@ -1,5 +1,5 @@
 tests-accessing - wrapper
 testDescription
-	command := self newObject.
+	command := self newObjectToTest.
 	command description: self anyString.
 	self assert: command description equals: self anyString.

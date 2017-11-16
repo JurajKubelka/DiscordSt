@@ -1,6 +1,6 @@
 *Discord-Extension-Core-Tests
 testIsFuelObjectFalse
-	object := self newObject 
+	object := self newObjectToTest 
 		name: DSSendCommand fuelFieldName; 
 		yourself.
 	self deny: object isFuelObject

@@ -9,7 +9,7 @@ collectionOfSortedChannelsMappingFor: aNeoJSONMapper
 						execute;
 						sortedChannels ].
 			mapping writer: [ :jsonWriter :aCollection | | flattenedChannels |
-				flattenedChannels := DSFlattenChannelsCommand new 
+				flattenedChannels := DSFlattenChannelsOrderByIdCommand new 
 					channels: aCollection;
 					execute;
 					flattenedChannels.

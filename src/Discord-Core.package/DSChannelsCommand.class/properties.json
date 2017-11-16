@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCoreCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"channels"
+	],
+	"name" : "DSChannelsCommand",
+	"type" : "normal"
+}

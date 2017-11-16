@@ -6,5 +6,5 @@ askForMessageAndSend
 	self isAuthenticated ifFalse: [ ^ self ].
 	model := self specModelWithToolbar.
 	window := model openWithSpec.
-	window title: 'Send Object to Discord'.
+	window title: 'Send Object to Discord' translated.
 	^ window

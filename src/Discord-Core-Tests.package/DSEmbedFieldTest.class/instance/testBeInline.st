@@ -1,4 +1,4 @@
 tests
 testBeInline
-	object := self newObject beInline; yourself.
+	object := self newObjectToTest beInline; yourself.
 	self assert: object isInline
