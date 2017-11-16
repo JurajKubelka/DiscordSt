@@ -1,5 +1,6 @@
 # Discord.st
-An API wrapper for Discord written in Pharo
+
+An API wrapper for [Discord](https://discordapp.com) written in [Pharo](http://pharo.org).
 
 [![Build Status](https://travis-ci.org/JurajKubelka/DiscordSt.svg?branch=master)](https://travis-ci.org/JurajKubelka/DiscordSt)
 [![Build status](https://ci.appveyor.com/api/projects/status/enr9dgwos8ke340m/branch/master?svg=true)](https://ci.appveyor.com/project/JurajKubelka/discordst/branch/master)
@@ -15,81 +16,51 @@ Metacello new
     load.
 ```
 
+## Documentation
+
+### Authentication
+
+Authenticating with the Discord can be done in one of three ways:
+
+- Using a Webhook URL gained by creating a Webhook bot.
+- Using a bot token gained by registering a bot
+- Using a user email and password credentials (notice that you should
+not use a user account to connect bots)
+
+### Webhook
+
+[Webhooks](https://discordapp.com/developers/docs/resources/webhook#webhook-resource)
+are a low-effort way to post messages to channels in Discord. They do
+not require a bot user or authentication to use. They cannot read
+messages from a channel.
+
+A typical example is being informed about GitHub repository
+changes. This case does not require extra resources, is [supported
+directly by Discord](https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22).
+
+### Bot
+
+Other option is creating a bot. Such account, Discord calls it *apps*,
+can be used for chatbots that can read and write messages and manage
+associated serves and channels.
+
+To create a bot, check following steps:
+- Create a Bot App https://discordapp.com/developers/applications/me
+- Copy the Client/Application ID
+- Calculate permissions and click on a link to authorize the Bot: https://discordapi.com/permissions.html
+- Remember that the new Bot has to connect to Gateway at least once, before sending messages
+
+### User Client
+
+The third option to connect to Discord within Pharo is by using a user
+account, email and password. Notice that using such account to connect
+bots is strictly prohibited.
+
 ## Examples
 
-### Text Messages
+Examples are divided into three sections:
 
-You can send a simple message by executing:
+- [Webhooks](doc/Webhooks.md)
+- [Bot](doc/Bot.md)
+- [User Client](doc/UserClient.md)
 
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	message: 'Hello! I am a Bot executed from Pharo';
-	post
-```
-
-Or you can add username and avatar information by executing:
-
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	message: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
-	username: 'Pharo Welcome';
-	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
-	post
-```
-
-![Bot example](assets/img/bot-example.png)
-
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	username: 'Pharo Welcome';
-	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
-	embedTitle: 'Discord Bot Announcement';
-	embedDescription: 'Hello! I am a Bot executed from [Pharo](http://pharo.org)';
-	embedUrl: 'https://github.com/JurajKubelka/DiscordSt';
-	embedColor: Color green;
-	embedFooterText: 'Discord API in Pharo';
-	embedFooterIconUrl: 'https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png';
-	post
-```
-
-![Bot example](assets/img/embed-object.png)
-
-### Attachments and Images
-
-You can send a file, for example an image:
-
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	message: 'Pharo loves Discord';
-	fileName: 'pharo-logo.png' 
-	bytes: (ZnEasy 
-		get: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png') contents;
-	post.
-```
-
-or a screenshot of a Form object:
-
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	message: 'Pharo loves Discord';
-	fileName: 'help-icon.png' form: Smalltalk ui icons help;
-	post.
-```
-
-or a screenshot of a Morph object:
-
-```Smalltalk
-DSWebhookClient new 
-	url: 'https://discordapp.com/api/webhooks/WEBHOOK-ID/WEBHOOK-TOKEN';
-	username: 'Pharo Screenshot';
-	avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
-	fileName: 'screen.png' morph: World;
-	post.
-```
-
-![Bot example](assets/img/morph-screenshot.png)
