@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 11/17/2017 13:42",
+	"super" : "DSAbstractFindMorphCommand",
+	"category" : "Discord-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSFindMorphCommand",
+	"type" : "normal"
+}

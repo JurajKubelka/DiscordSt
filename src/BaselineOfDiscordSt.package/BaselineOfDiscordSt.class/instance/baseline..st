@@ -45,8 +45,13 @@ baseline: spec
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
+			package: #'Discord-Tools' with: [
+				"They depend on GT-Inspector and GT-Playground that are stadard tools" ];
+			package: #'Discord-Examples' with: [
+				spec requires: #( #'Discord-WebhookClient' "GT-Inspector" ). ];
+
 			package: #'Discord-Extension-Core' with: [
-				spec requires: #( #'Discord-Client' ). ];
+				spec requires: #( #'Discord-Client' #'Discord-Tools' ). ];
 			package: #'Discord-Extension-Core-Tests' with: [
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' ). ];
 			package: #'Discord-Extension-UI' with: [
@@ -62,12 +67,14 @@ baseline: spec
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 
-			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' #'expertise' );
+			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' #'expertise' #'tools' #'examples' );
 			group: #'core' with: #( #'Discord-Core' );
 			group: #'client' with: #( #'Discord-Client' );
+			group: #'webhook' with: #( #'Discord-WebhookClient' );
+			group: #'tools' with: #( #'Discord-Tools' );
+			group: #'examples' with: #( #'Discord-Examples' );
 			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
 			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
-			group: #'webhook' with: #( #'Discord-WebhookClient' );
 			group: #'ui' with: #( #'Discord-Extension-UI' #'Discord-UI-Brick' );
 			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' ).
 	].

@@ -1,0 +1,3 @@
+tests
+testMorph
+	self subclassResponsibility
