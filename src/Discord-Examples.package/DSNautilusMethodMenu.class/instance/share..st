@@ -15,6 +15,8 @@ share: examples
 			returnValues size = 1 ifTrue: [ | object window | 
 				object := returnValues anyOne.
 				window := GTInspector openOn: object.
+				"A hack so the UI can be rendered."
+				500 milliSeconds wait.
 				client embedMorph: window.
 				window delete ] ];
 		embedFooterText: 'Shared from Pharo Nautilus';
