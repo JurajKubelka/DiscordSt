@@ -18,7 +18,8 @@ generateId
 		self encodeDateAndTime: DateAndTime now stream: aStream.
 		aStream nextPut: self class fuelIdSeparator.
 		"Messages with a binary data can be sent to a different channel."
-		self encodeNumber: self previousMessages anyOne channelId asNumber stream: aStream.
+		self previousMessages ifNotEmpty: [ 
+			self encodeNumber: self previousMessages anyOne channelId asNumber stream: aStream ].
 		aStream nextPut: self class fuelIdSeparator.
 		"Message Ids - messages that includes other parts of a serialized data"
 		self previousMessages 

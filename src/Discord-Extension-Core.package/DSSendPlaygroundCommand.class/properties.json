@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSendCommand",
+	"category" : "Discord-Extension-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playground"
+	],
+	"name" : "DSSendPlaygroundCommand",
+	"type" : "normal"
+}
