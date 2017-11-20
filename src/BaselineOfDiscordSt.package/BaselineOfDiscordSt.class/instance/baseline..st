@@ -26,7 +26,8 @@ baseline: spec
 
 			package: #'Discord-Announcements';
 
-			package: #'Discord-Core';
+			package: #'Discord-Core' with: [
+				spec requires: #( #'NeoJSON' ). ];
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
 
@@ -47,8 +48,6 @@ baseline: spec
 
 			package: #'Discord-Tools' with: [
 				"They depend on GT-Inspector and GT-Playground that are stadard tools" ];
-			package: #'Discord-Examples' with: [
-				spec requires: #( #'Discord-WebhookClient' "GT-Inspector" ). ];
 
 			package: #'Discord-Extension-Core' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Tools' ). ];
@@ -64,6 +63,9 @@ baseline: spec
 			package: #'Discord-Extension-Expertise-Tests' with: [
 				spec requires: #( #'Discord-Extension-Expertise' ). ];
 			
+			package: #'Discord-Examples' with: [
+				spec requires: #( #'Discord-WebhookClient' #'Discord-Extension-Expertise' #'Discord-Client' #'Discord-Announcements' "GT-Inspector" ). ];
+
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 
