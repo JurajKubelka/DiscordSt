@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DSGatewayPayloadAnnouncement",
+	"super" : "DSGatewayMessageAnnouncement",
 	"category" : "Discord-Announcements",
 	"classinstvars" : [ ],
 	"pools" : [ ],

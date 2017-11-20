@@ -9,7 +9,6 @@ sendJsonMessage: aDSClientJsonPost toGuildTextOrDMChannelId: channelId signalPro
 		post: aDSClientJsonPost;
 		execute;
 		entity.
-	entity contentType: ZnMimeType applicationJson.
 	response := self newZnClientAuthenticated
 		url: url;
 		signalProgress: aBoolean;
