@@ -30,6 +30,8 @@ gtInspectorMessages: composite
 					aStream nextPut: 'Object' ].
 				message isFuelStack ifTrue: [ 
 					aStream nextPut: 'Stack' ].
+				message isFuelPlayground ifTrue: [ 
+					aStream nextPut: 'Playground' ].
 				message hasEmbedImages ifTrue: [ 
 					aStream nextPut: 'Img' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];

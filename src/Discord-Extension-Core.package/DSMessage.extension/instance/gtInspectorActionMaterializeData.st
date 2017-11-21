@@ -6,5 +6,5 @@ gtInspectorActionMaterializeData
 				result := self materializeObjectInAWrapper.
 				"presentation update; selection: result" ];
 		icon: (self iconNamed: #smallInspectIt);
-		condition: [ self isFuelObject ];
+		condition: [ self isFuel ];
 		title: 'Inspect the received object' translated
