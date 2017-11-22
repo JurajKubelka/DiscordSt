@@ -73,8 +73,9 @@ baseline: spec
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
 			group: #'bot' with: #( #'Discord-Client' );
 			group: #'client' with: #( #'Discord-Client' );
+			group: #'src-core' with: #( #'webhook' #'bot' #'client' );
 			group: #'tests-core' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' );
-			group: #'core' with: #( #'webhook' #'bot' #'client' #'tests-core' );
+			group: #'core' with: #( #'src-core' #'tests-core' );
 
 			"extensions"
 			group: #'examples' with: #( #'Discord-Examples' );
@@ -85,12 +86,14 @@ baseline: spec
 			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
 
 			"light options (no Bloc/Brick)"
-			group: #'light' with: #( #'core' #'extensions' #'expertise' #'ui-light' #'examples' );
+			group: #'src-light' with: #( #'src-core' #'extensions' #'expertise' #'ui-light' #'examples' );
 			group: #'tests-light' with: #( #'tests-core' #'tests-extensions' );
+			group: #'light' with: #( #'src-light' #'tests-light' );
 			
 			"full (all packages including Bloc/Brick) options"
-			group: #'full' with: #( #'light' #'ui-full' );
+			group: #'src-full' with: #( #'src-light' #'ui-full' );
 			group: #'tests-full' with: #( #'tests-light' );
+			group: #'full' with: #( #'src-full' #'tests-full' );
 			
 			"default"
 			group: #'default' with: #( #'light' #'tests' );
