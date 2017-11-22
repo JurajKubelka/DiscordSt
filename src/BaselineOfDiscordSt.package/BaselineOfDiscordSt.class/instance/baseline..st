@@ -39,7 +39,7 @@ baseline: spec
 			package: #'Discord-Client' with: [
 				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
 			package: #'Discord-Client-Tests' with: [
-				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' ). ];
+				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' #'Discord-Gateway-Tests' ). ];
 
 			package: #'Discord-Gateway' with: [
 				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'ZincHTTPComponents' ). ];
@@ -69,14 +69,33 @@ baseline: spec
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 
-			group: #'default' with: #( #'core' #'webhook' #'client' #'tests' #'extensions' #'ui' #'expertise' #'tools' #'examples' );
+			"core (very basic) options"
 			group: #'core' with: #( #'Discord-Core' );
-			group: #'client' with: #( #'Discord-Client' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
-			group: #'tools' with: #( #'Discord-Tools' );
+			group: #'bot' with: #( #'Discord-Client' );
+			group: #'client' with: #( #'Discord-Client' );
+			group: #'tests-basic' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' );
+			group: #'basic' with: #( #'core' #'webhook' #'bot' #'client' #'tests-basic' );
+
+			"extensions"
 			group: #'examples' with: #( #'Discord-Examples' );
-			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
 			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
-			group: #'ui' with: #( #'Discord-Extension-UI' #'Discord-UI-Brick' );
-			group: #'tests' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' ).
+			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
+			group: #'ui-light' with: #( #'Discord-Extension-UI' );
+			group: #'ui-full' with: #( #'ui-light' #'Discord-UI-Brick' );
+			group: #'tests-extensions' with: #( #'tests-basic' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
+
+			"light options (no Bloc/Brick)"
+			group: #'light' with: #( #'basic' #'extensions' #'expertise' #'ui-light' #'examples' );
+			group: #'tests-light' with: #( #'tests-basic' #'tests-extensions' );
+			
+			"full (all packages including Bloc/Brick) options"
+			group: #'full' with: #( #'light' #'ui-full' );
+			group: #'tests-full' with: #( #'tests-light' );
+			
+			"default"
+			group: #'default' with: #( #'light' #'tests' );
+			group: #'all' with: #( #'full' #'tests-all' );
+			group: #'tests' with: #( #'tests-light' );
+			group: #'tests-all' with: #( #'tests-full' ).
 	].
