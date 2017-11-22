@@ -70,12 +70,11 @@ baseline: spec
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 
 			"core (very basic) options"
-			group: #'core' with: #( #'Discord-Core' );
 			group: #'webhook' with: #( #'Discord-WebhookClient' );
 			group: #'bot' with: #( #'Discord-Client' );
 			group: #'client' with: #( #'Discord-Client' );
-			group: #'tests-basic' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' );
-			group: #'basic' with: #( #'core' #'webhook' #'bot' #'client' #'tests-basic' );
+			group: #'tests-core' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' );
+			group: #'core' with: #( #'webhook' #'bot' #'client' #'tests-core' );
 
 			"extensions"
 			group: #'examples' with: #( #'Discord-Examples' );
@@ -83,11 +82,11 @@ baseline: spec
 			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
 			group: #'ui-light' with: #( #'Discord-Extension-UI' );
 			group: #'ui-full' with: #( #'ui-light' #'Discord-UI-Brick' );
-			group: #'tests-extensions' with: #( #'tests-basic' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
+			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
 
 			"light options (no Bloc/Brick)"
-			group: #'light' with: #( #'basic' #'extensions' #'expertise' #'ui-light' #'examples' );
-			group: #'tests-light' with: #( #'tests-basic' #'tests-extensions' );
+			group: #'light' with: #( #'core' #'extensions' #'expertise' #'ui-light' #'examples' );
+			group: #'tests-light' with: #( #'tests-core' #'tests-extensions' );
 			
 			"full (all packages including Bloc/Brick) options"
 			group: #'full' with: #( #'light' #'ui-full' );
