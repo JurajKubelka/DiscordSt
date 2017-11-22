@@ -16,7 +16,13 @@ Metacello new
     load.
 ```
 
+The script above installs all but UI packages. For more options, see [documentation](doc/Installation.md).
+
 ## Documentation
+
+You can watch a video tutorial available on
+[YouTube](https://www.youtube.com/watch?v=33kXsOiP6wA). It includes
+examples and several use cases. Check the talk outline (description) below the video. Slides are available [here](doc/TechTalk 21-11-2017.pdf).
 
 ### Authentication
 

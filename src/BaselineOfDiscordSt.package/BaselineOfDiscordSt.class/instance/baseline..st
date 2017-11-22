@@ -34,7 +34,7 @@ baseline: spec
 			package: #'Discord-WebhookClient' with: [
 				spec requires: #( #'Discord-Core' ). ];
 			package: #'Discord-WebhookClient-Tests' with: [
-				spec requires: #( #'Discord-WebhookClient' ). ];
+				spec requires: #( #'Discord-WebhookClient' #'Discord-Core-Tests' ). ];
 
 			package: #'Discord-Client' with: [
 				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
@@ -69,12 +69,19 @@ baseline: spec
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 
-			"core (very basic) options"
-			group: #'webhook' with: #( #'Discord-WebhookClient' );
-			group: #'bot' with: #( #'Discord-Client' );
-			group: #'client' with: #( #'Discord-Client' );
-			group: #'src-core' with: #( #'webhook' #'bot' #'client' );
-			group: #'tests-core' with: #( #'Discord-Core-Tests' #'Discord-WebhookClient-Tests' #'Discord-Client-Tests' #'Discord-Gateway-Tests' );
+			"Webhook"
+			group: #'src-webhook' with: #( #'Discord-WebhookClient' );
+			group: #'tests-webhook' with: #( #'Discord-WebhookClient-Tests' );
+			group: #'webhook' with: #( #'src-webhook' #'tests-webhook' );
+			
+			"Bot App and User Client"
+			group: #'src-client' with: #( #'Discord-Client' );
+			group: #'tests-client' with: #( #'Discord-Client-Tests' );
+			group: #'client' with: #( #'src-client' #'tests-client' );
+			
+			"core"
+			group: #'src-core' with: #( #'src-webhook' #'src-client' );
+			group: #'tests-core' with: #( #'tests-webhook' #'tests-client' );
 			group: #'core' with: #( #'src-core' #'tests-core' );
 
 			"extensions"
@@ -97,7 +104,9 @@ baseline: spec
 			
 			"default"
 			group: #'default' with: #( #'light' #'tests' );
-			group: #'all' with: #( #'full' #'tests-all' );
 			group: #'tests' with: #( #'tests-light' );
+
+			"all"
+			group: #'all' with: #( #'full' #'tests-all' );
 			group: #'tests-all' with: #( #'tests-full' ).
 	].
