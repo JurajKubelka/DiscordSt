@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 11/24/2017 17:08",
+	"super" : "Object",
+	"category" : "Discord-Core-Utility",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"stream"
+	],
+	"name" : "DSMarkdownBuilder",
+	"type" : "normal"
+}
