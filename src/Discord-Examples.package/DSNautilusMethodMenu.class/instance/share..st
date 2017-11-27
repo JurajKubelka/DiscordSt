@@ -17,7 +17,7 @@ share: examples
 				window := GTInspector openOn: object.
 				"A hack so the UI can be rendered."
 				500 milliSeconds wait.
-				client embedMorph: window.
+				client embedImageMorph: window.
 				window delete ] ];
 		embedFooterText: 'Shared from Pharo Nautilus';
 		send.

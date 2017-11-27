@@ -10,5 +10,5 @@ sendMainMessage: previousMessages
 		embedInlineFieldName: 'OS' value: self osFieldValue;
 		embedInlineFieldName: self fuelFieldName value: (self fuelFieldValueFrom: self channel messages: previousMessages);
 		with: [ :aMessage | 
-			self screenshot ifNotNil: [ aMessage embedForm: self screenshot ] ];
+			self screenshot ifNotNil: [ aMessage embedImageForm: self screenshot ] ];
 		with: [ :aMessage | self displayProgress: 'Sending user message' whileSending: aMessage toChannel: self channel ]
