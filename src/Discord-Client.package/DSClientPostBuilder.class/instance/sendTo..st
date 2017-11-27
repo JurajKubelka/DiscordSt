@@ -5,8 +5,8 @@ sendTo: aDSGuildTextChannelOrOneArgBlock
 	The block should return a aDSGuildTextChannel.
 	It returns the sent message.
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
-	<return: #DSMessage or: nil>
+	<return: #DSMessage or: nil> 
 	aDSGuildTextChannelOrOneArgBlock isClosure 
-		ifTrue: [ self channel: (aDSGuildTextChannelOrOneArgBlock value: self servers) ]
-		ifFalse: [ self channel: aDSGuildTextChannelOrOneArgBlock ].
+		ifTrue: [ self target: (aDSGuildTextChannelOrOneArgBlock value: self servers) ]
+		ifFalse: [ self target: aDSGuildTextChannelOrOneArgBlock ].
 	^ self send

@@ -1,16 +1,18 @@
 {
-	"commentStamp" : "JurajKubelka 4/12/2017 17:36",
-	"super" : "Object",
-	"category" : "Discord-WebhookClient",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSWebhookPostBuilder classTrait + TDSUnifiedPublishInterface classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"url",
-		"webhook",
+		"post",
 		"waitForResponse",
 		"ifFailBlock"
 	],
 	"name" : "DSWebhookClient",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 11/27/2017 13:17",
+	"super" : "Object",
+	"traitcomposition" : "TDSWebhookPostBuilder + TDSUnifiedPublishInterface",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-WebhookClient"
 }

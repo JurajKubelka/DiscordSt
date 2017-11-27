@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 defaultProcessName
 	"Return the process name used for the forked execution.
 	See #execute method."

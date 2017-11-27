@@ -8,4 +8,4 @@ ignoreAnyNetworkError
 		message: 'Hello! I am a Bot executed from Pharo';
 		supressNetworkErrors;
 		yourself ";
-		post"
+		send"

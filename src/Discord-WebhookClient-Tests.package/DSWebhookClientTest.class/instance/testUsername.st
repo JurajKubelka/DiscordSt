@@ -1,8 +1,8 @@
 tests
 testUsername
-	client := DSWebhookClient new 
+	client := self classToTest new 
 		message: self messageString;
 		username: self username;
 		yourself.
-	self assert: client webhook username equals: self username.
-	self assert: client webhook content equals: self messageString.
+	self assert: client post username equals: self username.
+	self assert: client post content equals: self messageString.

@@ -6,7 +6,7 @@ testAsDataPost2
 		content: 'a content';
 		nonce: '1234';
 		isTextToSpeech: true;
-		embedDescription: 'embed description'.
+		embed: ( DSEmbed new description: 'embed description'; yourself).
 	convertedPost := post asDataPost.
 	self deny: convertedPost == post.
 	self assert: convertedPost class equals: DSClientDataPost.

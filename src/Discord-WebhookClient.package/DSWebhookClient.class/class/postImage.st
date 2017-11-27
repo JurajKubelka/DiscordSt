@@ -10,4 +10,4 @@ postImage
 		bytes: (ZnEasy 
 			get: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png') contents;
 		yourself ";
-		post"
+		send"

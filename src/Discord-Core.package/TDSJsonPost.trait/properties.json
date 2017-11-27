@@ -1,0 +1,7 @@
+{
+	"commentStamp" : "JurajKubelka 11/27/2017 13:35",
+	"traitcomposition" : "TDSPost",
+	"classtraitcomposition" : "TDSPost classTrait",
+	"category" : "Discord-Core-Trait",
+	"name" : "TDSJsonPost"
+}

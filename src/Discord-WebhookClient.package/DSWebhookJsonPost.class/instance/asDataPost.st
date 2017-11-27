@@ -1,6 +1,7 @@
 converting
 asDataPost
-	"Data Webhook includes all but embeds."
+	"Convert JSON post to a data post."
+	<return: #TDSDataPost>
 	| data |
 	data := DSWebhookDataPost new.
 	data

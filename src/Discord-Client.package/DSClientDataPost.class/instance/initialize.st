@@ -1,5 +1,4 @@
 initialization
 initialize
 	super initialize.
-	fileParts := OrderedCollection new.
-	
+	mimeParts := OrderedCollection new

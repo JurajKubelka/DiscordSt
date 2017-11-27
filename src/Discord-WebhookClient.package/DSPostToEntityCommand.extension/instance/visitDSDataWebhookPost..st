@@ -5,5 +5,5 @@ visitDSDataWebhookPost: aDSWebhookDataPost
 	payloadJson := DSModelJsonMapping write: aDSWebhookDataPost mappedTo: #webhookPostMappingFor:.
 	part := ZnMimePart fieldName: 'payload_json' value: payloadJson.
 	entity addPart: part.
-	aDSWebhookDataPost fileParts do: [ :eachPart |
+	aDSWebhookDataPost mimeParts do: [ :eachPart |
 		entity addPart: eachPart ].

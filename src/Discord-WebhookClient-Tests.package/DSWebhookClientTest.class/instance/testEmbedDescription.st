@@ -1,8 +1,8 @@
 tests - embed
 testEmbedDescription
-	client := DSWebhookClient new
+	client := self classToTest new
 		embedDescription: self anyString;
 		yourself.
-	self assert: client webhook embeds isCollection.
-	self assert: client webhook embeds size equals: 1.
-	self assert: client webhook embeds first description equals: self anyString.
+	self assert: client post embeds isCollection.
+	self assert: client post embeds size equals: 1.
+	self assert: client post embeds first description equals: self anyString.

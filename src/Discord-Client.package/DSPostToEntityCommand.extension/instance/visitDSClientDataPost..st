@@ -5,5 +5,5 @@ visitDSClientDataPost: aDSClientDataPost
 	payloadJson := DSModelJsonMapping write: aDSClientDataPost mappedTo: #clientPostMappingFor:.
 	part := ZnMimePart fieldName: 'payload_json' value: payloadJson.
 	entity addPart: part.
-	aDSClientDataPost fileParts do: [ :eachPart |
+	aDSClientDataPost mimeParts do: [ :eachPart |
 		entity addPart: eachPart ].

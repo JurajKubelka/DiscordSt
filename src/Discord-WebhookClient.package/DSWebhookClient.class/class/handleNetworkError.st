@@ -8,4 +8,4 @@ handleNetworkError
 		message: 'Hello! I am a Bot executed from Pharo';
 		ifFail: [ :exception | Transcript show: exception ];
 		yourself ";
-		post"
+		send"

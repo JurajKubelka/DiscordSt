@@ -1,4 +1,4 @@
 tests
 testMessage
-	client := DSWebhookClient new message: self messageString.
-	self assert: client webhook content equals: self messageString.
+	client := self classToTest new message: self messageString.
+	self assert: client post content equals: self messageString.

@@ -1,8 +1,8 @@
-test - post
+test - sending
 testPostNetworkError6
 	"Post multi-part data form entity"
-	client := DSWebhookClient new 
+	client := self classToTest new 
 		url: 'http://nonexistingserver.localhost.';
 		message: self messageString;
 		fileName: self anyString bytes: self bytes.
-	self should: [ client post ] raise: NameLookupFailure.
+	self should: [ client send ] raise: NameLookupFailure.

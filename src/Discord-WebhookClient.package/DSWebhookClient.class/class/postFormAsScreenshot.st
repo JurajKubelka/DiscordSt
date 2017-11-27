@@ -8,4 +8,4 @@ postFormAsScreenshot
 		message: 'This is a help icon used in the Pharo image';
 		fileName: 'help-icon.png' form: #help asIcon;
 		yourself ";
-		post"
+		send"

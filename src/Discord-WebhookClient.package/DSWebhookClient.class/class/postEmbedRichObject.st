@@ -12,4 +12,4 @@ postEmbedRichObject
 		embedFooterText: 'Discord API in Pharo';
 		embedFooterIconUrl: 'https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png';
 		yourself ";
-		post"
+		send"

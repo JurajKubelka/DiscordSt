@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "JurajKubelka 5/8/2017 10:53",
-	"super" : "DSClientPost",
-	"category" : "Discord-Client",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSDataPost classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"fileParts"
+		"mimeParts"
 	],
 	"name" : "DSClientDataPost",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 11/27/2017 11:02",
+	"super" : "DSClientPost",
+	"traitcomposition" : "TDSDataPost",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Client"
 }

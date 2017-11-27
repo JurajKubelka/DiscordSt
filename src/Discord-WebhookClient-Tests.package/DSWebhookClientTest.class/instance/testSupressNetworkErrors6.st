@@ -1,11 +1,11 @@
-test - post
+test - sending
 testSupressNetworkErrors6
 	"Post multi-part data form entity"
 	| response |
-	client := DSWebhookClient new 
+	client := self classToTest new 
 		url: 'http://nonexistingserver.localhost.';
 		message: self messageString;
 		fileName: self anyString bytes: self bytes;
 		supressNetworkErrors.
-	response := client post.
+	response := client send.
 	self assert: response isNil

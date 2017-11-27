@@ -1,8 +1,8 @@
 tests - embed
 testEmbedColor
-	client := DSWebhookClient new
+	client := self classToTest new
 		embedColor: self color;
 		yourself.
-	self assert: client webhook embeds isCollection.
-	self assert: client webhook embeds size equals: 1.
-	self assert: client webhook embeds first color equals: self color.
+	self assert: client post embeds isCollection.
+	self assert: client post embeds size equals: 1.
+	self assert: client post embeds first color equals: self color.

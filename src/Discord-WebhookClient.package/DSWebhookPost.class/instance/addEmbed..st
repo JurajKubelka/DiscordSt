@@ -1,3 +1,3 @@
 adding
-addEmbed: aDSEmbedObject 
-	^ self embeds add: aDSEmbedObject
+addEmbed: aDSEmbed 
+	^ self embeds addLast: aDSEmbed

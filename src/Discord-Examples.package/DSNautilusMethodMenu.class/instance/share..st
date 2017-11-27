@@ -20,4 +20,4 @@ share: examples
 				client embedMorph: window.
 				window delete ] ];
 		embedFooterText: 'Shared from Pharo Nautilus';
-		post 
+		send.

@@ -1,4 +1,4 @@
 tests
 testIfFailBlock
-	client := DSWebhookClient new.
+	client := self classToTest new.
 	self assert: client ifFailBlock isBlock.

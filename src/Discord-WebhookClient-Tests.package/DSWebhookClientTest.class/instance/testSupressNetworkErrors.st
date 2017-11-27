@@ -1,13 +1,13 @@
-test - post
+test - sending
 testSupressNetworkErrors
 	"Post JSON entity"
 	| response port |
 	server := ZnServer startOn: 0.
 	port := server serverSocket port.
 	server stop.
-	client := DSWebhookClient new 
+	client := self classToTest new 
 		url: 'http://localhost:', port asString;
 		message: self messageString;
 		supressNetworkErrors.
-	response := client post.
+	response := client send.
 	self assert: response isNil

@@ -1,13 +1,15 @@
 {
-	"commentStamp" : "JurajKubelka 5/8/2017 10:52",
-	"super" : "DSWebhookPost",
-	"category" : "Discord-WebhookClient",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSDataPost classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"fileParts"
+		"mimeParts"
 	],
 	"name" : "DSWebhookDataPost",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 11/27/2017 13:17",
+	"super" : "DSWebhookPost",
+	"traitcomposition" : "TDSDataPost",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-WebhookClient"
 }

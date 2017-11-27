@@ -4,8 +4,9 @@ send
 	It returns the sent message.
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	<return: #DSMessage or: nil>
-	| result |
-	post isEmpty ifTrue: [ DSIncorrectValuesError signal: 'Cannot send an empty message' ].
-	[ result := post accept: self ]
+	self post isEmpty ifTrue: [ DSIncorrectValuesError signal: 'Cannot send an empty message' ].
+	^ [ self client restApi
+			sendMessage: post
+			toGuildTextOrDMChannelId: self channel id
+			signalProgress: self signalProgress ]
 		ensure: [ post := nil ].
-	^ result.

@@ -9,7 +9,7 @@ Basic usage is the following:
 DSWebhookClient new 
 	url: 'https://discordapp.com/api/webhooks/webhook-id/webhook-token';
 	message: 'Hello! I am a Bot executed from Pharo';
-	post
+	send
 }}}
 
 You can obtain the URL link from Discord application.

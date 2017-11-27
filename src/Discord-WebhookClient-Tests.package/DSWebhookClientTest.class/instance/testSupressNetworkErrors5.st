@@ -1,10 +1,10 @@
-test - post
+test - sending
 testSupressNetworkErrors5
 	"Post JSON entity"
 	| response |
-	client := DSWebhookClient new 
+	client := self classToTest new 
 		url: 'http://nonexistingserver.localhost.';
 		message: self messageString;
 		supressNetworkErrors.
-	response := client post.
+	response := client send.
 	self assert: response isNil

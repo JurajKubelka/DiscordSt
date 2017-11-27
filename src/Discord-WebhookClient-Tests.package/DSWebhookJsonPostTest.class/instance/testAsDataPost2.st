@@ -7,7 +7,7 @@ testAsDataPost2
 		username: '1234';
 		avatarUrl: 'http://example.com/avatar.png' asZnUrl;
 		isTextToSpeech: true;
-		embedDescription: 'embed description'.
+		embeds: { DSEmbed new description: 'embed description'; yourself }.
 	convertedPost := object asDataPost.
 	self deny: convertedPost == object.
 	self assert: convertedPost class equals: DSWebhookDataPost.

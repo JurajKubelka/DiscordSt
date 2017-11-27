@@ -9,4 +9,4 @@ postMorphAsScreenshot
 		avatarUrl: 'http://files.pharo.org/media/logo/icon-opaque-512x512.png';
 		fileName: 'screen.png' morph: World;
 		yourself ";
-		post"
+		send"
