@@ -50,7 +50,9 @@ baseline: spec
 				"They depend on GT-Inspector and GT-Playground that are stadard tools" ];
 
 			package: #'Discord-Extension-Core' with: [
-				spec requires: #( #'Discord-Client' #'Discord-Tools' ). ];
+				spec 
+					postLoadDoIt: #postLoadPlayground:;
+					requires: #( #'Discord-Client' #'Discord-Tools' ) ];
 			package: #'Discord-Extension-Core-Tests' with: [
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' ). ];
 			package: #'Discord-Extension-UI' with: [
@@ -68,7 +70,7 @@ baseline: spec
 
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
-
+			
 			"Webhook"
 			group: #'src-webhook' with: #( #'Discord-WebhookClient' );
 			group: #'tests-webhook' with: #( #'Discord-WebhookClient-Tests' );
