@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Examples-AdventOfCode",
+	"classinstvars" : [
+		"webhookUrl"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSAocSettings",
+	"type" : "normal"
+}

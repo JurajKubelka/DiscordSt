@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Examples-AdventOfCode",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playground"
+	],
+	"name" : "DSAocSharePlaygroundCommand",
+	"type" : "normal"
+}

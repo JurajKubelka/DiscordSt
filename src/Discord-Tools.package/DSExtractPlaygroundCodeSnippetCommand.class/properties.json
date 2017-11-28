@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/28/2017 09:46",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playground",
+		"codeSnippet"
+	],
+	"name" : "DSExtractPlaygroundCodeSnippetCommand",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"codeSnippet",
+		"classes"
+	],
+	"name" : "DSClassesInCodeSnippetCommand",
+	"type" : "normal"
+}

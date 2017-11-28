@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSToolCommandTest",
+	"category" : "Discord-Tools-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSClassesInCodeSnippetCommandTest",
+	"type" : "normal"
+}

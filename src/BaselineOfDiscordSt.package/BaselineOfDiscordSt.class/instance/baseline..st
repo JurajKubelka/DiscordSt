@@ -48,13 +48,15 @@ baseline: spec
 
 			package: #'Discord-Tools' with: [
 				"They depend on GT-Inspector and GT-Playground that are stadard tools" ];
+			package: #'Discord-Tools-Tests' with: [
+				spec requires: #( #'Discord-Tools' ) ];
 
 			package: #'Discord-Extension-Core' with: [
 				spec 
 					postLoadDoIt: #postLoadPlayground:;
 					requires: #( #'Discord-Client' #'Discord-Tools' ) ];
 			package: #'Discord-Extension-Core-Tests' with: [
-				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' ). ];
+				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' #'Discord-Tools-Tests' ). ];
 			package: #'Discord-Extension-UI' with: [
 				spec requires: #( #'Discord-Extension-Core' ). ];
 			package: #'Discord-Extension-UI-Tests' with: [
@@ -92,7 +94,7 @@ baseline: spec
 			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
 			group: #'ui-light' with: #( #'Discord-Extension-UI' );
 			group: #'ui-full' with: #( #'ui-light' #'Discord-UI-Brick' );
-			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
+			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Tools-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
 
 			"light options (no Bloc/Brick)"
 			group: #'src-light' with: #( #'src-core' #'extensions' #'expertise' #'ui-light' #'examples' );
