@@ -4,6 +4,6 @@ generatePngFileName
 	<return: #String>
 	^ DSGenerateFileNameCommand new
 		extension: '.png';
-		existingFileNames: self fileNames;
+		existingFileNames: self post fileNames;
 		execute;
 		fileName.
