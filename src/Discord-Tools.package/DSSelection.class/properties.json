@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Discord-Examples-AdventOfCode",
+	"category" : "Discord-Tools-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"playground",
-		"morph",
-		"codeSnippet"
+		"item",
+		"isSelected"
 	],
-	"name" : "DSAocSharePlaygroundCommand",
+	"name" : "DSSelection",
 	"type" : "normal"
 }
