@@ -1,4 +1,4 @@
-as yet unclassified
+gt-extension
 gtInspectorTreeIn: composite
 	<gtInspectorPresentationOrder: -1>
 	^ composite fastTree

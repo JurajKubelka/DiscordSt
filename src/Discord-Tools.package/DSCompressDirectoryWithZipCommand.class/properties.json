@@ -1,14 +1,14 @@
 {
-	"commentStamp" : "JurajKubelka 11/29/2017 12:43",
+	"commentStamp" : "JurajKubelka 11/29/2017 17:33",
 	"super" : "DSToolCommand",
 	"category" : "Discord-Tools-Commands",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"classes",
-		"packages"
+		"directory",
+		"zipFile"
 	],
-	"name" : "DSSortClassesPerPackageCommand",
+	"name" : "DSCompressDirectoryWithZipCommand",
 	"type" : "normal"
 }
