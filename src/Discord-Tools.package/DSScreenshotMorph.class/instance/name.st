@@ -1,3 +1,7 @@
 accessing
 name
-	^ self screenshot ifNotNil: #label ifNil: 'without screenshot'
+	^ self screenshot 
+		ifNotNil: [ :aMorph | aMorph isSystemWindow 
+			ifTrue: [ aMorph label ]  
+			ifFalse: [ aMorph printString ] ]
+		ifNil: 'without screenshot'

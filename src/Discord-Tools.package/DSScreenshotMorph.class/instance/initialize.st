@@ -8,5 +8,4 @@ initialize
 		listDirection: #leftToRight;
 		cellInset: 8;
 		cellPositioning: #center.
-	self addMorphBack: self newCheckboxButtonMorph.
-	self addMorphBack: self newLabelMorph.
+	self addMorphBack: self newCheckboxMorph.

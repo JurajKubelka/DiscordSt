@@ -1,13 +1,11 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 11/30/2017 15:45",
 	"super" : "LabelMorph",
 	"category" : "Discord-Tools-UI-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"preview"
-	],
+	"instvars" : [ ],
 	"name" : "DSScreenshotLabelMorph",
 	"type" : "normal"
 }

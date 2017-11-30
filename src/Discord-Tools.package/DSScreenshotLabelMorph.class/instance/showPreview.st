@@ -2,13 +2,11 @@ event handling
 showPreview	
 	"Pop up a balloon containing the given preview,
 	first removing any existing BalloonMorphs in the world."
-	| vertices aWorld aHand worldBounds |
-	self traceCr: #showPreview.
+	| vertices aWorld aHand worldBounds preview |
 	(aWorld := self world) ifNil: [^self].
 	aHand := aWorld activeHand.
 	preview := ImagePreviewMorph new
 		image: self screenshotForm size: 150@150;
-		"color: self theme backgroundColor;"
 		yourself.
 	preview fullBounds.
 	vertices := SimpleBalloonMorph getVertices: preview bounds.
