@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "LabelMorph",
+	"category" : "Discord-Tools-UI-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"preview"
+	],
+	"name" : "DSScreenshotLabelMorph",
+	"type" : "normal"
+}
