@@ -3,6 +3,6 @@ screenshot
 	<gtExample>
 	^ self new
 		screenshot: World submorphs atRandom;
-		isSelected: false;
+		extent: 500@300;
 		yourself";
 		openInWindow"
