@@ -8,6 +8,6 @@
 	"instvars" : [
 		"text"
 	],
-	"name" : "DSSendMessageMorph",
+	"name" : "DSScreenshotSendDialogMorph",
 	"type" : "normal"
 }

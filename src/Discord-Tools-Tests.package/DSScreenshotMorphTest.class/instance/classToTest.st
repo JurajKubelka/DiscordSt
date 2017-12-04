@@ -1,3 +1,3 @@
 running
 classToTest
-	^ DSScreenshotMorph
+	^ DSScreenshotItemMorph

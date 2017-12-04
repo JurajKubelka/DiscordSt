@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSScreenshotLabelMorph",
+	"name" : "DSScreenshotItemLabelMorph",
 	"type" : "normal"
 }

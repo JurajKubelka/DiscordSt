@@ -11,3 +11,4 @@ initialize
 		cellPositioning: #leftCenter.
 	self addMorphBack: self newCommentTextMorph.
 	self addMorphBack: self newScreenshotMorph.
+	self addMorphBack: self newSendbarMorph.

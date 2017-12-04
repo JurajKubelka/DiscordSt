@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morph",
+		"codeSnippet",
+		"packages",
+		"sendAction",
+		"message",
+		"isMorphSelected"
+	],
+	"name" : "DSMessageSendMorphCommand",
+	"type" : "normal"
+}
