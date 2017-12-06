@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FTColumn",
+	"category" : "Discord-Tools-UI-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"displayBlock"
+	],
+	"name" : "DSTableColumn",
+	"type" : "normal"
+}

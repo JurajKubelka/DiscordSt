@@ -1,6 +1,6 @@
 execute
 execute
-	DSScreenshotSendDialogMorph new
+	DSSendDialogMorph new
 		screenshot: self morph;
 		extent: 500@300;
 		onSendDo: [ :announcement | 
