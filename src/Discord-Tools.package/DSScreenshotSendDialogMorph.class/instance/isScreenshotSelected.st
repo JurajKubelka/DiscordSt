@@ -1,3 +1,3 @@
-as yet unclassified
+testing
 isScreenshotSelected
 	^ self submorphs second isSelected

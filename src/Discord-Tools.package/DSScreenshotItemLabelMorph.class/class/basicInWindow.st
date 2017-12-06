@@ -1,4 +1,4 @@
 examples
-openBasic
+basicInWindow
 	<example>
 	^ self basic openInWindow
