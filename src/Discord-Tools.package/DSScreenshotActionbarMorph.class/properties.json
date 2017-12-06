@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 12/6/2017 09:43",
 	"super" : "PanelMorph",
 	"category" : "Discord-Tools-UI-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSScreenshotSendbarMorph",
+	"name" : "DSScreenshotActionbarMorph",
 	"type" : "normal"
 }

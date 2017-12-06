@@ -1,4 +1,4 @@
 examples
 screenshotInWindow
-	<script>
+	<example>
 	^ self screenshot openInWindow

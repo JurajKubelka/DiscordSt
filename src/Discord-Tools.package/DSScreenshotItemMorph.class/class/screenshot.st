@@ -4,5 +4,5 @@ screenshot
 	^ self new
 		screenshot: World submorphs atRandom;
 		isSelected: false;
-		yourself";
-		openInWindow"
+		extent: 300@50;
+		yourself

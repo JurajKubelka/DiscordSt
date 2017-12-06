@@ -1,3 +1,3 @@
 accessing
 screenshotForm
-	^ self model screenshotForm
+	^ self morph imageForm
