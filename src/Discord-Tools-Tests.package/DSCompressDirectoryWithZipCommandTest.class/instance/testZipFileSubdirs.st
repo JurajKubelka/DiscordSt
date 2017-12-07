@@ -1,11 +1,9 @@
 tests
-testZipFile
+testZipFileSubdirs
 	| command dir |
 	command := self classToTest new.
-	dir := self createDirectoryWithTwoFiles.
+	dir := self createDirectoryWithSubDirectories.
 	command directory: dir.
 	command zipFile: FileLocator temp / 'archive.zip'.
 	zipFile := command execute; zipFile.
-	self assert: zipFile isFile.
-	self assert: zipFile exists.
-	self deny: zipFile size isZero.
+	self assertSubDirectories.
