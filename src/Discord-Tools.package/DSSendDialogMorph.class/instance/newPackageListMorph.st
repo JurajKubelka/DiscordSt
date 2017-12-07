@@ -1,6 +1,6 @@
 instance creation
 newPackageListMorph
 	^ DSPackageListMorph new
-		hResizing: #spaceFill; 
-		vResizing: #spaceFill;
+		height: self theme listFont pixelSize * 3;
+		vResizing: #shrinkWrap;
 		yourself

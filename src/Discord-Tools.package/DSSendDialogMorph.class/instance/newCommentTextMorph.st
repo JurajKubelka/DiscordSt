@@ -6,6 +6,7 @@ newCommentTextMorph
 		beWrapped;
 		beForPlainText;
 		takeKeyboardFocus;
+		minHeight: self theme listFont pixelSize * 3;
 		hResizing: #spaceFill; 
 		vResizing: #spaceFill;
 		withAdornment;
