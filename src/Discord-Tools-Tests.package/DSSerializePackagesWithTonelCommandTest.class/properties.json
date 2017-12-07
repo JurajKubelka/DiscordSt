@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 12/7/2017 11:53",
+	"super" : "DSToolCommandTest",
+	"category" : "Discord-Tools-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSerializePackagesWithTonelCommandTest",
+	"type" : "normal"
+}

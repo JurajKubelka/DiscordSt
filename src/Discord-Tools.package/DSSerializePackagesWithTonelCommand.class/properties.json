@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packages",
+		"directory"
+	],
+	"name" : "DSSerializePackagesWithTonelCommand",
+	"type" : "normal"
+}
