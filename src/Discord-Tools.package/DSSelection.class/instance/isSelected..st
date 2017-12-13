@@ -1,3 +1,6 @@
 accessing
-isSelected: anObject
-	isSelected := anObject
+isSelected: aBoolean
+	isSelected = aBoolean
+		ifTrue: [ ^ self ].
+	isSelected := aBoolean.
+	self announceSelectionChanged: aBoolean

@@ -1,15 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Discord-Tools-Support",
+	"category" : "Discord-Tools-UI-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"item",
-		"isSelected",
-		"announcer"
-	],
-	"name" : "DSSelection",
+	"instvars" : [ ],
+	"name" : "DSDataSourceItemName",
 	"type" : "normal"
 }

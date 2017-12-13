@@ -1,15 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Announcement",
 	"category" : "Discord-Tools-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"item",
-		"isSelected",
-		"announcer"
+		"selection",
+		"state"
 	],
-	"name" : "DSSelection",
+	"name" : "DSSelectionChangedAnnouncement",
 	"type" : "normal"
 }

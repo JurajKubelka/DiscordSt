@@ -13,7 +13,7 @@ execute
 			ifNone: [ | selection | 
 				selection := DSPackageSelection new 
 					item: package;
-					isSelected: true;
+					"isSelected: true;"
 					addClassSelection: (DSClassSelection new
 						item: eachClass;
 						isSelected: true;
