@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "JurajKubelka 12/13/2017 16:48",
 	"super" : "Object",
 	"category" : "Discord-Tools-UI-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DSDataSourceItemName",
+	"instvars" : [
+		"dataSource"
+	],
+	"name" : "DSDataSourceItemCheckbox",
 	"type" : "normal"
 }
