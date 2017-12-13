@@ -1,7 +1,7 @@
 examples
 listenToClicks
 	<gtExample>
-	<label: 'A basic instance without any configuration'>
+	<label: 'Display an information on button clicks'>
 	^ self basic
 		onCancelDo: [ :ann | self inform: ann ];
 		onSendDo: [ :ann | self inform: ann ];
