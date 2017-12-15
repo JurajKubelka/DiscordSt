@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "Discord-Tools-Tests-UI-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morph",
+		"window"
+	],
+	"name" : "DSSendActionbarMorphTest",
+	"type" : "normal"
+}

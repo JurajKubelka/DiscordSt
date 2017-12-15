@@ -1,0 +1,3 @@
+accessing
+email
+	^ emailModel getString

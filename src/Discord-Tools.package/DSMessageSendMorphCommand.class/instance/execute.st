@@ -3,6 +3,7 @@ execute
 	DSSendDialogMorph new
 		screenshot: self morph;
 		selection: self packages;
+		registries: DSRegistries uniqueInstance;
 		extent: 500@300;
 		onSendDo: [ :announcement | 
 			self handleSendRequestAnnouncement: announcement ];

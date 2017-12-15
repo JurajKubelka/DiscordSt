@@ -1,6 +1,6 @@
 instance creation
 newSendbarMorph
-	^ DSScreenshotActionbarMorph new
+	^ DSSendActionbarMorph new
 		hResizing: #spaceFill; 
 		vResizing: #shrinkWrap;
 		onAnnouncement: #cancelAction send: #cancelAction to: self;

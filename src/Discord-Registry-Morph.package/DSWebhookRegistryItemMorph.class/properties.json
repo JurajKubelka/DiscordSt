@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PanelMorph",
+	"category" : "Discord-Registry-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"registry"
+	],
+	"name" : "DSWebhookRegistryItemMorph",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PanelMorph",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSPanelMorph",
+	"type" : "normal"
+}

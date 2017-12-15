@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSConnectionRegistry",
+	"category" : "Discord-Registry-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"token"
+	],
+	"name" : "DSBotRegistry",
+	"type" : "normal"
+}

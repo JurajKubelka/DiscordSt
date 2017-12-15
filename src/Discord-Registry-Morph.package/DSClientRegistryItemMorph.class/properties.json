@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PanelMorph",
+	"category" : "Discord-Registry-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"registry",
+		"selectedServer",
+		"selectedChannel"
+	],
+	"name" : "DSClientRegistryItemMorph",
+	"type" : "normal"
+}
