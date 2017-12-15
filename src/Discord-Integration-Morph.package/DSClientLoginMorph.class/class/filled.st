@@ -1,4 +1,4 @@
-requirements
+examples
 filled
 	<gtExample>
 	<label: 'Fill email and password with a value'>

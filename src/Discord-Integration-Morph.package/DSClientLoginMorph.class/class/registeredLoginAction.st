@@ -1,4 +1,4 @@
-requirements
+examples
 registeredLoginAction
 	<gtExample>
 	<label: 'Register login request event'>

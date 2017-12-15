@@ -1,4 +1,4 @@
-requirements
+examples
 registeredEvents
 	<gtExample>
 	<label: 'Register email and password auto accept events and login request event'>

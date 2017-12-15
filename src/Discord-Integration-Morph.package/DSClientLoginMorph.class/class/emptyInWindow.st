@@ -1,4 +1,4 @@
-requirements
+examples
 emptyInWindow
 	<example>
 	^ self empty openInWindow

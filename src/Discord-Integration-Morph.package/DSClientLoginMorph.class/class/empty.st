@@ -1,4 +1,4 @@
-requirements
+examples
 empty
 	<gtExample>
 	<label: 'Basic Example'>
