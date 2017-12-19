@@ -1,5 +1,6 @@
 enumerating
 morphItems
-	^ self registries 
-		ifNil: [ #() ]
-		ifNotNil: [ self registries morphItems ]
+	^ self registries collect: [ :eachRegistry | 
+		DSWebhookRegistryItemMorph new
+		registry: eachRegistry;
+		yourself. ]

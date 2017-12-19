@@ -1,4 +1,4 @@
 accessing
 selection
-	<return: #DSRegistries>
-	^ self registries ifNotNil: [ :aDSRegistries | aDSRegistries selection ]
+	<return: #DSRegistry or: nil>
+	^ self registries selection

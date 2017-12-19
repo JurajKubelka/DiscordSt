@@ -1,6 +1,7 @@
 initialization
 initialize
 	super initialize.
+	registries := DSNoRegistries uniqueInstance.
 	self 
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;

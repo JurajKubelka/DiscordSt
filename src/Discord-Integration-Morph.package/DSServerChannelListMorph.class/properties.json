@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"registry"
+	],
 	"name" : "DSServerChannelListMorph",
 	"type" : "normal"
 }

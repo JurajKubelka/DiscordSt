@@ -9,7 +9,9 @@
 		"email",
 		"password",
 		"isAuthenticated",
-		"servers"
+		"servers",
+		"loginAction",
+		"announcer"
 	],
 	"name" : "DSMockClient",
 	"type" : "normal"

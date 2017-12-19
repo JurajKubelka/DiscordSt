@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "Discord-Registry-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"registries",
+		"selection"
+	],
+	"name" : "DSRegistrySelectionChangedAnnouncement",
+	"type" : "normal"
+}

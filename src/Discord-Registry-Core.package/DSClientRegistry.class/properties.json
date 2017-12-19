@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client"
+		"client",
+		"selectedServer",
+		"selectedChannel"
 	],
 	"name" : "DSClientRegistry",
 	"type" : "normal"

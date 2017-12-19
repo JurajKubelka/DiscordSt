@@ -1,3 +1,3 @@
 accessing
-selection: anObject
-	self registries ifNotNil: [ :aDSRegistries | aDSRegistries selection: anObject ]
+selection: aMorph
+	self registries selection: aMorph registry

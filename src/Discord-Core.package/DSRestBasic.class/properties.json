@@ -1,8 +1,10 @@
 {
-	"commentStamp" : "JurajKubelka 11/15/2017 14:47",
+	"commentStamp" : "JurajKubelka 12/19/2017 11:08",
 	"super" : "DSRestApi",
 	"category" : "Discord-Core-REST-Api",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"uniqueInstance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],

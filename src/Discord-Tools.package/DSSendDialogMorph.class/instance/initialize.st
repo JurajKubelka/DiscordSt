@@ -13,3 +13,4 @@ initialize
 	self addMorphBack: self newScreenshotMorph.
 	self addMorphBack: self newPackageListMorph.
 	self addMorphBack: self newSendbarMorph.
+	self addMorphBack: self newAccountDetailsMorph.
