@@ -1,6 +1,6 @@
 execute
 execute
-	DSSendDialogMorph new
+	DSSendDialogMorphOld new
 		screenshot: self morph;
 		selection: self packages;
 		registries: DSRegistries uniqueInstance;

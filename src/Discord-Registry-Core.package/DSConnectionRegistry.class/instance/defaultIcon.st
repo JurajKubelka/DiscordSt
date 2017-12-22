@@ -1,0 +1,3 @@
+initialization
+defaultIcon
+	^ #empty asIcon

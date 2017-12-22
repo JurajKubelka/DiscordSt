@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSSendItemTest",
+	"category" : "Discord-Send-Items-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSendRegistriesItemTest",
+	"type" : "normal"
+}

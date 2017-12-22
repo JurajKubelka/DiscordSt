@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSendItemMorph",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSendRegistriesItemMorph",
+	"type" : "normal"
+}

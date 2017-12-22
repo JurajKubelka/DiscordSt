@@ -1,5 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self initializeLayout.
-	
+	packages := DSSelections new: 0.

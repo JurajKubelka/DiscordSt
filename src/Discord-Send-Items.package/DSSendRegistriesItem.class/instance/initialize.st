@@ -1,5 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self initializeLayout.
-	
+	registries := DSRegistries uniqueInstance.

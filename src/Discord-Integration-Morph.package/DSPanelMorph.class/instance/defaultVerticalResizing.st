@@ -1,0 +1,3 @@
+initialization
+defaultVerticalResizing
+	^ #spaceFill
