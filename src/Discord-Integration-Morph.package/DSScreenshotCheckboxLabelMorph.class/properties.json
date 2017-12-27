@@ -1,14 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
+	"commentStamp" : "JurajKubelka 12/6/2017 10:39",
+	"super" : "LabelMorph",
 	"category" : "Discord-Integration-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"morph",
-		"itemIndex"
+		"getFormSelector"
 	],
-	"name" : "DSSendDialogBuilder",
+	"name" : "DSScreenshotCheckboxLabelMorph",
 	"type" : "normal"
 }

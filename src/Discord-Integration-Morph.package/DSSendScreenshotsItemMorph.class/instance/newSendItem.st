@@ -1,0 +1,3 @@
+instance creation
+newSendItem
+	^ DSSendScreenshotsItem

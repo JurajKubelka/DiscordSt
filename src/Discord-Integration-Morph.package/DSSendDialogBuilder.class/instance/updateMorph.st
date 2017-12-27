@@ -1,4 +1,6 @@
 actions
 updateMorph
 	"Update SendDialogMorph object according to its items object."
-	self itemsDo: [ :sendItem | sendItem accept: self ]
+	self itemsWithIndexDo: [ :sendItem :index | 
+		itemIndex := index.
+		sendItem accept: self ]

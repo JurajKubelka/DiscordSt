@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 visitDSSendRegistriesItem: aDSSendRegistriesItem 
 	| registriesMorph |
 	registriesMorph := self ensureSubmorphOfClass: DSSendRegistriesItemMorph.

@@ -1,9 +1,9 @@
 instance creation
 newLabelMorph
-	^ (DSScreenshotItemLabelMorph contents: self name)
+	^ (DSScreenshotCheckboxLabelMorph contents: self name)
 			model: self;
 			getTextSelector: #name;
-			getMorphSelector: #screenshot;
+			getFormSelector: #screenshotForm;
 			hResizing: #spaceFill; 
 			vResizing: #shrinkWrap; 
 			yourself

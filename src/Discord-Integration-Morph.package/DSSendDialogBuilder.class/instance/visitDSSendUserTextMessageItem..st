@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 visitDSSendUserTextMessageItem: aDSSendUserTextMessageItem 
 	| itemMorph |
 	itemMorph := self ensureSubmorphOfClass: DSSendUserTextMessageItemMorph.

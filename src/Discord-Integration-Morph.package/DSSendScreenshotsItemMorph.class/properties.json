@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "DSSendItemMorph",
 	"category" : "Discord-Integration-Morph",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"morph",
-		"itemIndex"
-	],
-	"name" : "DSSendDialogBuilder",
+	"instvars" : [ ],
+	"name" : "DSSendScreenshotsItemMorph",
 	"type" : "normal"
 }

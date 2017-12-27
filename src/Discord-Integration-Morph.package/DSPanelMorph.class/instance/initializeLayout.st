@@ -2,7 +2,7 @@ initialization
 initializeLayout
 	self
 		fillStyle: Color transparent;
-		cellInset: 8;
+		cellInset: self defaultCellInset;
 		changeTableLayout;
 		listDirection: self defaultListDirection;
 		hResizing: self defaultHorizontalResizing;
