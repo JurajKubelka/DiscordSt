@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "DSSendItemMorph",
-	"category" : "Discord-Integration-Morph",
+	"super" : "DSMessageSender",
+	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"items"
+		"webhook"
 	],
-	"name" : "DSSendRegistriesItemMorph",
+	"name" : "DSDiscordWebhookMessageSender",
 	"type" : "normal"
 }

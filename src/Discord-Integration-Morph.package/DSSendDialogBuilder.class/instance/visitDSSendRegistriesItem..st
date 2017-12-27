@@ -1,5 +1,9 @@
 visiting
 visitDSSendRegistriesItem: aDSSendRegistriesItem 
-	| registriesMorph |
-	registriesMorph := self ensureSubmorphOfClass: DSSendRegistriesItemMorph.
-	registriesMorph item: aDSSendRegistriesItem.
+	| submorph |
+	submorph := self ensureSubmorphOfClass: DSSendRegistriesItemMorph.
+	submorph item: aDSSendRegistriesItem.
+	submorph unsubscribeCancelAndSendActions: self morph.
+	submorph 
+		onCancelSend: #cancelAction to: self morph;
+		onSendSend: #sendAction to: self morph.

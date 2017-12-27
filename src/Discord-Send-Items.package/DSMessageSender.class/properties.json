@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "DSSendItemMorph",
-	"category" : "Discord-Integration-Morph",
+	"super" : "Object",
+	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"items"
+		"items",
+		"registry"
 	],
-	"name" : "DSSendRegistriesItemMorph",
+	"name" : "DSMessageSender",
 	"type" : "normal"
 }

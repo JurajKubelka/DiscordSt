@@ -1,4 +1,3 @@
 initialize-release
 close
-	self halt.
-	self owner ifNotNil: #delete ifNil: [ self delete ]
+	self containingWindow ifNotNil: #delete ifNil: [ self delete ]
