@@ -1,7 +1,7 @@
 instance creation
 newDataSource
 	^ (DSDataSource
-		roots: DSPackages new
-		children: [ :item | item children ])
+		roots: self newPackages
+		children: [ :eachChild | eachChild children ])
 			maxDepth: 1;
 			yourself

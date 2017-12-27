@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 12/13/2017 10:52",
+	"super" : "FTTreeDataSource",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packages"
+	],
+	"name" : "DSDataSource",
+	"type" : "normal"
+}

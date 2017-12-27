@@ -1,6 +1,6 @@
 execute
 execute
-	self packages: DSSelections new.
+	self packages: DSPackages new.
 	self classes do: [ :eachClass | | package |
 		package := eachClass package.
 		self packages 
