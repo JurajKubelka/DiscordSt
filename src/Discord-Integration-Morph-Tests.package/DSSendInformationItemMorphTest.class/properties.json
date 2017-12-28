@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSSendItemMorphTest",
+	"category" : "Discord-Integration-Morph-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSendInformationItemMorphTest",
+	"type" : "normal"
+}

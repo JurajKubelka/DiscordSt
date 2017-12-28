@@ -3,9 +3,8 @@ discordSharePlaygroundAction
 	<pageAction>
 	^ GLMGenericAction new
 		action: [ :presentation | 
-			DSSendPlaygroundCommand new
-				client: DSClient default;
+			DSSharePlaygroundCommand new
 				playground: self;
-				forkedExecution ];
+				executeAsync ];
 		icon: DSIcons discord;
-		title: 'Share code snippet on Discord' translated
+		title: 'Share Playground' translated

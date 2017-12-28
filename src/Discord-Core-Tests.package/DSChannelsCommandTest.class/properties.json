@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "DSCoreCommandTest",
+	"super" : "DSCommandTest",
 	"category" : "Discord-Core-Tests-Commands",
 	"classinstvars" : [ ],
 	"pools" : [ ],

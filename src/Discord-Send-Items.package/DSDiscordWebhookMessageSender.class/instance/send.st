@@ -1,7 +1,6 @@
 actions
 send
-	webhook := self newWebhookClient.
-	webhook url: self registry url.
+	messageBuilder := self newWebhookClient.
+	messageBuilder url: self registry url.
 	self items do: [ :eachItem | eachItem accept: self ].
-	self halt.
-	webhook send.
+	messageBuilder send.

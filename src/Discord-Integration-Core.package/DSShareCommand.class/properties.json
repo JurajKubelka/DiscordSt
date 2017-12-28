@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCommand",
+	"category" : "Discord-Integration-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"registries"
+	],
+	"name" : "DSShareCommand",
+	"type" : "normal"
+}
