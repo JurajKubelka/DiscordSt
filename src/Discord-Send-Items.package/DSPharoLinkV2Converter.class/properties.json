@@ -1,14 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "DSMessageSender",
+	"super" : "Object",
 	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"messageBuilder",
-		"sharedData"
+		"data",
+		"url"
 	],
-	"name" : "DSDiscordMessageSender",
+	"name" : "DSPharoLinkV2Converter",
 	"type" : "normal"
 }

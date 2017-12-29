@@ -1,5 +1,5 @@
 adding
 addPharoAndOsVersion
 	self
-		add: DSSendInformation pharoVersion;
-		add: DSSendInformation osVersion.
+		add: DSSendInformation newPharoVersion;
+		add: DSSendInformation newOsVersion.

@@ -1,4 +1,5 @@
 actions
 send
 	"Build a messages based on items and send it using registry."
-	^ self subclassResponsibility
+	self sendSharedData.
+	self sendMainMessage.

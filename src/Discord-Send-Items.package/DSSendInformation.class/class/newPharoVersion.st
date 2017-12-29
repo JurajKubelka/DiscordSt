@@ -1,5 +1,5 @@
 instance creation
-pharoVersion
+newPharoVersion
 	"Return an object that represents the Pharo version."
 	^ self new 
 		name: 'Pharo';

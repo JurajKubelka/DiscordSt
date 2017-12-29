@@ -1,5 +1,5 @@
 instance creation
-osVersion
+newOsVersion
 	"Return an object that represents the operating system version."
 	^ self new 
 		name: 'OS';

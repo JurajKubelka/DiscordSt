@@ -7,8 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"messageBuilder",
-		"sharedData"
+		"attachmentTypes",
+		"messages"
 	],
-	"name" : "DSDiscordMessageSender",
+	"name" : "DSDiscordSharedDataSender",
 	"type" : "normal"
 }

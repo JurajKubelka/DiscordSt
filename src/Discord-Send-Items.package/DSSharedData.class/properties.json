@@ -1,14 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "DSMessageSender",
+	"super" : "Object",
 	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"messageBuilder",
-		"sharedData"
+		"type",
+		"fileName",
+		"url"
 	],
-	"name" : "DSDiscordMessageSender",
+	"name" : "DSSharedData",
 	"type" : "normal"
 }

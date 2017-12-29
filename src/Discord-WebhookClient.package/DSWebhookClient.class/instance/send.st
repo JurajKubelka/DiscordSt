@@ -13,5 +13,6 @@ send
 		url: self url;
 		entity: entity;
 		ifFail: self ifFailBlock;
+		contentReader: [ :content | self parseMessage: content ];
 		post;
-		response.
+		contents.

@@ -1,5 +1,5 @@
-actions
-send
+private
+sendMainMessage
 	messageBuilder := self newWebhookClient.
 	messageBuilder url: self registry url.
 	self items do: [ :eachItem | eachItem accept: self ].
