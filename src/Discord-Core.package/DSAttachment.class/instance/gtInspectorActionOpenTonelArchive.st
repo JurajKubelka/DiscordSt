@@ -1,4 +1,4 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorActionOpenTonelArchive
 	<gtInspectorAction>
 	^ GLMGenericAction new

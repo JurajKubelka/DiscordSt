@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "DSSharedData",
 	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fileName",
-		"url"
+		"string"
 	],
-	"name" : "DSSharedData",
+	"name" : "DSSharedCodeSnippet",
 	"type" : "normal"
 }

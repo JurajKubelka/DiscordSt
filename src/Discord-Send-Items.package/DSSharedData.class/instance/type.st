@@ -1,3 +1,3 @@
 accessing
 type
-	^ type
+	^ self class typeName

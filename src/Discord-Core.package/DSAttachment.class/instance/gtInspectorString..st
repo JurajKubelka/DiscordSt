@@ -1,4 +1,4 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorString: composite
 	<gtInspectorPresentationOrder: 2>
 	^ composite text 

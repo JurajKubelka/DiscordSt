@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Discord-Send-Items",
+	"super" : "DSCommand",
+	"category" : "Discord-Downloader",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"fileName",
-		"url"
+		"data"
 	],
-	"name" : "DSSharedData",
+	"name" : "DSLoadIt",
 	"type" : "normal"
 }

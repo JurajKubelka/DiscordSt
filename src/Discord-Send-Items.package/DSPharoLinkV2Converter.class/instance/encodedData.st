@@ -4,6 +4,7 @@ encodedData
 	<return: #String>
 	| string |
 	self assert: [ self data notNil ] description: 'You have to set the collection of shared data'.
+	self assert: [ self data isCollection ] description: 'Data should includes an array of DSSharedData objects'.
 	string := (String streamContents: [ :aStream | | gzstream |
 			gzstream := GZipWriteStream on: aStream.
 			self data

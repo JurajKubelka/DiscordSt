@@ -1,4 +1,4 @@
-*Discord-Extension-Core
+*Discord-Integration-Playground
 discordSharePlaygroundAction
 	<pageAction>
 	^ GLMGenericAction new

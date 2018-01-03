@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCommand",
+	"category" : "Discord-Downloader",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"playground",
+		"window",
+		"sharedData",
+		"postExecutions",
+		"otherWindows"
+	],
+	"name" : "DSDisplaySharedPlayground",
+	"type" : "normal"
+}
