@@ -1,10 +1,10 @@
 asserting
 assertSubDirectories
 	| members memory |
-	self assert: zipFile isFile.
-	self assert: zipFile exists.
-	self deny: zipFile size isZero.
-	self assert: (ZipArchive isZipArchive: zipFile).
+	self assert: zipFile exists description: 'ZIP file does NOT exist'.
+	self assert: zipFile isFile description: 'ZIP file is NOT file'.
+	self deny: zipFile size isZero description: 'ZIP file size is zero.'.
+	self assert: (ZipArchive isZipArchive: zipFile) description: 'ZIP file is NOT ZIP Archive'.
 	members :=  ZipArchive new 
 						readFrom: zipFile;
 						members.
