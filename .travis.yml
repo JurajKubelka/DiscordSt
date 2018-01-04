@@ -9,7 +9,7 @@ os:
   - osx
 
 smalltalk:
-  - Pharo-6.0
+  - Pharo-6.1
 
 # bob-bench xUnit file analysis
 after_success:
