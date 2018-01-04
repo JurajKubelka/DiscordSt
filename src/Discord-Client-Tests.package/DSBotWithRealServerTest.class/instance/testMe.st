@@ -1,7 +1,6 @@
 tests
 testMe
-	| user |
+	"Ensure that user is cached."
 	self skipIfNotAuthenticated.
-	user := self client me.
-	self assert: user notNil.
-	self assert: user class equals: DSUser.
+	self assert: self client me == self client me.
+	
