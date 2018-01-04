@@ -1,9 +1,8 @@
 tests
 testSendEmbedObject
-	| channel response content |
+	| response content |
 	self skipIfNotAuthenticated.
 	content := self classAndTestSelectorMessageString.
-	channel := self client servers first channelNamed: self channelName.
 	response := self client message
 		embedTitle: 'Embed Title';
 		embedDescription: content;
@@ -20,7 +19,7 @@ testSendEmbedObject
 		fileName: 'footer.png' form: #pharo asIcon;
 		fileName: 'random-image.jpg' 
 			bytes: PolymorphSystemSettings pharoLogoContents base64Decoded asByteArray;
-		sendTo: channel.
+		sendToServer: self serverName channel: self channelName.
 	self assert: response class equals: DSMessage.
 	#( 'random-image.jpg' ) do: [ :eachFileName |
 		self 
