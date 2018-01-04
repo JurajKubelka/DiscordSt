@@ -4,7 +4,7 @@ assertSubDirectories
 	self assert: zipFile exists description: 'ZIP file does NOT exist'.
 	self assert: zipFile isFile description: 'ZIP file is NOT file'.
 	self deny: zipFile size isZero description: 'ZIP file size is zero.'.
-	self assert: (ZipArchive isZipArchive: zipFile) description: 'ZIP file is NOT ZIP Archive'.
+	self assert: (ZipArchive isZipArchive: zipFile) description: 'ZIP file is NOT ZIP Archive (', zipFile fullName, ', size=', zipFile size asString, ')'.
 	members :=  ZipArchive new 
 						readFrom: zipFile;
 						members.
