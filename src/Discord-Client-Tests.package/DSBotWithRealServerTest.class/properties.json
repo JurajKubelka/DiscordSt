@@ -1,13 +1,13 @@
 {
-	"commentStamp" : "",
-	"super" : "DSClientWithResourceTest",
+	"commentStamp" : "JurajKubelka 5/3/2017 14:44",
+	"super" : "DSClientTestCase",
 	"category" : "Discord-Client-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client"
+		"bot"
 	],
-	"name" : "DSBotWithResourceTest",
+	"name" : "DSBotWithRealServerTest",
 	"type" : "normal"
 }

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSDiscordResponseError",
+	"category" : "Discord-Core-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSResponseError",
+	"type" : "normal"
+}

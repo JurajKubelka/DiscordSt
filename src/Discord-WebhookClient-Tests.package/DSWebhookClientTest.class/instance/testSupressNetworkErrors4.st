@@ -1,13 +1,12 @@
 test - sending
 testSupressNetworkErrors4
 	"Post multi-part data form entity"
-	| response port |
-	server := ZnServer startOn: 0.
-	port := server serverSocket port.
+	| result |
+	self startZnServer.
 	client := self classToTest new 
-		url: 'http://localhost:', port asString, '/doesNotExists';
+		url: self serverUrl / 'doesNotExists';
 		message: self messageString;
 		fileName: self anyString bytes: self bytes;
 		supressNetworkErrors.
-	response := client send.
-	self assert: response isError
+	result := client send.
+	self assert: result class equals: DSResponseError.

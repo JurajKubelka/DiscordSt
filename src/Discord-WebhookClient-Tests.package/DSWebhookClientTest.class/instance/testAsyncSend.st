@@ -9,7 +9,7 @@ testAsyncSend
 	delegate map: '/' to: [ :request :response | 
 		serverRequests add: request. 
 		semaphore signal.
-		response entity: (ZnEntity text: 'ROOT') ].
+		response entity: self messageEntity ].
 	server delegate: delegate.
 	port := server serverSocket port.
 	client := self classToTest new 

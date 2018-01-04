@@ -1,12 +1,13 @@
 test - sending
 testSupressNetworkErrors3
 	"Post JSON entity"
-	| response port |
-	server := ZnServer startOn: 0.
-	port := server serverSocket port.
+	| result |
+	self startZnServer.
+	server delegate map: '/' to: [ :request :response | 
+		response entity: self messageEntity ].
 	client := self classToTest new 
-		url: 'http://localhost:', port asString, '/doesNotExists';
+		url: self serverUrl / 'doesNotExists';
 		message: self messageString;
 		supressNetworkErrors.
-	response := client send.
-	self assert: response isError
+	result := client send.
+	self assert: result class equals: DSResponseError.

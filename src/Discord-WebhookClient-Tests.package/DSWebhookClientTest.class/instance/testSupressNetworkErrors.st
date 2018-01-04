@@ -1,13 +1,12 @@
 test - sending
 testSupressNetworkErrors
 	"Post JSON entity"
-	| response port |
-	server := ZnServer startOn: 0.
-	port := server serverSocket port.
-	server stop.
+	| response |
+	self startZnServer.
 	client := self classToTest new 
-		url: 'http://localhost:', port asString;
+		url: self serverUrl;
 		message: self messageString;
 		supressNetworkErrors.
+	server stop.
 	response := client send.
 	self assert: response isNil
