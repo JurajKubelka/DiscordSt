@@ -47,7 +47,8 @@ baseline: spec
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
 			package: #'Discord-Tools' with: [
-				"They depend on GT-Inspector and GT-Playground that are stadard tools" ];
+				spec requires: #( #'Discord-Core' )
+				"It depends on GT-Inspector and GT-Playground that are stadard tools" ];
 			package: #'Discord-Tools-Tests' with: [
 				spec requires: #( #'Discord-Tools' ) ];
 
@@ -68,10 +69,53 @@ baseline: spec
 				spec requires: #( #'Discord-Extension-Expertise' ). ];
 			
 			package: #'Discord-Examples' with: [
-				spec requires: #( #'Discord-WebhookClient' #'Discord-Extension-Expertise' #'Discord-Client' #'Discord-Announcements' "GT-Inspector" ). ];
+				spec requires: #( 
+					#'Discord-WebhookClient' #'Discord-Extension-Expertise' 
+					#'Discord-Client' #'Discord-Announcements' "GT-Inspector" ). ];
 
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
+			
+			"New packages to clean."
+			package: #'Discord-Mock' with: [ 
+				spec requires: #( #'Discord-Announcements' #'Discord-Core' ) ];
+			
+			package: #'Discord-Registry-Core' with: [ 
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Client' #'Discord-Mock' ) ];
+			
+			package: #'Discord-Registry-Core-Tests' with: [ 
+				spec requires: #( #'Discord-Registry-Core' ) ];
+
+			package: #'Discord-Send-Items' with: [ 
+				spec requires: #( #'Discord-Registry-Core' #'Discord-Tools' #'Discord-WebhookClient' ) ];
+
+			package: #'Discord-Send-Items-Tests' with: [ 
+				spec requires: #( #'Discord-Send-Items' ) ];
+
+			package: #'Discord-Integration-Core' with: [ 
+				spec requires: #( #'Discord-Core' #'Discord-Registry-Core' "#'Tonel'" ) ];
+			
+			package: #'Discord-Integration-Morph' with: [ 
+				spec requires: #( 
+					#'Discord-Announcements' #'Discord-Mock' #'Discord-Registry-Core' 
+					#'Discord-Send-Items' #'Discord-Tools' ) ];
+			
+			package: #'Discord-Integration-Morph-Tests' with: [ 
+				spec requires: #( #'Discord-Integration-Morph' ) ];
+			
+			package: #'Discord-Integration-Playground' with: [ 
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Integration-Core' #'Discord-Integration-Morph' 
+					#'Discord-Send-Items' #'Discord-Tools' ) ];
+			
+			package: #'Discord-Downloader' with: [ 
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Integration-Core' 
+					#'Discord-Send-Items' #'Discord-Integration-Playground' ) ];
+			
+			package: #'Discord-Downloader-Tests' with: [ 
+				spec requires: #( #'Discord-Downloader' #'Discord-Core-Tests' ) ];
 			
 			"Webhook"
 			group: #'src-webhook' with: #( #'Discord-WebhookClient' );
@@ -95,10 +139,23 @@ baseline: spec
 			group: #'ui-light' with: #( #'Discord-Extension-UI' );
 			group: #'ui-full' with: #( #'ui-light' #'Discord-UI-Brick' );
 			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Tools-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
+			
+			"integration: packages to clean"
+			group: #'downloader' with: #( #'Discord-Downloader' );
+			group: #'integration-playground' with: #( #'Discord-Integration-Playground' );
+			group: #'src-integration' with: #( #'downloader' #'integration-playground' );
+			group: #'tests-integration' with: #( 
+				#'src-integration'
+				#'tests-core'
+				#'Discord-Tools-Tests'
+				#'Discord-Downloader-Tests' #'Discord-Integration-Morph-Tests'
+				#'Discord-Send-Items-Tests' #'Discord-Registry-Core-Tests' );
 
 			"light options (no Bloc/Brick)"
-			group: #'src-light' with: #( #'src-core' #'extensions' #'expertise' #'ui-light' #'examples' );
-			group: #'tests-light' with: #( #'tests-core' #'tests-extensions' );
+			group: #'src-light' with: #( 
+				#'src-core' #'extensions' #'expertise' #'ui-light' #'examples' #'src-integration' );
+			group: #'tests-light' with: #( 
+				#'tests-core' #'tests-extensions' #'tests-integration' );
 			group: #'light' with: #( #'src-light' #'tests-light' );
 			
 			"full (all packages including Bloc/Brick) options"

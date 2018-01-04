@@ -1,7 +1,0 @@
-instance creation
-newDataSource
-	^ (DSDataSource
-		roots: DSPackages new
-		children: [ :item | item children ])
-			maxDepth: 1;
-			yourself
