@@ -2,9 +2,9 @@ language: smalltalk
 sudo: true
 
 install:
-  - [ "$TRAVIS_OS_NAME" = "osx" ] && sudo easy_install pip
+  - if [ "$TRAVIS_OS_NAME" = "osx" ] ; then sudo easy_install pip ; fi
   - pip install --user benchupload
-  - [ "$TRAVIS_OS_NAME" = "osx" ] && export unset DISCORD_ST_TEST_CASE_BOT_TOKEN
+  - if [ "$TRAVIS_OS_NAME" = "osx" ] ; then export unset DISCORD_ST_TEST_CASE_BOT_TOKEN ; fi
 
 os:
   - linux
