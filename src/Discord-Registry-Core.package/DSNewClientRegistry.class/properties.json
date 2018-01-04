@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "DSConnectionRegistry",
 	"category" : "Discord-Registry-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"icon",
-		"origin"
-	],
-	"name" : "DSConnectionRegistry",
+	"instvars" : [ ],
+	"name" : "DSNewClientRegistry",
 	"type" : "normal"
 }

@@ -1,3 +1,4 @@
 accessing
 uniqueInstance
-	^ uniqueInstance ifNil: [ uniqueInstance := self new ]
+	uniqueInstance ifNil: [ self setUniqueInstance ].
+	^ uniqueInstance

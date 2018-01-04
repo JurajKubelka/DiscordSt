@@ -1,14 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Discord-Registry-Core",
+	"category" : "Discord-Examples-WebhookRegistry",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"icon",
-		"origin"
-	],
-	"name" : "DSConnectionRegistry",
+	"instvars" : [ ],
+	"name" : "DSWebhookRegistryExample",
 	"type" : "normal"
 }

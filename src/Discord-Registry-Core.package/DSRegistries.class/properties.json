@@ -3,7 +3,8 @@
 	"super" : "OrderedCollection",
 	"category" : "Discord-Registry-Core",
 	"classinstvars" : [
-		"uniqueInstance"
+		"uniqueInstance",
+		"collector"
 	],
 	"pools" : [ ],
 	"classvars" : [ ],

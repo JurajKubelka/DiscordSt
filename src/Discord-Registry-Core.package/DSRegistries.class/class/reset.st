@@ -1,3 +1,4 @@
-accessing
+cleanup
 reset
-	uniqueInstance := nil
+	collector ifNotNil: [ :aCollector | aCollector release. collector := nil. ].
+	uniqueInstance := nil.

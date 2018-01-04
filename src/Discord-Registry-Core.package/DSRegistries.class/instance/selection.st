@@ -1,3 +1,3 @@
 accessing
 selection
-	^ selection
+	^ selection ifNil: [ selection := self defaultSelection ]
