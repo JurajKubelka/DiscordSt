@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSCoreTestCase",
+	"category" : "Discord-Client-Tests-REST-Api",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"api"
+	],
+	"name" : "DSApiTest",
+	"type" : "normal"
+}

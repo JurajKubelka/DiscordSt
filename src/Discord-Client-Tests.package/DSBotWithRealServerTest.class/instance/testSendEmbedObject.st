@@ -1,7 +1,6 @@
 tests
 testSendEmbedObject
 	| response content |
-	self skipIfNotAuthenticated.
 	content := self classAndTestSelectorMessageString.
 	response := self client message
 		embedTitle: 'Embed Title';

@@ -8,7 +8,8 @@
 	"instvars" : [
 		"id",
 		"lastMessageId",
-		"recipients"
+		"recipients",
+		"messages"
 	],
 	"name" : "DSDirectMessageChannel",
 	"type" : "normal"

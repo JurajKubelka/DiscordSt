@@ -34,7 +34,7 @@ testSendTo2
 		yourself.
 	builder := self newInstanceToBeTested
 		content: self anyString;
-		client: client;
+		restApi: client restApi;
 		yourself.
 	message := builder sendTo: [ :servers | servers first general ].
 	self assert: message notNil.

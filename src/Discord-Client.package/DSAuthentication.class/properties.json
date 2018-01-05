@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 11/15/2017 17:46",
+	"super" : "Object",
+	"category" : "Discord-Client-REST-Api",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSAuthentication",
+	"type" : "normal"
+}

@@ -14,7 +14,7 @@ testSendTo
 		yourself.
 	builder := self newInstanceToBeTested 
 		content: self anyString;
-		client: client;
+		restApi: client restApi;
 		yourself.
 	message := builder sendTo: (DSGuildTextChannel new id: 'channel-id'; yourself).
 	self assert: message notNil.

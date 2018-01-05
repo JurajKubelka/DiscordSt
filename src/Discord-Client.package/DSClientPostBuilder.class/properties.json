@@ -2,10 +2,10 @@
 	"classtraitcomposition" : "TDSClientPostBuilder classTrait + TDSUnifiedPublishInterface classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
 		"post",
 		"channel",
-		"signalProgress"
+		"signalProgress",
+		"restApi"
 	],
 	"name" : "DSClientPostBuilder",
 	"commentStamp" : "JurajKubelka 11/27/2017 10:45",

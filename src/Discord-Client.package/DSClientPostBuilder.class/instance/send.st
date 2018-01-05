@@ -5,8 +5,8 @@ send
 	See https://discordapp.com/developers/docs/resources/channel#create-message"
 	<return: #DSMessage or: nil>
 	self post isEmpty ifTrue: [ DSIncorrectValuesError signal: 'Cannot send an empty message' ].
-	^ [ self client restApi
+	^ [ self restApi
 			sendMessage: post
-			toGuildTextOrDMChannelId: self channel id
+			toChannel: self channel
 			signalProgress: self signalProgress ]
 		ensure: [ post := nil ].
