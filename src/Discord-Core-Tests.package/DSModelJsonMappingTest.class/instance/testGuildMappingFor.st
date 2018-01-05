@@ -32,7 +32,7 @@ testGuildMappingFor
 	self assert: result memberCount equals: 108.
 	self assert: result voiceStates class equals: Array.
 	self assert: result voiceStates first class equals: DSVoiceState.
-	self assert: result members class equals: Array.
+	self assert: result members class equals: DSGuildMembers.
 	self assert: result members first class equals: DSGuildMember.
 	self assert: result channels class equals: DSChannels.
 	self assert: result channels first class equals: DSCategoryChannel.

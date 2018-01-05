@@ -1,3 +1,0 @@
-*Discord-Core
-asDiscordJSONString
-	^ self

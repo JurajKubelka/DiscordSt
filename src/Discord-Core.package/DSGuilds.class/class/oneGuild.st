@@ -2,7 +2,7 @@ examples
 oneGuild
 	<gtExample>
 	<label: 'One guild (server) with two channels'>
-	^ DSModelJsonMapping 
+	^ self jsonMappingClass 
 		read: #CollectionOfGuilds 
 		withMapping: #collectionOfGuildsMappingFor:
-		on: DSModelJsonMapping jsonCollectionOfGuildsOne readStream
+		on: self jsonMappingClass jsonCollectionOfGuildsOne readStream
