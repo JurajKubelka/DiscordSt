@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TDSTestingConstants classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"api"
+	],
+	"name" : "DSRestApiTest",
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"traitcomposition" : "TDSTestingConstants",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Core-Tests-REST-Api"
+}

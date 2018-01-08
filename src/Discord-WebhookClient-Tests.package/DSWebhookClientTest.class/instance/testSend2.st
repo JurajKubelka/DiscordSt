@@ -2,7 +2,7 @@ test - sending
 testSend2
 	"Send multi-part data form entity"
 	| message |
-	self startZnServer.
+	self startMockServer.
 	server delegate map: '/' to: [ :request :response | 
 		response entity: self messageEntity ].
 	client := self classToTest new 

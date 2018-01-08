@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"restApi"
+		"restApi",
+		"announcer"
 	],
 	"name" : "DSAnnouncingRestApi",
 	"type" : "normal"

@@ -4,9 +4,9 @@ testMessageCreateEvent
 		socket sendMessage: self gatewayModelJsonMapping jsonMessageCreatePayload ].
 	client announcer 
 		when: DSGatewayMessageCreateAnnouncement  
-		do: [ :announcement | self serverRequests add: announcement. self signalServerSemaphore ]. 
+		do: [ :announcement | self mockServerRequests add: announcement. self signalServerSemaphore ]. 
 	client connect.
 	self assertServerSemaphore.
-	self assert: self serverRequests size equals: 2.
-	self assert: self serverRequests first equals: #apiGateway.
-	self assert: self serverRequests second class equals: DSGatewayMessageCreateAnnouncement.
+	self assert: self mockServerRequests size equals: 2.
+	self assert: self mockServerRequests first equals: #apiGateway.
+	self assert: self mockServerRequests second class equals: DSGatewayMessageCreateAnnouncement.

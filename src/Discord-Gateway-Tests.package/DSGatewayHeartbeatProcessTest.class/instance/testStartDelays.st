@@ -2,15 +2,15 @@ tests
 testStartDelays
 	"Check delays between three heartbeat cycles"
 	| heartbeatInterval |
-	self startZnServer.
+	self startMockServer.
 	self serverDelegate: (ZnWebSocketDelegate map: 'gateway' to: [ :socket |
-		self serverRequests add: DateAndTime now.
+		self mockServerRequests add: DateAndTime now.
 		socket readMessage.
-		self serverRequests add: DateAndTime now.
+		self mockServerRequests add: DateAndTime now.
 		socket readMessage.
-		self serverRequests add: DateAndTime now.
+		self mockServerRequests add: DateAndTime now.
 		socket readMessage.
-		self serverRequests add: DateAndTime now.
+		self mockServerRequests add: DateAndTime now.
 		socket close.
 		self signalServerSemaphore ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
@@ -21,7 +21,7 @@ testStartDelays
 	process start.
 	self serverSemaphoreTimeout: heartbeatInterval * 5.
 	self assertServerSemaphore.
-	self assert: self serverRequests size equals: 4.
-	self assertDelay: heartbeatInterval between: self serverRequests first and: self serverRequests second.
-	self assertDelay: heartbeatInterval between: self serverRequests second and: self serverRequests third.
-	self assertDelay: heartbeatInterval between: self serverRequests third and: self serverRequests fourth.
+	self assert: self mockServerRequests size equals: 4.
+	self assertDelay: heartbeatInterval between: self mockServerRequests first and: self mockServerRequests second.
+	self assertDelay: heartbeatInterval between: self mockServerRequests second and: self mockServerRequests third.
+	self assertDelay: heartbeatInterval between: self mockServerRequests third and: self mockServerRequests fourth.

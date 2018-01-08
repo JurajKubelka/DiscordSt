@@ -2,7 +2,7 @@ test - sending
 testSupressNetworkErrors3
 	"Post JSON entity"
 	| result |
-	self startZnServer.
+	self startMockServer.
 	server delegate map: '/' to: [ :request :response | 
 		response entity: self messageEntity ].
 	client := self classToTest new 

@@ -1,0 +1,3 @@
+initialization
+newAnnouncer
+	^ Announcer new

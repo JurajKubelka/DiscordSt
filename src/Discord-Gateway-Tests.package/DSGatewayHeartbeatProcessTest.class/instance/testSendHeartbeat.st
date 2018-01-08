@@ -1,15 +1,15 @@
 tests
 testSendHeartbeat
 	"Send one heartbeat message to a server"
-	self startZnServer.
+	self startMockServer.
 	self serverDelegate: (ZnWebSocketDelegate map: 'gateway' to: [ :socket |
-		self serverRequests add: #server.
-		self serverRequests add: socket readMessage.
-		self serverRequests add: #finished.
+		self mockServerRequests add: #server.
+		self mockServerRequests add: socket readMessage.
+		self mockServerRequests add: #finished.
 		self signalServerSemaphore. ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
 	process sendHeartbeat.
 	self assertServerSemaphore.
-	self assert: self serverRequests size equals: 3.
+	self assert: self mockServerRequests size equals: 3.

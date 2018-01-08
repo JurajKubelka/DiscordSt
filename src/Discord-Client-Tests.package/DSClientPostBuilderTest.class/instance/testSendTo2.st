@@ -1,11 +1,11 @@
 test - protocol - sending
 testSendTo2
 	| client message |
-	self startZnServer.
-	self serverDelegate
+	self startMockServer.
+	self mockServerDelegate
 		map: '/api/users/@me/guilds'
 			to: [ :request :response | 
-			self serverRequests add: request.
+			self mockServerRequests add: request.
 			response
 				entity:
 					(ZnEntity
@@ -13,7 +13,7 @@ testSendTo2
 							'[{"owner": false, "permissions": 104332353, "icon": "icon-id", "id": "1234", "name": "Guild One"}]') ];
 		map: '/api/guilds/1234/channels'
 			to: [ :request :response | 
-			self serverRequests add: request.
+			self mockServerRequests add: request.
 			response
 				entity:
 					(ZnEntity
@@ -21,7 +21,7 @@ testSendTo2
 							'[{"guild_id": "1234", "name": "general", "permission_overwrites": [], "topic": "Channel topic", "position": 0, "last_message_id": "5678", "type": 0, "id": "1234", "is_private": false}]') ];
 		map: '/api/channels/1234/messages'
 			to: [ :request :response | 
-			self serverRequests add: request.
+			self mockServerRequests add: request.
 			response
 				entity:
 					(ZnEntity
@@ -39,6 +39,6 @@ testSendTo2
 	message := builder sendTo: [ :servers | servers first general ].
 	self assert: message notNil.
 	self assert: message content equals: 'text message'.
-	self assert: self serverRequests size equals: 3.
-	self assert: self serverRequests last method equals: #POST.
+	self assert: self mockServerRequests size equals: 3.
+	self assert: self mockServerRequests last method equals: #POST.
 	self assert: builder post isNil

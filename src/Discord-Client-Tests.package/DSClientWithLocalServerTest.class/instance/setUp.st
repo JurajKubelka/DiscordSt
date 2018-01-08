@@ -1,12 +1,12 @@
 initialization
 setUp
 	super setUp.
-	self startZnServer.
+	self startMockServer.
 	websocketDelegate := ZnWebSocketDelegate new.
-	self serverDelegate
+	self mockServerDelegate
 		map: '/api/gateway'
 			to: [ :request :response | 
-			self serverRequests add: #apiGateway.
+			self mockServerRequests add: #apiGateway.
 			response entity: (ZnEntity text: self gatewayUrlMessage) ];
 		map: '/gateway'
 			to: [ :request :response | websocketDelegate handleRequest: request ].

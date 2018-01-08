@@ -1,9 +1,9 @@
 tests
 testDisableNextCycle
 	"Heartbeat is not allowed explicitly"
-	self startZnServer.
+	self startMockServer.
 	self serverDelegate: (ZnWebSocketDelegate map: 'gateway' to: [ :socket |
-		self serverRequests add: #server ]).
+		self mockServerRequests add: #server ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.

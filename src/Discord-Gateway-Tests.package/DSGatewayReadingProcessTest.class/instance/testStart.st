@@ -1,7 +1,7 @@
 tests
 testStart
 	"Do three reading cycles and then close the connection"
-	self startZnServer.
+	self startMockServer.
 	self serverDelegate: (ZnWebSocketDelegate map: 'gateway' to: [ :socket |
 		socket 
 			sendMessage: '21';
@@ -10,12 +10,12 @@ testStart
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
-	process receiver: [ :message | self serverRequests add: message. self signalServerSemaphore ].
+	process receiver: [ :message | self mockServerRequests add: message. self signalServerSemaphore ].
 	process start.
 	self assertServerSemaphore.
 	self assertServerSemaphore.
 	self assertServerSemaphore.
-	self assert: self serverRequests size equals: 3.
+	self assert: self mockServerRequests size equals: 3.
 	self 
-		assert: self serverRequests asArray 
+		assert: self mockServerRequests asArray 
 		equals: #( '21' '42' '108' ).

@@ -1,35 +1,35 @@
 tests
 testConnect
 	"Connect using a gateway websocket URL"
-	self startZnServer.
-	self serverDelegate 
+	self startMockServer.
+	self mockServerDelegate 
 		map: '/api/gateway' to: [ :request :response | 
-			self serverRequests add: #apiGateway.
+			self mockServerRequests add: #apiGateway.
 			response entity: (ZnEntity text: self gatewayUrlMessage) ];
 		map: '/gateway' to: [ :request :response | (ZnWebSocketDelegate handler: [ :webSocket | 
-		self serverRequests add: #hello.
+		self mockServerRequests add: #hello.
 		webSocket sendMessage: DSGatewayModelJsonMapping jsonHelloPayload.
-		self serverRequests add: #identify.
+		self mockServerRequests add: #identify.
 		webSocket readMessage.
-		self serverRequests add: #ready.
+		self mockServerRequests add: #ready.
 		webSocket sendMessage: DSGatewayModelJsonMapping jsonReadyPayload.
-		self serverRequests add: #finished.
+		self mockServerRequests add: #finished.
 		self signalServerSemaphore ]) handleRequest: request ].
 	api := self newGateway. 
-	api session: (DSSession new token: self tokenString; yourself).
+	api session: (DSSession new token: self constants tokenString; yourself).
 	api restApiUrl: self apiUrl.
 	api when: DSGatewayReadyAnnouncement do: [ :ann | 
-		self serverRequests add: ann. self signalServerSemaphore ].
+		self mockServerRequests add: ann. self signalServerSemaphore ].
 	self defaultConnectionTimeoutDuring: [ api connect ].
 	self assertServerSemaphore.
 	self assertServerSemaphore.
-	self assert: self serverRequests size equals: 6.
-	self assert: self serverRequests first equals: #apiGateway.
-	self assert: self serverRequests second equals: #hello.
-	self assert: self serverRequests third equals: #identify.
-	self assert: self serverRequests fourth equals: #ready.
-	self assert: self serverRequests fifth equals: #finished.
-	self assert: self serverRequests sixth class equals: DSGatewayReadyAnnouncement.
+	self assert: self mockServerRequests size equals: 6.
+	self assert: self mockServerRequests first equals: #apiGateway.
+	self assert: self mockServerRequests second equals: #hello.
+	self assert: self mockServerRequests third equals: #identify.
+	self assert: self mockServerRequests fourth equals: #ready.
+	self assert: self mockServerRequests fifth equals: #finished.
+	self assert: self mockServerRequests sixth class equals: DSGatewayReadyAnnouncement.
 	self assert: api heartbeatInterval equals: 41250.
 	self assert: api sessionId equals: 21.
 	self assert: api sequenceNumber equals: 2.
