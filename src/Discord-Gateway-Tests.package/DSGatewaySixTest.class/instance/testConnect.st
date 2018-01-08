@@ -14,15 +14,15 @@ testConnect
 		self mockServerRequests add: #ready.
 		webSocket sendMessage: DSGatewayModelJsonMapping jsonReadyPayload.
 		self mockServerRequests add: #finished.
-		self signalServerSemaphore ]) handleRequest: request ].
+		self signalMockServerSemaphore ]) handleRequest: request ].
 	api := self newGateway. 
 	api session: (DSSession new token: self constants tokenString; yourself).
 	api restApiUrl: self apiUrl.
 	api when: DSGatewayReadyAnnouncement do: [ :ann | 
-		self mockServerRequests add: ann. self signalServerSemaphore ].
+		self mockServerRequests add: ann. self signalMockServerSemaphore ].
 	self defaultConnectionTimeoutDuring: [ api connect ].
-	self assertServerSemaphore.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 6.
 	self assert: self mockServerRequests first equals: #apiGateway.
 	self assert: self mockServerRequests second equals: #hello.

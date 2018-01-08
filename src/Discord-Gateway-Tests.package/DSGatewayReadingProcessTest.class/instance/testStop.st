@@ -8,16 +8,16 @@ testStop
 		socket sendMessage: '21'.
 		self deny: (semaphore waitTimeoutMSecs: 100).
 		self mockServerRequests add: #finished.
-		self signalServerSemaphore ]).
+		self signalMockServerSemaphore ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
-	process receiver: [ :message | self mockServerRequests add: message. self signalServerSemaphore ].
+	process receiver: [ :message | self mockServerRequests add: message. self signalMockServerSemaphore ].
 	process start.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	process stop.
 	semaphore signal.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 2.
 	self 
 		assert: self mockServerRequests asArray 

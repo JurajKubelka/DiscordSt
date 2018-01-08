@@ -3,16 +3,16 @@ testLogoutUnauthorized
 	"Unauthorized logout"
 
 	self startMockServer.
-	api := self newRestApi.
-	api apiUrl: self apiUrl.
-	api token: 'secret-token'.
+	restApi := self newRestApi.
+	restApi apiUrl: self apiUrl.
+	restApi token: 'secret-token'.
 	self mockServerDelegate map: '/api/auth/logout' to: self unauthorizedResponseBlock.
 	self
-		should: [ api logout ]
+		should: [ restApi logout ]
 		raise: DSUnauthorizedOperationError
 		withExceptionDo: self unauthorizedExceptionAssetionBlock.
-	self assert: api isAuthenticated.
-	self assert: api token equals: 'secret-token'.
+	self assert: restApi isAuthenticated.
+	self assert: restApi token equals: 'secret-token'.
 	self assert: self mockServerRequests size equals: 1.
 	self
 		assert: self mockServerRequests first contents

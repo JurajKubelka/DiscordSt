@@ -1,0 +1,3 @@
+testing
+isAsyncApi
+	^ true

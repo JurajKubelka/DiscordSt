@@ -2,4 +2,5 @@ initialization
 initialize
 	super initialize.
 	command := DSNoCommand uniqueInstance.
-	onSuccess := [ "do nothing" ].
+	onSuccess := [ :aResult :aCommand | "do nothing" ].
+	onError := [ :anException :aCommand | "do nothing" ].

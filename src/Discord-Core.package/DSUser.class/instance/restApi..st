@@ -1,3 +1,4 @@
 accessing
-restApi: anObject
-	restApi := anObject
+restApi: aRestApi
+	[ aRestApi isAsyncApi not ] assert.
+	restApi := aRestApi

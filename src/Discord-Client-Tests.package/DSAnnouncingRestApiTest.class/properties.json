@@ -1,11 +1,15 @@
 {
+	"classtraitcomposition" : "TDSMockServerAccess classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"mockServer"
+	],
+	"name" : "DSAnnouncingRestApiTest",
 	"commentStamp" : "<historical>",
 	"super" : "DSRestApiTest",
-	"category" : "Discord-Client-Tests-REST-Api",
+	"traitcomposition" : "TDSMockServerAccess",
+	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DSAnnouncingRestApiTest",
-	"type" : "normal"
+	"category" : "Discord-Client-Tests-REST-Api"
 }

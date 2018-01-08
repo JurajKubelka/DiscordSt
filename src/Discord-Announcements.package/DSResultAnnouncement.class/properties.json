@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSAnnouncement",
+	"category" : "Discord-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSResultAnnouncement",
+	"type" : "normal"
+}

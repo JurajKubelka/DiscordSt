@@ -6,10 +6,10 @@ testSendHeartbeat
 		self mockServerRequests add: #server.
 		self mockServerRequests add: socket readMessage.
 		self mockServerRequests add: #finished.
-		self signalServerSemaphore. ]).
+		self signalMockServerSemaphore. ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
 	process sendHeartbeat.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 3.

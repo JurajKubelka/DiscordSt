@@ -12,15 +12,15 @@ testStartDelays
 		socket readMessage.
 		self mockServerRequests add: DateAndTime now.
 		socket close.
-		self signalServerSemaphore ]).
+		self signalMockServerSemaphore ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
 	heartbeatInterval := 300.
 	process heartbeatInterval: heartbeatInterval.
 	process start.
-	self serverSemaphoreTimeout: heartbeatInterval * 5.
-	self assertServerSemaphore.
+	self mockServerSemaphoreTimeout: heartbeatInterval * 5.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 4.
 	self assertDelay: heartbeatInterval between: self mockServerRequests first and: self mockServerRequests second.
 	self assertDelay: heartbeatInterval between: self mockServerRequests second and: self mockServerRequests third.

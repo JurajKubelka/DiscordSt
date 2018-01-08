@@ -10,11 +10,11 @@ testStart
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
-	process receiver: [ :message | self mockServerRequests add: message. self signalServerSemaphore ].
+	process receiver: [ :message | self mockServerRequests add: message. self signalMockServerSemaphore ].
 	process start.
-	self assertServerSemaphore.
-	self assertServerSemaphore.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
+	self assertMockServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 3.
 	self 
 		assert: self mockServerRequests asArray 

@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TDSMockServerAccess classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"mockServer"
+	],
+	"name" : "DSAsyncRestApiTest",
+	"commentStamp" : "<historical>",
+	"super" : "DSRestApiTest",
+	"traitcomposition" : "TDSMockServerAccess",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Client-Tests-REST-Api"
+}

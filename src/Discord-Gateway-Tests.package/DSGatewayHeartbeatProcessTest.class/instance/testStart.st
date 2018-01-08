@@ -11,13 +11,13 @@ testStart
 		self mockServerRequests add: socket readMessage.
 		self mockServerRequests add: #finished.
 		socket close.
-		self signalServerSemaphore ]).
+		self signalMockServerSemaphore ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
 	process heartbeatInterval: 10.
 	process start.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 7.
 	self 
 		assert: self mockServerRequests asArray 

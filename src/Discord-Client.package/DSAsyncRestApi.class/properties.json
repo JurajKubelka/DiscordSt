@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "DSRestApi",
+	"category" : "Discord-Client-REST-Api",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"restApi",
+		"onSuccess",
+		"onError"
+	],
+	"name" : "DSAsyncRestApi",
+	"type" : "normal"
+}

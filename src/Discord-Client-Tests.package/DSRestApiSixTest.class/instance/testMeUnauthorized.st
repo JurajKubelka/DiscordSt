@@ -1,12 +1,12 @@
 tests
 testMeUnauthorized
 	self startMockServer.
-	api := self newRestApi.
-	api apiUrl: self apiUrl.
-	api token: self constants tokenString.
+	restApi := self newRestApi.
+	restApi apiUrl: self apiUrl.
+	restApi token: self constants tokenString.
 	self mockServerDelegate map: '/api/users/@me' to: self unauthorizedResponseBlock.
 	self
-		should: [ api me ]
+		should: [ restApi me ]
 		raise: DSUnauthorizedOperationError
 		withExceptionDo: self unauthorizedExceptionAssetionBlock.
 	self assert: self mockServerRequests size equals: 1.

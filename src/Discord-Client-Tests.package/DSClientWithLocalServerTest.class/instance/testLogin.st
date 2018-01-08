@@ -5,9 +5,9 @@ testLogin
 		response entity: (ZnEntity text: '{"token":"secret-token"}') ].
 	client announcer 
 		when: DSAuthenticatedAnnouncement 
-		do: [ :announcement | self mockServerRequests add: announcement. self signalServerSemaphore ]. 
+		do: [ :announcement | self mockServerRequests add: announcement. self signalMockServerSemaphore ]. 
 	client login.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 2.
 	self assert: self mockServerRequests first equals: #login.
 	self assert: self mockServerRequests second class equals: DSAuthenticatedAnnouncement.

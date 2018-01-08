@@ -1,3 +1,3 @@
 instance creation
 newCommand
-	^ DSMockCommand new
+	^ DSExtensionMockCommand new

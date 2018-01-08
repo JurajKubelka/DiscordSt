@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSMockCommand",
+	"name" : "DSExtensionMockCommand",
 	"type" : "normal"
 }

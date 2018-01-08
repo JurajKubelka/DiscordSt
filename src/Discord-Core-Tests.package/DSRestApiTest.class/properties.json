@@ -1,13 +1,13 @@
 {
-	"classtraitcomposition" : "TDSTestingConstants classTrait",
+	"classtraitcomposition" : "TDSTestingConstants classTrait + TDSAssertingObjects classTrait",
 	"classvars" : [ ],
 	"instvars" : [
-		"api"
+		"restApi"
 	],
 	"name" : "DSRestApiTest",
 	"commentStamp" : "<historical>",
 	"super" : "TestCase",
-	"traitcomposition" : "TDSTestingConstants",
+	"traitcomposition" : "TDSTestingConstants + TDSAssertingObjects",
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],

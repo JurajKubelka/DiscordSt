@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"command",
-		"onSuccess"
+		"onSuccess",
+		"onError"
 	],
 	"name" : "DSAsyncCommand",
 	"type" : "normal"

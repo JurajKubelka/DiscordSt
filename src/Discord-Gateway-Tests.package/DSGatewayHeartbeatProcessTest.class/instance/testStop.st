@@ -8,19 +8,19 @@ testStop
 		self mockServerRequests add: #server.
 		self mockServerRequests add: socket readMessage.
 		self mockServerRequests add: #waiting.
-		self signalServerSemaphore.
+		self signalMockServerSemaphore.
 		self deny: (semaphore waitTimeoutMSecs: 100).
 		self mockServerRequests add: #finished.
-		self signalServerSemaphore. ]).
+		self signalMockServerSemaphore. ]).
 	websocket := ZnWebSocket to: self gatewayConnectUrl.
 	process := self newGatewayProcess.
 	process websocket: websocket.
 	process heartbeatInterval: 10.
 	process start.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	process stop.
 	semaphore signal.
-	self assertServerSemaphore.
+	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 4.
 	self 
 		assert: self mockServerRequests asArray 

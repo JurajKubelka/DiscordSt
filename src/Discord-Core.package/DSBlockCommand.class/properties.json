@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "DSBlockCommand",
+	"type" : "normal"
+}
