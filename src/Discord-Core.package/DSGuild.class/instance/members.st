@@ -1,3 +1,3 @@
 accessing
 members
-	^ members ifNil: [ members := self restApi listGuildMembersOfGuildId: self id ]
+	^ members ifNil: [ members := self restApi membersOfGuild: self ]

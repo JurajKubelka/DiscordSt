@@ -1,12 +1,7 @@
 tests
 testLogout
-	self startMockServer.
-	restApi := self newRestApi.
-	restApi apiUrl: self apiUrl.
-	restApi token: 'secret-token'.
-	self mockServerDelegate map: '/api/auth/logout' to: [ :request :response |
-		self mockServerRequests add: request.
-		response entity: (ZnEntity text: '{}') ].
+	self startMockServer initializeAuthLogoutDelegate.
+	restApi := self newRestApiWithApiUrlAndToken.
 	restApi logout.
 	self deny: restApi isAuthenticated.
 	self assert: restApi token isNil.

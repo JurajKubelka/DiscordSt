@@ -1,3 +1,5 @@
 public - authentication
 login
-	^ self restApi login
+	self catchDiscordErrorDuring: [ 
+		self restApi login.
+		self announce: DSAuthenticatedAnnouncement ]

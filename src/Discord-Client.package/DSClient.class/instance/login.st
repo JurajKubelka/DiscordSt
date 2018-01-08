@@ -5,4 +5,3 @@ login
 	Raise NetworkError on any network problem."
 
 	self restApi login.
-	self announce: DSAuthenticatedAnnouncement.

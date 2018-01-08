@@ -1,5 +1,5 @@
-public
-listGuildMembersOfGuildId: guildId
+private - communication
+membersOfGuildId: guildId
 	"Returns a list of guild member objects that are members of the guild.
 	See https://discordapp.com/developers/docs/resources/guild#list-guild-members"
 

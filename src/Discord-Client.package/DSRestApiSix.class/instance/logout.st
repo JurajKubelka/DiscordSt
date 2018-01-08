@@ -1,4 +1,4 @@
-public
+public - authentication
 logout
 	| response |
 	response := self newZnClientAuthenticated
