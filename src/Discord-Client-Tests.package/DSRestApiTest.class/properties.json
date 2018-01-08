@@ -8,6 +8,6 @@
 	"instvars" : [
 		"api"
 	],
-	"name" : "DSApiTest",
+	"name" : "DSRestApiTest",
 	"type" : "normal"
 }

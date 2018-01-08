@@ -1,3 +1,3 @@
 instance creation
 newRestApi
-	^ DSRestApi new 
+	^ DSRestApi defaultClass new

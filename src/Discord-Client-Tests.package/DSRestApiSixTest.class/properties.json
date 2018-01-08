@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "DSApiTest",
+	"super" : "DSRestApiTest",
 	"category" : "Discord-Client-Tests-REST-Api",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSApiSixTest",
+	"name" : "DSRestApiSixTest",
 	"type" : "normal"
 }

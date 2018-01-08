@@ -1,7 +1,6 @@
 public
 login
 	| response |
-	self resetCache.
 	response := self newZnClientWithUserAgent
 		url: self loginAuthUrl;
 		entity: (ZnEntity text: self emailAndPasswordJson);

@@ -1,5 +1,5 @@
 public - user
-directMessageWith: aDSUser 
+directChannelWith: aDSUser 
 	| response entity |
 	entity := ZnEntity text: (self class jsonMappingClass
 		write: aDSUser mappedTo: #recipientMappingFor:).

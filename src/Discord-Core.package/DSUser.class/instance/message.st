@@ -1,3 +1,3 @@
 accessing - convenience
 message
-	^ (self restApi directMessageWith: self) message
+	^ (self restApi directChannelWith: self) message

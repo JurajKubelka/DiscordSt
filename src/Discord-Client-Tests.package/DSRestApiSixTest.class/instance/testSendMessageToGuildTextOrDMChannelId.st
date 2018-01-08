@@ -1,4 +1,4 @@
-as yet unclassified
+tests
 testSendMessageToGuildTextOrDMChannelId
 	| message returnedMessage |
 	self startZnServer.
