@@ -1,4 +1,4 @@
-tests
+tests - public - guild
 testChannelsInGuild
 	"Return Three channels"
 	| channels guild |
@@ -12,4 +12,5 @@ testChannelsInGuild
 	self assertChannels: channels.
 	self assert: self mockServerRequests size equals: 2.
 	self assert: self mockServerRequests second class equals: DSChannelsAnnouncement.
+	self assert: self mockServerRequests second guild equals: guild.
 	self assert: self mockServerRequests second channels equals: channels.

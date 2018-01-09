@@ -1,4 +1,4 @@
-tests
+tests - public - authentication
 testLogin
 	self startMockServer initializeAuthLoginDelegate.
 	restApi := self classToTest new.

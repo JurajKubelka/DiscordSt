@@ -1,4 +1,4 @@
-tests
+tests - public - guild
 testGuildChannelsUsingIdUnauthorized
 	self startMockServer.
 	restApi := self newRestApi.

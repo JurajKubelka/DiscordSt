@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"guild",
-		"channels"
+		"members"
 	],
-	"name" : "DSChannelsAnnouncement",
+	"name" : "DSMembersAnnouncement",
 	"type" : "normal"
 }

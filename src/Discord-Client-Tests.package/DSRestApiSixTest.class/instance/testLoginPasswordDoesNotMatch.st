@@ -1,4 +1,4 @@
-tests
+tests - public - authentication
 testLoginPasswordDoesNotMatch
 	self startMockServer.
 	restApi := self newRestApi.

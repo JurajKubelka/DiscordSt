@@ -1,13 +1,13 @@
 tests - public - guild
-testChannelsInGuild
+testMembersOfGuild
 	| guild |
-	self startMockServer initializeGuildsGuildChannels.
+	self startMockServer initializeGuildsGuildMembers.
 	restApi := self newRestApiWithApiUrlAndToken.
-	restApi onSuccess: [ :aChannels | 
-		self mockServerRequests add: aChannels. 
+	restApi onSuccess: [ :aMembers | 
+		self mockServerRequests add: aMembers. 
 		self signalMockServerSemaphore ].
 	guild := DSGuild new id: '41771983423143937'; yourself.
-	restApi channelsInGuild: guild.
+	restApi membersOfGuild: guild.
 	self assertMockServerSemaphore.
 	self assert: self mockServerRequests size equals: 2.
-	self assertChannels: self mockServerRequests second.
+	self assertMembers: self mockServerRequests second.

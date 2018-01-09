@@ -1,4 +1,4 @@
-tests
+tests - public - authentication
 testLoginNewLoginLocationDetected
 	self startMockServer.
 	restApi := self newRestApi.

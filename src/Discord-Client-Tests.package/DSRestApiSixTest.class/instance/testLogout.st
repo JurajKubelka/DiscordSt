@@ -1,4 +1,4 @@
-tests
+tests - public - authentication
 testLogout
 	self startMockServer initializeAuthLogoutDelegate.
 	restApi := self newRestApiWithApiUrlAndToken.

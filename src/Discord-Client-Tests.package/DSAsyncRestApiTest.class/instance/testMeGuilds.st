@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMeGuilds
 	self startMockServer initializeUsersMeGuildDelegate.
 	restApi := self newRestApiWithApiUrlAndToken.

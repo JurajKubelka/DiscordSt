@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMeGuildsUnauthorized
 	self startMockServer.
 	restApi := self newRestApi.

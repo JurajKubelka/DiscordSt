@@ -1,4 +1,4 @@
-tests
+tests - public - authentication
 testLogoutUnauthorized
 	"Unauthorized logout"
 

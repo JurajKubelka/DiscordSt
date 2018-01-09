@@ -4,5 +4,8 @@ channelsInGuild: aDSGuild
 	^ self catchDiscordErrorDuring: [ | channels |
 		channels := self restApi channelsInGuild: aDSGuild.
 		channels allChannelsDo: [ :eachChannel | eachChannel restApi: self ].
-		self announce: (DSChannelsAnnouncement new channels: channels; yourself).
+		self announce: (DSChannelsAnnouncement new
+			guild: aDSGuild;
+			channels: channels; 
+			yourself).
 		channels ]

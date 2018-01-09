@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMeTokenRequiered
 	restApi := self newRestApi.
 	self

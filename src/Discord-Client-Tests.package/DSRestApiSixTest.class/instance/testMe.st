@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMe
 	| user |
 	self startMockServer initializeUsersMeDelegate.

@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMeTokenRequiered
 	| results answer |
 	results := OrderedCollection new.

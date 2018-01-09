@@ -1,4 +1,4 @@
-tests
+tests - public - user
 testMeGuilds
 	| guilds |
 	self startMockServer initializeUsersMeGuildDelegate.

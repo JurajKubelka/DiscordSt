@@ -1,4 +1,4 @@
-tests-public
+tests
 testEditMessageIdInChannelIdContentEmbed
 	self startMockServer.
 	restApi := self newRestApi.
