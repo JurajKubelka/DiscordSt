@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "DSResultAnnouncement",
+	"super" : "DSChannelsAnnouncement",
 	"category" : "Discord-Announcements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"channels"
+		"guild"
 	],
-	"name" : "DSChannelsAnnouncement",
+	"name" : "DSGuildChannelsAnnouncement",
 	"type" : "normal"
 }
