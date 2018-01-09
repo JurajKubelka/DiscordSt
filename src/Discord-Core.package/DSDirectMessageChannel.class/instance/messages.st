@@ -1,4 +1,4 @@
 accessing - convenience
 messages
 	<return: #DSMessages of: #DSMessage>
-	^ messages ifNil: [ self restApi messagesForChannel: self ]
+	^ messages ifNil: [ self restApi messagesInChannel: self ]

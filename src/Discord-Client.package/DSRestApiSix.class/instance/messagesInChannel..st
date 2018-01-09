@@ -1,5 +1,5 @@
 public - channel
-messagesForChannel: aChannel 
+messagesInChannel: aChannel 
 	"Returns the messages for a channel. If operating on a guild channel, 
 	this endpoint requires the 'READ_MESSAGES' permission to be present on the current user. 
 	Returns an array of message objects on success.

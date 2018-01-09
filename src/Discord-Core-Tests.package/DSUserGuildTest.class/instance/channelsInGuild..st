@@ -1,4 +1,4 @@
 helpers
-guildChannelsOf: aDSUserGuild 
+channelsInGuild: aDSUserGuild 
 	"Return some channels."
 	^ guildChannels
