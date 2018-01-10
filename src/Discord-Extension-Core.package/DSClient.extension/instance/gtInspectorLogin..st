@@ -10,6 +10,4 @@ gtInspectorLogin: composite
 					buildWithSpec.
 			 ];
 		when: [ self isAuthenticated not ];
-		updateOn: DSAuthenticatedAnnouncement 
-			from: [ :client | client announcer ];
 		yourself

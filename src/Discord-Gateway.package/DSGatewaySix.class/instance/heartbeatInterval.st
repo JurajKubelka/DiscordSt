@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 heartbeatInterval
 	"For testing purpose only."
 	<return: #Integer>

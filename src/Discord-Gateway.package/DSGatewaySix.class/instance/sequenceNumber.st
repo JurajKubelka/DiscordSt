@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 sequenceNumber
 	"For testing purpose only."
 	<return: #Integer>
