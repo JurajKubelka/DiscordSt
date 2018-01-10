@@ -14,5 +14,5 @@
 	"type" : "normal",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"category" : "Discord-Client"
+	"category" : "Discord-Client-Core"
 }

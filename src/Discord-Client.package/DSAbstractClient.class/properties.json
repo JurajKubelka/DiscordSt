@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 11/20/2017 15:23",
 	"super" : "Object",
-	"category" : "Discord-Client",
+	"category" : "Discord-Client-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

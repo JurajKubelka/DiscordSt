@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "PackageManifest",
-	"category" : "Discord-Client-Tests",
+	"category" : "Discord-Client-Tests-Manifest",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
