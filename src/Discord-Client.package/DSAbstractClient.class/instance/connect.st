@@ -4,4 +4,5 @@ connect
 	Discord Gateway is a server that informs clients about new messages and other events.
 	Discord Gateway uses WebSocket connection."
 
-	self gateway connect
+	self isAuthenticated ifFalse: [ self authenticate ].
+	self isAuthenticated ifTrue: [ self gateway connect ].

@@ -1,6 +1,6 @@
 announcement handling
 handleGatewayReadyAnnouncement: aDSGatewayReadyAnnouncement 
-	self client 
-		me: aDSGatewayReadyAnnouncement event user;
-		guilds: aDSGatewayReadyAnnouncement event guilds;
-		privateChannels: aDSGatewayReadyAnnouncement event privateChannels.
+	self updateUser: aDSGatewayReadyAnnouncement event user.
+	self updateGuilds: aDSGatewayReadyAnnouncement event guilds.
+	self updatePrivateChannels: aDSGatewayReadyAnnouncement event privateChannels.
+	self client announcer announce: (DSClientConnectedAnnouncement new client: self client; yourself)

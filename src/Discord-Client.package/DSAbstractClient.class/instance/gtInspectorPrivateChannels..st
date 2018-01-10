@@ -4,7 +4,7 @@ gtInspectorPrivateChannels: composite
 	^ composite fastTree
 		title: [ 'Private Channels' translated ];
 		display: [ self privateChannels ];
-		when: [ self isAuthenticated ];
+		when: [ self privateChannels notEmpty ];
 		children: [ :item | item children ];
 		expandedUntil: 1;
 		yourself

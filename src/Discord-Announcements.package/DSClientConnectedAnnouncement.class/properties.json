@@ -5,9 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"guilds"
-	],
-	"name" : "DSClientGuildsChangedAnnouncement",
+	"instvars" : [ ],
+	"name" : "DSClientConnectedAnnouncement",
 	"type" : "normal"
 }
