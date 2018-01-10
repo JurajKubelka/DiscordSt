@@ -1,7 +1,7 @@
 tests - public - user
 testMeGuilds
 	| guilds |
-	self startMockServer initializeUsersMeGuildDelegate.
+	self startMockServer initializeUsersMeGuildsDelegate.
 	restApi := self newRestApiWithApiUrlAndToken.
 	guilds := restApi meGuilds.
 	self assertUsersMeGuilds: guilds.

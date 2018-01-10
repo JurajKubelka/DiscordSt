@@ -8,7 +8,11 @@
 	"instvars" : [
 		"gateway",
 		"announcer",
-		"restApi"
+		"restApi",
+		"me",
+		"guilds",
+		"privateChannels",
+		"updater"
 	],
 	"name" : "DSAbstractClient",
 	"type" : "normal"

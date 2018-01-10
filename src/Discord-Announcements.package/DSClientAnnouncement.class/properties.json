@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "DSAnnouncement",
-	"category" : "Discord-Announcements",
+	"category" : "Discord-Announcements-Client",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "DSResponseErrorAnnouncement",
+	"instvars" : [
+		"client"
+	],
+	"name" : "DSClientAnnouncement",
 	"type" : "normal"
 }

@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "DSAnnouncement",
-	"category" : "Discord-Announcements",
+	"category" : "Discord-Announcements-REST-Api",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSResultAnnouncement",
+	"name" : "DSRestApiResponseAnnouncement",
 	"type" : "normal"
 }

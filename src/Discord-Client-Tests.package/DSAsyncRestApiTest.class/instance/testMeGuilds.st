@@ -1,6 +1,6 @@
 tests - public - user
 testMeGuilds
-	self startMockServer initializeUsersMeGuildDelegate.
+	self startMockServer initializeUsersMeGuildsDelegate.
 	restApi := self newRestApiWithApiUrlAndToken.
 	restApi onSuccess: [ :aGuilds | 
 		self mockServerRequests add: aGuilds. 

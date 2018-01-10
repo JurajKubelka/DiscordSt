@@ -2,7 +2,7 @@ tests
 testSendEmbedObject
 	| response content |
 	content := self classAndTestSelectorMessageString.
-	response := self client message
+	response := (self client guildNamed: self serverName channelNamed: self channelName) message
 		embedTitle: 'Embed Title';
 		embedDescription: content;
 		embedUrl: 'http://pharo.org';
@@ -18,7 +18,7 @@ testSendEmbedObject
 		fileName: 'footer.png' form: #pharo asIcon;
 		fileName: 'random-image.jpg' 
 			bytes: PolymorphSystemSettings pharoLogoContents base64Decoded asByteArray;
-		sendToServer: self serverName channel: self channelName.
+		send.
 	self assert: response class equals: DSMessage.
 	#( 'random-image.jpg' ) do: [ :eachFileName |
 		self 

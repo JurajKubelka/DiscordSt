@@ -1,9 +1,9 @@
 gt-inspector-extension
-gtInspectorDirectChannels: composite
+gtInspectorPrivateChannels: composite
 	<gtInspectorPresentationOrder: 3>
 	^ composite fastTree
-		title: [ 'Direct Channels' translated ];
-		display: [ self me directChannels ];
+		title: [ 'Private Channels' translated ];
+		display: [ self privateChannels ];
 		when: [ self isAuthenticated ];
 		children: [ :item | item children ];
 		expandedUntil: 1;

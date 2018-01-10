@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "DSAuthenticationAnnouncement",
-	"category" : "Discord-Announcements",
+	"category" : "Discord-Announcements-REST-Api",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
