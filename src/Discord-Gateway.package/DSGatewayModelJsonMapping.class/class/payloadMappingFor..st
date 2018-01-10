@@ -6,6 +6,7 @@ payloadMappingFor: aNeoJSONMapper
 		dispatchReadyEventPayloadMappingFor: aNeoJSONMapper;
 		resumePayloadMappingFor: aNeoJSONMapper;
 		heartbeatPayloadMappingFor: aNeoJSONMapper;
+		resumedPayloadMappingFor: aNeoJSONMapper;
 		invalidSessionPayloadMappingFor: aNeoJSONMapper;
 		heartbeatAckPayloadMappingFor: aNeoJSONMapper;
 		messageCreatePayloadMappingFor: aNeoJSONMapper;

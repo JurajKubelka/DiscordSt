@@ -1,9 +1,5 @@
 {
-	"commentStamp" : "JurajKubelka 11/20/2017 15:23",
-	"super" : "Object",
-	"category" : "Discord-Client-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSRestApi classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"gateway",
@@ -15,5 +11,11 @@
 		"updater"
 	],
 	"name" : "DSAbstractClient",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 11/20/2017 15:23",
+	"super" : "Object",
+	"traitcomposition" : "TDSRestApi",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Client-Core"
 }

@@ -1,4 +1,4 @@
-protocol
+public - authentication
 connect
 	"Connect to Discord Gateway.
 	Discord Gateway is a server that informs clients about new messages and other events.

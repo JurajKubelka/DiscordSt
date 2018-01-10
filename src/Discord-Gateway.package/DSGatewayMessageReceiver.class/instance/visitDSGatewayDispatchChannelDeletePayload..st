@@ -1,3 +1,3 @@
-as yet unclassified
+visiting
 visitDSGatewayDispatchChannelDeletePayload: aDSGatewayDispatchChannelDeletePayload 
 	self announcer announce: (DSGatewayChannelDeleteAnnouncement payload: aDSGatewayDispatchChannelDeletePayload)

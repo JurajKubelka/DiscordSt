@@ -1,0 +1,3 @@
+announcement handling
+handleGatewayResumedAnnouncement: aDSGatewayResumedAnnouncement
+	self announceConnected

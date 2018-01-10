@@ -1,3 +1,3 @@
-as yet unclassified
+visiting
 visitDSGatewayDispatchVoiceStateUpdatePayload: aDSGatewayDispatchVoiceStateUpdatePayload 
 	self announcer announce: (DSGatewayVoiceStateUpdateAnnouncement payload: aDSGatewayDispatchVoiceStateUpdatePayload)

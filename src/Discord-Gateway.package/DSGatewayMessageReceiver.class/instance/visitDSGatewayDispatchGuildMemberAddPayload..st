@@ -1,3 +1,3 @@
-as yet unclassified
+visiting
 visitDSGatewayDispatchGuildMemberAddPayload: aDSGatewayDispatchGuildMemberAddPayload 
 	self announcer announce: (DSGatewayGuildMemberAddAnnouncement payload: aDSGatewayDispatchGuildMemberAddPayload)

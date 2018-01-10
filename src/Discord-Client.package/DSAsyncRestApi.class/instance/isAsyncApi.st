@@ -1,3 +1,0 @@
-testing
-isAsyncApi
-	^ true

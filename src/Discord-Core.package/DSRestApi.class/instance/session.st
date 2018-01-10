@@ -1,4 +1,4 @@
-public - accessing
+accessing
 session
 	<return: #DSSession>
 	^ self subclassResponsibility
