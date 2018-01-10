@@ -11,4 +11,12 @@ payloadMappingFor: aNeoJSONMapper
 		messageCreatePayloadMappingFor: aNeoJSONMapper;
 		presenceUpdatePayloadMappingFor: aNeoJSONMapper;
 		messageUpdatePayloadMappingFor: aNeoJSONMapper;
+		guildCreatePayloadMappingFor: aNeoJSONMapper;
+		guildDeletePayloadMappingFor: aNeoJSONMapper;
+		guildUpdatePayloadMappingFor: aNeoJSONMapper;
+		guildMemberAddayloadMappingFor: aNeoJSONMapper;
+		voiceStateUpdatePayloadMappingFor: aNeoJSONMapper;
+		channelCreatePayloadMappingFor: aNeoJSONMapper;
+		channelDeletePayloadMappingFor: aNeoJSONMapper;
+		channelUpdatePayloadMappingFor: aNeoJSONMapper;
 		unclassifiedPayloadMappingFor: aNeoJSONMapper.
