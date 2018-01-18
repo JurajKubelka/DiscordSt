@@ -1,8 +1,11 @@
 visiting
 visitDSSendPackagesItem: aDSSendPackagesItem 
-	| zipFile |
+	| zipFile selectedPackages |
+	selectedPackages := aDSSendPackagesItem packages 
+		select: #isSelected thenCollect: #item.
+	selectedPackages ifEmpty: [ ^ self ].
 	zipFile := DSSerializePackagesWithTonelCommand new
-		packages: (aDSSendPackagesItem packages collect: #item);
+		packages: selectedPackages;
 		execute;
 		zipFile.
 	messageBuilder fileName: 'tonel.zip' fileReference: zipFile.
