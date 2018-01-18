@@ -47,14 +47,16 @@ baseline: spec
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
 			package: #'Discord-Tools' with: [
-				spec requires: #( #'Discord-Core' )
-				"It depends on GT-Inspector and GT-Playground that are stadard tools" ];
+				"It depends on GT-Inspector and GT-Playground that are standard tools"
+				spec 
+					preLoadDoIt: #preLoadTonel:;
+					requires: #( #'Discord-Core' ) ];
 			package: #'Discord-Tools-Tests' with: [
 				spec requires: #( #'Discord-Tools' ) ];
 
 			package: #'Discord-Extension-Core' with: [
 				spec 
-					postLoadDoIt: #postLoadPlayground:;
+					preLoadDoIt: #preLoadPlayground:;
 					requires: #( #'Discord-Client' #'Discord-Tools' ) ];
 			package: #'Discord-Extension-Core-Tests' with: [
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' #'Discord-Tools-Tests' ). ];

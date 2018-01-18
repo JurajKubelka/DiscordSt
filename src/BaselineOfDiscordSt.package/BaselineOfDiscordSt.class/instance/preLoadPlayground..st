@@ -1,5 +1,5 @@
 actions
-postLoadPlayground: aSpecLoader
+preLoadPlayground: aSpecLoader
 	"Load a patch to be able to extend GT-Playground with actions."
 	| playgroundClass |
 	SystemVersion current highestUpdate > 60000 ifFalse: [ ^ self ].
