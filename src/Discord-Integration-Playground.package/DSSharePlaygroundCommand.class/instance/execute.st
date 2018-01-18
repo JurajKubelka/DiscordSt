@@ -9,6 +9,8 @@ execute
 	items screenshotsItem addMorph: morph.
 	classes := (DSClassesInCodeSnippetCommand new codeSnippet: codeSnippetCmd codeSnippet; execute; classes).
 	packages := (DSSortClassesPerPackageCommand new classes: classes; execute; packages).
+	"Hack as it shares the whole package, we cannot select particular classes"
+	packages do: [ :eachPackage | eachPackage classes: #(); isSelected: true ].
 	items packagesItem packages: packages.
 	items informationItem addPharoAndOsVersion.
 	items addCodeSnippetAttachment: codeSnippetCmd codeSnippet.

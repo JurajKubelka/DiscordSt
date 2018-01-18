@@ -5,7 +5,8 @@ downloadContents: decodedData
 			displayHTTPProgress: 'Downloading data (' , eachData type asString , ')'
 			during: [ | response |
 				response := ZnEasy client
-					signalProgress: true;
+					signalProgress: false;
 					url: eachData url;
-					get.
+					get;
+					response.
 				eachData contents: response contents ] ].
