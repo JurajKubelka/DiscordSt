@@ -9,17 +9,17 @@ packageNameFor: aDSPackageSelection
 				selectedClasses := aDSPackageSelection classes.
 				diff := (existingClasses size - selectedClasses size ).
 				stream 
-					space;
-					nextPutAll: '(including ';
-					print: selectedClasses size;
-					space;
-					nextPutAll: ('class' asPluralBasedOn: selectedClasses size);
-					nextPutAll: ' below'.
-				diff > 0 ifTrue: [ 
-					stream
-						nextPutAll: ' and ';
-						print: diff;
 						space;
-						nextPutAll: 'more ';
-						nextPutAll: ('class' asPluralBasedOn: diff) ].
+						nextPutAll: '(including '.
+				selectedClasses ifNotEmpty: [ 
+					stream 
+						print: selectedClasses size;
+						space;
+						nextPutAll: (selectedClasses size = 1 ifTrue: [ 'class' ] ifFalse: [ 'classes' ]);
+						nextPutAll: ' below' ].
+				diff > 0 ifTrue: [ 
+					selectedClasses ifNotEmpty: [ stream nextPutAll: ' and ' ].
+					stream print: diff; space.
+					selectedClasses ifNotEmpty: [ stream nextPutAll: 'more ' ].
+					stream nextPutAll: (diff = 1 ifTrue: [ 'class' ] ifFalse: [ 'classes' ]) ].
 				stream nextPut: $) ] ] ]
