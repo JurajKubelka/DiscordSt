@@ -2,9 +2,9 @@ instance creation
 newDefault
  	DSClientSettings updateSettings.
 	^ self new
-		email: DSClientSettings discordClientEmail;
-		password: DSClientSettings discordClientPassword;
-		token: DSClientSettings discordClientToken;
+		email: DSClientSettings cleanDiscordClientEmail;
+		password: DSClientSettings cleanDiscordClientPassword;
+		token: DSClientSettings cleanDiscordClientToken;
 		with: [ :theClient | 
 			theClient announcer 
 				subscribe: DSAuthenticatedAnnouncement 
