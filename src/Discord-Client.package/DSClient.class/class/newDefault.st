@@ -8,5 +8,5 @@ newDefault
 		with: [ :theClient | 
 			theClient announcer 
 				subscribe: DSAuthenticatedAnnouncement 
-				do: [ :announcement | DSClientSettings storeDiscordClientToken: theClient token ] ];
+				do: [ :announcement | DSClientSettings storeDiscordClientSession: theClient ] ];
 		yourself.
