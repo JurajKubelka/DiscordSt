@@ -9,7 +9,7 @@ login
 		post;
 		response.
 	response isSuccess 
-		ifTrue: [ self session token: ((NeoJSONObject fromString: response contents) at: self tokenKey) ]
+		ifTrue: [ self token: ((NeoJSONObject fromString: response contents) at: self tokenKey) ]
 		ifFalse: [ DSCannotLoginError new 
 			response: response;
 			signal: response contents ]
