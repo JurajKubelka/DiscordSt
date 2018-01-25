@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 zipFileInDirectory: aFileLocator 
 	"Define any random and unique ZIP file name that should be located in the given directory."
 	| existingFileNames |
