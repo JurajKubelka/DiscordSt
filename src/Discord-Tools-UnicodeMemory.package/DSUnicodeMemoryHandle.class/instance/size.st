@@ -1,0 +1,3 @@
+public
+size
+	^ entry fileSize
