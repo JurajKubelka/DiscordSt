@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "OrderedCollection",
+	"category" : "Discord-Registry-Core",
+	"classinstvars" : [
+		"uniqueInstance",
+		"collector"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selection",
+		"announcer"
+	],
+	"name" : "DSRegistries",
+	"type" : "normal"
+}

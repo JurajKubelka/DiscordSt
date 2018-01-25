@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "JurajKubelka 6/26/2017 15:50",
-	"super" : "DSCommand",
+	"super" : "DSCommandOld",
 	"category" : "Discord-Extension-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],

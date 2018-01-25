@@ -9,7 +9,7 @@ payload: payloadSchema event: eventSchema mappingFor: aNeoJSONMapper
 				getter: [ :object | object code ] 
 				setter: [ :object :value | 
 					"Check we are reading the payload."
-					self assert: object code equals: value ].
+					[ object code = value ] assert ].
 	      propertyMapping := (mapping mapAccessor: #eventData to: #d).
 			eventSchema ifNotNil: [ propertyMapping valueSchema: eventSchema ].
 			mapping mapAccessor: #sequenceNumber to: #s.

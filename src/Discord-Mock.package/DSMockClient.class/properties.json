@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Mock",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"email",
+		"password",
+		"isAuthenticated",
+		"servers",
+		"loginAction",
+		"announcer"
+	],
+	"name" : "DSMockClient",
+	"type" : "normal"
+}

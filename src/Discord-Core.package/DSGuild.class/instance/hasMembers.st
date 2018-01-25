@@ -1,0 +1,3 @@
+testing
+hasMembers
+	^ members notNil

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 12/6/2017 09:43",
+	"super" : "PanelMorph",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSendActionbarMorph",
+	"type" : "normal"
+}

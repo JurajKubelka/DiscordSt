@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSelection",
+	"category" : "Discord-Tools-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classes"
+	],
+	"name" : "DSPackageSelection",
+	"type" : "normal"
+}

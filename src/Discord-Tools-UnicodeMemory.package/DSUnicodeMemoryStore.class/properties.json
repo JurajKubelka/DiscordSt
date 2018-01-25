@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 1/25/2018 15:38",
+	"super" : "MemoryStore",
+	"category" : "Discord-Tools-UnicodeMemory",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSUnicodeMemoryStore",
+	"type" : "normal"
+}

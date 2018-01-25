@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSCommandTest",
+	"category" : "Discord-Downloader-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"window"
+	],
+	"name" : "DSDisplaySharedPlaygroundTest",
+	"type" : "normal"
+}

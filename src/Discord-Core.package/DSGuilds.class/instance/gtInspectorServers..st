@@ -1,10 +1,10 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorServers: composite
-	<gtInspectorPresentationOrder: -1>
+	<gtInspectorPresentationOrder: -10>
 	^ composite fastTree
 		title: [ 'Servers' translated ];
 		display: [ self ];
-		when: [ self isAuthenticated ];
+		when: [ self notEmpty ];
 		children: [ :item | item children ];
 		expandedUntil: 1;
 		yourself

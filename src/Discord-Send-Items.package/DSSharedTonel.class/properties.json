@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSharedData",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bytes"
+	],
+	"name" : "DSSharedTonel",
+	"type" : "normal"
+}

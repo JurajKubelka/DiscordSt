@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 6/20/2017 18:58",
 	"super" : "DSObjectTest",
-	"category" : "Discord-Core-Tests",
+	"category" : "Discord-Core-Tests-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

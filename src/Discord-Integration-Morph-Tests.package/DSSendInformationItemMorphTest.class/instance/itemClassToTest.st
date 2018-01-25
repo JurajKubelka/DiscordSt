@@ -1,0 +1,3 @@
+running
+itemClassToTest
+	^ DSSendInformationItem

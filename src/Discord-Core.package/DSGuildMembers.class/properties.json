@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "JurajKubelka 1/5/2018 15:13",
+	"super" : "DSOrderedCollection",
+	"category" : "Discord-Core-Collections",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSGuildMembers",
+	"type" : "normal"
+}

@@ -3,6 +3,7 @@ menuFor: aBuilder
 	| model method examples |
 	model := aBuilder model ifNil: [ ^ self ].
 	method := model selectedMethod ifNil: [ ^ self ].
+	(model respondsTo: #gtExamples) ifFalse: [ ^ self ].
 	examples := method gtExamples reject: [ :each | each isNil ].
 	examples ifEmpty: [ ^ self ].
 	(aBuilder item: #'Share example on Discord')

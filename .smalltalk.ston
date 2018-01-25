@@ -7,8 +7,6 @@ SmalltalkCISpec {
     }
   ],
   #testing : {
-    #coverage: {
         #categories: [ 'Discord*' ]
-    }
   }
 }

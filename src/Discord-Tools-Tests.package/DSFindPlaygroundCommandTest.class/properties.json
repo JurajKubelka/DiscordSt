@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSAbstractFindMorphCommandTest",
+	"category" : "Discord-Tools-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSFindPlaygroundCommandTest",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSPanelMorph",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"registry"
+	],
+	"name" : "DSServerChannelListMorph",
+	"type" : "normal"
+}

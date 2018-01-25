@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCommand",
+	"category" : "Discord-Core-Commands",
+	"classinstvars" : [
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSNoCommand",
+	"type" : "normal"
+}

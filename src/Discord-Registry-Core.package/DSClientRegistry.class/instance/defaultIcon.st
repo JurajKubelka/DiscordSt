@@ -1,0 +1,3 @@
+initialization
+defaultIcon
+	^ #user asIcon

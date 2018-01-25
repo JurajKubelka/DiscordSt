@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSToolCommandTest",
+	"category" : "Discord-Tools-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"zipFile"
+	],
+	"name" : "DSCompressDirectoryWithZipCommandTest",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSendItem",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"text"
+	],
+	"name" : "DSSendUserTextMessageItem",
+	"type" : "normal"
+}

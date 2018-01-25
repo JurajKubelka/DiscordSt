@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSConnectionRegistryTest",
+	"category" : "Discord-Registry-Core-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSWebhookRegistryTest",
+	"type" : "normal"
+}

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSConnectionRegistry",
+	"category" : "Discord-Registry-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"url",
+		"name"
+	],
+	"name" : "DSWebhookRegistry",
+	"type" : "normal"
+}

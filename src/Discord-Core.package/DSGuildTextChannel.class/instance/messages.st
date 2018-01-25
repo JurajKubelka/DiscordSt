@@ -5,4 +5,4 @@ messages
 	Returns an array of message objects on success.
 	See https://discordapp.com/developers/docs/resources/channel#get-channel-messages"
 
-	^ messages ifNil: [ self restApi messagesForChannel: self id ]
+	^ messages ifNil: [ self restApi messagesForChannel: self ]

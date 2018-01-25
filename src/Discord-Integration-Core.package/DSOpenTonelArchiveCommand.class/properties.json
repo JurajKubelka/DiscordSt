@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSCommand",
+	"category" : "Discord-Integration-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bytes",
+		"window"
+	],
+	"name" : "DSOpenTonelArchiveCommand",
+	"type" : "normal"
+}

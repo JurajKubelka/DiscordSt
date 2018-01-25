@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/29/2017 12:43",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classes",
+		"packages"
+	],
+	"name" : "DSSortClassesPerPackageCommand",
+	"type" : "normal"
+}

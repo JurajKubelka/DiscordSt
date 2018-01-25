@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Tools-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"item",
+		"isSelected",
+		"announcer"
+	],
+	"name" : "DSSelection",
+	"type" : "normal"
+}

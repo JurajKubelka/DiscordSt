@@ -14,4 +14,8 @@ basicSpecModel
 	model passwordLabel label: 'Password: '.
 	model passwordInput text: self client password; autoAccept: true; beEncrypted.
 	model layout: self basicSpecLayout.
+	model focusOrder 
+		add: model emailInput;
+		add: model passwordInput.
+	model emailInput takeKeyboardFocus.
 	^ model

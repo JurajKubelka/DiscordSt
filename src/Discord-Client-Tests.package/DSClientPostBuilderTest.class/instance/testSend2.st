@@ -15,7 +15,7 @@ testSend2
 	builder := self newInstanceToBeTested 
 		content: self anyString;
 		fileName: 'attachment1.data' bytes: self bytes;
-		client: client;
+		restApi: client restApi;
 		channel: (DSGuildTextChannel new id: 'channel-id-two'; yourself);
 		yourself.
 	message := builder send.

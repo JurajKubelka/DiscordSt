@@ -5,4 +5,4 @@ resetDefault
 		ifNil: [ ^ self ]
 		ifNotNil: [ :aClient | 
 			default := nil.
-			aClient disconnect; logout ].
+			aClient disconnect ].

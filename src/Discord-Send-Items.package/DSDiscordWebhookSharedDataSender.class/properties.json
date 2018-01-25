@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSDiscordSharedDataSender",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSDiscordWebhookSharedDataSender",
+	"type" : "normal"
+}

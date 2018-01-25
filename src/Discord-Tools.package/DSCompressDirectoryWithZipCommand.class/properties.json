@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "JurajKubelka 11/29/2017 17:33",
+	"super" : "DSToolCommand",
+	"category" : "Discord-Tools-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"directory",
+		"zipFile"
+	],
+	"name" : "DSCompressDirectoryWithZipCommand",
+	"type" : "normal"
+}

@@ -7,5 +7,5 @@ testPostNetworkError4
 	client := self classToTest new 
 		url: 'http://localhost:', port asString, '/doesNotExists';
 		message: self messageString.
-	response := client send.
-	self assert: response isError.
+	self should: [ response := client send ] raise: DSResponseError.
+	self assert: response isNil.

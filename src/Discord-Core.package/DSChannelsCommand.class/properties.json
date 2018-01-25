@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "DSCoreCommand",
+	"super" : "DSCommand",
 	"category" : "Discord-Core-Commands",
 	"classinstvars" : [ ],
 	"pools" : [ ],

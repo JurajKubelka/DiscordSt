@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSToolCommandTest",
+	"category" : "Discord-Tools-Tests-Commands",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"morph",
+		"window",
+		"command",
+		"result"
+	],
+	"name" : "DSAbstractFindMorphCommandTest",
+	"type" : "normal"
+}

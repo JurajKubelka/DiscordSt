@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSMessageSender",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"messageBuilder",
+		"sharedData"
+	],
+	"name" : "DSDiscordMessageSender",
+	"type" : "normal"
+}

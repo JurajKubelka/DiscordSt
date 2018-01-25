@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 5/10/2017 17:19",
 	"super" : "Object",
-	"category" : "Discord-Core-Tests",
+	"category" : "Discord-Core-Tests-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

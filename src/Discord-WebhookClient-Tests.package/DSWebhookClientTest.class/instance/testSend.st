@@ -1,11 +1,12 @@
 test - sending
 testSend
 	"Send JSON entity"
-	| response port |
-	server := ZnServer startOn: 0.
-	port := server serverSocket port.
+	| message |
+	self startZnServer.
+	server delegate map: '/' to: [ :request :response | 
+		response entity: self messageEntity ].
 	client := self classToTest new 
-		url: 'http://localhost:', port asString;
+		url: self serverUrl;
 		message: self messageString.
-	response := client send.
-	self assert: response isSuccess
+	message := client send.
+	self assert: message class equals: DSMessage.

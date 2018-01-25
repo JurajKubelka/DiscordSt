@@ -5,7 +5,7 @@ setTemporalBackground: imageElement
 		paint: (Color gray alpha: 0.5);
 		build.
 	imageElement background: imageBackground.
-	DSForkedCommand new
+	DSAsyncCommand new
 		image: self embed image;
 		onSuccess: [ 
 			imageBackground := BlBackground builder

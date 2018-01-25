@@ -8,5 +8,5 @@ testPostNetworkError5
 		url: 'http://localhost:', port asString, '/doesNotExists';
 		message: self messageString;
 		fileName: self anyString bytes: self bytes.
-	response := client send.
-	self assert: response isError.
+	self should: [ response := client send ] raise: DSResponseError.
+	self assert: response isNil.

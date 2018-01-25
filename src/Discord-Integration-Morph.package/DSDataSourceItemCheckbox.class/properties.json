@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "JurajKubelka 12/13/2017 16:48",
+	"super" : "Object",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"dataSource"
+	],
+	"name" : "DSDataSourceItemCheckbox",
+	"type" : "normal"
+}

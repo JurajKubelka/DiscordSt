@@ -1,15 +1,17 @@
 language: smalltalk
-sudo: false
+sudo: true
 
 install:
+  - if [ "$TRAVIS_OS_NAME" = "osx" ] ; then sudo easy_install pip ; fi
   - pip install --user benchupload
+  - if [ "$TRAVIS_OS_NAME" = "osx" ] ; then export unset DISCORD_ST_TEST_CASE_BOT_TOKEN ; fi
 
 os:
   - linux
   - osx
 
 smalltalk:
-  - Pharo-6.0
+  - Pharo-6.1
 
 # bob-bench xUnit file analysis
 after_success:

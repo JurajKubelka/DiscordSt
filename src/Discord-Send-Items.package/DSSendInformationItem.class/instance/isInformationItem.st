@@ -1,0 +1,3 @@
+testing
+isInformationItem
+	^ true

@@ -4,5 +4,5 @@ gtInspectorImage: composite
 	^ composite morph
 		title: [ 'Image' translated ];
 		display: [ self image ifNotNil: #asForm ];
-		when: [ self hasImage ];
+		when: [ self hasImage and: [ self image hasKnownScheme ] ];
 		yourself

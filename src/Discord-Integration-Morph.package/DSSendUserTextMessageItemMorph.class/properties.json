@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSendItemMorph",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textModel"
+	],
+	"name" : "DSSendUserTextMessageItemMorph",
+	"type" : "normal"
+}
