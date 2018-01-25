@@ -46,13 +46,18 @@ baseline: spec
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
+			package: #'Discord-Tools-UnicodeMemory';
+			package: #'Discord-Tools-UnicodeMemory-Tests' with: [ 
+				spec
+					requires: #( #'Discord-Tools-UnicodeMemory' ) ];
+
 			package: #'Discord-Tools' with: [
 				"It depends on GT-Inspector and GT-Playground that are standard tools"
 				spec 
 					preLoadDoIt: #preLoadTonel:;
-					requires: #( #'Discord-Core' ) ];
+					requires: #( #'Discord-Core' #'Discord-Tools-UnicodeMemory' ) ];
 			package: #'Discord-Tools-Tests' with: [
-				spec requires: #( #'Discord-Tools' ) ];
+				spec requires: #( #'Discord-Tools' #'Discord-Tools-UnicodeMemory-Tests' ) ];
 
 			package: #'Discord-Extension-Core' with: [
 				spec 
