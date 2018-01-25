@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 zipFile
 	^ DSCompressDirectoryWithZipCommand new
 		directory: self directory;
