@@ -22,3 +22,7 @@ assertSubDirectories
 	self assert: memory root children size equals: 2.
 	self assert: memory root children first basename equals: 'dir1'.
 	self assert: memory root children second basename equals: 'dir2'.
+	self assert: memory root children first children second basename equals: 'file2.txt'.
+	self assert: memory root children first children second contents equals: 'file 2 contents'.
+	self assert: memory root children first children first basename equals: 'file1.txt'.
+	self assert: memory root children first children first contents equals: 'file 1 contents with ™'.

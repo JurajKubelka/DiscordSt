@@ -6,4 +6,6 @@ testDirectory
 	result := command execute; directory.
 	self assert: result notNil.
 	self assert: result isDirectory.
-	self assert: result basename equals: self class package name.
+	self assert: result directories size equals: 1.
+	self assert: (result directoryNames anySatisfy: [ :directoryName | directoryName = self class package name ])
+		descriptionBlock: [ 'Missing directory named ', self class package name ]

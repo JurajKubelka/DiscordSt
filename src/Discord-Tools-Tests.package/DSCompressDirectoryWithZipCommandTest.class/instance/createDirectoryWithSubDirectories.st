@@ -3,11 +3,11 @@ createDirectoryWithSubDirectories
 	"Return a directory that includes two subdirectories, each one two files."
 	<return: #FileReference>
 	| fileSystem dir file mainDir |
-	fileSystem := FileSystem memory.
+	fileSystem := FileSystem discordUnicodeMemory.
 	mainDir := (fileSystem root / 'mainDir') createDirectory.
 	dir := (mainDir / 'dir1') createDirectory.
 	file := dir / 'file1.txt'.
-	file writeStreamDo: [ :stream | stream << 'file 1 contents' ].
+	file writeStreamDo: [ :stream | stream << 'file 1 contents with ™' ].
 	file := dir / 'file2.txt'.
 	file writeStreamDo: [ :stream | stream << 'file 2 contents' ].
 	dir := (mainDir / 'dir2') createDirectory.
