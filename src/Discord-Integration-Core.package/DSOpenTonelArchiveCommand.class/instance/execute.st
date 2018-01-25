@@ -1,7 +1,7 @@
 execute
 execute
 	| memory repository inspector |
-	memory := FileSystem memory.
+	memory := FileSystem discordUnicodeMemory.
 	ZipArchive new 
 		readFrom: self bytes readStream;
 		extractAllTo: memory root.

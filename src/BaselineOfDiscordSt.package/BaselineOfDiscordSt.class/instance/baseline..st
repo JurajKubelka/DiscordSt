@@ -101,7 +101,9 @@ baseline: spec
 				spec requires: #( #'Discord-Send-Items' ) ];
 
 			package: #'Discord-Integration-Core' with: [ 
-				spec requires: #( #'Discord-Core' #'Discord-Registry-Core' "#'Tonel'" ) ];
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Registry-Core' 
+					#'Discord-Tools-UnicodeMemory' ) ];
 			
 			package: #'Discord-Integration-Morph' with: [ 
 				spec requires: #( 

@@ -13,7 +13,7 @@ assertSubDirectories
 	self assert: members second fileName equals: 'dir1/file2.txt'.
 	self assert: members third fileName equals: 'dir2/file3.txt'.
 	self assert: members fourth fileName equals: 'dir2/file4.txt'.
-	memory := FileSystem memory.
+	memory := FileSystem discordUnicodeMemory.
 	ZipArchive new
 		readFrom: zipFile;
 		extractAllTo: memory root.
