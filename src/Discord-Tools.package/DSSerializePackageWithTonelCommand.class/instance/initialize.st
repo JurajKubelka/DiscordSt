@@ -1,4 +1,6 @@
 accessing
 initialize
 	super initialize.
-	fileSystem := FileSystem discordUnicodeMemory.
+	fileSystem := FileSystem disk.
+	rootDirectory := self uniqueRootDirectory.
+	rootDirectory ensureCreateDirectory.

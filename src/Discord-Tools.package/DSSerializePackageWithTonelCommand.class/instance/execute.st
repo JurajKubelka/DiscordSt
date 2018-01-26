@@ -1,7 +1,7 @@
 execute
 execute
 	| repository mcPackage workingCopy newVersion |
-	repository := TonelRepository new directory: fileSystem workingDirectory.
+	repository := TonelRepository new directory: rootDirectory.
 	mcPackage := MCPackage named: self package name.
 	workingCopy := MCWorkingCopy forPackage: mcPackage.
 	newVersion := workingCopy
