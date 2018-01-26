@@ -1,6 +1,7 @@
 *Discord-Integration-Playground
 discordMonticelloOfSharedPlaygroundAction
 	<pageAction>
+	<pageActionOrder: 50>
 	^ GLMGenericAction new
 		action: [ :presentation | 
 			DSOpenTonelArchiveCommand new
