@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	packages := DSPackages new.
+	screenshots := OrderedCollection new: 1.
