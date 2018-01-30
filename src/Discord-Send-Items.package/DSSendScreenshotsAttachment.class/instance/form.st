@@ -2,7 +2,7 @@ accessing - computed
 form
 	"Return all selected screenshots as one Form object"
 	<return: #Form>
-	| forms form selectedScreenshots point |
+	| forms form point |
 	forms := self screenshots 
 		select: [ :eachScreenshot | eachScreenshot isSelected ]
 		thenCollect: #form.

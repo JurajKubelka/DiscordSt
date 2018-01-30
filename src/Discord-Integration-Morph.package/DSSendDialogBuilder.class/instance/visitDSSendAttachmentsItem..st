@@ -1,5 +1,5 @@
 visiting
 visitDSSendAttachmentsItem: aDSSendAttachmentsItem 
 	| submorph |
-	submorph := self ensureSubmorphOfClass: DSSendAttachmentsMorph.
+	submorph := self ensureSubmorphOfClass: DSSendAttachmentsItemMorph.
 	submorph item: aDSSendAttachmentsItem.

@@ -1,1 +1,0 @@
-A DSSendMorphScreenshotsItemMorphTest is a test class for testing the behavior of DSSendMorphScreenshotsItemMorph
