@@ -8,6 +8,6 @@
 	"instvars" : [
 		"table"
 	],
-	"name" : "DSSendItemAttachmentsMorph",
+	"name" : "DSSendAttachmentsMorph",
 	"type" : "normal"
 }
