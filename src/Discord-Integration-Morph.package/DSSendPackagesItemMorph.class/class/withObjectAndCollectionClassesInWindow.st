@@ -1,4 +1,0 @@
-examples
-withObjectAndCollectionClassesInWindow
-	<example>
-	^ self withObjectAndCollectionClasses openInWindow

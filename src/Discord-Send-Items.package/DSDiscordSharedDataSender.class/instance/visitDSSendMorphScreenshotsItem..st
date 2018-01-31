@@ -1,3 +1,0 @@
-visiting
-visitDSSendMorphScreenshotsItem: aDSSendScreenshotsItem 
-	"ignore"

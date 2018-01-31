@@ -1,3 +1,0 @@
-initialization
-defaultListDirection
-	^ #topToBottom

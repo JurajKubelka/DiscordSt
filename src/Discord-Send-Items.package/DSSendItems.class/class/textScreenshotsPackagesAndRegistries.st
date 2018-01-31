@@ -5,7 +5,6 @@ textScreenshotsPackagesAndRegistries
 	^ self new 
 		collection: { 
 			DSSendUserTextMessageItem new.
-			DSSendScreenshotsItem twoRandomMorphs.
-			DSSendPackagesItem withObjectAndCollectionClasses.
+			DSSendAttachmentsItem screenshotsAndPackages.
 			DSSendRegistriesItem twoWebhooksAndOneClient };
 		yourself

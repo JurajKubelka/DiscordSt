@@ -1,3 +1,0 @@
-initialization
-defaultVerticalResizing
-	^ #shrinkWrap

@@ -1,3 +1,0 @@
-initialization
-defaultCellInset
-	^ 0

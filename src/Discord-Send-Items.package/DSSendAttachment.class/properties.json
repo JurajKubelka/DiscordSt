@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"isSelected"
+		"isSelected",
+		"announcer"
 	],
 	"name" : "DSSendAttachment",
 	"type" : "normal"

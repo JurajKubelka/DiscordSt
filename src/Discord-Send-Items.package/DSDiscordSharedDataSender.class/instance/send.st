@@ -2,7 +2,8 @@ actions
 send
 	self initializeMessageBuilder.
 	self items do: [ :eachItem | eachItem accept: self ].
-	messages add: messageBuilder send.
+	messageBuilder isPostValid ifTrue: [ 
+		messages add: messageBuilder send ].
 	self associateAttachmentsAndTypes.
 	self addShareLinkInformation.
 	^ messages.
