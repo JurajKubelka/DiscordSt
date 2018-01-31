@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSScreenshot",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bytes"
+	],
+	"name" : "DSAnimatedGifScreenshot",
+	"type" : "normal"
+}

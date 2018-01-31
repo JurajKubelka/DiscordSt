@@ -6,7 +6,8 @@ visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment
 	labelMorph := 'Screenshots' asMorph asReadOnlyMorph.
 	rowMorph := self table theme newRowIn: self for: {
 		labelMorph.
-		self newAddWindowButtonFor: aDSSendScreenshotsAttachment }.
+		self newAddWindowButtonFor: aDSSendScreenshotsAttachment.
+		self newAddGifButtonFor: aDSSendScreenshotsAttachment }.
 	checkbox := CheckboxMorph new
 			on: aDSSendScreenshotsAttachment
 			selected: #isSelected
