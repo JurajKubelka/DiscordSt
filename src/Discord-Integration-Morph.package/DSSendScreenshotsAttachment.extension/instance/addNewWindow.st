@@ -1,4 +1,4 @@
-actions
+*Discord-Integration-Morph
 addNewWindow
 	| aMenu aHand aPosition |
 	aMenu := UIManager default newMenuIn: World for: self.

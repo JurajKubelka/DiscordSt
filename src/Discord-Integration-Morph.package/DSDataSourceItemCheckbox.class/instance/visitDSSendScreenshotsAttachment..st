@@ -1,6 +1,8 @@
 visiting
 visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment 
 	| labelMorph checkbox rowMorph |
+	aDSSendScreenshotsAttachment onChangedDo: [ :announcement | 
+		self table dataSource updateData ].
 	labelMorph := 'Screenshots' asMorph asReadOnlyMorph.
 	rowMorph := self table theme newRowIn: self for: {
 		labelMorph.
@@ -13,5 +15,4 @@ visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment
 			hResizing: #spaceFill; 
 			vResizing: #shrinkWrap; 
 			yourself.
-	checkbox labelClickable: false.
 	^ checkbox

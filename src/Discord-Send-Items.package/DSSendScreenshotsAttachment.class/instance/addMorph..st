@@ -1,3 +1,3 @@
 adding
 addMorph: aMorph
-	^ screenshots addLast: (DSMorphScreenshot new morph: aMorph; yourself)
+	^ self add: (DSMorphScreenshot new morph: aMorph; yourself)
