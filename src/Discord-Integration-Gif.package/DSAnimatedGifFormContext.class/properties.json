@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSAnimatedGifPreviewContext",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSAnimatedGifFormContext",
+	"type" : "normal"
+}

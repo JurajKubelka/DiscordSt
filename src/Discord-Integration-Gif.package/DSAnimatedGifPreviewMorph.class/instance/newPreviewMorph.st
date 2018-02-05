@@ -1,3 +1,5 @@
 instance creation
 newPreviewMorph
-	^ self newDefaultForm asMorph
+	^ AlphaImageMorph new
+		layout: #scaledAspect;
+		yourself
