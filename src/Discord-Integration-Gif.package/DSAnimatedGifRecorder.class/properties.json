@@ -11,7 +11,8 @@
 		"rectangle",
 		"writer",
 		"bytes",
-		"continue"
+		"continue",
+		"process"
 	],
 	"name" : "DSAnimatedGifRecorder",
 	"type" : "normal"

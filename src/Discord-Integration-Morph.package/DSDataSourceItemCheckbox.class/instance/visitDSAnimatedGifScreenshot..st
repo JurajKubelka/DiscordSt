@@ -4,7 +4,7 @@ visitDSAnimatedGifScreenshot: aDSAnimatedGifScreenshot
 	labelMorph := aDSAnimatedGifScreenshot name asMorph asReadOnlyMorph.
 	rowMorph := self table theme newRowIn: self for: {
 		labelMorph.
-		self newStopRecordingButtonFor: aDSAnimatedGifScreenshot }.
+		self newRecordingButtonFor: aDSAnimatedGifScreenshot }.
 	^ CheckboxMorph new
 			on: aDSAnimatedGifScreenshot 
 			selected: #isSelected
