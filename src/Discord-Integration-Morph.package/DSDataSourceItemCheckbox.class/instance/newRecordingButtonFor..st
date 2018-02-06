@@ -11,11 +11,10 @@ newRecordingButtonFor: aDSAnimatedGifScreenshot
 		getLabel: #recordingLabel
 		help: nil.
 	aDSAnimatedGifScreenshot recorder
+		whenRectangleRequestedDo: [ :announcement |  
+			aDSAnimatedGifScreenshot changed: #recordingLabel. ];
 		whenRecordingInitiatedDo: [ :announcement | 
-			self inform: 'Recording now...'.
-			aDSAnimatedGifScreenshot changed: #recordingLabel.
-			"button label: 'Stop'" ];
+			aDSAnimatedGifScreenshot changed: #recordingLabel. ];
 		whenRecordingFinishedDo: [ :announcement |
-			self inform: 'Recording finished'.
 			aDSAnimatedGifScreenshot changed: #recordingLabel. ].
 	^ button
