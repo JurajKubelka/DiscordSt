@@ -1,0 +1,3 @@
+visiting
+isEmpty 
+	^ self explicitRequirement

@@ -1,11 +1,13 @@
 {
-	"commentStamp" : "JurajKubelka 4/12/2017 17:38",
-	"super" : "Object",
-	"category" : "Discord-Core-Model",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSObjectTree classTrait",
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "DSObject",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 4/12/2017 17:38",
+	"super" : "Object",
+	"traitcomposition" : "TDSObjectTree",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Core-Model"
 }
