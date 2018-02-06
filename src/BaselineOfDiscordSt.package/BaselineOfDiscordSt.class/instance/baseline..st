@@ -23,6 +23,8 @@ baseline: spec
 				spec
 					repository: 'github://pharo-graphics/Brick/src';
 					loads: #development ];
+			baseline: 'Commander' with: [
+				spec repository: 'github://dionisiydk/Commander:v0.4.x' ];
 
 			package: #'Discord-Announcements';
 
@@ -107,6 +109,7 @@ baseline: spec
 			
 			package: #'Discord-Integration-Gif' with: [ 
 				spec requires: #( 
+					#Commander
 					#'Discord-Announcements' #'Discord-Mock' #'Discord-Registry-Core' 
 					#'Discord-Send-Items' #'Discord-Tools' ) ];
 			
