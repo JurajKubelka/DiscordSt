@@ -107,21 +107,13 @@ baseline: spec
 					#'Discord-Core' #'Discord-Registry-Core' 
 					#'Discord-Tools-UnicodeMemory' ) ];
 			
-			package: #'Discord-Integration-Gif' with: [ 
-				spec requires: #( 
-					#Commander
-					#'Discord-Announcements' #'Discord-Mock' #'Discord-Registry-Core' 
-					#'Discord-Send-Items' #'Discord-Tools' ) ];
-			
 			package: #'Discord-Integration-Morph' with: [ 
 				spec requires: #( 
 					#'Discord-Announcements' #'Discord-Mock' #'Discord-Registry-Core' 
 					#'Discord-Send-Items' #'Discord-Tools' ) ];
 			
-			"TODO: currently, there is a cycle between Discord-Integration-Morph and Discord-Integration-Gif.
-			It has to be fixed."
 			package: #'Discord-Integration-Gif' with: [ 
-				spec requires: #( #'Discord-Integration-Morph' ) ];
+				spec requires: #( #Commander #'Discord-Integration-Morph' ) ];
 
 			package: #'Discord-Integration-Morph-Tests' with: [ 
 				spec requires: #( #'Discord-Integration-Morph' ) ];

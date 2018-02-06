@@ -1,3 +1,3 @@
-*Discord-Integration-Morph
+*Discord-Integration-Gif
 addAnimatedGif
 	self add: DSAnimatedGifScreenshot new
