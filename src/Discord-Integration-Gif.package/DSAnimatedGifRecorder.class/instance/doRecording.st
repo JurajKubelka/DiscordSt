@@ -13,4 +13,7 @@ doRecording
 			writer close ].
 		process := nil.
 		self announceRecordingFinished.
-	] forkAt: Processor userSchedulingPriority + 1 named: 'Animated GIF Recording Process'
+	] newProcess.
+	process priority: Processor userSchedulingPriority + 1.
+	process name: 'Animated GIF Recording Process'.
+	process resume.

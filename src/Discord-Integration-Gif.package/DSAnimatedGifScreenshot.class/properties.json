@@ -1,12 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "DSScreenshot",
-	"category" : "Discord-Send-Items",
+	"category" : "Discord-Integration-Gif",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"bytes"
+		"bytes",
+		"recorder"
 	],
 	"name" : "DSAnimatedGifScreenshot",
 	"type" : "normal"
