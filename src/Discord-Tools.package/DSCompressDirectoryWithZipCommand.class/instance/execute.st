@@ -9,4 +9,5 @@ execute
 		member := zip addString: eachFile contents utf8Encoded as: fileName.
 		member desiredCompressionMethod: ZipArchive compressionDeflated ].
 	self zipFile ensureDelete.
-	zip writeTo: self zipFile writeStream.
+	self zipFile writeStreamDo: [ :aStream |
+		zip writeTo: aStream ].
