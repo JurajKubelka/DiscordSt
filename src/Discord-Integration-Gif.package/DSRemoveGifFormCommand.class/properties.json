@@ -7,7 +7,10 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"reader",
-		"form"
+		"form",
+		"gifReader",
+		"displayedForm",
+		"index"
 	],
 	"name" : "DSRemoveGifFormCommand",
 	"type" : "normal"
