@@ -113,7 +113,7 @@ baseline: spec
 					#'Discord-Send-Items' #'Discord-Tools' ) ];
 			
 			package: #'Discord-Integration-Gif' with: [ 
-				spec requires: #( #Commander #'Discord-Integration-Morph' ) ];
+				spec requires: #( #'Discord-Send-Items' #'Discord-Integration-Morph' ) ];
 
 			package: #'Discord-Integration-Morph-Tests' with: [ 
 				spec requires: #( #'Discord-Integration-Morph' ) ];

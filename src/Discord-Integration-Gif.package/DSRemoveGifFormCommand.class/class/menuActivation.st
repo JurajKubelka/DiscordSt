@@ -1,4 +1,0 @@
-activation
-menuActivation
-	<classAnnotation>
-	^ CmdContextMenuCommandActivation byRootGroupItemFor: DSAnimatedGifFormContext
