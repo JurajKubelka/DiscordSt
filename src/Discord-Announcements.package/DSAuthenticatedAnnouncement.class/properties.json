@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 6/20/2017 10:48",
 	"super" : "DSAuthenticationAnnouncement",
-	"category" : "Discord-Announcements",
+	"category" : "Discord-Announcements-REST-Api",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

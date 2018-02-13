@@ -1,3 +1,3 @@
-as yet unclassified
+visiting
 visitDSGatewayUnclassifiedPayload: payload 
 	self announcer announce: (DSGatewayUnclassifiedAnnouncement payload: payload)

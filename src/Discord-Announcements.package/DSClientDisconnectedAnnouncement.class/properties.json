@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSClientAnnouncement",
+	"category" : "Discord-Announcements-Client",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSClientDisconnectedAnnouncement",
+	"type" : "normal"
+}

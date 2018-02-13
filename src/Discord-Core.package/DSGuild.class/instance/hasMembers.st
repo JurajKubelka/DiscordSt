@@ -1,3 +1,3 @@
 testing
 hasMembers
-	^ members notNil
+	^ members isEmptyOrNil not

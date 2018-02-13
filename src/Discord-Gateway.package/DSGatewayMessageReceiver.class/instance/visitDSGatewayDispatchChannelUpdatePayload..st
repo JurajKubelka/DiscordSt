@@ -1,0 +1,3 @@
+visiting
+visitDSGatewayDispatchChannelUpdatePayload: aDSGatewayDispatchChannelUpdatePayload 
+	self announcer announce: (DSGatewayChannelUpdateAnnouncement payload: aDSGatewayDispatchChannelUpdatePayload)

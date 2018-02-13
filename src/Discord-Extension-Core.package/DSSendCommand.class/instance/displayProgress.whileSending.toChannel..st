@@ -4,4 +4,5 @@ displayProgress: aString whileSending: aMessageBuilder toChannel: aDSGuildChanne
 		displayHTTPProgress: aString
 		during: [ aMessageBuilder
 				signalProgress: true;
-				sendTo: aDSGuildChannel ]
+				channel: aDSGuildChannel;
+				send ]

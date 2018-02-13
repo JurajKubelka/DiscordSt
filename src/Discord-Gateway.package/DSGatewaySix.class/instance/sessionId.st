@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 sessionId
 	"For testing purpose only"
 	<return: #String>

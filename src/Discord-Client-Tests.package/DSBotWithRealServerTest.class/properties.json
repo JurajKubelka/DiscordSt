@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 5/3/2017 14:44",
 	"super" : "DSClientTestCase",
-	"category" : "Discord-Client-Tests",
+	"category" : "Discord-Client-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

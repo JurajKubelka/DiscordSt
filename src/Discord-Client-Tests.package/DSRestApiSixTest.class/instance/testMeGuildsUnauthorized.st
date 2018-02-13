@@ -6,7 +6,7 @@ testMeGuildsUnauthorized
 	restApi token: self constants tokenString.
 	self mockServerDelegate map: '/api/users/@me/guilds' to: self unauthorizedResponseBlock.
 	self
-		should: [ restApi meGuilds ]
+		should: [ restApi guilds ]
 		raise: DSUnauthorizedOperationError
 		withExceptionDo: self unauthorizedExceptionAssetionBlock.
 	self assert: self mockServerRequests size equals: 1.

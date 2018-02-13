@@ -1,0 +1,3 @@
+visiting
+visitDSGatewayDispatchGuildMemberAddPayload: aDSGatewayDispatchGuildMemberAddPayload 
+	self announcer announce: (DSGatewayGuildMemberAddAnnouncement payload: aDSGatewayDispatchGuildMemberAddPayload)

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "DSClientTest",
-	"category" : "Discord-Client-Tests",
+	"category" : "Discord-Client-Tests-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

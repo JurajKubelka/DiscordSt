@@ -16,7 +16,7 @@ testConnect
 		self mockServerRequests add: #finished.
 		self signalMockServerSemaphore ]) handleRequest: request ].
 	api := self newGateway. 
-	api session: (DSSession new token: self constants tokenString; yourself).
+	api session: (DSSession new token: self tokenString; yourself).
 	api restApiUrl: self apiUrl.
 	api when: DSGatewayReadyAnnouncement do: [ :ann | 
 		self mockServerRequests add: ann. self signalMockServerSemaphore ].

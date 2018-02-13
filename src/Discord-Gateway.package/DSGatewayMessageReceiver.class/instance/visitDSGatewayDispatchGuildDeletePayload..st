@@ -1,0 +1,3 @@
+visiting
+visitDSGatewayDispatchGuildDeletePayload: aDSGatewayDispatchGuildDeletePayload 
+	self announcer announce: (DSGatewayChannelDeleteAnnouncement payload: aDSGatewayDispatchGuildDeletePayload)

@@ -1,6 +1,7 @@
 public - authentication
 logout
 	| response |
+	self isAuthenticated ifFalse: [ ^ self ].
 	response := self newZnClientAuthenticated
 		url: self logoutAuthUrl;
 		entity: (ZnEntity text: self tokenJson);

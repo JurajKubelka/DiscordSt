@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "JurajKubelka 11/10/2017 09:08",
 	"super" : "DSAnnouncement",
-	"category" : "Discord-Announcements",
+	"category" : "Discord-Announcements-Gateway",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSAnnouncement",
+	"category" : "Discord-Announcements-REST-Api",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSRestApiResponseAnnouncement",
+	"type" : "normal"
+}

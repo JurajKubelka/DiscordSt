@@ -1,15 +1,21 @@
 {
-	"commentStamp" : "JurajKubelka 11/20/2017 15:23",
-	"super" : "Object",
-	"category" : "Discord-Client",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "TDSRestApi classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"gateway",
 		"announcer",
-		"restApi"
+		"restApi",
+		"me",
+		"guilds",
+		"privateChannels",
+		"updater"
 	],
 	"name" : "DSAbstractClient",
-	"type" : "normal"
+	"commentStamp" : "JurajKubelka 11/20/2017 15:23",
+	"super" : "Object",
+	"traitcomposition" : "TDSRestApi",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Client-Core"
 }

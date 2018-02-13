@@ -1,5 +1,5 @@
 tests
 testIsGeneral
 	channel := self newChannel.
-	channel id: self anyString; guildId: self anyString; yourself.
+	channel name: 'general'; yourself.
 	self assert: channel isGeneral

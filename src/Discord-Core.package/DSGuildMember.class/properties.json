@@ -11,7 +11,8 @@
 		"roleIds",
 		"joinedAt",
 		"deaf",
-		"mute"
+		"mute",
+		"guildId"
 	],
 	"name" : "DSGuildMember",
 	"type" : "normal"
