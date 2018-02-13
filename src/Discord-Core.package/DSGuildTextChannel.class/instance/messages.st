@@ -5,4 +5,6 @@ messages
 	Returns an array of message objects on success.
 	See https://discordapp.com/developers/docs/resources/channel#get-channel-messages"
 
-	^ messages isEmptyOrNil ifTrue: [ self restApi messagesInChannel: self ]
+	^ messages isEmptyOrNil 
+		ifTrue: [ messages := self restApi messagesInChannel: self ]
+		ifFalse: [ messages ]
