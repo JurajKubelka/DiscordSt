@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 selectCodeSnippets: aDSMessages
 	<return: #DSMessages> 
 	^ aDSMessages select: [ :message | 

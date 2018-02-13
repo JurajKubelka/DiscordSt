@@ -1,4 +1,4 @@
-as yet unclassified
+enumerating
 selectAttachments: aDSMessages
 	<return: #DSMessages> 
 	^ aDSMessages select: [ :message |

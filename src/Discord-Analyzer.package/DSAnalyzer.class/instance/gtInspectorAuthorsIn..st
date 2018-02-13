@@ -37,6 +37,11 @@ gtInspectorAuthorsIn: composite
 				with: [ :table | 
 					(self selectCodeSnippets: table rawSelection value)
 						gtInspectorInterestingObject ];
+			selectionPopulate: #selection 
+				entitled: 'Browse Questions'
+				with: [ :table | 
+					(self selectQuestions: table rawSelection value)
+						gtInspectorInterestingObject ];
 "		column: '#Embeds'
 			evaluated: [ :message | message numberOfEmbeds ]
 			width: 90
