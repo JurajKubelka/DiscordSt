@@ -17,10 +17,26 @@ gtInspectorAuthorsIn: composite
 			sortedBy: [ :a :b | a value size > b value size ];
 		column: '#Attachments'
 			evaluated: [ :assoc | assoc value sum: #numberOfAttachments ]
-			width: 80
+			width: 85
 			tags: {  }
 			sortedBy: [ :a :b | 
 				(a value sum: #numberOfAttachments) > (b value sum: #numberOfAttachments) ];
+		column: '#CodeSnippets'
+			evaluated: [ :assoc | self numberOfCodeSnippets: assoc value ]
+			width: 80
+			tags: {  }
+			sortedBy: [ :a :b | 
+				(self numberOfCodeSnippets: a value) > (self numberOfCodeSnippets: b value) ];
+			selectionPopulate: #selection 
+				entitled: 'Browse Attachments'
+				with: [ :table | 
+					(self selectAttachments: table rawSelection value)
+						gtInspectorInterestingObject ];
+			selectionPopulate: #selection 
+				entitled: 'Browse Code Snippets'
+				with: [ :table | 
+					(self selectCodeSnippets: table rawSelection value)
+						gtInspectorInterestingObject ];
 "		column: '#Embeds'
 			evaluated: [ :message | message numberOfEmbeds ]
 			width: 90
