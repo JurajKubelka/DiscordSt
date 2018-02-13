@@ -8,7 +8,8 @@
 	"instvars" : [
 		"package",
 		"fileSystem",
-		"directory"
+		"directory",
+		"rootDirectory"
 	],
 	"name" : "DSSerializePackageWithTonelCommand",
 	"type" : "normal"

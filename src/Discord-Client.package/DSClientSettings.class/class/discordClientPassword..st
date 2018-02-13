@@ -1,0 +1,3 @@
+accessing
+discordClientPassword: passwordOrEmptyString
+	DSClientPassword := passwordOrEmptyString

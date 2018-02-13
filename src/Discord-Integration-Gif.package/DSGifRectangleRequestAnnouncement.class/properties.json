@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSGifRecorderAnnouncement",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"rectangle"
+	],
+	"name" : "DSGifRectangleRequestAnnouncement",
+	"type" : "normal"
+}

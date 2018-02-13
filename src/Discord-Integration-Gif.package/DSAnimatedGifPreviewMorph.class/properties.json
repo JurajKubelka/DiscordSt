@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSPanelMorph",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reader",
+		"sliderIndex"
+	],
+	"name" : "DSAnimatedGifPreviewMorph",
+	"type" : "normal"
+}

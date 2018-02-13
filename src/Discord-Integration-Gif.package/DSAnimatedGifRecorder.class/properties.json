@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"announcer",
+		"step",
+		"rectangle",
+		"writer",
+		"bytes",
+		"continue",
+		"process",
+		"isRectangleRequested"
+	],
+	"name" : "DSAnimatedGifRecorder",
+	"type" : "normal"
+}

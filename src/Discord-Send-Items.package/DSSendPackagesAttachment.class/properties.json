@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "DSSendAttachment",
+	"category" : "Discord-Send-Items",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packages"
+	],
+	"name" : "DSSendPackagesAttachment",
+	"type" : "normal"
+}

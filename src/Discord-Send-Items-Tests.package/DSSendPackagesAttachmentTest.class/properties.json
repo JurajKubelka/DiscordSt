@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "DSSendAttachmentTest",
+	"category" : "Discord-Send-Items-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSendPackagesAttachmentTest",
+	"type" : "normal"
+}

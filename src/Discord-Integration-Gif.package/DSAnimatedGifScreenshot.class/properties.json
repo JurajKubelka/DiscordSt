@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "DSScreenshot",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bytes",
+		"recorder"
+	],
+	"name" : "DSAnimatedGifScreenshot",
+	"type" : "normal"
+}

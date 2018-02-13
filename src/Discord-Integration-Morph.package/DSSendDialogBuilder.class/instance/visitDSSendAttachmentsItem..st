@@ -1,3 +1,5 @@
 visiting
 visitDSSendAttachmentsItem: aDSSendAttachmentsItem 
-	"ignore for a moment"
+	| submorph |
+	submorph := self ensureSubmorphOfClass: DSSendAttachmentsItemMorph.
+	submorph item: aDSSendAttachmentsItem.

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "JurajKubelka 1/24/2018 15:18",
+	"super" : "Object",
+	"category" : "Discord-Client-Settings",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"DSClientEmail",
+		"DSClientPassword",
+		"DSClientToken"
+	],
+	"instvars" : [ ],
+	"name" : "DSClientSettings",
+	"type" : "normal"
+}

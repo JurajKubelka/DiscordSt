@@ -1,0 +1,3 @@
+testing
+isRecording
+	^ process isNotNil

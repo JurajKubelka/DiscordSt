@@ -23,6 +23,8 @@ baseline: spec
 				spec
 					repository: 'github://pharo-graphics/Brick/src';
 					loads: #development ];
+			baseline: 'Commander' with: [
+				spec repository: 'github://dionisiydk/Commander:v0.4.x' ];
 
 			package: #'Discord-Announcements';
 
@@ -46,15 +48,22 @@ baseline: spec
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ];
 
+			package: #'Discord-Tools-UnicodeMemory';
+			package: #'Discord-Tools-UnicodeMemory-Tests' with: [ 
+				spec
+					requires: #( #'Discord-Tools-UnicodeMemory' ) ];
+
 			package: #'Discord-Tools' with: [
-				spec requires: #( #'Discord-Core' )
-				"It depends on GT-Inspector and GT-Playground that are stadard tools" ];
+				"It depends on GT-Inspector and GT-Playground that are standard tools"
+				spec 
+					preLoadDoIt: #preLoadTonel:;
+					requires: #( #'Discord-Core' #'Discord-Tools-UnicodeMemory' ) ];
 			package: #'Discord-Tools-Tests' with: [
-				spec requires: #( #'Discord-Tools' ) ];
+				spec requires: #( #'Discord-Tools' #'Discord-Tools-UnicodeMemory-Tests' ) ];
 
 			package: #'Discord-Extension-Core' with: [
 				spec 
-					postLoadDoIt: #postLoadPlayground:;
+					preLoadDoIt: #preLoadPlayground:;
 					requires: #( #'Discord-Client' #'Discord-Tools' ) ];
 			package: #'Discord-Extension-Core-Tests' with: [
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' #'Discord-Tools-Tests' ). ];
@@ -94,19 +103,25 @@ baseline: spec
 				spec requires: #( #'Discord-Send-Items' ) ];
 
 			package: #'Discord-Integration-Core' with: [ 
-				spec requires: #( #'Discord-Core' #'Discord-Registry-Core' "#'Tonel'" ) ];
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Registry-Core' 
+					#'Discord-Tools-UnicodeMemory' ) ];
 			
 			package: #'Discord-Integration-Morph' with: [ 
 				spec requires: #( 
 					#'Discord-Announcements' #'Discord-Mock' #'Discord-Registry-Core' 
 					#'Discord-Send-Items' #'Discord-Tools' ) ];
 			
+			package: #'Discord-Integration-Gif' with: [ 
+				spec requires: #( #'Discord-Send-Items' #'Discord-Integration-Morph' ) ];
+
 			package: #'Discord-Integration-Morph-Tests' with: [ 
 				spec requires: #( #'Discord-Integration-Morph' ) ];
 			
 			package: #'Discord-Integration-Playground' with: [ 
 				spec requires: #( 
 					#'Discord-Core' #'Discord-Integration-Core' #'Discord-Integration-Morph' 
+					#'Discord-Integration-Gif'
 					#'Discord-Send-Items' #'Discord-Tools' ) ];
 			
 			package: #'Discord-Downloader' with: [ 

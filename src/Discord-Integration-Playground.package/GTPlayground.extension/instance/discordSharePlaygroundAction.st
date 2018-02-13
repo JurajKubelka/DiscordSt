@@ -1,6 +1,7 @@
 *Discord-Integration-Playground
 discordSharePlaygroundAction
 	<pageAction>
+	<pageActionOrder: 45>
 	^ GLMGenericAction new
 		action: [ :presentation | 
 			DSSharePlaygroundCommand new

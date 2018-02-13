@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "Discord-Integration-Gif",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"recorder"
+	],
+	"name" : "DSGifRecorderAnnouncement",
+	"type" : "normal"
+}

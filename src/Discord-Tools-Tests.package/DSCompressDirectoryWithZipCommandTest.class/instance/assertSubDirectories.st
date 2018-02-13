@@ -13,7 +13,7 @@ assertSubDirectories
 	self assert: members second fileName equals: 'dir1/file2.txt'.
 	self assert: members third fileName equals: 'dir2/file3.txt'.
 	self assert: members fourth fileName equals: 'dir2/file4.txt'.
-	memory := FileSystem memory.
+	memory := FileSystem discordUnicodeMemory.
 	ZipArchive new
 		readFrom: zipFile;
 		extractAllTo: memory root.
@@ -22,3 +22,7 @@ assertSubDirectories
 	self assert: memory root children size equals: 2.
 	self assert: memory root children first basename equals: 'dir1'.
 	self assert: memory root children second basename equals: 'dir2'.
+	self assert: memory root children first children second basename equals: 'file2.txt'.
+	self assert: memory root children first children second contents equals: 'file 2 contents'.
+	self assert: memory root children first children first basename equals: 'file1.txt'.
+	self assert: memory root children first children first contents equals: 'file 1 contents with ™'.

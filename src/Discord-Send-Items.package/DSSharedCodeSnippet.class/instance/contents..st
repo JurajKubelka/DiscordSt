@@ -1,4 +1,5 @@
 accessing
-contents: aByteArray
+contents: aByteArrayOrNil
 	"The argument should be a decoded UFT8 string."
-	string := aByteArray utf8Decoded.
+	aByteArrayOrNil ifNil: [ ^ self ].
+	string := aByteArrayOrNil utf8Decoded.
