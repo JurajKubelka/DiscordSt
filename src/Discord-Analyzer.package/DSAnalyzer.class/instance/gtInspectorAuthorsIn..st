@@ -23,25 +23,31 @@ gtInspectorAuthorsIn: composite
 				(a value sum: #numberOfAttachments) > (b value sum: #numberOfAttachments) ];
 		column: '#CodeSnippets'
 			evaluated: [ :assoc | self numberOfCodeSnippets: assoc value ]
-			width: 80
+			width: 100
 			tags: {  }
 			sortedBy: [ :a :b | 
 				(self numberOfCodeSnippets: a value) > (self numberOfCodeSnippets: b value) ];
-			selectionPopulate: #selection 
-				entitled: 'Browse Attachments'
-				with: [ :table | 
-					(self selectAttachments: table rawSelection value)
-						gtInspectorInterestingObject ];
-			selectionPopulate: #selection 
-				entitled: 'Browse Code Snippets'
-				with: [ :table | 
-					(self selectCodeSnippets: table rawSelection value)
-						gtInspectorInterestingObject ];
-			selectionPopulate: #selection 
-				entitled: 'Browse Questions'
-				with: [ :table | 
-					(self selectQuestions: table rawSelection value)
-						gtInspectorInterestingObject ];
+		column: '#Questions'
+			evaluated: [ :assoc | self numberOfQuestions: assoc value ]
+			width: 80
+			tags: {  }
+			sortedBy: [ :a :b | 
+				(self numberOfQuestions: a value) > (self numberOfQuestions: b value) ];
+		selectionPopulate: #selection 
+			entitled: 'Browse Attachments'
+			with: [ :table | 
+				(self selectAttachments: table rawSelection value)
+					gtInspectorInterestingObject ];
+		selectionPopulate: #selection 
+			entitled: 'Browse Code Snippets'
+			with: [ :table | 
+				(self selectCodeSnippets: table rawSelection value)
+					gtInspectorInterestingObject ];
+		selectionPopulate: #selection 
+			entitled: 'Browse Questions'
+			with: [ :table | 
+				(self selectQuestions: table rawSelection value)
+					gtInspectorInterestingObject ];
 "		column: '#Embeds'
 			evaluated: [ :message | message numberOfEmbeds ]
 			width: 90
