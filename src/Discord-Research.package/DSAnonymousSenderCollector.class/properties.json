@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "JurajKubelka 2/15/2018 11:46",
+	"super" : "Object",
+	"category" : "Discord-Research",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"items",
+		"output",
+		"stream",
+		"indent"
+	],
+	"name" : "DSAnonymousSenderCollector",
+	"type" : "normal"
+}

@@ -85,6 +85,9 @@ baseline: spec
 			package: #'Discord-UI-Brick' with: [ 
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 			
+			package: #'Discord-Research' with: [ 
+				spec requires: #( #'Discord-Registry-Core' ) ];	
+
 			"New packages to clean."
 			package: #'Discord-Mock' with: [ 
 				spec requires: #( #'Discord-Announcements' #'Discord-Core' ) ];
@@ -97,7 +100,9 @@ baseline: spec
 				spec requires: #( #'Discord-Registry-Core' ) ];
 
 			package: #'Discord-Send-Items' with: [ 
-				spec requires: #( #'Discord-Registry-Core' #'Discord-Tools' #'Discord-WebhookClient' ) ];
+				spec requires: #( 
+					#'Discord-Registry-Core' #'Discord-Tools' #'Discord-WebhookClient'
+					#'Discord-Research' ) ];
 
 			package: #'Discord-Send-Items-Tests' with: [ 
 				spec requires: #( #'Discord-Send-Items' ) ];

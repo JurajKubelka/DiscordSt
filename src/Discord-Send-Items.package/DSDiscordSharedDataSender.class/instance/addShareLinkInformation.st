@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 addShareLinkInformation
 	| link |
 	link := DSPharoLinkV2Converter new

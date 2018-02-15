@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"infos"
+		"infos",
+		"isSelected"
 	],
 	"name" : "DSSendInformationItem",
 	"type" : "normal"
