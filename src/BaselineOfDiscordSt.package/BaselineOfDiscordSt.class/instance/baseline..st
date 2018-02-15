@@ -86,7 +86,11 @@ baseline: spec
 				spec requires: #( #'Brick' #'Discord-Core' ) ];
 			
 			package: #'Discord-Research' with: [ 
-				spec requires: #( #'Discord-Registry-Core' ) ];	
+				spec requires: #( 
+					#'Discord-Downloader'
+					#'Discord-WebhookClient'
+					#'Discord-Send-Items'
+					#'Discord-Registry-Core' ) ];	
 
 			"New packages to clean."
 			package: #'Discord-Mock' with: [ 
@@ -101,8 +105,7 @@ baseline: spec
 
 			package: #'Discord-Send-Items' with: [ 
 				spec requires: #( 
-					#'Discord-Registry-Core' #'Discord-Tools' #'Discord-WebhookClient'
-					#'Discord-Research' ) ];
+					#'Discord-Registry-Core' #'Discord-Tools' #'Discord-WebhookClient' ) ];
 
 			package: #'Discord-Send-Items-Tests' with: [ 
 				spec requires: #( #'Discord-Send-Items' ) ];
@@ -161,8 +164,8 @@ baseline: spec
 			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Tools-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
 			
 			"integration: packages to clean"
-			group: #'downloader' with: #( #'Discord-Downloader' );
-			group: #'integration-playground' with: #( #'Discord-Integration-Playground' );
+			group: #'downloader' with: #( #'Discord-Downloader' #'Discord-Research' );
+			group: #'integration-playground' with: #( #'Discord-Integration-Playground' #'Discord-Research' );
 			group: #'src-integration' with: #( #'downloader' #'integration-playground' );
 			group: #'tests-integration' with: #( 
 				#'src-integration'

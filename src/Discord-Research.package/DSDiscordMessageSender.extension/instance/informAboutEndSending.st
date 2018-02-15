@@ -1,4 +1,4 @@
-research
+*Discord-Research
 informAboutEndSending
 	"This is for a research purpose.
 	I will remove it once I finish my PhD.
