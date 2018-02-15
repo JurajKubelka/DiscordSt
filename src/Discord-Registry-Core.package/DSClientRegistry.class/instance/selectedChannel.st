@@ -1,3 +1,9 @@
 accessing
 selectedChannel
-	^ selectedChannel ifNil: [ selectedChannel := self selectedServer ifNotNil: [ :server | server textChannels first ] ]
+	^ self selectedServer
+		ifNotNil: [ :aServer | | previousChannel |
+			previousChannel := selectedChannels at: aServer id ifAbsent: nil.
+			previousChannel ifNil: [ | anyChannel |
+				anyChannel := aServer textChannels first.
+				self selectedChannel: anyChannel.
+				anyChannel ] ].

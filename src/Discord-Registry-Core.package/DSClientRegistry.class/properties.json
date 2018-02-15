@@ -8,7 +8,7 @@
 	"instvars" : [
 		"client",
 		"selectedServer",
-		"selectedChannel",
+		"selectedChannels",
 		"directChannelsItem"
 	],
 	"name" : "DSClientRegistry",
