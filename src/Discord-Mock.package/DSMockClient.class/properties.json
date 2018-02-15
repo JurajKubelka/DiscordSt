@@ -11,7 +11,8 @@
 		"isAuthenticated",
 		"servers",
 		"loginAction",
-		"announcer"
+		"announcer",
+		"directChannels"
 	],
 	"name" : "DSMockClient",
 	"type" : "normal"

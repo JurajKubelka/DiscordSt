@@ -7,4 +7,5 @@ authenticated
 		password: 'alice password';
 		isAuthenticated: true;
 		servers: DSGuilds oneGuild;
+		directChannels: DSChannels oneDirectChannel;
 		yourself

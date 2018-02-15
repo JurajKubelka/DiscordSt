@@ -1,3 +1,3 @@
 accessing
 servers
-	^ self client servers
+	^ self client servers copyWith: directChannelsItem

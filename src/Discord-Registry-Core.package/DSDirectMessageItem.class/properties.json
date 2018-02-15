@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "DSConnectionRegistry",
+	"super" : "Object",
 	"category" : "Discord-Registry-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"client",
-		"selectedServer",
-		"selectedChannel",
-		"directChannelsItem"
+		"registry"
 	],
-	"name" : "DSClientRegistry",
+	"name" : "DSDirectMessageItem",
 	"type" : "normal"
 }

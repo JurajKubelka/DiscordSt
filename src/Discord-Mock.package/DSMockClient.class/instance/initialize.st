@@ -5,3 +5,4 @@ initialize
 	isAuthenticated := false.
 	loginAction := [ :client | self isAuthenticated: true ].
 	servers := DSGuilds new.
+	directChannels := DSChannels new.
