@@ -7,11 +7,6 @@ externalProjects: spec
 					repository: 'http://smalltalkhub.com/mc/Pharo/Fuel/main';
 					versionString: #stable;
 					loads: 'FuelProgressUpdate' ];
-			configuration: 'ZincHTTPComponents' with: [ 
-				spec
-					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
-					versionString: #stable;
-					loads: 'WebSocket' ];
 			configuration: 'NeoJSON' with: [ 
 				spec
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/Neo/main/';
@@ -23,6 +18,14 @@ externalProjects: spec
 					loads: #development ];
 			baseline: 'Commander' with: [
 				spec repository: 'github://dionisiydk/Commander:v0.4.x' ]
+	].
+	spec for: #'pharo6.x' do: [
+		spec
+			configuration: 'ZincHTTPComponents' with: [ 
+				spec
+					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
+					versionString: #stable;
+					loads: 'WebSocket' ] 
 	].
 	spec for: #'pharo7.x' do: [
 		spec
