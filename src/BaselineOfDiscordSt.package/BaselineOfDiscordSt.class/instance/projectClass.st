@@ -1,3 +1,5 @@
 accessing
 projectClass
-   ^ MetacelloCypressBaselineProject
+   ^ Smalltalk 
+		at: #'MetacelloCypressBaselineProject' 
+		ifAbsent: [ super projectClass ]
