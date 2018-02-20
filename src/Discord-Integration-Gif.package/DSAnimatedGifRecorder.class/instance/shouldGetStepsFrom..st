@@ -1,3 +1,3 @@
-as yet unclassified
+wiw support
 shouldGetStepsFrom: aWorldMorph 
 	^ World = aWorldMorph
