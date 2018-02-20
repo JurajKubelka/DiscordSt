@@ -18,6 +18,34 @@ Metacello new
 
 The script above installs all but UI packages. For more options, see [documentation](doc/Installation.md).
 
+### Update
+
+If you do not use Iceberg to install source code form GitHub repositories, the recommended update script is: 
+
+```Smalltalk
+	UIManager default
+		informUserDuring: [ :bar | 
+			bar label: 'Removing cached DiscordSt repository from github-cache'.
+			bar current: 0.
+			(FileLocator workingDirectory / 'github-cache' / 'JurajKubelka' / 'DiscordSt')
+				ensureDeleteAll.
+			bar label: 'Updating DiscordSt baseline definition'.
+			bar current: 0.33.
+			Gofer new 
+				url: 'github://JurajKubelka/DiscordSt:dev/src';
+				package: 'BaselineOfDiscordSt';
+				load.
+			bar label: 'Updating DiscordSt source files'.
+			bar current: 0.66.
+			Metacello new
+			    baseline: #DiscordSt;
+			    repository: 'github://JurajKubelka/DiscordSt:dev/src';
+			    load: #default.
+			bar current: 1 ].
+```
+
+You can find this script in the World menu / `Communication` / `Update DiscordSt`.
+
 ## Documentation
 
 You can watch a video tutorial available on
