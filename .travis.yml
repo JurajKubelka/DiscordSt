@@ -12,6 +12,10 @@ os:
 
 smalltalk:
   - Pharo-6.1
+  - Pharo-6.0
+  - Pharo-7.0
+  - Pharo64-6.1
+  - Pharo64-7.0 
 
 # bob-bench xUnit file analysis
 after_success:
