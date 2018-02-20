@@ -1,3 +1,3 @@
 testing
 isRecording
-	^ process isNotNil
+	^ isRecording
