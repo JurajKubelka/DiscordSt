@@ -7,13 +7,13 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"announcer",
-		"step",
 		"rectangle",
 		"writer",
 		"bytes",
 		"continue",
-		"process",
-		"isRectangleRequested"
+		"isRectangleRequested",
+		"isRecording",
+		"writeStream"
 	],
 	"name" : "DSAnimatedGifRecorder",
 	"type" : "normal"
