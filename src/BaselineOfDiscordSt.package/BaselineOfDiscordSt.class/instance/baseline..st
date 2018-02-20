@@ -26,6 +26,8 @@ baseline: spec
 			baseline: 'Commander' with: [
 				spec repository: 'github://dionisiydk/Commander:v0.4.x' ];
 
+
+			package: #'Discord-WorldMenu';
 			package: #'Discord-Announcements';
 
 			package: #'Discord-Core' with: [
@@ -159,7 +161,7 @@ baseline: spec
 			group: #'examples' with: #( #'Discord-Examples' );
 			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
 			group: #'extensions' with: #( #'Discord-Extension-Core' #'expertise' );
-			group: #'ui-light' with: #( #'Discord-Extension-UI' );
+			group: #'ui-light' with: #( #'Discord-Extension-UI' #'Discord-WorldMenu' );
 			group: #'ui-full' with: #( #'ui-light' #'Discord-UI-Brick' );
 			group: #'tests-extensions' with: #( #'tests-core' #'Discord-Tools-Tests' #'Discord-Extension-Core-Tests' #'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
 			
