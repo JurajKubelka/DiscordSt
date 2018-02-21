@@ -31,7 +31,7 @@ externalProjects: spec
 		spec
 			configuration: 'ZincHTTPComponents' with: [ 
 				spec
-					preLoadDoIt: #preLoadZincComponents:;
+					"preLoadDoIt: #preLoadZincComponents:;"
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
 					versionString: #bleedingEdge;
 					loads: 'WebSocket' ]
