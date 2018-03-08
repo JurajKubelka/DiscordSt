@@ -1,20 +1,15 @@
 accessing
 textLenghtInfo
-	^ Text streamContents: [ :aStream | | textColor |
-			textColor := self exceedsMessageLenghtLimit
-				ifTrue: [ self exceedTextColor ]
-				ifFalse: [ self textColor ].
+	^ Text streamContents: [ :aStream |
 			aStream
 				withAttribute:
 					(TextColor new
-						color: textColor;
+						color: self exceedTextColor;
 						yourself)
 				do: [ aStream
-						nextPutAll: 'Length: ';
+						nextPutAll: 'Text too long: ';
 						print: self text size;
-						nextPutAll: ' out of ';
-						print: DSConstants maxMessageLenght.
-				self exceedsMessageLenghtLimit ifTrue: [ 
-					aStream 
-						nextPutAll: ' Cursor position: ';
-						print: self textArea pointIndex ] ] ]
+						nextPutAll: ' characters (max. ';
+						print: DSConstants maxMessageLenght;
+						nextPutAll: '), cursor at ';
+						print: self textArea pointIndex ] ]
