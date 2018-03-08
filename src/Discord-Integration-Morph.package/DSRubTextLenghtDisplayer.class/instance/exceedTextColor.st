@@ -1,0 +1,3 @@
+accessing
+exceedTextColor
+	^ Color red

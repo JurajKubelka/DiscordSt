@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "RubScrolledTextSideRuler",
+	"category" : "Discord-Integration-Morph",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"lineAnnotation",
+		"rowMorph"
+	],
+	"name" : "DSRubTextLenghtDisplayer",
+	"type" : "normal"
+}

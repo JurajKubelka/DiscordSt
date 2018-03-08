@@ -9,6 +9,7 @@ newTextMorph
 		hResizing: #spaceFill; 
 		vResizing: #spaceFill;
 		withGhostText: 'Write a question or comment...';
+		withRulerNamed: #dstextlenght;
 		autoAccept: true;
 		yourself.
 	^ morph
