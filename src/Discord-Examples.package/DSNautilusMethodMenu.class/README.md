@@ -1,1 +1,0 @@
-I add a Nautilus context menu item for the method list.

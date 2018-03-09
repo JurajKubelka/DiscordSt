@@ -1,3 +1,0 @@
-defaults
-dataQuery
-	^ 'data'

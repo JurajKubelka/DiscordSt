@@ -1,3 +1,0 @@
-coverage
-classToTest
-	^ DSExpertiseExpert

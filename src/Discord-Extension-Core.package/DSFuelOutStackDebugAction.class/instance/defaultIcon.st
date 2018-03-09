@@ -1,3 +1,0 @@
-accessing
-defaultIcon
-	^ DSIcons discord

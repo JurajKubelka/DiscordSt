@@ -1,1 +1,0 @@
-A DSObjectWrapperTest is a test class for testing the behavior of DSObjectWrapper

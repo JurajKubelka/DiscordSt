@@ -1,3 +1,0 @@
-accessing
-morphModel
-	^ self object
