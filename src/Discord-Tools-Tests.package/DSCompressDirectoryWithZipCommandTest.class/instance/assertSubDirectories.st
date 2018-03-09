@@ -13,10 +13,10 @@ assertSubDirectories
 						readFrom: zipFile;
 						members.
 	self assert: members size equals: 4.
-	self assert: members first fileName equals: 'dir1/file1.txt'.
-	self assert: members second fileName equals: 'dir1/file2.txt'.
-	self assert: members third fileName equals: 'dir2/file3.txt'.
-	self assert: members fourth fileName equals: 'dir2/file4.txt'.
+	self assertMembers: members includesFileName: 'dir1/file1.txt'.
+	self assertMembers: members includesFileName: 'dir1/file2.txt'.
+	self assertMembers: members includesFileName: 'dir2/file3.txt'.
+	self assertMembers: members includesFileName: 'dir2/file4.txt'.	
 	extractedDir := rootDir / 'extracted-zip'.
 	extractedDir createDirectory.
 	ZipArchive new
