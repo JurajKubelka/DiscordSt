@@ -36,7 +36,7 @@ groups: spec
 
 			"UI - Morphic"
 			group: #'integration-playground' with: #( #'Discord-Integration-Playground' #'Discord-Research' );
-			group: #'src-ui-morphic' with: #( #'integration-playground' );
+			group: #'src-ui-morphic' with: #( #'integration-playground' #'ui-worldmenu' );
 			group: #'tests-ui-morphic' with: #( 
 				#'src-ui-morphic'
 				#'tests-core'
