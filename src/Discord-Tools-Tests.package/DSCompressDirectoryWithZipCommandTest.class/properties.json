@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"zipFile"
+		"zipFile",
+		"rootDir"
 	],
 	"name" : "DSCompressDirectoryWithZipCommandTest",
 	"type" : "normal"
