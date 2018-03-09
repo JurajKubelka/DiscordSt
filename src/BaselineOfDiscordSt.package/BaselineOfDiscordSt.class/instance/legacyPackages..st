@@ -9,7 +9,6 @@ legacyPackages: spec
 
 			package: #'Discord-Extension-Core' with: [
 				spec 
-					preLoadDoIt: #preLoadPlayground:;
 					requires: #( #'Discord-Client' #'Discord-Tools' ) ];
 			package: #'Discord-Extension-Core-Tests' with: [
 				spec requires: #( #'Discord-Extension-Core' #'Discord-Core-Tests' #'Discord-Tools-Tests' ). ];

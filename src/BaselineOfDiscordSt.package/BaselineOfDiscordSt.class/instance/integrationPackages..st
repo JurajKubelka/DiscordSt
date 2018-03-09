@@ -44,8 +44,11 @@ integrationPackages: spec
 				spec requires: #( #'Discord-Integration-Morph' ) ];
 			
 			package: #'Discord-Integration-Playground' with: [ 
-				spec requires: #( 
-					#'Discord-Core' #'Discord-Integration-Core' #'Discord-Integration-Morph' 
-					#'Discord-Integration-Gif'
-					#'Discord-Send-Items' #'Discord-Tools' ) ]
+				spec
+					preLoadDoIt: #preLoadPlayground:;
+					requires: #( 
+						#'Discord-Core' #'Discord-Integration-Core' 
+						#'Discord-Integration-Morph' 
+						#'Discord-Integration-Gif'
+						#'Discord-Send-Items' #'Discord-Tools' ) ]
 	].
