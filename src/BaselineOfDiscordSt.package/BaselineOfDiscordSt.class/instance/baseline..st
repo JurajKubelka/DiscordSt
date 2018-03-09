@@ -3,7 +3,6 @@ baseline: spec
 	<baseline>
 	self externalProjects: spec.
 	self corePackages: spec.
-	self legacyPackages: spec.
 	self brickPackages: spec.
 	self integrationPackages: spec.
 	self researchPackages: spec.

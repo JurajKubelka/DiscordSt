@@ -6,9 +6,9 @@ integrationPackages: spec
 				"It depends on GT-Inspector and GT-Playground that are standard tools"
 				spec 
 					preLoadDoIt: #preLoadTonel:;
-					requires: #( #'Discord-Core' #'Discord-Tools-UnicodeMemory' ) ];
+					requires: #( #'Discord-Core' ) ];
 			package: #'Discord-Tools-Tests' with: [
-				spec requires: #( #'Discord-Tools' #'Discord-Tools-UnicodeMemory-Tests' ) ];
+				spec requires: #( #'Discord-Tools' ) ];
 
 			package: #'Discord-Mock' with: [ 
 				spec requires: #( #'Discord-Announcements' #'Discord-Core' ) ];
@@ -29,8 +29,7 @@ integrationPackages: spec
 
 			package: #'Discord-Integration-Core' with: [ 
 				spec requires: #( 
-					#'Discord-Core' #'Discord-Registry-Core' 
-					#'Discord-Tools-UnicodeMemory' ) ];
+					#'Discord-Core' #'Discord-Registry-Core' ) ];
 			
 			package: #'Discord-Integration-Morph' with: [ 
 				spec requires: #( 
