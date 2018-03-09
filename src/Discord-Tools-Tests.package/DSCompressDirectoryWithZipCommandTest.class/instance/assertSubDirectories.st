@@ -25,9 +25,5 @@ assertSubDirectories
 	self assert: extractedDir children size equals: 2.
 	self assert: extractedDir allChildren size equals: 7.
 	self assert: extractedDir children size equals: 2.
-	self assert: extractedDir children first basename equals: 'dir1'.
-	self assert: extractedDir children second basename equals: 'dir2'.
-	self assert: extractedDir children first children second basename equals: 'file2.txt'.
-	self assert: extractedDir children first children second contents equals: 'file 2 contents'.
-	self assert: extractedDir children first children first basename equals: 'file1.txt'.
-	self assert: extractedDir children first children first contents equals: 'file 1 contents with ™'.
+	extractedDir allChildren do: [ :eachChild |
+		self assertChild: eachChild inRoot: extractedDir ].
