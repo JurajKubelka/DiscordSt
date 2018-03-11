@@ -26,12 +26,12 @@ gtInspectorMessages: composite
 			evaluated: [ :message | message numberOfEmbeds ]
 			width: 90
 			tags: [ :message | Array streamContents: [ :aStream |
-				message isFuelObject ifTrue: [ 
+"				message isFuelObject ifTrue: [ 
 					aStream nextPut: 'Object' ].
 				message isFuelStack ifTrue: [ 
 					aStream nextPut: 'Stack' ].
 				message isFuelPlayground ifTrue: [ 
-					aStream nextPut: 'Playground' ].
+					aStream nextPut: 'Playground' ]."
 				message hasEmbedImages ifTrue: [ 
 					aStream nextPut: 'Img' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
