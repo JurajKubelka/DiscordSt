@@ -1,10 +1,13 @@
 gt-inspector-extension
 gtInspectorDirectChannels: composite
 	<gtInspectorPresentationOrder: 3>
-	^ composite fastTree
+	^ composite fastList
 		title: [ 'Direct Channels' translated ];
 		display: [ self directChannels ];
 		when: [ self isAuthenticated ];
-		children: [ :item | item children ];
-		expandedUntil: 1;
+		selectionAct: [ :presentation | | id |
+			id := presentation rawSelection recipients first id.
+			Clipboard clipboardText: id asString. ]
+			entitled: 'Copy Recipient''s id';
+		enableFilter;
 		yourself
