@@ -15,9 +15,7 @@ externalProjects: spec
 			baseline: 'Brick' with: [ 
 				spec
 					repository: 'github://pharo-graphics/Brick/src';
-					loads: #development ];
-			baseline: 'Commander' with: [
-				spec repository: 'github://dionisiydk/Commander:v0.4.x' ]
+					loads: #development ]
 	].
 	spec for: #'pharo6.x' do: [
 		spec
