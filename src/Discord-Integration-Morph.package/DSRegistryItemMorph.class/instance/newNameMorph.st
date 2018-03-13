@@ -1,6 +1,6 @@
 instance creation
 newNameMorph
-	^ '<nameless webhook>' asMorph
+	^ 'uninitialized account' asMorph
 			hResizing: #spaceFill;
 			vResizing: #shrinkWrap;
 			yourself
