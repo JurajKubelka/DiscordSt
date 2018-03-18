@@ -1,4 +1,4 @@
-as yet unclassified
+private
 updateAuthenticatedClientRegistry: aDSClientRegistry 
 	| clientMorph |
 	clientMorph := self morph ensureAuthenticatedClientMorph.
