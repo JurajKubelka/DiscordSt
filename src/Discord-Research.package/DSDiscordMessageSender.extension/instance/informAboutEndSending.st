@@ -14,7 +14,8 @@ informAboutEndSending
 	DSWebhookClient new
 		url: 'https://discordapp.com/api/webhooks/413701870780022784/TssfbR0P8A_du6-tkeYZYWnkzICZU9RKBnolxngIykVVqzb-l9naTIfj7F3iCfmVm0ve';
 		content: 'Finished sending (', 
-			self identityHash asString ,') with: ', 
+			self identityHash asString,
+			'), version "', DSConstants version,'" with: ', 
 			String cr, output;
 		supressNetworkErrors;
 		send.

@@ -41,8 +41,9 @@ over the REST API.
 ### User Client
 
 The third option to connect to Discord within Pharo is by using a user
-account, email and password. Notice that using such account to connect
-bots is strictly prohibited.
+account, email and password. **Notice that using such account to connect
+bots is strictly prohibited. You should not use your user account to
+automate login and other operations!**
 
 ## Examples
 
@@ -50,6 +51,6 @@ Examples are divided into three sections:
 
 - [Webhook](Webhook.md)
 - [Bot](Bot.md)
-- [User Client](UserClient.md) Note: this documentation is missing. You can find examples on `DSClient` class side.
+- User Client Note: this documentation is missing. You can find examples on `DSClient` class side.
 
 For more examples, please, check the class sides of the corresponding classes. We use [GT-Examples](https://github.com/feenkcom/gtoolkit-examples) to document the source code.

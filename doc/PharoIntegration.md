@@ -2,6 +2,12 @@
 
 This section describes how the DiscordSt is integrated with developer tools in order to bring better electronic communication experience to Pharo developers. Notice, that the current version is focused on sending messages with a rich contents. 
 
+## Login
+
+The first time you use the DiscordSt integration, you need to login. To do so, open the DiscordSt send message dialog and in the account part, fill-in your Discord account email and password. If you use Two-Factor-Authentication, provide a code when requested.
+
+![Login](../assets/img/integration-login.png)
+
 ## Ask Developers from GT-Playground
 
 If you have a code snippet in GT-Playground and you get stuck with it, ask directly from the playground. Click on the Discord icon. In the *Send Message Dialog*, you can write a question and choose a best channel to ask. In addition, you can add screenshots and source code in order to help the readers to understand your problem and play with it.
