@@ -31,7 +31,7 @@ The script above installs a standard Discord client (webhook, bot, user client, 
 
 ## Update
 
-You can update the Discord this script in the World menu / `Communication` / `Update DiscordSt`.
+You can update the Discord client from World menu / `Communication` / `Update DiscordSt`.
 
 ![World menu -> DiscordSt Update](assets/img/world-menu-update.png)
 
