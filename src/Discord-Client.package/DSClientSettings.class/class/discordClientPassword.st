@@ -1,3 +1,4 @@
 accessing
 discordClientPassword
-	^ DSClientPassword ifNil: [ DSClientPassword := '' ]
+	self ensureVolatileDiscordClientPassword.
+	^ DSClientPassword value

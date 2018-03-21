@@ -16,7 +16,9 @@ corePackages: spec
 				spec requires: #( #'Discord-WebhookClient' #'Discord-Core-Tests' ). ];
 
 			package: #'Discord-Client' with: [
-				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'Discord-Gateway' #'Fuel' ). ];
+				spec requires: #( 
+					#'Discord-Announcements' #'Discord-Core' #'Discord-Gateway' 
+					#'Fuel' #'ExternalVolatileStore' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' #'Discord-Gateway-Tests' ). ];
 
