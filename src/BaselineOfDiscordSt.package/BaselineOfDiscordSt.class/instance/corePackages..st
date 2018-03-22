@@ -6,7 +6,7 @@ corePackages: spec
 			package: #'Discord-Announcements';
 
 			package: #'Discord-Core' with: [
-				spec requires: #( #'NeoJSON' ). ];
+				spec requires: #( #'NeoJSON' #'ExternalVolatileStore' ). ];
 			package: #'Discord-Core-Tests' with: [
 				spec requires: #( #'Discord-Core' ). ];
 
