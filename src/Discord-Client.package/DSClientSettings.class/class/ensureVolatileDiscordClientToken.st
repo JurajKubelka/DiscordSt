@@ -1,6 +1,7 @@
 private
 ensureVolatileDiscordClientToken
 	DSClientToken ifNil: [ 
-		DSClientToken := AutoReloadableVolatileSystemSetting
-				fromString: ''
-				settingId: #discordClientToken ]
+		DSClientToken := AutoReloadableVolatileSystemSetting new
+			settingId: #discordClientToken;
+			string: '';
+			yourself ]

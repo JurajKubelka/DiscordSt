@@ -1,6 +1,7 @@
 private
 ensureVolatileDiscordClientPassword
 	DSClientPassword ifNil: [ 
-		DSClientPassword := AutoReloadableVolatileSystemSetting
-				fromString: ''
-				settingId: #discordClientPassword ]
+		DSClientPassword := AutoReloadableVolatileSystemSetting new
+			settingId: #discordClientPassword;
+			string: '';
+			yourself ]
