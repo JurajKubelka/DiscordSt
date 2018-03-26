@@ -6,5 +6,5 @@ ensureVolatilePassword
 	password isString ifTrue: [ passwordValue := password. password := nil ].
 	password ifNotNil: [ ^ self ].
 	"Initialization"
-	password := TemporaryAutoReloadableVolatileSystemSetting new.
+	password := AutoReloadableVolatileTemporarySettingValue new.
 	password string: passwordValue.

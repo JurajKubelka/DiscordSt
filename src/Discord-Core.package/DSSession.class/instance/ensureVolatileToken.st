@@ -6,5 +6,5 @@ ensureVolatileToken
 	token isString ifTrue: [ tokenValue := token. token := nil ].
 	token ifNotNil: [ ^ self ].
 	"Initialization"
-	token := TemporaryAutoReloadableVolatileSystemSetting new.
+	token := AutoReloadableVolatileTemporarySettingValue new.
 	token string: tokenValue.
