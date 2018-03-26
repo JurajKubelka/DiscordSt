@@ -15,7 +15,7 @@ externalProjects: spec
 			baseline: 'Brick' with: [ 
 				spec
 					repository: 'github://pharo-graphics/Brick/src';
-					loads: #development ];
+					loads: #default ];
 			baseline: 'ExternalVolatileStore' with: [ 
 				spec
 					repository: 'github://feenkcom/external-volatile-store/src';
