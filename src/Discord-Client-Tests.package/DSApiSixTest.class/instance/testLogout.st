@@ -9,7 +9,7 @@ testLogout
 		response entity: (ZnEntity text: '{}') ].
 	api logout.
 	self deny: api isAuthenticated.
-	self assert: api token isNil.
+	self assert: api token isEmpty.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first contents equals: '{"token":"secret-token"}'.
 	self assert: self serverRequests first method equals: #POST.

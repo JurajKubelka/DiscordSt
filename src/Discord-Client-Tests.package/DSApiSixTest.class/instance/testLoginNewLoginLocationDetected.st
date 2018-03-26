@@ -18,7 +18,7 @@ testLoginNewLoginLocationDetected
 		self assert: exception response code = 400.
 		self assert: exception response contents equals: '{"email": ["New login location detected, please check your e-mail."]}' ].
 	self deny: api isAuthenticated.
-	self assert: api token isNil.
+	self assert: api token isEmpty.
 	self assert: self serverRequests size equals: 1.
 	self assert: self serverRequests first contents equals: '{"email":"email@example.com","password":"secret password"}'.
 	self assert: self serverRequests first method equals: #POST.
