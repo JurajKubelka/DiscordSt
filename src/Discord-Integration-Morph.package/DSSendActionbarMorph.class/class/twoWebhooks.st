@@ -2,6 +2,9 @@ examples
 twoWebhooks
 	<gtExample>
 	<label: 'Add two webhooks registry'>
-	^ self listenToClicks
+	| ui |
+	ui := self listenToClicks
 		registries: DSRegistries twoWebhooks;
-		yourself
+		yourself.
+	"self assert: ui selection notNil."
+	^ ui
