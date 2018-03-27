@@ -1,3 +1,3 @@
 accessing
 cleanDiscordClientToken
-	^ self discordClientToken ifEmpty: [ nil ]
+	^ self discordClientToken
