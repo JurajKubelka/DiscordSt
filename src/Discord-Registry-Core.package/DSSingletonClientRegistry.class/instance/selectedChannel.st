@@ -4,6 +4,6 @@ selectedChannel
 		ifNotNil: [ :aServer | | previousChannel |
 			previousChannel := selectedChannels at: aServer id ifAbsent: nil.
 			previousChannel ifNil: [ | anyChannel |
-				anyChannel := aServer textChannels first.
+				anyChannel := aServer textChannels ifNotEmpty: #first ifEmpty: nil.
 				self selectedChannel: anyChannel.
 				anyChannel ] ].
