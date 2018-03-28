@@ -1,9 +1,9 @@
 tests-enumerating
-testOnChangedDo
+testOnContentChangedDo
 	| results |
 	results := OrderedCollection new.
 	attachment := self classToTest new.
-	attachment onChangedDo: [ :announcement | results add: announcement ].
+	attachment onContentChangedDo: [ :announcement | results add: announcement ].
 	attachment addMorph: Morph new.
 	self assert: results size equals: 1.
-	self assert: results first class equals: DSSendAttachmentChangedAnnouncement.
+	self assert: results first class equals: DSContentChangedAnnouncement.

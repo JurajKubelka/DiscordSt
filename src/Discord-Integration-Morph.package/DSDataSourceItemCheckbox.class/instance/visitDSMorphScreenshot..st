@@ -1,6 +1,6 @@
 visiting
 visitDSMorphScreenshot: aDSMorphScreenshot 
-	| labelMorph checkbox |
+	| labelMorph |
 	labelMorph := (DSScreenshotCheckboxLabelMorph contents: aDSMorphScreenshot name)
 			model: aDSMorphScreenshot;
 			getTextSelector: #name;
@@ -8,17 +8,4 @@ visitDSMorphScreenshot: aDSMorphScreenshot
 			hResizing: #spaceFill; 
 			vResizing: #shrinkWrap; 
 			yourself.
-	checkbox := CheckboxMorph new
-			on: aDSMorphScreenshot 
-			selected: #isSelected
-			changeSelected: #isSelected:;
-			getEnabledSelector: #isEnabled;
-			labelMorph: labelMorph;
-			hResizing: #spaceFill; 
-			vResizing: #shrinkWrap; 
-			yourself.
-	aDSMorphScreenshot onSelectionChangedDo: [ :announcement | 
-		aDSMorphScreenshot changed: #isSelected. ].
-	aDSMorphScreenshot onEnabledChangedDo: [ :announcement | 
-		aDSMorphScreenshot changed: #isEnabled. ].
-	^ checkbox
+	^ self newCheckboxMorphFor: aDSMorphScreenshot labelMorph: labelMorph.

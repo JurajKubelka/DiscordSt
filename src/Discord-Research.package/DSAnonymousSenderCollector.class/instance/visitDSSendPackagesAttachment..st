@@ -6,6 +6,8 @@ visitDSSendPackagesAttachment: aDSSendPackagesAttachment
 		nextPutAll: aDSSendPackagesAttachment packages size asString;
 		nextPutAll: ', selected: ';
 		nextPutAll: aDSSendPackagesAttachment isSelected asString;
+		nextPutAll: ', enabled: ';
+		nextPutAll: aDSSendPackagesAttachment isEnabled asString;
 		cr.
 	self increaseIndent.
 	aDSSendPackagesAttachment packages do: [ :eachPackage | 

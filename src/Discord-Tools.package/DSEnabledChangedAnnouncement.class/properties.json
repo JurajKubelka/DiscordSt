@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "DSSendAnnouncement",
-	"category" : "Discord-Send-Items",
+	"super" : "DSStateChangedAnnouncement",
+	"category" : "Discord-Tools-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSSendAttachmentChangedAnnouncement",
+	"name" : "DSEnabledChangedAnnouncement",
 	"type" : "normal"
 }

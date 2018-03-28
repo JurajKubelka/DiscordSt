@@ -7,4 +7,6 @@ visitDSAnimatedGifScreenshot: aDSAnimatedGifScreenshot
 			ifNil: [ '0' ] ifNotNil: [ :aBytes | aBytes size asString ]);
 		nextPutAll: ', selected: ';
 		nextPutAll: aDSAnimatedGifScreenshot isSelected asString;
+		nextPutAll: ', enabled: ';
+		nextPutAll: aDSAnimatedGifScreenshot isEnabled asString;
 		cr

@@ -7,6 +7,6 @@ testSelectionChangedDeselected
 	selection isSelected: false.
 	self assert: result notNil.
 	self assert: result class equals: DSSelectionChangedAnnouncement.
-	self assert: result selection equals: selection.
+	self assert: result object equals: selection.
 	self deny: result state.
 	

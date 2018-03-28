@@ -4,7 +4,7 @@ testSelectionChanged
 	result := OrderedCollection new.
 	attachment := self classToTest new.
 	attachment onSelectionChangedDo: [ :announcement | 
-		self assert: announcement attachment = attachment.
+		self assert: announcement object = attachment.
 		result add: announcement ].
 	attachment isSelected: attachment isSelected not.
 	self assert: result size equals: 1.

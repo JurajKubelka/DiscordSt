@@ -6,6 +6,8 @@ visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment
 		nextPutAll: aDSSendScreenshotsAttachment screenshots size asString;
 		nextPutAll: ', is selected: ';
 		nextPutAll: aDSSendScreenshotsAttachment isSelected asString;
+		nextPutAll: ', enabled: ';
+		nextPutAll: aDSSendScreenshotsAttachment isEnabled asString;
 		cr.
 	self increaseIndent.
 	aDSSendScreenshotsAttachment screenshots do: [ :eachScreenshot | 

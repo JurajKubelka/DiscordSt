@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSSelectionChangedAnnouncement",
+	"name" : "DSContentChangedAnnouncement",
 	"type" : "normal"
 }

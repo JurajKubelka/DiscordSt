@@ -1,14 +1,16 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Discord-Send-Items",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "DSSelectableObjectTrait classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"priority",
 		"announcer"
 	],
 	"name" : "DSSendItem",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "DSSelectableObjectTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Send-Items"
 }

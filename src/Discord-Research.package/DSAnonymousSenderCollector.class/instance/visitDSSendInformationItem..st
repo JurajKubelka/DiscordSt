@@ -4,6 +4,8 @@ visitDSSendInformationItem: aDSSendInformationItem
 		nextPutAll: self indentString;
 		nextPutAll: 'information selected: ';
 		nextPutAll: aDSSendInformationItem isSelected asString;
+		nextPutAll: ', enabled: ';
+		nextPutAll: aDSSendInformationItem isEnabled asString;
 		cr.
 	self increaseIndent.
 	aDSSendInformationItem infos do: [ :eachInfo | | printedInfo |
