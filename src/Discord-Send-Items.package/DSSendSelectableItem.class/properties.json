@@ -3,13 +3,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"isSelected",
-		"isEnabled",
-		"name",
-		"value"
+		"isEnabled"
 	],
-	"name" : "DSSendInformation",
+	"name" : "DSSendSelectableItem",
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "DSSendItem",
 	"traitcomposition" : "DSSelectableObjectTrait",
 	"type" : "normal",
 	"classinstvars" : [ ],

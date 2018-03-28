@@ -17,5 +17,7 @@ visitDSSendInformationItem: aDSSendInformationItem
 			nextPutAll: printedInfo;
 			nextPutAll: ', selected: ';
 			nextPutAll: eachInfo isSelected asString;
+			nextPutAll: ', enabled: ';
+			nextPutAll: eachInfo isEnabled asString;
 			cr ].
 	self decreaseIndent.
