@@ -1,3 +1,4 @@
 accessing
-packages: anObject
-	packages := anObject
+packages: aCollection
+	aCollection do: [ :each | each isEnabled: self isSelected ].
+	packages := aCollection
