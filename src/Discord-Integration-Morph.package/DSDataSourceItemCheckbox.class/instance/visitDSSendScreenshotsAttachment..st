@@ -3,6 +3,8 @@ visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment
 	| labelMorph checkbox rowMorph |
 	aDSSendScreenshotsAttachment onChangedDo: [ :announcement | 
 		self table dataSource updateData ].
+	aDSSendScreenshotsAttachment onSelectionChangedDo: [ :announcement | 
+		self toggleEnabledForAllChildren ].
 	labelMorph := 'Screenshots' asMorph asReadOnlyMorph.
 	rowMorph := self table theme newRowIn: self for: {
 		labelMorph.
@@ -12,6 +14,7 @@ visitDSSendScreenshotsAttachment: aDSSendScreenshotsAttachment
 			on: aDSSendScreenshotsAttachment
 			selected: #isSelected
 			changeSelected: #isSelected:;
+			getEnabledSelector: #isEnabled;
 			labelMorph: rowMorph;
 			hResizing: #spaceFill; 
 			vResizing: #shrinkWrap; 

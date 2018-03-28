@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "DSSendAttachment",
+	"super" : "DSSendAnnouncement",
 	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSScreenshot",
+	"name" : "DSSendAttachmentSelectionChangedAnnouncement",
 	"type" : "normal"
 }

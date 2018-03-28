@@ -1,6 +1,6 @@
 announcement registration
-onChangedDo: oneArgBlock
+onEnabledChangedDo: oneArgBlock
 	"Register for content changes. The block receives the announcement."
 	^ self announcer 
-		subscribe: DSSendAttachmentChangedAnnouncement
+		subscribe: DSSendAttachmentEnabledChangedAnnouncement
 		do: oneArgBlock
