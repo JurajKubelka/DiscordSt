@@ -1,4 +1,7 @@
 visiting
 visitDSMorphScreenshot: aDSMorphScreenshot 
+	| form |
 	aDSMorphScreenshot isSelected ifFalse: [ ^ self ].
-	"ignore static images as they are included in one big image"
+	form := aDSMorphScreenshot form.
+	form extent isZero ifFalse: [
+		messageBuilder attachForm: form ].

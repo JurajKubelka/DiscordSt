@@ -1,3 +1,3 @@
 visiting
 visitDSSendUserTextMessageItem: aDSSendUserTextMessageItem 
-	messageBuilder embedDescription: aDSSendUserTextMessageItem text
+	messageBuilder content: aDSSendUserTextMessageItem text
