@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Integration-Playground",
+	"classinstvars" : [
+		"wasScreenshotsSelected",
+		"wasPackagesSelected",
+		"wasCodeSnippetSelected",
+		"wasAttachmentsSelected"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSharePlaygroundSettings",
+	"type" : "normal"
+}
