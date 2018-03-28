@@ -1,4 +1,4 @@
-as yet unclassified
+visiting
 visitDSClientRegistry: aDSClientRegistry 
 	aDSClientRegistry announcer 
 		subscribe: DSAuthenticatedAnnouncement 
