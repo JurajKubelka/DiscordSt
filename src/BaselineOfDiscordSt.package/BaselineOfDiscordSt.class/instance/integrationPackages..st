@@ -49,5 +49,14 @@ integrationPackages: spec
 						#'Discord-Core' #'Discord-Integration-Core' 
 						#'Discord-Integration-Morph' 
 						#'Discord-Integration-Gif'
+						#'Discord-Send-Items' #'Discord-Tools' ) ];
+
+			package: #'Discord-Integration-Calypso' with: [ 
+				spec
+					requires: #( 
+						#'Calypso'
+						#'Discord-Core' #'Discord-Integration-Core' 
+						#'Discord-Integration-Morph' 
+						#'Discord-Integration-Gif'
 						#'Discord-Send-Items' #'Discord-Tools' ) ]
 	].

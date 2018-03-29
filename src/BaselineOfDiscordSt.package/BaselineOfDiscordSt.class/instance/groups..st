@@ -67,5 +67,8 @@ groups: spec
 			group: #'tests' with: #( #'tests-light' );
 
 			"all - without legacy code"
-			group: #'all' with: #( #'full' #'tests-full' )
+			group: #'all' with: #( #'full' #'tests-full' );
+			
+			"optional extensions"
+			group: #'calypso' with: #( #'Discord-Integration-Calypso' )
 	].

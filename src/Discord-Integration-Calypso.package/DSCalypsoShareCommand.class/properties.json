@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "SycSourceCodeCommand",
+	"category" : "Discord-Integration-Calypso",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"selectedTextInterval",
+		"selectedText",
+		"browserMorph"
+	],
+	"name" : "DSCalypsoShareCommand",
+	"type" : "normal"
+}

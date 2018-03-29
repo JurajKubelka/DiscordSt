@@ -7,6 +7,6 @@ addSourceCodeTo: items codeSnippet: codeSnippet
 	packages do: [ :eachPackage | eachPackage classes: #(); isSelected: true ].
 	item := items addPackagesAttachment: packages.
 	item 
-		isSelected: DSSharePlaygroundSettings wasPackagesSelected;
+		isSelected: self settingsClass wasPackagesSelected;
 		onSelectionChangedDo: [ :announcement | 
-			DSSharePlaygroundSettings wasPackagesSelected: announcement state ].
+			self settingsClass wasPackagesSelected: announcement state ].

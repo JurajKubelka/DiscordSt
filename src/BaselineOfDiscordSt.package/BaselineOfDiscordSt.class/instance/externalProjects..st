@@ -19,7 +19,11 @@ externalProjects: spec
 			baseline: 'ExternalVolatileStore' with: [ 
 				spec
 					repository: 'github://feenkcom/external-volatile-store/src';
-					loads: #default ]
+					loads: #default ];
+			baseline: 'Calypso' with: [ 
+				spec
+					repository: 'github://dionisiydk/Calypso';
+					loads: 'default' ]
 	].
 	spec for: #'pharo6.x' do: [
 		spec

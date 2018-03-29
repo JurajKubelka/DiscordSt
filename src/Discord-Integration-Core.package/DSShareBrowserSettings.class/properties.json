@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "DSShareSettings",
-	"category" : "Discord-Integration-Playground",
+	"category" : "Discord-Integration-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSSharePlaygroundSettings",
+	"name" : "DSShareBrowserSettings",
 	"type" : "normal"
 }

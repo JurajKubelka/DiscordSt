@@ -1,6 +1,6 @@
 private
 initializeAttachmentsItem: items
 	items attachmentItem 
-		isSelected: DSSharePlaygroundSettings wasAttachmentsSelected;
+		isSelected: self settingsClass wasAttachmentsSelected;
 		onSelectionChangedDo: [ :announcement | 
-			DSSharePlaygroundSettings wasAttachmentsSelected: announcement state ].
+			self settingsClass wasAttachmentsSelected: announcement state ].

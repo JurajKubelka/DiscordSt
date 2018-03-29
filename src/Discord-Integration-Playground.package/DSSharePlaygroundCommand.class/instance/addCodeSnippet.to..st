@@ -3,6 +3,6 @@ addCodeSnippet: codeSnippet to: items
 	| item |
 	item := items addCodeSnippetAttachment: codeSnippet.
 	item 
-		isSelected: DSSharePlaygroundSettings wasCodeSnippetSelected;
+		isSelected: self settingsClass  wasCodeSnippetSelected;
 		onSelectionChangedDo: [ :announcement | 
-			DSSharePlaygroundSettings wasCodeSnippetSelected: announcement state ].
+			self settingsClass wasCodeSnippetSelected: announcement state ].
