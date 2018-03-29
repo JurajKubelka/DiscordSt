@@ -2,4 +2,6 @@ accessing - computed
 markdown
 	"Return Markdown representation of a Playground code snippet"
 	<return: #String>
-	^ DSUtility smalltalkMarkdownOf: self codeSnippet trimBoth
+	^ self hasSelection 
+		ifTrue: [ DSUtility smalltalkMarkdownOf: self selectionText trimBoth ]
+		ifFalse: [ DSUtility smalltalkMarkdownOf: self codeSnippet trimBoth ]
