@@ -23,15 +23,14 @@ groups: spec
 			"Downloader"
 			group: #'src-downloader' with: #( #'Discord-Downloader' #'Discord-Research' );
 
-			"UI - Morphic"
+			"Integration - UI - Morphic" 
 			group: #'integration-rubric' with: #( #'Discord-Integration-Rubric' #'Discord-Research' );
 			group: #'integration-calypso' with: #( #'Discord-Integration-Calypso' #'Discord-Research' );
 			group: #'integration-playground' with: #( 
 				#'Discord-Integration-Playground' #'Discord-Research' );
-			group: #'src-ui-morphic' with: #( 
-				#'integration-rubric'
-				#'integration-playground'
-				#'ui-worldmenu' );
+			group: #'src-ui-morphic' with: [ 
+				spec 
+					preLoadDoIt: #mayRequireCalypso: ];
 			group: #'tests-ui-morphic' with: #( 
 				#'src-ui-morphic'
 				#'tests-core'
