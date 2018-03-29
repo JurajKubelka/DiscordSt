@@ -20,23 +20,18 @@ groups: spec
 			"world menu"
 			group: #'ui-worldmenu' with: #( #'Discord-WorldMenu' );
 
-			"legacy"
-			group: #'examples' with: #( #'Discord-Examples' );
-			group: #'extensions' with: #( #'Discord-Extension-Core' );
-			group: #'expertise' with: #( #'Discord-Extension-Expertise' );
-			group: #'ui-legacy' with: #( #'Discord-Extension-UI' #'ui-worldmenu' );
-			group: #'src-legacy' with: #( #'examples' #'extensions' #'expertise' #'ui-legacy' );
-			group: #'tests-legacy' with: #( #'tests-core' 
-				#'Discord-Tools-Tests' #'Discord-Extension-Core-Tests' 
-				#'Discord-Extension-UI-Tests' #'Discord-Extension-Expertise-Tests' );
-			group: #'legacy' with: #( #'src-legacy' #'tests-legacy' );
-
 			"Downloader"
 			group: #'src-downloader' with: #( #'Discord-Downloader' #'Discord-Research' );
 
 			"UI - Morphic"
-			group: #'integration-playground' with: #( #'Discord-Integration-Playground' #'Discord-Research' );
-			group: #'src-ui-morphic' with: #( #'integration-playground' #'ui-worldmenu' );
+			group: #'integration-rubric' with: #( #'Discord-Integration-Rubric' #'Discord-Research' );
+			group: #'integration-calypso' with: #( #'Discord-Integration-Calypso' #'Discord-Research' );
+			group: #'integration-playground' with: #( 
+				#'Discord-Integration-Playground' #'Discord-Research' );
+			group: #'src-ui-morphic' with: #( 
+				#'integration-rubric'
+				#'integration-playground'
+				#'ui-worldmenu' );
 			group: #'tests-ui-morphic' with: #( 
 				#'src-ui-morphic'
 				#'tests-core'
@@ -67,8 +62,5 @@ groups: spec
 			group: #'tests' with: #( #'tests-light' );
 
 			"all - without legacy code"
-			group: #'all' with: #( #'full' #'tests-full' );
-			
-			"optional extensions"
-			group: #'calypso' with: #( #'Discord-Integration-Calypso' )
+			group: #'all' with: #( #'full' #'tests-full' )
 	].

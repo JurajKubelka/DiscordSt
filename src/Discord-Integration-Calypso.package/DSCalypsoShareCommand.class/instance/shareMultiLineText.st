@@ -1,6 +1,6 @@
 as yet unclassified
 shareMultiLineText
-	DSShareMultiLineCodeSnippetCommand new
+	DSShareMultiLineMethodPartCommand new
 		method: method;
 		sourceNode: sourceNode;
 		selectedText: selectedText;

@@ -1,17 +1,16 @@
 {
 	"commentStamp" : "",
 	"super" : "DSShareCommand",
-	"category" : "Discord-Integration-Calypso",
+	"category" : "Discord-Integration-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"method",
-		"sourceNode",
-		"selectedText",
+		"wholeText",
 		"selectedTextInterval",
+		"selectedText",
 		"morph"
 	],
-	"name" : "DSShareCodeSnippetCommand",
+	"name" : "DSShareTextCommand",
 	"type" : "normal"
 }

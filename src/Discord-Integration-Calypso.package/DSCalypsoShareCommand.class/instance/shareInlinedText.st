@@ -1,6 +1,6 @@
 private
 shareInlinedText
-	DSShareInlinedCodeSnippetCommand new
+	DSShareInlinedMethodPartCommand new
 		method: method;
 		sourceNode: sourceNode;
 		selectedText: selectedText;

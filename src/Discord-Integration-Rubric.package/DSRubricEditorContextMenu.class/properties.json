@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "JurajKubelka 3/29/2018 14:25",
+	"super" : "Object",
+	"category" : "Discord-Integration-Rubric",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"editorMorph",
+		"editorModel",
+		"selection",
+		"selectedText",
+		"menuItem",
+		"wholeText"
+	],
+	"name" : "DSRubricEditorContextMenu",
+	"type" : "normal"
+}

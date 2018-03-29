@@ -41,6 +41,10 @@ integrationPackages: spec
 
 			package: #'Discord-Integration-Morph-Tests' with: [ 
 				spec requires: #( #'Discord-Integration-Morph' ) ];
+
+			package: #'Discord-Integration-Rubric' with: [ 
+				spec requires: #( 
+					#'Discord-Core' #'Discord-Integration-Core' ) ];
 			
 			package: #'Discord-Integration-Playground' with: [ 
 				spec
@@ -58,5 +62,6 @@ integrationPackages: spec
 						#'Discord-Core' #'Discord-Integration-Core' 
 						#'Discord-Integration-Morph' 
 						#'Discord-Integration-Gif'
-						#'Discord-Send-Items' #'Discord-Tools' ) ]
+						#'Discord-Send-Items' #'Discord-Tools'
+						#'Discord-Integration-Rubric' ) ]
 	].

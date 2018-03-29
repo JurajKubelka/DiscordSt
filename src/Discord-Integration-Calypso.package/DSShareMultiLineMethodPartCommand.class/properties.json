@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "DSShareWholeMethodCommand",
+	"name" : "DSShareMultiLineMethodPartCommand",
 	"type" : "normal"
 }
