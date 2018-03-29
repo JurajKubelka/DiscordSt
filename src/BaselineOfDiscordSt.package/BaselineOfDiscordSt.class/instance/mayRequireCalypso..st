@@ -9,4 +9,4 @@ mayRequireCalypso: aSpecLoader
 	self class environment
 		at: #ClyBrowser
 		ifPresent: [ requirements := requirements copyWith: #'integration-calypso' ].
-	aSpecLoader requires: requirements
+	^ requirements
