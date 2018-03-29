@@ -28,9 +28,7 @@ groups: spec
 			group: #'integration-calypso' with: #( #'Discord-Integration-Calypso' #'Discord-Research' );
 			group: #'integration-playground' with: #( 
 				#'Discord-Integration-Playground' #'Discord-Research' );
-			group: #'src-ui-morphic' with: [ 
-				spec 
-					preLoadDoIt: #mayRequireCalypso: ];
+			group: #'src-ui-morphic' with: (self mayRequireCalypso: spec);
 			group: #'tests-ui-morphic' with: #( 
 				#'src-ui-morphic'
 				#'tests-core'
