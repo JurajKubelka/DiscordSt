@@ -44,7 +44,10 @@ integrationPackages: spec
 
 			package: #'Discord-Integration-Rubric' with: [ 
 				spec requires: #( 
-					#'Discord-Core' #'Discord-Integration-Core' ) ];
+					#'Discord-Core' 
+					#'Discord-Integration-Core' 
+					#'Discord-Integration-Morph'
+					#'Discord-Integration-Gif' ) ];
 			
 			package: #'Discord-Integration-Playground' with: [ 
 				spec

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "DSShareCommand",
-	"category" : "Discord-Integration-Core",
+	"category" : "Discord-Integration-Rubric",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
