@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BlInfiniteElementHolder",
+	"super" : "BlInfiniteHolder",
 	"category" : "Discord-UI-Brick",
 	"classinstvars" : [ ],
 	"pools" : [ ],
