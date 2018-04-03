@@ -1,3 +1,4 @@
 accessing
 discordClientToken
-	^ DSClientToken ifNil: [ DSClientToken := '' ]
+	self ensureVolatileDiscordClientToken.
+	^ DSClientToken value

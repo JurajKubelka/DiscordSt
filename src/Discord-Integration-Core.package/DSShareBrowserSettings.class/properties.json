@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSShareSettings",
+	"category" : "Discord-Integration-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSShareBrowserSettings",
+	"type" : "normal"
+}

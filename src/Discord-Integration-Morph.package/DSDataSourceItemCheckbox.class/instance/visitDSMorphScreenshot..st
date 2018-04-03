@@ -8,11 +8,4 @@ visitDSMorphScreenshot: aDSMorphScreenshot
 			hResizing: #spaceFill; 
 			vResizing: #shrinkWrap; 
 			yourself.
-	^ CheckboxMorph new
-			on: aDSMorphScreenshot 
-			selected: #isSelected
-			changeSelected: #isSelected:;
-			labelMorph: labelMorph;
-			hResizing: #spaceFill; 
-			vResizing: #shrinkWrap; 
-			yourself.
+	^ self newCheckboxMorphFor: aDSMorphScreenshot labelMorph: labelMorph.

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "DSShareCommand",
+	"category" : "Discord-Integration-Rubric",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wholeText",
+		"selectedTextInterval",
+		"selectedText",
+		"morph"
+	],
+	"name" : "DSShareTextCommand",
+	"type" : "normal"
+}

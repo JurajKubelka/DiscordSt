@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Discord-Integration-Core",
+	"classinstvars" : [
+		"wasScreenshotsSelected",
+		"wasAttachmentsSelected",
+		"wasCodeSnippetSelected",
+		"wasPackagesSelected"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSShareSettings",
+	"type" : "normal"
+}

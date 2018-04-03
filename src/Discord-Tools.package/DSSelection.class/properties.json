@@ -1,15 +1,18 @@
 {
-	"commentStamp" : "",
-	"super" : "Object",
-	"category" : "Discord-Tools-Support",
-	"classinstvars" : [ ],
-	"pools" : [ ],
+	"classtraitcomposition" : "DSSelectableObjectTrait classTrait",
 	"classvars" : [ ],
 	"instvars" : [
 		"item",
 		"isSelected",
+		"isEnabled",
 		"announcer"
 	],
 	"name" : "DSSelection",
-	"type" : "normal"
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "DSSelectableObjectTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Tools-Support"
 }

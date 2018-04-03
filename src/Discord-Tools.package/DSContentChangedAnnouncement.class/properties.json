@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSStateChangedAnnouncement",
+	"category" : "Discord-Tools-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSContentChangedAnnouncement",
+	"type" : "normal"
+}

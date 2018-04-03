@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "DSShareSettings",
+	"category" : "Discord-Integration-Playground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "DSSharePlaygroundSettings",
+	"type" : "normal"
+}

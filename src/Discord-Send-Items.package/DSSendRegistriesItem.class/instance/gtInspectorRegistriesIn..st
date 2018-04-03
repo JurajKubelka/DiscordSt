@@ -1,4 +1,4 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorRegistriesIn: composite
 	<gtInspectorPresentationOrder: 1>
 	^ composite fastList

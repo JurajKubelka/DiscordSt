@@ -1,0 +1,16 @@
+{
+	"classtraitcomposition" : "DSSelectableObjectTrait classTrait",
+	"classvars" : [ ],
+	"instvars" : [
+		"isSelected",
+		"isEnabled"
+	],
+	"name" : "DSSendSelectableItem",
+	"commentStamp" : "",
+	"super" : "DSSendItem",
+	"traitcomposition" : "DSSelectableObjectTrait",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Discord-Send-Items"
+}

@@ -1,4 +1,5 @@
 accessing
 token: aString
 	"Set token used to authorize Discord opperations."
-	token := aString
+	self ensureVolatileToken.
+	token string: aString

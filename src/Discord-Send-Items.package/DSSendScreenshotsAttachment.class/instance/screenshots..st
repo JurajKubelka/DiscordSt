@@ -1,3 +1,4 @@
 accessing
-screenshots: anObject
-	screenshots := anObject
+screenshots: aCollection
+	self updateEnabledOfChildren.
+	screenshots := aCollection

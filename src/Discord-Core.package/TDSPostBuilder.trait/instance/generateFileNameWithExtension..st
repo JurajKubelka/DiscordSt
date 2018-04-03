@@ -4,6 +4,6 @@ generateFileNameWithExtension: extensionString
 	<return: #String>
 	^ DSGenerateFileNameCommand new
 		extension: extensionString;
-		existingFileNames: self post fileNames;
+		existingFileNames: self dataPost fileNames;
 		execute;
 		fileName.

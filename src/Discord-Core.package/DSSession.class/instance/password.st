@@ -1,4 +1,5 @@
 accessing
 password
 	"Get password used to login into a Discord server."
-	^ password
+	self ensureVolatilePassword.
+	^ password value

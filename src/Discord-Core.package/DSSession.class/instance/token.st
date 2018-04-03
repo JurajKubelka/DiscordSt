@@ -1,4 +1,5 @@
 accessing
 token
 	"Get token used to authorize Discord opperations."
-	^ token
+	self ensureVolatileToken.
+	^ token value

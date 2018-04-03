@@ -1,3 +1,4 @@
 accessing
 discordClientPassword: passwordOrEmptyString
-	DSClientPassword := passwordOrEmptyString
+	self ensureVolatileDiscordClientPassword.
+	DSClientPassword value: passwordOrEmptyString

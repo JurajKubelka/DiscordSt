@@ -1,3 +1,4 @@
 accessing
 discordClientToken: tokenOrEmptyString 
-	DSClientToken := tokenOrEmptyString
+	self ensureVolatileDiscordClientToken.
+	DSClientToken value: tokenOrEmptyString

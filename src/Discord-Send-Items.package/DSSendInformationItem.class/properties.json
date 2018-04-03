@@ -1,13 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "DSSendItem",
+	"super" : "DSSendSelectableItem",
 	"category" : "Discord-Send-Items",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"infos",
-		"isSelected"
+		"infos"
 	],
 	"name" : "DSSendInformationItem",
 	"type" : "normal"
