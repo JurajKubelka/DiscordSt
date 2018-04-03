@@ -38,6 +38,6 @@ externalProjects: spec
 			configuration: 'ZincHTTPComponents' with: [ 
 				spec
 					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/ZincHTTPComponents/main/';
-					versionString: #bleedingEdge;
+					versionString: #stable;
 					loads: 'WebSocket' ]
 	].
