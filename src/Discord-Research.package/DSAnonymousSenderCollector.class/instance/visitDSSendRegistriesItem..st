@@ -13,7 +13,7 @@ visitDSSendRegistriesItem: aDSSendRegistriesItem
 		nextPutAll: ', instance hash: ';
 		nextPutAll: aDSSendRegistriesItem selectedRegistry identityHash asString;
 		cr.
-	(aDSSendRegistriesItem selectedRegistry class = DSClientRegistry) 
+	(aDSSendRegistriesItem selectedRegistry class = DSSingletonClientRegistry) 
 		ifTrue: [  
 			stream
 				nextPutAll: self indentString;
