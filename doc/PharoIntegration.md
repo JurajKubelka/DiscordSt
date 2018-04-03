@@ -26,6 +26,20 @@ If you want to play with a posted code snippet, that may also includes necessary
 
 ## Record and Share Animated GIFs
 
-The Pharo integration also includes an option to share animated GIFs. You can take the advantage of it to share visual animations, steps to reproduce an error, short tutorials, and other ideas.
+The Pharo integration includes an option to share animated GIFs. You can take the advantage of it to share visual animations, steps to reproduce an error, short tutorials, and other ideas.
 
 ![Record and share animated GIFs from GT-Playground](../assets/img/integration-gif.gif)
+
+## Share Code from System Browser
+
+The Pharo integration includes an option to share a method source code directly from the Calypso system browser. The former system browser, Nautilus, is also supported.
+
+![Integration with Calypso](../assets/img/integration-calypso.png)
+
+## Share Code from Text Editor and Transcript
+
+Technically, you can share a text (code snippet) from any text editor, including Transcript and the Monticello repository.
+
+![Integration with Transcript](../assets/img/integration-transcript.png)
+
+![Integration with Monticello](../assets/img/integration-monticello.png)
