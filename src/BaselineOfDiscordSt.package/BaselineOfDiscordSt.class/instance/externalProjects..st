@@ -19,7 +19,7 @@ externalProjects: spec
 			baseline: 'ExternalVolatileStore' with: [ 
 				spec
 					repository: 'github://feenkcom/external-volatile-store/src';
-					loads: #default ];
+					loads: #minimal ];
 			baseline: 'Calypso' with: [ 
 				spec
 					repository: 'github://dionisiydk/Calypso';
