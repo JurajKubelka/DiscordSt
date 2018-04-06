@@ -7,7 +7,9 @@ printFullMessageOn: aStream
 		aStream nextPutAll: '   '.
 		aStream withAttributes: { TextEmphasis italic. TextColor gray } do: [ 
 			aStream << (DSUtility printShortTime: aDateAndTime) ] ].
-	self content ifNotNil: [ :string | aStream << string << String crlfcrlf ].
+	aStream << String crlfcrlf.
+	self readableContent ifNotNil: [ :string | 
+		aStream << string << String crlfcrlf ].
 	self embeds 
 		do: [ :eachEmbed |
 			aStream withAttribute: TextEmphasis bold do: [ 
