@@ -1,4 +1,4 @@
-as yet unclassified
+gt-inspector-extension
 gtInspectorAround: composite
 	<gtInspectorPresentationOrder: 5>
 	^ composite fastTable 
