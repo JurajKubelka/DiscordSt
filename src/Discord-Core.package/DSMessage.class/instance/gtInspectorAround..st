@@ -3,7 +3,7 @@ gtInspectorAround: composite
 	<gtInspectorPresentationOrder: 5>
 	^ composite fastTable 
 		title: [ 'Around' ];
-		display: [ self restApi messagesAround: self ];
+		display: [ (self restApi messagesAround: self) sort: [ :a :b | a id < b id ] ];
 		when: [ self restApi isAuthenticated ];
 		column: 'Time' 
 			evaluated: [ :message | DSUtility printShortTime: message timestamp ]

@@ -36,5 +36,6 @@ gtInspectorMessages: composite
 					aStream nextPut: 'Img' ] ] ]
 			sortedBy: [ :a :b | a numberOfEmbeds > b numberOfEmbeds ];
 		column: 'Content'
-			evaluated: [ :message | message printFullMessage ];
+			evaluated: [ :message | 
+				Text streamContents: [ :aStream | message printFullMessageOn: aStream ] limitedTo: 80 ];
 		yourself

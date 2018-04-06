@@ -1,6 +1,6 @@
 gt-inspector-extension
 gtInspectorContent: composite
-	<gtInspectorPresentationOrder: 1>
+	<gtInspectorPresentationOrder: -10>
 	^ composite text
 		title: [ 'Content' translated ];
 		display: [ self printFullMessage ];

@@ -1,10 +1,10 @@
 gt-inspector-extension
 gtInspectorAroundContent: composite
-	<gtInspectorPresentationOrder: 5.5>
+	<gtInspectorPresentationOrder: -9>
 	^ composite text 
 		title: [ 'Around (Text)' ];
 		display: [ | messagesAround |
-			messagesAround := self restApi messagesAround: self.
+			messagesAround := (self restApi messagesAround: self) sort: [ :a :b | a id < b id ].
 			Text streamContents: [ :aStream | 
 				messagesAround 
 					do: [ :eachMessage | 
