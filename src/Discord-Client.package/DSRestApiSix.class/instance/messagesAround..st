@@ -1,8 +1,8 @@
 public - channel
-messagesAfter: aDSMessage inChannel: aDSGuildTextChannel 
+messagesAround: aDSMessage 
 	<return: #DSMessages of: #DSMessage>
 	| queryParams |
 	queryParams := Dictionary new
-		at: 'after' put: aDSMessage id; 
+		at: 'around' put: aDSMessage id;
 		yourself.
 	^ self messagesForChannelId: aDSMessage channelId queryParams: queryParams
