@@ -6,7 +6,14 @@ printFullMessageOn: aStream
 	self timestamp ifNotNil: [ :aDateAndTime | 
 		aStream nextPutAll: '   '.
 		aStream withAttributes: { TextEmphasis italic. TextColor gray } do: [ 
-			aStream << (DSUtility printShortTime: aDateAndTime) ] ].
+			aStream << (DSUtility printShortTime: aDateAndTime).
+			(aDateAndTime asDate = Date today) ifFalse: [ 
+				aStream nextPutAll: ' '.
+				aDateAndTime printHMSOn: aStream. ] ] ].
+	self id ifNotNil: [ :aString | 
+		aStream nextPutAll: '   '.
+		aStream withAttributes: { TextEmphasis italic. TextColor gray } do: [ 
+			aStream << aString ] ].
 	aStream << String crlfcrlf.
 	self readableContent ifNotNil: [ :string | 
 		aStream << string << String crlfcrlf ].
