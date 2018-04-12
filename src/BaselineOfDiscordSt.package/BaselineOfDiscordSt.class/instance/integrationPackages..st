@@ -61,7 +61,6 @@ integrationPackages: spec
 			package: #'Discord-Integration-Calypso' with: [ 
 				spec
 					requires: #( 
-						#'Calypso'
 						#'Discord-Core' #'Discord-Integration-Core' 
 						#'Discord-Integration-Morph' 
 						#'Discord-Integration-Gif'
