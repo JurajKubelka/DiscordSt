@@ -5,6 +5,7 @@ gtInspectorMessages: composite
 		title: [ 'Messages' ];
 		display: [ self ];
 		when: [ self notEmpty ];
+		beMultiple;
 		column: 'Time' 
 			evaluated: [ :message | self printShortTime: message timestamp ]
 			width: 80
@@ -38,4 +39,5 @@ gtInspectorMessages: composite
 		column: 'Content'
 			evaluated: [ :message | 
 				Text streamContents: [ :aStream | message printFullMessageOn: aStream ] limitedTo: 80 ];
+		sendOneOrMultipleAs: self species;
 		yourself
