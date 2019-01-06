@@ -1,6 +1,10 @@
 private
 doOneRecord
-	| form |
+	| form frame |
 	continue ifFalse: [ ^ self ].
 	form := Form fromDisplay: rectangle.
-	writer nextPutImage: form.
+	frame := AnimatedImageFrame new.
+	frame
+		form: form;
+		delay: 20.
+	writer nextPutFrame: frame.

@@ -1,5 +1,11 @@
 accessing
 gifReader
+	| reader |
 	bytes ifNil: [ ^ nil ].
 	self isRecording ifTrue: [ ^ nil ].
-	^ AnimatedGIFReadWriter formsFromStream: self bytes readStream
+	reader := GIFReadWriter on: self bytes readStream.
+	Cursor wait showWhile: [
+		reader
+			readHeader;
+			readBody ].
+	^ reader

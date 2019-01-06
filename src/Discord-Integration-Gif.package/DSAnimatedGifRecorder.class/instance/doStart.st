@@ -3,7 +3,7 @@ doStart
 	bytes := nil.
 	writeStream := ByteArray new writeStream.
 	writer := GIFReadWriter on: writeStream.
-	writer delay: 20.
+	writer loopCount: -1. "Ensures infinite loop"
 	isRecording := true.
 	self announceRecordingInitiated.
 	World 

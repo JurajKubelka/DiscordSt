@@ -1,3 +1,0 @@
-accessing
-sliderIndex
-	^ sliderIndex
