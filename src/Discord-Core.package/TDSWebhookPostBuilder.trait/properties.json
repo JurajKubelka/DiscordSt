@@ -3,5 +3,7 @@
 	"traitcomposition" : "TDSPostBuilder",
 	"classtraitcomposition" : "TDSPostBuilder classTrait",
 	"category" : "Discord-Core-Trait",
-	"name" : "TDSWebhookPostBuilder"
+	"classinstvars" : [ ],
+	"name" : "TDSWebhookPostBuilder",
+	"instvars" : [ ]
 }

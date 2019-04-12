@@ -5,6 +5,8 @@ gtInspectorMessages: composite
 		title: [ 'Messages' ];
 		display: [ self ];
 		when: [ self notEmpty ];
+		beMultiple;
+		sendOneOrMultipleAs: DSMessages;
 		column: 'Time' 
 			evaluated: [ :message | self printShortTime: message timestamp ]
 			width: 80

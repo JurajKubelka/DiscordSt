@@ -1,3 +1,3 @@
 initialization
 defaultIcon
-	^ #user asIcon
+	^ self iconNamed: #user

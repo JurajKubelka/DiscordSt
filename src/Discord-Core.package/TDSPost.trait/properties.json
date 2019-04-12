@@ -1,5 +1,7 @@
 {
-	"name" : "TDSPost",
 	"commentStamp" : "JurajKubelka 11/27/2017 13:34",
-	"category" : "Discord-Core-Trait"
+	"classinstvars" : [ ],
+	"category" : "Discord-Core-Trait",
+	"instvars" : [ ],
+	"name" : "TDSPost"
 }

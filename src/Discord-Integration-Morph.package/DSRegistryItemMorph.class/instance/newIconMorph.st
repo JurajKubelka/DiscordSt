@@ -1,7 +1,7 @@
 instance creation
 newIconMorph
 	<return: #ImageMorph>
-	^ #empty asIcon asMorph
-			hResizing: #shrinkWrap;
-			vResizing: #shrinkWrap;
-			yourself
+	^ (self iconNamed: #empty) asMorph
+		hResizing: #shrinkWrap;
+		vResizing: #shrinkWrap;
+		yourself

@@ -1,5 +1,7 @@
 {
-	"name" : "TDSObjectTree",
 	"commentStamp" : "",
-	"category" : "Discord-Core-Trait"
+	"classinstvars" : [ ],
+	"category" : "Discord-Core-Trait",
+	"instvars" : [ ],
+	"name" : "TDSObjectTree"
 }

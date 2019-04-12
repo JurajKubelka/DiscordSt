@@ -1,5 +1,7 @@
 {
-	"name" : "TDSUnifiedPublishInterface",
 	"commentStamp" : "JurajKubelka 11/27/2017 13:38",
-	"category" : "Discord-Core-Trait"
+	"classinstvars" : [ ],
+	"category" : "Discord-Core-Trait",
+	"instvars" : [ ],
+	"name" : "TDSUnifiedPublishInterface"
 }

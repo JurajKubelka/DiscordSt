@@ -1,3 +1,3 @@
 initialization
 defaultIcon
-	^ #empty asIcon
+	^ self iconNamed: #empty

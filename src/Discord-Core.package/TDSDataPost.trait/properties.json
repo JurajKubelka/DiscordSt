@@ -3,5 +3,7 @@
 	"traitcomposition" : "TDSPost",
 	"classtraitcomposition" : "TDSPost classTrait",
 	"category" : "Discord-Core-Trait",
-	"name" : "TDSDataPost"
+	"classinstvars" : [ ],
+	"name" : "TDSDataPost",
+	"instvars" : [ ]
 }
