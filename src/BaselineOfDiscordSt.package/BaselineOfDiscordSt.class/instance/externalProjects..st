@@ -7,11 +7,8 @@ externalProjects: spec
 					repository: 'http://smalltalkhub.com/mc/Pharo/Fuel/main';
 					versionString: #stable;
 					loads: 'FuelProgressUpdate' ];
-			configuration: 'NeoJSON' with: [ 
-				spec
-					repository: 'http://smalltalkhub.com/mc/SvenVanCaekenberghe/Neo/main/';
-					versionString: #stable;
-					loads: 'default' ];
+			baseline: 'NeoJSON' with: [
+				spec repository: 'github://svenvc/NeoJSON:master/repository' ];
 			baseline: 'Brick' with: [ 
 				spec
 					repository: 'github://pharo-graphics/Brick/src';
