@@ -1,4 +1,4 @@
-accessing
+*Discord-UI-Brick
 gtLiveFor: aView
 	<gtView>
 	(self hasContent or: [ self hasEmbeds ]) ifFalse: [ ^ aView empty ].
