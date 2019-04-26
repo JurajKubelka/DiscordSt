@@ -10,7 +10,7 @@ gtMessagesFor: aView
 			format: [ :aTimestamp | self printShortTime: aTimestamp ]
 			width: 80;
 		column: 'Author'
-			item: [ :aMessage | aMessage author ifNotNil: #username ]
+			item: [ :aMessage | aMessage username ]
 			width: 80;
 		column: '#Attach'
 			item: [ :aMessage | aMessage numberOfAttachments ]
