@@ -5,9 +5,8 @@ newTimestampElement
 	dateString := dateAndTime asDate = Date today
 		ifTrue: [ dateAndTime asTime print24 ]
 		ifFalse: [ dateAndTime asDate yyyymmdd ].
-	dateText := BrRopedText string: dateString.
-	dateText
-		attributes: {(BrTextForegroundAttribute paint: Color gray)}.
+	dateText := dateString asRopedText.
+	dateText foreground: Color gray.
 	timestampElement := BlTextElement new.
 	timestampElement text: dateText.
 	timestampElement

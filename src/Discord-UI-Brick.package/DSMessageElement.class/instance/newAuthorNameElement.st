@@ -1,10 +1,8 @@
 instance creation
 newAuthorNameElement
 	| authorText authorElement |
-	authorText := BrRopedText string: self message authorName.
-	authorText attributes: {
-		BrFontSizeAttribute size: 16.
-		BrFontEmphasisAttribute oblique }.
+	authorText := self message authorName asRopedText.
+	authorText fontSize: 16; oblique.
 	authorElement := BlTextElement new.
 	authorElement text: authorText.
 	authorElement constraintsDo: [ :c |
