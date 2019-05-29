@@ -3,7 +3,7 @@ baseline: spec
 	<baseline>
 	spec for: #'common' do: [
 		spec			
-			baseline: 'DiscordStGateWay' with: [
+			baseline: 'DiscordStGateway' with: [
 				spec repository: 'github://JurajKubelka/DiscordSt/src' ];
 			baseline: 'ExternalVolatileStore' with: [ 
 				spec
@@ -17,7 +17,7 @@ baseline: spec
 
 			package: #'Discord-Client' with: [
 				spec requires: #( 
-					#DiscordStGateWay
+					#DiscordStGateway
 					#'Fuel' #'ExternalVolatileStore' ). ];
 			package: #'Discord-Client-Tests' with: [
 				spec requires: #( #'Discord-Client' ) ]
