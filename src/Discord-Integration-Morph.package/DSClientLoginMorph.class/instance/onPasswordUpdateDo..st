@@ -1,5 +1,5 @@
 accessing
 onPasswordUpdateDo: aBlock
-	^ passwordModel announcer 
-		subscribe: RubTextUpdatedInModel 
+	^ passwordModel announcer
+		when: RubTextUpdatedInModel
 		do: [ :ann | aBlock cull: passwordModel getString ]

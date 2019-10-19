@@ -1,5 +1,7 @@
 {
-	"name" : "DSSelectableObjectTrait",
 	"commentStamp" : "",
-	"category" : "Discord-Tools"
+	"classinstvars" : [ ],
+	"category" : "Discord-Tools",
+	"instvars" : [ ],
+	"name" : "DSSelectableObjectTrait"
 }

@@ -1,2 +1,2 @@
 SystemOrganization addCategory: #'Discord-Client-Tests'!
-SystemOrganization addCategory: 'Discord-Client-Tests-REST-Api'!
+SystemOrganization addCategory: #'Discord-Client-Tests-REST-Api'!
