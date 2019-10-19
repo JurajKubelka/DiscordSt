@@ -23,7 +23,7 @@ corePackages: spec
 				spec requires: #( #'Discord-Client' #'Discord-Core-Tests' #'Discord-Gateway-Tests' ). ];
 
 			package: #'Discord-Gateway' with: [
-				spec requires: #( #'Discord-Announcements' #'Discord-Core' ). ];
+				spec requires: #( #'Discord-Announcements' #'Discord-Core' #'ZincHTTPComponents' ). ];
 			package: #'Discord-Gateway-Tests' with: [
 				spec requires: #( #'Discord-Gateway' #'Discord-Core-Tests' ). ]
 	].

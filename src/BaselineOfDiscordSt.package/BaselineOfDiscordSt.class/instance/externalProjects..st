@@ -34,3 +34,11 @@ externalProjects: spec
 					versionString: #bleedingEdge;
 					loads: 'WebSocket' ]
 	].
+	spec for: #'pharo8.x' do: [
+		spec
+			configuration: 'ZincHTTPComponents' with: [ 
+				spec
+					repository: 'github://svenvc/zinc/repository';
+					versionString: #bleedingEdge;
+					loads: 'WebSocket' ]
+	].
