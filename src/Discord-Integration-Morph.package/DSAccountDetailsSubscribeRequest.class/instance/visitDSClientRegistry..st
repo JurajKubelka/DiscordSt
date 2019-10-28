@@ -1,6 +1,6 @@
 visiting
-visitDSClientRegistry: aDSClientRegistry 
-	aDSClientRegistry announcer 
-		subscribe: DSAuthenticatedAnnouncement 
-		send: #handleUserAuthenticatedAnnouncement: 
-		to: self morph.
+visitDSClientRegistry: aDSClientRegistry
+	aDSClientRegistry announcer
+		when: DSAuthenticatedAnnouncement
+		send: #handleUserAuthenticatedAnnouncement:
+		to: self morph
