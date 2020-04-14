@@ -3,7 +3,9 @@ externalProjects: spec
 	spec for: #'common' do: [
 		spec    
             baseline: 'Fuel' with: [ 
-                spec repository: 'github://theseion/Fuel:master/repository' ];
+				spec 
+					repository: 'github://theseion/Fuel:master/repository';
+					loads: 'CoreWithExtras' ];
 			baseline: 'NeoJSON' with: [
 				spec repository: 'github://svenvc/NeoJSON:master/repository' ];
 			baseline: 'Brick' with: [ 

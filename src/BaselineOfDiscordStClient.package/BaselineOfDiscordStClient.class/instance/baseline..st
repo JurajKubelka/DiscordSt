@@ -9,11 +9,10 @@ baseline: spec
 				spec
 					repository: 'github://feenkcom/external-volatile-store/src';
 					loads: #minimal ];
-			configuration: 'Fuel' with: [ 
-				spec
-					repository: 'http://smalltalkhub.com/mc/Pharo/Fuel/main';
-					versionString: #stable;
-					loads: 'FuelProgressUpdate' ];
+			baseline: 'Fuel' with: [ 
+				spec 
+					repository: 'github://theseion/Fuel:master/repository';
+					loads: 'CoreWithExtras' ];
 
 			package: #'Discord-Client' with: [
 				spec requires: #( 
