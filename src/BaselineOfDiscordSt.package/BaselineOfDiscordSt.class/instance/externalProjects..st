@@ -1,12 +1,9 @@
 private
 externalProjects: spec
 	spec for: #'common' do: [
-		spec
-			configuration: 'Fuel' with: [ 
-				spec
-					repository: 'http://smalltalkhub.com/mc/Pharo/Fuel/main';
-					versionString: #stable;
-					loads: 'FuelProgressUpdate' ];
+		spec    
+            baseline: 'Fuel' with: [ 
+                spec repository: 'github://theseion/Fuel:master/repository' ];
 			baseline: 'NeoJSON' with: [
 				spec repository: 'github://svenvc/NeoJSON:master/repository' ];
 			baseline: 'Brick' with: [ 
