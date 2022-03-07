@@ -4,19 +4,23 @@ externalProjects: spec
 		spec    
             baseline: 'Fuel' with: [ 
 				spec 
-					repository: 'github://theseion/Fuel:master/repository';
-					loads: 'CoreWithExtras' ];
+					repository: 'github://theseion/Fuel:master/repository' ];
 			baseline: 'NeoJSON' with: [
 				spec repository: 'github://svenvc/NeoJSON:master/repository' ];
-			baseline: 'Brick' with: [ 
-				spec
-					repository: 'github://pharo-graphics/Brick/src';
-					loads: #default ];
 			baseline: 'ExternalVolatileStore' with: [ 
 				spec
 					repository: 'github://feenkcom/external-volatile-store/src';
 					loads: #minimal ]
 	].
+	
+	spec for: #'notGToolkit' do: [
+		spec
+			baseline: 'Brick' with: [ 
+				spec
+					repository: 'github://pharo-graphics/Brick/src';
+					loads: #default ]
+	].
+	
 	spec for: #'pharo6.x' do: [
 		spec
 			configuration: 'ZincHTTPComponents' with: [ 
